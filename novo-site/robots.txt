@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://heliosprotecao.com.br/sitemap.xml

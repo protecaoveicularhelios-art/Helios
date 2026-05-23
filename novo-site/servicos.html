@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços | Hélios Proteção Veicular</title>
+  <meta name="description" content="Conheça todos os serviços da Hélios Proteção Veicular: carro reserva, cobertura contra colisão, troca de vidros, reboque, assistência 24h e muito mais.">
+  <link rel="canonical" href="https://heliosprotecao.com.br/servicos">
+  <meta property="og:title" content="Serviços | Hélios Proteção Veicular">
+  <meta property="og:description" content="Cobertura completa para seu veículo: carro reserva, colisão, vidros, reboque, assistência 24h e rastreamento.">
+  <meta property="og:url" content="https://heliosprotecao.com.br/servicos">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/images/helios_ico.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:   #0b1a35;
+      --navy2:  #00122b;
+      --yellow: #f5c400;
+      --yellow2:#e6b800;
+      --white:  #ffffff;
+      --gray:   #f4f6f9;
+      --text:   #1a2332;
+      --mid:    #4a5568;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', sans-serif; color: var(--text); background: #fff; overflow-x: hidden; }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1001;
+      background: #fff; border-bottom: 1px solid #e8eaf0;
+      padding: 0 40px; height: 40px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .topbar-left {
+      font-size: .72rem; font-weight: 800; color: var(--navy);
+      letter-spacing: 1.5px; text-transform: uppercase;
+    }
+    .topbar-center {
+      display: flex; align-items: center; gap: 24px;
+    }
+    .topbar-item {
+      display: flex; align-items: center; gap: 6px;
+      font-size: .72rem; font-weight: 600; color: var(--navy);
+      letter-spacing: .5px; text-transform: uppercase; white-space: nowrap;
+    }
+    .topbar-item span.label { color: #555; font-weight: 700; }
+    .topbar-item a {
+      color: var(--navy); font-weight: 800; text-decoration: none;
+      transition: color .2s;
+    }
+    .topbar-item a:hover { color: var(--yellow); }
+    .topbar-dot { color: #bbb; font-size: .9rem; }
+    .topbar-right {
+      display: flex; align-items: center; gap: 10px;
+    }
+    .topbar-brand {
+      font-size: .72rem; font-weight: 800; color: var(--navy);
+      letter-spacing: 1px; text-transform: uppercase;
+    }
+    .topbar-social {
+      display: flex; align-items: center; gap: 8px;
+    }
+    .topbar-social a {
+      color: var(--navy); display: flex; align-items: center;
+      transition: color .2s; text-decoration: none;
+    }
+    .topbar-social a:hover { color: var(--yellow); }
+    .topbar { transition: transform .3s ease; }
+    .topbar.hidden { transform: translateY(-100%); }
+    .navbar { transition: top .3s ease, background .3s, box-shadow .3s, padding .3s !important; }
+    .navbar.topbar-gone { top: 0 !important; }
+    @media (max-width: 768px) { .topbar { display: none; } }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      position: fixed; top: 40px; left: 0; right: 0; z-index: 1000;
+      padding: 18px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: background .3s, box-shadow .3s, padding .3s;
+    }
+    .navbar.scrolled { background: var(--navy); box-shadow: 0 4px 24px rgba(0,0,0,.3); padding: 12px 40px; }
+    .nav-logo img { height: 52px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.85); text-decoration: none; font-size: .82rem; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--yellow); }
+    .nav-cta { background: var(--yellow) !important; color: var(--navy) !important; padding: 10px 22px !important; border-radius: 50px; font-weight: 800 !important; }
+    .nav-cta:hover { background: var(--yellow2) !important; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-toggle span { display: block; width: 26px; height: 2px; background: #fff; margin: 5px 0; }
+
+    /* ── HERO SERVIÇOS ── */
+    .servicos-hero {
+      height: 62vh; min-height: 420px;
+      background: #00122b;
+      padding-top: 120px;
+      position: relative; overflow: visible;
+      z-index: 1;
+    }
+
+    /* Slider principal */
+    .slider-wrap {
+      height: 100%; position: relative;
+      display: flex; align-items: center;
+      max-width: 1200px; margin: 0 auto; padding: 0 80px;
+    }
+
+    .slides-container {
+      width: 55%; overflow: hidden; flex-shrink: 0;
+      background: #00122b;
+    }
+    .slides-track {
+      display: flex; transition: transform .45s cubic-bezier(.4,0,.2,1);
+      background: #00122b;
+      will-change: transform;
+    }
+    .slide {
+      min-width: 100%;
+      padding: 24px 0;
+      background: #00122b;
+    }
+
+    /* Ícone — metade no hero, metade na faixa branca */
+    .hero-visual {
+      position: absolute;
+      right: 80px; bottom: -140px;
+      width: 280px; height: 280px;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none; z-index: 5;
+    }
+    .hero-visual img {
+      width: 100%; height: 100%; object-fit: contain;
+      filter: drop-shadow(0 0 40px rgba(245,196,0,.25));
+      transition: opacity .3s ease;
+    }
+    .slide-tag {
+      display: inline-block;
+      background: rgba(245,196,0,.15); border: 1px solid rgba(245,196,0,.3);
+      color: var(--yellow); font-size: .62rem; font-weight: 800;
+      letter-spacing: 2px; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 50px; margin-bottom: 14px;
+    }
+    .slide-title {
+      font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 900;
+      color: #fff; line-height: 1.1; margin-bottom: 10px;
+    }
+    .slide-subtitle {
+      font-size: .9rem; font-weight: 700;
+      color: var(--yellow); margin-bottom: 14px;
+    }
+    .slide-desc {
+      color: rgba(255,255,255,.7); font-size: .85rem;
+      line-height: 1.7; margin-bottom: 24px; max-width: 420px;
+    }
+    .slide-btn {
+      display: inline-block;
+      background: var(--yellow); color: var(--navy);
+      padding: 13px 30px; border-radius: 50px;
+      font-weight: 800; font-size: .88rem;
+      text-decoration: none; letter-spacing: .5px;
+      transition: transform .2s;
+    }
+    .slide-btn:hover { transform: translateY(-2px); }
+    .slide-details {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 20px;
+    }
+    .detail-chip {
+      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.75); font-size: .7rem; font-weight: 600;
+      padding: 5px 12px; border-radius: 50px;
+    }
+
+
+    /* Indicadores */
+    .slider-dots {
+      position: absolute; bottom: 16px; left: 0; right: 0;
+      display: flex; justify-content: center; gap: 8px;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: rgba(255,255,255,.12); border: none; cursor: pointer;
+      transition: background .3s, width .3s, border-radius .3s; padding: 0;
+    }
+    .dot.active { background: var(--yellow); width: 28px; border-radius: 4px; }
+
+
+/* ── LISTA COMPLETA ── */
+    .todos-servicos { padding: 80px 40px; padding-top: 180px; background: #fff; }
+    .todos-inner { max-width: 1200px; margin: 0 auto; }
+    .todos-header { text-align: center; margin-bottom: 52px; }
+    .section-label { font-size: .65rem; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; color: var(--yellow2); margin-bottom: 10px; }
+    .section-title { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 900; color: var(--text); line-height: 1.2; margin-bottom: 16px; }
+    .section-title span { color: var(--yellow2); }
+    .todos-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .todos-card {
+      border: 1.5px solid #e8ecf0; border-radius: 18px;
+      padding: 28px 24px; transition: border-color .3s, transform .3s, box-shadow .3s;
+    }
+    .todos-card:hover { border-color: var(--yellow); transform: translateY(-4px); box-shadow: 0 10px 32px rgba(245,196,0,.15); }
+    .todos-title { font-size: .95rem; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+    .todos-text { font-size: .81rem; color: var(--mid); line-height: 1.65; }
+
+    /* ── CTA ── */
+    .servicos-cta {
+      background: linear-gradient(135deg, var(--navy2) 0%, #0d2250 100%);
+      text-align: center; padding: 80px 40px;
+    }
+    .servicos-cta h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 900; color: #fff; margin-bottom: 12px; }
+    .servicos-cta p { color: rgba(255,255,255,.7); font-size: .9rem; margin-bottom: 36px; }
+    .btn-whatsapp {
+      background: #25d366; color: #fff;
+      padding: 15px 36px; border-radius: 50px; font-weight: 800; font-size: .95rem;
+      text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+      box-shadow: 0 8px 24px rgba(37,211,102,.4); transition: transform .2s;
+    }
+    .btn-whatsapp:hover { transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer { background: #060f20; padding: 48px 40px 28px; }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    .footer-logo-img { height: 44px; display: block; margin-bottom: 14px; filter: brightness(0) invert(1); }
+    .footer-desc { color: rgba(255,255,255,.4); font-size: .78rem; line-height: 1.7; margin-bottom: 18px; }
+    .footer-social { display: flex; gap: 10px; }
+    .social-btn { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.55); text-decoration: none; font-size: .8rem; transition: background .2s; }
+    .social-btn:hover { background: var(--yellow); color: var(--navy); }
+    .footer-col h5 { color: #fff; font-size: .76rem; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 9px; }
+    .footer-links a { color: rgba(255,255,255,.4); text-decoration: none; font-size: .78rem; transition: color .2s; }
+    .footer-links a:hover { color: var(--yellow); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 22px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .footer-bottom p { color: rgba(255,255,255,.28); font-size: .7rem; }
+    .footer-bottom span { color: var(--yellow); font-weight: 700; }
+
+    .whatsapp-fab { position: fixed; bottom: 28px; right: 28px; background: #25d366; color: #fff; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; box-shadow: 0 6px 20px rgba(37,211,102,.5); text-decoration: none; z-index: 999; transition: transform .2s; }
+    .whatsapp-fab:hover { transform: scale(1.1); }
+
+    /* Offcanvas */
+    .offcanvas { position: fixed; top: 0; right: -100%; width: 280px; height: 100%; background: var(--navy); z-index: 9999; transition: right .3s; padding: 80px 32px 32px; }
+    .offcanvas.open { right: 0; }
+    .offcanvas-links { list-style: none; }
+    .offcanvas-links li { margin-bottom: 22px; }
+    .offcanvas-links a { color: rgba(255,255,255,.85); text-decoration: none; font-size: 1rem; font-weight: 700; text-transform: uppercase; }
+    .offcanvas-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+    .menu-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 9998; }
+    .menu-overlay.open { display: block; }
+
+    @media (max-width: 1024px) {
+      .todos-grid { grid-template-columns: repeat(2,1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .hero-visual { width: 220px; height: 220px; right: 24px; bottom: -110px; }
+      .todos-servicos { padding-top: 150px; }
+    }
+    @media (max-width: 768px) {
+      /* navbar */
+      .navbar { padding: 14px 20px; top: 0 !important; }
+      .navbar.scrolled { padding: 10px 20px; }
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+
+      /* hero */
+      .servicos-hero { height: auto; min-height: unset; padding: 80px 0 48px; overflow: hidden; }
+      .slider-wrap { padding: 0 20px; flex-direction: column; align-items: flex-start; }
+      .slides-container { width: 100%; }
+      .hero-visual { display: none; }
+
+      /* todos serviços — remove o offset do carro */
+      .todos-servicos { padding: 56px 20px 56px; }
+      .todos-grid { grid-template-columns: 1fr; }
+
+      /* slider dots */
+      .slider-dots { bottom: 8px; }
+
+      /* footer */
+      .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+      footer { padding: 40px 20px 24px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Hélios Proteção Veicular",
+    "image": "https://heliosprotecao.com.br/assets/images/logo-helios.png",
+    "url": "https://heliosprotecao.com.br",
+    "telephone": "+5531975192923",
+    "email": "contato@heliosprotecao.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Edmeia Matos Lazzarotti, 2901",
+      "addressLocality": "Betim",
+      "addressRegion": "MG",
+      "postalCode": "32604-455",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": ["https://www.instagram.com/heliosprotecaoveicular"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "33"
+    },
+    "description": "Proteção veicular completa em Betim e Grande BH. Cobertura contra roubo, furto, colisão, assistência 24h e muito mais. Sem burocracia.",
+    "areaServed": "Grande Belo Horizonte, MG"
+  }
+  </script>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">Hélios Proteção Veicular</div>
+  <div class="topbar-center">
+    <div class="topbar-item">
+      <span class="label">Assistência 24H</span>
+      <a href="tel:08004900190">0800 490 0190</a>
+    </div>
+    <span class="topbar-dot">•</span>
+    <div class="topbar-item">
+      <span class="label">Geral</span>
+      <a href="tel:+5531972593075">(31) 97259-3075</a>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-brand">heliosprotecaoveicular</span>
+    <div class="topbar-social">
+      <a href="https://www.instagram.com/heliosprotecaoveicular" target="_blank" aria-label="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo-helios.png" alt="Hélios Proteção Veicular">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="quem-somos.html">Quem Somos</a></li>
+    <li><a href="servicos.html" class="active">Serviços</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="https://wa.me/5531992395859?text=Olá!%20Gostaria%20de%20uma%20cotação." class="nav-cta" target="_blank">Faça sua cotação</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- OFFCANVAS -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<div class="offcanvas" id="offcanvas">
+  <button class="offcanvas-close" id="offcanvasClose">✕</button>
+  <ul class="offcanvas-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="quem-somos.html">Quem Somos</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="https://wa.me/5531992395859" style="color:var(--yellow)">Faça sua cotação</a></li>
+  </ul>
+</div>
+
+<!-- HERO SLIDER -->
+<section class="servicos-hero">
+  <div class="slider-wrap">
+    <div class="slides-container">
+      <div class="slides-track" id="slidesTrack">
+
+        <!-- SLIDE 1 -->
+        <div class="slide">
+          <h1 class="slide-title">Lanternagem<br>e Pintura</h1>
+          <p class="slide-subtitle">Cobertura completa em caso de colisão</p>
+          <p class="slide-desc">Sofreu um acidente? A Hélios cobre os reparos de lanternagem, pintura e peças danificadas do seu veículo. Você não paga nada além da mensalidade.</p>
+          <a href="https://wa.me/5531992395859?text=Quero%20saber%20sobre%20cobertura%20de%20colisão." class="slide-btn" target="_blank">Faça sua cotação</a>
+        </div>
+        <!-- SLIDE 2 -->
+        <div class="slide">
+          <h1 class="slide-title">Carro<br>Reserva</h1>
+          <p class="slide-subtitle">Seu dia não para enquanto o carro é reparado</p>
+          <p class="slide-desc">Disponibilizamos um carro reserva para que você continue com sua rotina enquanto seu veículo está em manutenção. Sem estresse, sem preocupação.</p>
+          <a href="https://wa.me/5531992395859?text=Quero%20saber%20sobre%20carro%20reserva." class="slide-btn" target="_blank">Faça sua cotação</a>
+        </div>
+        <!-- SLIDE 3 -->
+        <div class="slide">
+          <h1 class="slide-title">Troca de<br>Vidros</h1>
+          <p class="slide-subtitle">Para-brisa, laterais e vidro traseiro</p>
+          <p class="slide-desc">Cobertura total para para-brisas, janelas laterais e vidro traseiro danificados. Sem carência e sem burocracia — é só acionar e resolver.</p>
+          <a href="https://wa.me/5531992395859?text=Quero%20saber%20sobre%20cobertura%20de%20vidros." class="slide-btn" target="_blank">Faça sua cotação</a>
+        </div>
+        <!-- SLIDE 4 -->
+        <div class="slide">
+          <h1 class="slide-title">Reboque<br>24 horas</h1>
+          <p class="slide-subtitle">Assistência onde você estiver</p>
+          <p class="slide-desc">Em caso de acidente, pane ou qualquer imprevisto, enviamos reboque para te socorrer em qualquer lugar do Brasil. Rápido e sem custo adicional.</p>
+          <a href="https://wa.me/5531992395859?text=Quero%20saber%20sobre%20reboque." class="slide-btn" target="_blank">Faça sua cotação</a>
+        </div>
+        <!-- SLIDE 5 -->
+        <div class="slide">
+          <h1 class="slide-title">Assistência<br>24 horas</h1>
+          <p class="slide-subtitle">Chaveiro, pneu, pane seca e pane elétrica</p>
+          <p class="slide-desc">Nossa assistência está disponível 24h por dia, 7 dias por semana. Chaveiro, troca de pneu, pane seca ou elétrica — estamos sempre prontos.</p>
+          <a href="https://wa.me/5531992395859?text=Quero%20saber%20sobre%20assistência%2024h." class="slide-btn" target="_blank">Faça sua cotação</a>
+        </div>
+        <!-- SLIDE 6 -->
+        <div class="slide">
+          <h1 class="slide-title">Roubo e<br>Furto</h1>
+          <p class="slide-subtitle">100% da Tabela FIPE garantida</p>
+          <p class="slide-desc">Se seu veículo for roubado ou furtado, você recebe 100% do valor da Tabela FIPE. Proteção real, sem letras miúdas, sem pegadinhas.</p>
+          <a href="https://wa.me/5531992395859?text=Quero%20saber%20sobre%20cobertura%20de%20roubo%20e%20furto." class="slide-btn" target="_blank">Faça sua cotação</a>
+        </div>
+        <!-- SLIDE 7 -->
+        <div class="slide">
+          <h1 class="slide-title">Rastreamento<br>e Recuperação</h1>
+          <p class="slide-subtitle">Tecnologia a favor da sua segurança</p>
+          <p class="slide-desc">Com rastreamento ativo, localizamos e recuperamos seu veículo rapidamente em caso de roubo ou furto. Tecnologia moderna, proteção de verdade.</p>
+          <a href="https://wa.me/5531992395859?text=Quero%20saber%20sobre%20rastreamento." class="slide-btn" target="_blank">Faça sua cotação</a>
+        </div>
+        <!-- SLIDE 8 -->
+        <div class="slide">
+          <h1 class="slide-title">Clube de<br>Benefícios</h1>
+          <p class="slide-subtitle">Vantagens exclusivas para associados</p>
+          <p class="slide-desc">Acesso a descontos exclusivos em parceiros selecionados, telemedicina, e muito mais. Ser associado Hélios vai além da proteção do seu veículo.</p>
+          <a href="https://wa.me/5531992395859?text=Quero%20saber%20sobre%20o%20clube%20de%20benefícios." class="slide-btn" target="_blank">Faça sua cotação</a>
+        </div>
+
+      </div><!-- /slides-track -->
+    </div><!-- /slides-container -->
+
+    <!-- Carro — metade no azul, metade na faixa abaixo -->
+    <div class="hero-visual">
+      <img id="heroVisualImg" src="assets/images/carro-hero.png.png" alt="Veículo protegido">
+    </div>
+
+  </div><!-- /slider-wrap -->
+
+  <!-- Dots -->
+  <div class="slider-dots" id="sliderDots"></div>
+
+</section>
+
+
+
+<!-- TODOS OS SERVIÇOS -->
+<section class="todos-servicos">
+  <div class="todos-inner">
+    <div class="todos-header">
+      <p class="section-label" style="color:#ffcc00">Cobertura completa</p>
+      <h2 class="section-title">Tudo que você precisa <span style="color:#ffcc00">em um só lugar</span></h2>
+    </div>
+    <div class="todos-grid">
+      <div class="todos-card">
+        <div class="todos-title">Lanternagem e Pintura</div>
+        <div class="todos-text">Reparos completos em funilaria e pintura em caso de colisão, sem custo adicional.</div>
+      </div>
+      <div class="todos-card">
+        <div class="todos-title">Carro Reserva</div>
+        <div class="todos-text">Veículo reserva disponível enquanto o seu está em reparo. Sua rotina não para.</div>
+      </div>
+      <div class="todos-card">
+        <div class="todos-title">Troca de Vidros</div>
+        <div class="todos-text">Cobertura para para-brisa, janelas laterais e vidro traseiro danificados.</div>
+      </div>
+      <div class="todos-card">
+        <div class="todos-title">Reboque 24h</div>
+        <div class="todos-text">Serviço de reboque disponível 24h em qualquer lugar do Brasil.</div>
+      </div>
+      <div class="todos-card">
+        <div class="todos-title">Assistência 24h</div>
+        <div class="todos-text">Chaveiro, troca de pneu, pane seca e elétrica — suporte completo a qualquer hora.</div>
+      </div>
+      <div class="todos-card">
+        <div class="todos-title">Roubo e Furto</div>
+        <div class="todos-text">Indenização de 100% da Tabela FIPE em caso de roubo ou furto do veículo.</div>
+      </div>
+      <div class="todos-card">
+        <div class="todos-title">Rastreamento</div>
+        <div class="todos-text">Tecnologia de rastreamento para localização e recuperação rápida do veículo.</div>
+      </div>
+      <div class="todos-card">
+        <div class="todos-title">Fenômenos da Natureza</div>
+        <div class="todos-text">Cobertura contra danos causados por alagamentos, granizo, vendaval e outros fenômenos.</div>
+      </div>
+      <div class="todos-card">
+        <div class="todos-title">Clube de Benefícios</div>
+        <div class="todos-text">Descontos exclusivos, telemedicina e vantagens para todos os associados Hélios.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="servicos-cta">
+  <h2>Pronto para proteger seu veículo?</h2>
+  <p>Fale com um consultor agora mesmo. Cotação gratuita e sem compromisso.</p>
+  <a href="https://wa.me/5531992395859?text=Olá!%20Gostaria%20de%20fazer%20uma%20cotação%20na%20Hélios." class="btn-whatsapp" target="_blank">
+    💬 Falar no WhatsApp
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/images/logo-helios.png" alt="Hélios" class="footer-logo-img">
+        <p class="footer-desc">Confiança, Proteção e Tranquilidade ao seu alcance.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/heliosprotecaoveicular" class="social-btn" target="_blank" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5531992395859" class="social-btn" target="_blank" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Serviços</h5>
+        <ul class="footer-links">
+          <li><a href="servicos.html">Lanternagem e Pintura</a></li>
+          <li><a href="servicos.html">Carro Reserva</a></li>
+          <li><a href="servicos.html">Assistência 24h</a></li>
+          <li><a href="servicos.html">Roubo e Furto</a></li>
+          <li><a href="servicos.html">Rastreamento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul class="footer-links">
+          <li><a href="tel:08004900190">0800 490 0190</a></li>
+          <li><a href="tel:+5531972593075">(31) 97259-3075</a></li>
+          <li><a href="https://wa.me/5531992395859" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:contato@heliosprotecao.com.br">contato@heliosprotecao.com.br</a></li>
+          <li>Belo Horizonte, MG</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>Hélios Proteção Veicular</span>. Todos os direitos reservados.</p>
+      <p>heliosprotecao.com.br — Belo Horizonte, MG</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5531992395859" class="whatsapp-fab" target="_blank">💬</a>
+
+<script>
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  const topbar = document.querySelector('.topbar');
+  window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY > 50;
+    navbar.classList.toggle('scrolled', scrolled);
+    if (topbar) {
+      topbar.classList.toggle('hidden', scrolled);
+      navbar.classList.toggle('topbar-gone', scrolled);
+    }
+  });
+
+  // Offcanvas
+  const navToggle = document.getElementById('navToggle');
+  const offcanvas = document.getElementById('offcanvas');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const offcanvasClose = document.getElementById('offcanvasClose');
+  function openMenu()  { offcanvas.classList.add('open'); menuOverlay.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeMenu() { offcanvas.classList.remove('open'); menuOverlay.classList.remove('open'); document.body.style.overflow=''; }
+  navToggle.addEventListener('click', openMenu);
+  offcanvasClose.addEventListener('click', closeMenu);
+  menuOverlay.addEventListener('click', closeMenu);
+
+  // Slider
+  const track  = document.getElementById('slidesTrack');
+  const slides  = track.querySelectorAll('.slide');
+  const dotsWrap = document.getElementById('sliderDots');
+  let current = 0;
+  const total = slides.length;
+
+  // Criar dots
+  slides.forEach((_, i) => {
+    const d = document.createElement('button');
+    d.className = 'dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(d);
+  });
+
+  const slideImages = [
+    'assets/images/cobertura-contra-colisao.png',                                        // Lanternagem e Pintura
+    'assets/images/cobertura-contra-colisao.png',                                        // Carro Reserva
+    'assets/images/cobertura-de-vidros.png',                                             // Troca de Vidros
+    'assets/images/assistencia-ao-veiculo-chaveiro-troca-de-pneus-pane-seca-pane-eletrica.png', // Reboque 24 horas
+    'assets/images/assistencia-ao-veiculo-chaveiro-troca-de-pneus-pane-seca-pane-eletrica.png', // Assistência 24 horas
+    'assets/images/cobertura-contra-roubo-e-furto.png',                                  // Roubo e Furto
+    'assets/images/rastreamento-e-recuperacao.png.png',                                  // Rastreamento e Recuperação
+    'assets/images/clube-de-beneficios.png',                                             // Clube de Benefícios
+  ];
+  const heroImg = document.getElementById('heroVisualImg');
+
+  function goTo(n) {
+    current = (n + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dotsWrap.querySelectorAll('.dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    const newSrc = slideImages[current];
+    if (heroImg.getAttribute('src') !== newSrc) {
+      heroImg.style.opacity = '0';
+      setTimeout(() => {
+        heroImg.src = newSrc;
+        heroImg.style.opacity = '1';
+      }, 200);
+    }
+  }
+
+  // Auto-avanço a cada 5s
+  setInterval(() => goTo(current + 1), 5000);
+
+
+</script>
+</body>
+</html>

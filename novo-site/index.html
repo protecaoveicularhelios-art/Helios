@@ -81,13 +81,16 @@
     .navbar { transition: top .3s ease, background .3s, box-shadow .3s, padding .3s !important; }
     .navbar.topbar-gone { top: 0 !important; }
     @media (max-width: 768px) {
-      .topbar { display: flex; padding: 0 16px; height: 36px; }
+      .topbar { display: flex; padding: 0 12px; height: 36px; justify-content: center; }
       .topbar-left { display: none; }
-      .topbar-center { gap: 12px; }
-      .topbar-item .label { display: none; }
+      .topbar-right { display: none; }
+      .topbar-center { gap: 8px; justify-content: center; }
+      .topbar-item { font-size: .62rem; gap: 4px; }
+      .topbar-item .label { display: inline; font-size: .62rem; }
+      .topbar-item a { font-size: .62rem; }
+      .topbar-dot { display: inline; font-size: .7rem; }
       .topbar-brand { display: none; }
       .topbar-social { display: none; }
-      .topbar-dot { display: none; }
     }
 
     /* ── NAVBAR ── */
@@ -195,7 +198,7 @@
     }
     .hero-pill .pill-top { font-size: 1rem; line-height: 1; }
     .hero-pill .pill-bot { font-size: .52rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-    .hero-pill-1 { bottom: 450px; left: -50px; }
+    .hero-pill-1 { bottom: 530px; left: -10px; }
     .hero-pill-2 { bottom: -14px; left: -10px; }
     .hero-pill-3 { bottom: 50px; right: -10px; }
 
@@ -568,7 +571,7 @@
       .hero-inner { grid-template-columns: 1fr; gap: 36px; padding: 40px 20px; text-align: center; }
       .hero-img-wrap { order: -1; width: 100% !important; max-width: 100% !important; overflow: hidden; }
       .hero-img-wrap img,
-      .hero-img-wrap video { width: 100% !important; max-width: 100% !important; height: auto !important; display: block !important; transform: translateY(80px); }
+      .hero-img-wrap video { width: 100% !important; max-width: 100% !important; height: auto !important; display: block !important; margin-top: 30px; }
       .hero-btns { justify-content: center; }
       .hero-trust { justify-content: center; }
       .hero-badge { left: 4px; bottom: -10px; }

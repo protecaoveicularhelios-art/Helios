@@ -80,7 +80,15 @@
     .topbar.hidden { transform: translateY(-100%); }
     .navbar { transition: top .3s ease, background .3s, box-shadow .3s, padding .3s !important; }
     .navbar.topbar-gone { top: 0 !important; }
-    @media (max-width: 768px) { .topbar { display: none; } }
+    @media (max-width: 768px) {
+      .topbar { display: flex; padding: 0 16px; height: 36px; }
+      .topbar-left { display: none; }
+      .topbar-center { gap: 12px; }
+      .topbar-item .label { display: none; }
+      .topbar-brand { display: none; }
+      .topbar-social { display: none; }
+      .topbar-dot { display: none; }
+    }
 
     /* ── NAVBAR ── */
     .navbar {
@@ -552,11 +560,11 @@
     @media (max-width: 768px) {
       section { padding: 64px 20px; }
       #cta { padding: 64px 20px; }
-      .navbar { padding: 14px 20px; top: 0 !important; }
+      .navbar { padding: 14px 20px; top: 36px !important; }
       .navbar.scrolled { padding: 10px 20px; }
       .nav-links { display: none; }
       .nav-toggle { display: block; }
-      .hero { padding-top: 80px; height: auto; min-height: 100svh; }
+      .hero { padding-top: 116px; height: auto; min-height: 100svh; }
       .hero-inner { grid-template-columns: 1fr; gap: 36px; padding: 40px 20px; text-align: center; }
       .hero-img-wrap { order: -1; width: 100% !important; max-width: 100% !important; overflow: hidden; }
       .hero-img-wrap img,
@@ -705,7 +713,7 @@
       </div>
     </div>
     <div class="hero-img-wrap">
-      <video src="assets/videos/inauguracao.mp4" autoplay muted playsinline id="heroVideo"></video>
+      <video src="assets/videos/inauguracao.mp4" autoplay muted playsinline id="heroVideo" style="width:100%;max-width:100%;display:block;height:auto;border-radius:12px;"></video>
       <div class="hero-pill hero-pill-1">
         <div class="pill-top">Proteja</div>
         <div class="pill-bot">seu tempo</div>

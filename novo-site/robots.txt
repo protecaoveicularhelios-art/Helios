@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://heliosprotecao.com.br/sitemap.xml
+Sitemap: https://heliosprotecaoveicular.com.br/sitemap.xml

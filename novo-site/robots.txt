@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /b/
 
 Sitemap: https://heliosprotecaoveicular.com.br/sitemap.xml

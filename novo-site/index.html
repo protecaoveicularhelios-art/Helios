@@ -485,6 +485,49 @@
       text-align: center; font-size: .72rem; color: #aaa; margin-top: 12px;
     }
 
+    /* ── APPS ── */
+    #apps { background: #fff; }
+    .apps-header { text-align: center; margin-bottom: 52px; }
+    .apps-header .section-sub { margin: 0 auto; text-align: center; }
+    .apps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .app-card {
+      border-radius: 20px; padding: 40px 36px;
+      border: 1.5px solid #e8edf4;
+      box-shadow: 0 8px 32px rgba(0,0,0,.06);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .app-card:hover { transform: translateY(-5px); box-shadow: 0 16px 48px rgba(0,0,0,.1); }
+    .app-card-header { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+    .app-icon {
+      width: 64px; height: 64px; border-radius: 16px;
+      background: var(--navy); display: flex; align-items: center;
+      justify-content: center; flex-shrink: 0;
+    }
+    .app-icon svg { width: 32px; height: 32px; fill: var(--yellow); }
+    .app-card-title { font-size: 1.15rem; font-weight: 900; color: var(--navy); line-height: 1.2; }
+    .app-card-sub { font-size: .75rem; font-weight: 600; color: var(--mid); margin-top: 3px; text-transform: uppercase; letter-spacing: .5px; }
+    .app-features { list-style: none; margin-bottom: 32px; display: flex; flex-direction: column; gap: 14px; }
+    .app-features li { display: flex; align-items: flex-start; gap: 10px; font-size: .85rem; color: var(--mid); line-height: 1.5; }
+    .app-features li::before { content: ''; width: 18px; height: 18px; border-radius: 50%; background: rgba(245,196,0,.15); border: 1.5px solid var(--yellow); flex-shrink: 0; margin-top: 1px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 6l3 3 5-5' stroke='%23e6b800' stroke-width='1.8' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: center; }
+    .app-store-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+    .app-store-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--navy); color: #fff;
+      padding: 11px 20px; border-radius: 12px;
+      text-decoration: none; transition: background .2s, transform .2s;
+      flex: 1; min-width: 140px;
+    }
+    .app-store-btn:hover { background: var(--navy2); transform: translateY(-2px); }
+    .app-store-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+    .app-store-btn-text { display: flex; flex-direction: column; }
+    .app-store-btn-text small { font-size: .6rem; font-weight: 500; opacity: .75; line-height: 1; }
+    .app-store-btn-text span { font-size: .82rem; font-weight: 800; line-height: 1.3; }
+    @media (max-width: 768px) {
+      .apps-grid { grid-template-columns: 1fr; }
+      .app-card { padding: 28px 22px; }
+      .app-store-btn { flex: 1 1 auto; }
+    }
+
     /* ── FOOTER ── */
     footer { background: #060f20; padding: 60px 40px 32px; }
     .footer-inner { max-width: 1200px; margin: 0 auto; }
@@ -1128,6 +1171,88 @@
         <div class="why-title">Carro Reserva</div>
         <div class="why-text">Seu dia não para. Com a Hélios você tem carro reserva enquanto seu veículo é reparado.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPS -->
+<section id="apps">
+  <div class="container">
+    <div class="apps-header">
+      <p class="section-label">Nossos Aplicativos</p>
+      <h2 class="section-title">Tudo na palma <span>da sua mão</span></h2>
+      <p class="section-sub">Gerencie sua proteção e rastreie seu veículo de forma simples e rápida.</p>
+    </div>
+    <div class="apps-grid">
+
+      <!-- App do Associado -->
+      <div class="app-card">
+        <div class="app-card-header">
+          <div class="app-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 2H7C5.9 2 5 2.9 5 4v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 18H7V4h10v16zm-5-1c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/></svg>
+          </div>
+          <div>
+            <div class="app-card-title">App do Associado</div>
+            <div class="app-card-sub">Hélios Proteção Veicular</div>
+          </div>
+        </div>
+        <ul class="app-features">
+          <li>Segunda via de boleto — acesse e pague seus boletos rapidamente</li>
+          <li>Notificações em tempo real — alertas sobre sua proteção</li>
+          <li>Histórico de pagamentos — acompanhe todos os seus registros</li>
+        </ul>
+        <div class="app-store-btns">
+          <a href="https://play.google.com/store/apps/details?id=br.com.heliosprotecaoveicular.appassociado&hl=pt_BR" target="_blank" class="app-store-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24.99.19l12.49-7.19-2.61-2.61-10.87 9.61zm-1.73-20.1C1.17 4.06 1 4.57 1 5.14v13.72c0 .57.17 1.08.45 1.48l.08.07 7.69-7.69v-.18L1.53 3.59l-.08.07zm16.24 9.26l-2.61-1.51-2.93 2.93 2.93 2.93 2.63-1.52c.75-.43.75-1.41-.02-1.83zM4.17.24l12.49 7.2-2.61 2.61L3.18.44C3.48.26 3.86.21 4.17.24z"/></svg>
+            <div class="app-store-btn-text">
+              <small>Disponível no</small>
+              <span>Google Play</span>
+            </div>
+          </a>
+          <a href="https://apps.apple.com/br/app/h%C3%A9lios-prote%C3%A7%C3%A3o-veicular/id6670277716" target="_blank" class="app-store-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.18 1.27-2.16 3.8.03 3.02 2.65 4.03 2.68 4.04l-.07.28zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="app-store-btn-text">
+              <small>Disponível na</small>
+              <span>App Store</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- App do Rastreador -->
+      <div class="app-card">
+        <div class="app-card-header">
+          <div class="app-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          </div>
+          <div>
+            <div class="app-card-title">App de Rastreamento</div>
+            <div class="app-card-sub">Localização do Veículo</div>
+          </div>
+        </div>
+        <ul class="app-features">
+          <li>Localização em tempo real — veja onde seu veículo está a qualquer momento</li>
+          <li>Histórico de rotas — consulte todos os trajetos realizados</li>
+          <li>Alertas inteligentes — notificações de movimentação suspeita</li>
+        </ul>
+        <div class="app-store-btns">
+          <a href="https://play.google.com/store/apps/details?id=com.softruck.helios&hl=pt_BR" target="_blank" class="app-store-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24.99.19l12.49-7.19-2.61-2.61-10.87 9.61zm-1.73-20.1C1.17 4.06 1 4.57 1 5.14v13.72c0 .57.17 1.08.45 1.48l.08.07 7.69-7.69v-.18L1.53 3.59l-.08.07zm16.24 9.26l-2.61-1.51-2.93 2.93 2.93 2.93 2.63-1.52c.75-.43.75-1.41-.02-1.83zM4.17.24l12.49 7.2-2.61 2.61L3.18.44C3.48.26 3.86.21 4.17.24z"/></svg>
+            <div class="app-store-btn-text">
+              <small>Disponível no</small>
+              <span>Google Play</span>
+            </div>
+          </a>
+          <a href="https://apps.apple.com/br/iphone/search?term=h%C3%A9lios%20prote%C3%A7%C3%A3o%20veicular" target="_blank" class="app-store-btn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.14-2.18 1.27-2.16 3.8.03 3.02 2.65 4.03 2.68 4.04l-.07.28zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="app-store-btn-text">
+              <small>Disponível na</small>
+              <span>App Store</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>

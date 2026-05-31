@@ -3,5 +3,6 @@ Allow: /
 Disallow: /b/
 Disallow: /l/
 Disallow: /a/
+Disallow: /city-seventy/
 
 Sitemap: https://heliosprotecaoveicular.com.br/sitemap.xml

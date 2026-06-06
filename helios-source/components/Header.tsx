@@ -26,6 +26,7 @@ export default function Header() {
             { label: "Home", href: "https://heliosprotecaoveicular.com.br" },
             { label: "Quem Somos", href: "https://heliosprotecaoveicular.com.br/#sobre" },
             { label: "Serviços", href: "https://heliosprotecaoveicular.com.br/servicos" },
+            { label: "Blog", href: "https://heliosprotecaoveicular.com.br/blog/" },
             { label: "Contato", href: "https://heliosprotecaoveicular.com.br/#contato" },
           ].map((item) => (
             <a key={item.label} href={item.href} className="text-white no-underline font-semibold text-sm">

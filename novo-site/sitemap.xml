@@ -1,22 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://heliosprotecaoveicular.com.br/</loc><priority>1.0</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/servicos</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/quem-somos</loc><priority>0.7</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/contato</loc><priority>0.7</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/belo-horizonte/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/contagem/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/betim/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/ribeirao-das-neves/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/santa-luzia/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/ibirite/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/vespasiano/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/sabara/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/nova-lima/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/lagoa-santa/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/pedro-leopoldo/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/brumadinho/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/esmeraldas/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/mario-campos/</loc><priority>0.8</priority></url>
-  <url><loc>https://heliosprotecaoveicular.com.br/sarzedo/</loc><priority>0.8</priority></url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/blog/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/belo-horizonte/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/contagem/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/betim/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/ribeirao-das-neves/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/santa-luzia/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/ibirite/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/vespasiano/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/sabara/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/nova-lima/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/lagoa-santa/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/pedro-leopoldo/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/brumadinho/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/esmeraldas/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/mario-campos/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/sarzedo/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/blog/diferenca-entre-seguro-de-carro-e-protecao-veicular/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/blog/maiores-protecoes-veiculares-do-brasil/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/blog/seguro-moto-ou-protecao-veicular-qual-escolher/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/blog/protecao-veicular-e-confiavel/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://heliosprotecaoveicular.com.br/blog/protecao-veicular-para-motorista-de-aplicativo/</loc>
+<lastmod>2026-06-06T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
 </urlset>

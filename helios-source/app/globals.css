@@ -24,3 +24,66 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.prose-helios h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #0b1a35;
+  margin: 2rem 0 0.75rem;
+}
+
+.prose-helios h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0b1a35;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.prose-helios p {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.prose-helios ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-helios ul li {
+  color: #374151;
+  line-height: 1.8;
+  margin-bottom: 0.25rem;
+}
+
+.prose-helios strong {
+  color: #0b1a35;
+  font-weight: 700;
+}
+
+.prose-helios table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.prose-helios table th {
+  background: #0b1a35;
+  color: #f5c400;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.prose-helios table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #e8eaf0;
+  color: #374151;
+}
+
+.prose-helios table tr:nth-child(even) td {
+  background: #f8faff;
+}

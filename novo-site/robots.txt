@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /b/
+Disallow: /l/
+Disallow: /a/
 Disallow: /_next/
 Disallow: /*.txt$
 

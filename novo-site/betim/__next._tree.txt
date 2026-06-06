@@ -1,2 +1,2 @@
-:HL["/_next/static/chunks/029bhr6fx0j.x.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cidade","param":{"type":"d","key":"betim","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"9n04jKjcALwrwZCIm78ei"}
+:HL["/_next/static/chunks/0b09csh8f2ntc.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cidade","param":{"type":"d","key":"betim","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"-Ptf-L8mZD-5jbTnO1NB6"}

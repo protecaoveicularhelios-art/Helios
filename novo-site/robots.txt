@@ -1,8 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /b/
-Disallow: /l/
-Disallow: /a/
-Disallow: /city-seventy/
+Disallow: /_next/
+Disallow: /*.txt$
 
 Sitemap: https://heliosprotecaoveicular.com.br/sitemap.xml

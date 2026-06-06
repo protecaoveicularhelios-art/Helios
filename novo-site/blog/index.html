@@ -145,9 +145,10 @@
   @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   .card:nth-child(1){ animation-delay:.05s } .card:nth-child(2){ animation-delay:.1s } .card:nth-child(3){ animation-delay:.15s }
   .card:nth-child(4){ animation-delay:.2s } .card:nth-child(5){ animation-delay:.25s }
-  .card-thumb { height: 5px; width: 100%; }
-  .cat-edu { background: #1a56c4; } .cat-comp { background: #b02a7a; } .cat-moto { background: #e6960c; }
-  .cat-duvida { background: #1a7a45; } .cat-app { background: #c45c00; }
+  .card-thumb { position: relative; width: 100%; height: 200px; overflow: hidden; }
+  .card-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+  .card:hover .card-thumb img { transform: scale(1.04); }
+  .card-thumb-badge { position: absolute; top: 12px; left: 12px; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; }
   .card-body { padding: 20px 22px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
   .card-badge { display: inline-block; padding: 3px 11px; border-radius: 20px; font-size: 11px; font-weight: 700; align-self: flex-start; }
   .bg-edu { background: #e8f0fe; color: #1a56c4; } .bg-comp { background: #fce8f3; color: #b02a7a; }
@@ -345,9 +346,11 @@
   <div class="articles-grid" id="articlesGrid">
 
     <article class="card" data-cat="Educação Financeira" data-min="5" data-date="2026-06-05">
-      <div class="card-thumb cat-edu"></div>
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80" alt="Diferença entre seguro de carro e proteção veicular">
+        <span class="card-thumb-badge bg-edu">Educação Financeira</span>
+      </div>
       <div class="card-body">
-        <span class="card-badge bg-edu">Educação Financeira</span>
         <h3 class="card-title">Diferença entre seguro de carro e proteção veicular</h3>
         <p class="card-desc">Entenda de uma vez por todas a diferença entre seguro de carro e proteção veicular, qual é mais barato e qual cobre melhor o seu veículo.</p>
       </div>
@@ -358,9 +361,11 @@
     </article>
 
     <article class="card" data-cat="Comparativos" data-min="6" data-date="2026-06-05">
-      <div class="card-thumb cat-comp"></div>
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80" alt="As 5 maiores proteções veiculares do Brasil">
+        <span class="card-thumb-badge bg-comp">Comparativos</span>
+      </div>
       <div class="card-body">
-        <span class="card-badge bg-comp">Comparativos</span>
         <h3 class="card-title">As 5 maiores proteções veiculares do Brasil em 2026</h3>
         <p class="card-desc">Conheça as maiores e mais conhecidas proteções veiculares do Brasil, compare coberturas e descubra qual é a melhor opção para você.</p>
       </div>
@@ -371,9 +376,11 @@
     </article>
 
     <article class="card" data-cat="Motos" data-min="5" data-date="2026-06-05">
-      <div class="card-thumb cat-moto"></div>
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Seguro para moto ou proteção veicular">
+        <span class="card-thumb-badge bg-moto">Motos</span>
+      </div>
       <div class="card-body">
-        <span class="card-badge bg-moto">Motos</span>
         <h3 class="card-title">Seguro para moto ou proteção veicular: qual escolher em 2026?</h3>
         <p class="card-desc">Compare coberturas, preços e descubra qual é a melhor opção para proteger sua moto com tranquilidade.</p>
       </div>
@@ -384,9 +391,11 @@
     </article>
 
     <article class="card" data-cat="Dúvidas Frequentes" data-min="5" data-date="2026-06-05">
-      <div class="card-thumb cat-duvida"></div>
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80" alt="Proteção veicular é confiável?">
+        <span class="card-thumb-badge bg-duvida">Dúvidas Frequentes</span>
+      </div>
       <div class="card-body">
-        <span class="card-badge bg-duvida">Dúvidas Frequentes</span>
         <h3 class="card-title">Proteção veicular é confiável? Tire todas as suas dúvidas</h3>
         <p class="card-desc">Proteção veicular é seguro? É confiável? Entenda como funciona, quais as garantias e por que milhões de brasileiros escolhem.</p>
       </div>
@@ -397,9 +406,11 @@
     </article>
 
     <article class="card" data-cat="Motoristas de App" data-min="5" data-date="2026-06-05">
-      <div class="card-thumb cat-app"></div>
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80" alt="Proteção veicular para motorista de app">
+        <span class="card-thumb-badge bg-app">Motoristas de App</span>
+      </div>
       <div class="card-body">
-        <span class="card-badge bg-app">Motoristas de App</span>
         <h3 class="card-title">Proteção veicular para motorista de app: Uber, 99 e iFood</h3>
         <p class="card-desc">Motorista de Uber, 99 ou iFood precisa de seguro especial? Entenda como a proteção veicular funciona e quanto custa.</p>
       </div>

@@ -5,6 +5,7 @@ export type Artigo = {
   data: string
   categoria: string
   tempoLeitura: string
+  imagem: string
   conteudo: string
 }
 
@@ -16,6 +17,7 @@ export const artigos: Artigo[] = [
     data: "2026-06-06",
     categoria: "Educação Financeira",
     tempoLeitura: "5 min",
+    imagem: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200&q=80",
     conteudo: `
       <h2>Seguro de carro e proteção veicular: qual a diferença?</h2>
       <p>Se você já pesquisou <strong>seguro para o seu carro</strong> e se deparou com o termo "proteção veicular", sabe que a confusão é comum. Muita gente trata os dois como sinônimos — mas eles são produtos completamente diferentes, com regras, custos e coberturas distintas.</p>
@@ -64,6 +66,7 @@ export const artigos: Artigo[] = [
     data: "2026-06-06",
     categoria: "Comparativos",
     tempoLeitura: "6 min",
+    imagem: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&q=80",
     conteudo: `
       <h2>As proteções veiculares mais conhecidas do Brasil</h2>
       <p>O mercado de <strong>proteção veicular no Brasil</strong> cresceu muito nos últimos anos. Diferente do seguro tradicional, a proteção veicular é oferecida por associações de proprietários de veículos — um modelo mutualista que reduz os custos mensais em até 60%. Mas com tantas opções disponíveis, como escolher a melhor?</p>
@@ -105,6 +108,7 @@ export const artigos: Artigo[] = [
     data: "2026-06-06",
     categoria: "Motos",
     tempoLeitura: "5 min",
+    imagem: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
     conteudo: `
       <h2>Seguro para moto: por que é tão caro?</h2>
       <p>Se você já tentou contratar um <strong>seguro para moto</strong>, provavelmente se surpreendeu com os valores. O seguro de moto no Brasil é um dos mais caros do mercado — em muitos casos, a franquia anual supera o próprio valor do veículo.</p>
@@ -158,6 +162,7 @@ export const artigos: Artigo[] = [
     data: "2026-06-06",
     categoria: "Dúvidas Frequentes",
     tempoLeitura: "5 min",
+    imagem: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
     conteudo: `
       <h2>Proteção veicular é confiável?</h2>
       <p>Essa é, sem dúvida, a pergunta que mais recebemos de pessoas que estão pesquisando sobre proteção veicular pela primeira vez. A resposta é: <strong>sim, a proteção veicular é confiável — desde que você escolha uma associação séria e bem estruturada.</strong></p>
@@ -203,6 +208,7 @@ export const artigos: Artigo[] = [
     data: "2026-06-06",
     categoria: "Motoristas de App",
     tempoLeitura: "5 min",
+    imagem: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80",
     conteudo: `
       <h2>Motorista de aplicativo precisa de seguro especial?</h2>
       <p>Se você trabalha como motorista de <strong>Uber, 99, InDriver</strong> ou faz entregas pelo <strong>iFood, Rappi ou Loggi</strong>, já deve ter se perguntado: o meu veículo está protegido durante o trabalho?</p>

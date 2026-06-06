@@ -81,6 +81,16 @@ export default async function ArtigoPage({ params }: { params: Promise<{ slug: s
           </div>
         </section>
 
+        {/* IMAGEM DE CAPA */}
+        <div className="px-4 md:px-10 max-w-[800px] mx-auto -mt-6 mb-0">
+          <img
+            src={artigo.imagem}
+            alt={artigo.titulo}
+            className="w-full rounded-2xl shadow-lg"
+            style={{ maxHeight: "420px", objectFit: "cover" }}
+          />
+        </div>
+
         {/* CONTEÚDO */}
         <section className="py-12 md:py-16 px-4 md:px-10 bg-white">
           <div className="max-w-[800px] mx-auto">

@@ -1,2 +1,3 @@
-:HL["/_next/static/chunks/0ydg9ofboe4eq.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cidade","param":{"type":"d","key":"lagoa-santa","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"dEX_VI9zCQRDSE-LI5rZQ"}
+:HL["/_next/static/chunks/0y_b9fyhqht6~.css","style"]
+:HL["/assets/images/logo-helios.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cidade","param":{"type":"d","key":"lagoa-santa","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"7XyN0MhvZTasM0IURG3Sz"}

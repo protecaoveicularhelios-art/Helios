@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export default function Footer() {
   const whatsapp = "https://wa.me/5531993728984"
 
@@ -8,8 +6,9 @@ export default function Footer() {
       <div className="max-w-[1100px] mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           <div className="col-span-2 md:col-span-1">
-            <Image
-              src="https://heliosprotecaoveicular.com.br/assets/images/logo-helios.png"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/images/logo-helios.png"
               alt="Hélios Proteção Veicular"
               width={130}
               height={55}

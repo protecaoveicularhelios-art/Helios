@@ -200,6 +200,48 @@ export default async function PaginaCidade({ params }: { params: Promise<{ cidad
           </div>
         </section>
 
+        {/* LEIA TAMBÉM */}
+        <section className="py-12 md:py-16 px-4 md:px-10 bg-[#f8faff]">
+          <div className="max-w-[1100px] mx-auto">
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#0b1a35] mb-8">
+              Leia também
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                {
+                  titulo: "Diferença entre seguro de carro e proteção veicular",
+                  href: "/blog/diferenca-entre-seguro-de-carro-e-protecao-veicular/",
+                  categoria: "Educação Financeira",
+                },
+                {
+                  titulo: "Proteção veicular é confiável? Tire todas as suas dúvidas",
+                  href: "/blog/protecao-veicular-e-confiavel/",
+                  categoria: "Dúvidas Frequentes",
+                },
+                {
+                  titulo: "Proteção veicular para motorista de app: Uber, 99 e iFood",
+                  href: "/blog/protecao-veicular-para-motorista-de-aplicativo/",
+                  categoria: "Motoristas de App",
+                },
+              ].map((artigo) => (
+                <a
+                  key={artigo.href}
+                  href={artigo.href}
+                  className="bg-white border border-[#e8eaf0] rounded-xl p-5 no-underline hover:shadow-md transition-shadow flex flex-col gap-2"
+                >
+                  <span className="text-xs font-semibold text-[#0b1a35] bg-[#f5c400] px-2 py-0.5 rounded-full self-start">
+                    {artigo.categoria}
+                  </span>
+                  <span className="text-[#0b1a35] font-bold text-sm leading-snug flex-1">
+                    {artigo.titulo}
+                  </span>
+                  <span className="text-[#f5c400] font-bold text-sm">Ler artigo →</span>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* CTA FINAL */}
         <section className="bg-[#0b1a35] py-16 md:py-20 px-4 md:px-10 text-center">
           <h2 className="text-white text-2xl md:text-3xl font-extrabold mb-4">

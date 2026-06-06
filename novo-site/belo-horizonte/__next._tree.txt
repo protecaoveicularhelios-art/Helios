@@ -1,2 +1,2 @@
-:HL["/_next/static/chunks/152axakjh36h-.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cidade","param":{"type":"d","key":"belo-horizonte","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"yvF7VjkQAK5xQSzccWZib"}
+:HL["/_next/static/chunks/0ydg9ofboe4eq.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"cidade","param":{"type":"d","key":"belo-horizonte","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"dEX_VI9zCQRDSE-LI5rZQ"}

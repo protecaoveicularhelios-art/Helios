@@ -39,10 +39,22 @@ foreach ($c in $cidades) {
 }
 Write-Host "  $($cidades.Count) cidades copiadas." -ForegroundColor Green
 
-# 3. COPIAR BLOG
+# 3. COPIAR BLOG (apenas artigos — preserva index.html customizado)
 Write-Host "[3/4] Copiando blog..." -ForegroundColor Cyan
-Get-ChildItem "$out\blog" | Copy-Item -Destination "$dst\blog" -Recurse -Force
-Write-Host "  Blog copiado." -ForegroundColor Green
+$artigos = @(
+  "diferenca-entre-seguro-de-carro-e-protecao-veicular",
+  "maiores-protecoes-veiculares-do-brasil",
+  "seguro-moto-ou-protecao-veicular-qual-escolher",
+  "protecao-veicular-e-confiavel",
+  "protecao-veicular-para-motorista-de-aplicativo"
+)
+foreach ($a in $artigos) {
+  Get-ChildItem "$out\blog\$a" | Copy-Item -Destination "$dst\blog\$a" -Recurse -Force
+}
+# Copiar arquivos auxiliares do blog (exceto index.html)
+Get-ChildItem "$out\blog" -File | Where-Object { $_.Name -ne "index.html" } | Copy-Item -Destination "$dst\blog" -Force
+Get-ChildItem "$out\blog" -Directory | Where-Object { $_.Name -notin $artigos } | Copy-Item -Destination "$dst\blog" -Recurse -Force
+Write-Host "  Blog copiado (index.html customizado preservado)." -ForegroundColor Green
 
 # 4. COPIAR ASSETS _next
 Write-Host "[4/4] Copiando assets (_next)..." -ForegroundColor Cyan

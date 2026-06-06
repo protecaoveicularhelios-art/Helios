@@ -3,6 +3,8 @@ Allow: /
 Disallow: /b/
 Disallow: /l/
 Disallow: /a/
+Disallow: /city-seventy/
+Disallow: /cidades-atendidas
 Disallow: /_next/
 Disallow: /*.txt$
 

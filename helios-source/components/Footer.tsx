@@ -4,46 +4,46 @@ export default function Footer() {
   const whatsapp = "https://wa.me/5531993728984"
 
   return (
-    <footer style={{ background: "#0b1a35", color: "#fff", padding: "48px 40px 24px" }}>
-      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: "40px", marginBottom: "40px" }}>
-          <div>
+    <footer className="bg-[#0b1a35] text-white px-4 md:px-10 pt-12 pb-6">
+      <div className="max-w-[1100px] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+          <div className="col-span-2 md:col-span-1">
             <Image
               src="https://heliosprotecaoveicular.com.br/assets/images/logo-helios.png"
               alt="Hélios Proteção Veicular"
               width={130}
               height={55}
-              style={{ objectFit: "contain", marginBottom: "16px" }}
+              className="object-contain mb-4"
             />
-            <p style={{ color: "#a0aec0", fontSize: "14px", lineHeight: "1.7" }}>
+            <p className="text-[#a0aec0] text-sm leading-relaxed">
               Confiança, Proteção e Tranquilidade ao seu alcance.
             </p>
           </div>
           <div>
-            <h4 style={{ color: "#fff", fontWeight: "700", marginBottom: "16px" }}>Navegação</h4>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <h4 className="text-white font-bold mb-4">Navegação</h4>
+            <div className="flex flex-col gap-2">
               {[
                 { label: "Home", href: "https://heliosprotecaoveicular.com.br" },
                 { label: "Quem Somos", href: "https://heliosprotecaoveicular.com.br/#sobre" },
                 { label: "Serviços", href: "https://heliosprotecaoveicular.com.br/servicos" },
                 { label: "Contato", href: "https://heliosprotecaoveicular.com.br/#contato" },
               ].map((item) => (
-                <a key={item.label} href={item.href} style={{ color: "#a0aec0", textDecoration: "none", fontSize: "14px" }}>{item.label}</a>
+                <a key={item.label} href={item.href} className="text-[#a0aec0] no-underline text-sm">{item.label}</a>
               ))}
             </div>
           </div>
           <div>
-            <h4 style={{ color: "#fff", fontWeight: "700", marginBottom: "16px" }}>Serviços</h4>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <h4 className="text-white font-bold mb-4">Serviços</h4>
+            <div className="flex flex-col gap-2">
               {["Roubo e Furto", "Assistência 24h", "Carro Reserva", "Rastreamento", "Reboque 24h"].map((s) => (
-                <span key={s} style={{ color: "#a0aec0", fontSize: "14px" }}>{s}</span>
+                <span key={s} className="text-[#a0aec0] text-sm">{s}</span>
               ))}
             </div>
           </div>
           <div>
-            <h4 style={{ color: "#fff", fontWeight: "700", marginBottom: "16px" }}>Contato</h4>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px", color: "#a0aec0", fontSize: "14px" }}>
-              <a href={whatsapp} target="_blank" rel="noopener noreferrer" style={{ color: "#a0aec0", textDecoration: "none" }}>
+            <h4 className="text-white font-bold mb-4">Contato</h4>
+            <div className="flex flex-col gap-2 text-[#a0aec0] text-sm">
+              <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="text-[#a0aec0] no-underline">
                 📞 (31) 99372-8984
               </a>
               <span>📍 Belo Horizonte, MG</span>
@@ -52,8 +52,8 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div style={{ borderTop: "1px solid #1a2e50", paddingTop: "24px", textAlign: "center", color: "#4a5568", fontSize: "13px" }}>
-          © {new Date().getFullYear()} <strong style={{ color: "#f5c400" }}>Hélios Proteção Veicular</strong>. Todos os direitos reservados. &nbsp;|&nbsp; heliosprotecaoveicular.com.br
+        <div className="border-t border-[#1a2e50] pt-6 text-center text-[#4a5568] text-xs">
+          © {new Date().getFullYear()} <strong className="text-[#f5c400]">Hélios Proteção Veicular</strong>. Todos os direitos reservados. &nbsp;|&nbsp; heliosprotecaoveicular.com.br
         </div>
       </div>
     </footer>

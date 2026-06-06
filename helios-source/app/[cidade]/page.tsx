@@ -19,9 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ cidade: s
   return {
     title,
     description,
-    alternates: {
-      canonical: url,
-    },
+    alternates: { canonical: url },
     openGraph: {
       title,
       description,
@@ -104,57 +102,60 @@ export default async function PaginaCidade({ params }: { params: Promise<{ cidad
       <main style={{ fontFamily: "'Montserrat', sans-serif", color: "#1a2332" }}>
 
         {/* HERO */}
-        <section style={{ background: "linear-gradient(135deg, #0b1a35 0%, #1a2e50 100%)", color: "#fff", padding: "80px 40px", textAlign: "center" }}>
-          <p style={{ color: "#f5c400", fontWeight: "700", fontSize: "14px", letterSpacing: "2px", marginBottom: "16px", textTransform: "uppercase" }}>
+        <section
+          className="py-16 md:py-20 px-4 md:px-10 text-center"
+          style={{ background: "linear-gradient(135deg, #0b1a35 0%, #1a2e50 100%)", color: "#fff" }}
+        >
+          <p className="text-[#f5c400] font-bold text-xs tracking-widest mb-4 uppercase">
             {cidade.regiao}
           </p>
-          <h1 style={{ fontSize: "clamp(28px, 5vw, 52px)", fontWeight: "800", marginBottom: "20px", lineHeight: "1.2" }}>
+          <h1 className="font-extrabold mb-5 leading-tight" style={{ fontSize: "clamp(26px, 5vw, 52px)" }}>
             Proteção Veicular em {cidade.nome}
           </h1>
-          <p style={{ fontSize: "18px", color: "#a0b4cc", maxWidth: "600px", margin: "0 auto 36px", lineHeight: "1.7" }}>
+          <p className="text-[#a0b4cc] text-base md:text-lg max-w-xl mx-auto mb-9 leading-relaxed">
             {cidade.frase}
           </p>
           <a
             href={whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ background: "#25d366", color: "#fff", fontWeight: "800", padding: "16px 40px", borderRadius: "10px", textDecoration: "none", fontSize: "16px", display: "inline-block" }}
+            className="inline-block bg-[#25d366] text-white font-extrabold px-8 md:px-10 py-4 rounded-xl no-underline text-base"
           >
             💬 Falar no WhatsApp
           </a>
         </section>
 
         {/* NÚMEROS */}
-        <section style={{ background: "#f5c400", padding: "40px" }}>
-          <div style={{ maxWidth: "1100px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px", textAlign: "center" }}>
+        <section className="bg-[#f5c400] py-8 md:py-10 px-4 md:px-10">
+          <div className="max-w-[1100px] mx-auto grid grid-cols-3 gap-4 text-center">
             {[
               { numero: "+10.000", label: "Veículos Protegidos" },
               { numero: "24h", label: "Assistência Disponível" },
               { numero: "98%", label: "Clientes Satisfeitos" },
             ].map((item) => (
               <div key={item.label}>
-                <div style={{ fontSize: "36px", fontWeight: "800", color: "#0b1a35" }}>{item.numero}</div>
-                <div style={{ fontSize: "14px", fontWeight: "600", color: "#0b1a35" }}>{item.label}</div>
+                <div className="text-2xl md:text-4xl font-extrabold text-[#0b1a35]">{item.numero}</div>
+                <div className="text-xs md:text-sm font-semibold text-[#0b1a35] mt-1">{item.label}</div>
               </div>
             ))}
           </div>
         </section>
 
         {/* COBERTURAS */}
-        <section style={{ padding: "80px 40px", background: "#fff" }}>
-          <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-            <h2 style={{ fontSize: "32px", fontWeight: "800", color: "#0b1a35", textAlign: "center", marginBottom: "8px" }}>
+        <section className="py-16 md:py-20 px-4 md:px-10 bg-white">
+          <div className="max-w-[1100px] mx-auto">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#0b1a35] text-center mb-2">
               Coberturas disponíveis em {cidade.nome}
             </h2>
-            <p style={{ textAlign: "center", color: "#6b7280", marginBottom: "48px" }}>
+            <p className="text-center text-[#6b7280] mb-10 md:mb-12">
               Proteção completa para o seu veículo
             </p>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "24px" }}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {coberturas.map((item) => (
-                <div key={item.titulo} style={{ background: "#f8faff", border: "1px solid #e8eaf0", borderRadius: "12px", padding: "28px" }}>
-                  <div style={{ fontSize: "36px", marginBottom: "12px" }}>{item.icon}</div>
-                  <h3 style={{ fontWeight: "700", color: "#0b1a35", marginBottom: "8px" }}>{item.titulo}</h3>
-                  <p style={{ color: "#6b7280", fontSize: "14px", lineHeight: "1.6" }}>{item.desc}</p>
+                <div key={item.titulo} className="bg-[#f8faff] border border-[#e8eaf0] rounded-xl p-6 md:p-7">
+                  <div className="text-4xl mb-3">{item.icon}</div>
+                  <h3 className="font-bold text-[#0b1a35] mb-2">{item.titulo}</h3>
+                  <p className="text-[#6b7280] text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -162,17 +163,17 @@ export default async function PaginaCidade({ params }: { params: Promise<{ cidad
         </section>
 
         {/* BAIRROS */}
-        <section style={{ padding: "60px 40px", background: "#f8faff" }}>
-          <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-            <h2 style={{ fontSize: "28px", fontWeight: "800", color: "#0b1a35", marginBottom: "8px" }}>
+        <section className="py-12 md:py-16 px-4 md:px-10 bg-[#f8faff]">
+          <div className="max-w-[1100px] mx-auto">
+            <h2 className="text-xl md:text-2xl font-extrabold text-[#0b1a35] mb-2">
               Atendemos todos os bairros de {cidade.nome}
             </h2>
-            <p style={{ color: "#6b7280", marginBottom: "32px" }}>
+            <p className="text-[#6b7280] mb-8">
               Incluindo {cidade.bairros.join(", ")} e toda a região.
             </p>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
+            <div className="flex flex-wrap gap-3">
               {cidade.bairros.map((bairro) => (
-                <span key={bairro} style={{ background: "#0b1a35", color: "#f5c400", padding: "6px 16px", borderRadius: "20px", fontSize: "14px", fontWeight: "600" }}>
+                <span key={bairro} className="bg-[#0b1a35] text-[#f5c400] px-4 py-1.5 rounded-full text-sm font-semibold">
                   {bairro}
                 </span>
               ))}
@@ -181,18 +182,18 @@ export default async function PaginaCidade({ params }: { params: Promise<{ cidad
         </section>
 
         {/* FAQ */}
-        <section style={{ padding: "80px 40px", background: "#fff" }}>
-          <div style={{ maxWidth: "800px", margin: "0 auto" }}>
-            <h2 style={{ fontSize: "32px", fontWeight: "800", color: "#0b1a35", textAlign: "center", marginBottom: "48px" }}>
+        <section className="py-16 md:py-20 px-4 md:px-10 bg-white">
+          <div className="max-w-[800px] mx-auto">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-[#0b1a35] text-center mb-10 md:mb-12">
               Perguntas Frequentes
             </h2>
-            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <div className="flex flex-col gap-4">
               {faq.map((item) => (
-                <div key={item.pergunta} style={{ border: "1px solid #e8eaf0", borderRadius: "12px", padding: "24px" }}>
-                  <h3 style={{ fontWeight: "700", color: "#0b1a35", marginBottom: "8px", fontSize: "16px" }}>
+                <div key={item.pergunta} className="border border-[#e8eaf0] rounded-xl p-5 md:p-6">
+                  <h3 className="font-bold text-[#0b1a35] mb-2 text-sm md:text-base">
                     {item.pergunta}
                   </h3>
-                  <p style={{ color: "#6b7280", lineHeight: "1.7", fontSize: "14px" }}>{item.resposta}</p>
+                  <p className="text-[#6b7280] leading-relaxed text-sm">{item.resposta}</p>
                 </div>
               ))}
             </div>
@@ -200,18 +201,18 @@ export default async function PaginaCidade({ params }: { params: Promise<{ cidad
         </section>
 
         {/* CTA FINAL */}
-        <section style={{ background: "#0b1a35", padding: "80px 40px", textAlign: "center" }}>
-          <h2 style={{ color: "#fff", fontSize: "32px", fontWeight: "800", marginBottom: "16px" }}>
+        <section className="bg-[#0b1a35] py-16 md:py-20 px-4 md:px-10 text-center">
+          <h2 className="text-white text-2xl md:text-3xl font-extrabold mb-4">
             Proteja seu veículo em {cidade.nome} agora
           </h2>
-          <p style={{ color: "#a0b4cc", fontSize: "16px", marginBottom: "36px" }}>
+          <p className="text-[#a0b4cc] text-base mb-9">
             Solicite uma cotação gratuita e sem compromisso
           </p>
           <a
             href={whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ background: "#25d366", color: "#fff", fontWeight: "800", padding: "16px 48px", borderRadius: "10px", textDecoration: "none", fontSize: "18px", display: "inline-block" }}
+            className="inline-block bg-[#25d366] text-white font-extrabold px-10 md:px-12 py-4 rounded-xl no-underline text-lg"
           >
             💬 Falar no WhatsApp
           </a>

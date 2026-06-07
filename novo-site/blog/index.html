@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -535,5 +535,19 @@
     document.getElementById('emptyMsg').style.display = visible === 0 ? 'block' : 'none';
   }
 </script>
+<!-- WhatsApp Click Tracking -->
+<script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href*="wa.me"]');
+  if (link) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'whatsapp_click',
+      whatsapp_page: window.location.pathname
+    });
+  }
+});
+</script>
+<!-- End WhatsApp Click Tracking -->
 </body>
 </html>

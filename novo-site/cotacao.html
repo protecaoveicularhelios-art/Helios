@@ -17,6 +17,9 @@
     gtag('js', new Date());
     gtag('config', 'AW-18080438684');
   </script>
+  <!-- PowerCRM -->
+  <script src="https://app.powercrm.com.br/assets/external/js/pwr_power.js"></script>
+  <script>function loadPage(){PowerCRM.init(['helios337']);}</script>
   <title>Cotação Gratuita | Hélios Proteção Veicular</title>
   <meta name="description" content="Simule seu plano de proteção veicular gratuitamente. Cobertura contra furto, roubo e colisão com assistência 24h e rastreamento incluído.">
   <link rel="icon" href="assets/images/helios_ico.png" type="image/png">
@@ -307,6 +310,22 @@
     .modal p  { color: var(--mid); font-size: .85rem; line-height: 1.6; margin-bottom: 24px; }
     .modal .btn-wa { display: flex; justify-content: center; width: 100%; }
     .modal-fechar { display: block; margin-top: 12px; color: var(--mid); font-size: .78rem; cursor: pointer; text-decoration: underline; background: none; border: none; font-family: inherit; }
+
+    /* ── PowerCRM form ── */
+    .pwr-tipos { list-style: none; display: flex; gap: 8px; margin-top: 8px; }
+    .pwr-tipos li { flex: 1; border: 2px solid #e5e7eb; border-radius: 10px; padding: 10px 6px; cursor: pointer; transition: border-color .2s; display: flex; align-items: center; justify-content: center; gap: 5px; }
+    .pwr-tipos li label { cursor: pointer; font-size: .75rem; font-weight: 700; color: var(--navy); }
+    .pwr-tipos input[type="radio"] { accent-color: var(--navy); cursor: pointer; }
+    .pwr-tipos li:has(input:checked) { border-color: var(--navy2); background: rgba(0,34,85,.06); }
+    .pwr-row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .pwr-btn-row { display: flex; gap: 8px; margin-top: 6px; }
+    .pwr-btn-row .btn-simular { flex: 1; margin-top: 0; }
+    .btn-back { min-width: 44px; background: #e5e7eb; border: none; border-radius: 10px; cursor: pointer; font-size: 1rem; font-weight: 800; color: var(--navy); transition: background .2s; }
+    .btn-back:hover { background: #d1d5db; }
+    .pwr-check { display: flex; align-items: center; gap: 10px; padding: 12px; border: 2px solid #e5e7eb; border-radius: 10px; margin-top: 5px; }
+    .pwr-check input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--navy); cursor: pointer; flex-shrink: 0; }
+    .pwr-check label { font-size: .82rem; color: var(--text); cursor: pointer; line-height: 1.4; }
+    .pwr-check small { color: var(--mid); font-size: .72rem; }
   </style>
 </head>
 <body>
@@ -387,43 +406,86 @@
       </div>
     </div>
 
-    <!-- DIREITA: Formulário -->
+    <!-- DIREITA: Formulário PowerCRM -->
     <div class="hero-form-col">
-      <div class="form-card">
+      <div class="form-card pwr_form">
         <h2>Simule seu plano agora</h2>
         <p>Preencha abaixo e receba sua proposta em minutos</p>
-        <form id="formLead" name="cotacao" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="enviarLead(event)">
-          <input type="hidden" name="form-name" value="cotacao" />
-          <input type="hidden" name="bot-field" style="display:none" />
+
+        <!-- Etapa 1: Dados pessoais -->
+        <div class="step" id="pwr_step_1">
           <div class="form-group">
-            <label for="nome">Seu nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required />
-          </div>
-          <div class="form-group">
-            <label for="tel">WhatsApp</label>
-            <input type="tel" id="tel" name="tel" placeholder="(31) 9 0000-0000" required />
+            <label>Seu nome</label>
+            <input type="text" id="pwr_field_name" placeholder="Ex: João Silva" />
           </div>
           <div class="form-group">
-            <label for="cidade">Cidade</label>
-            <input type="text" id="cidade" name="cidade" placeholder="Ex: Pedro Leopoldo" required />
+            <label>E-mail</label>
+            <input type="text" id="pwr_field_email" placeholder="seu@email.com" />
           </div>
           <div class="form-group">
-            <label for="veiculo">Tipo de veículo</label>
-            <select id="veiculo" name="veiculo" required>
-              <option value="">Selecione...</option>
-              <option>Carro (passeio)</option>
-              <option>Moto</option>
-              <option>Caminhonete / SUV</option>
-              <option>Veículo de Aplicativo (Uber/99)</option>
-              <option>Caminhão / Utilitário</option>
-            </select>
+            <label>WhatsApp</label>
+            <input type="text" id="pwr_field_mobile" placeholder="(31) 9 0000-0000" />
           </div>
-          <button class="btn-simular" type="submit" id="btnSimular">🔍 Simular meu plano gratuitamente</button>
-          <div class="form-seguro">
-            <svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2zm-2 14l-3-3 1.4-1.4L10 13.2l5.6-5.6L17 9l-7 7z"/></svg>
-            Seus dados estão seguros. Sem spam.
+          <button class="btn-simular" id="pwr_step_1_next" type="button">Próximo →</button>
+        </div>
+
+        <!-- Etapa 2: Veículo -->
+        <div class="step" style="display:none" id="pwr_step_2">
+          <div class="form-group">
+            <label>Tipo de veículo</label>
+            <ul class="pwr-tipos">
+              <li><input type="radio" id="pwr_field_type_car" name="pwr_field_type" value="1"/><label for="pwr_field_type_car">🚗 Carro</label></li>
+              <li><input type="radio" id="pwr_field_type_motorcycle" name="pwr_field_type" value="2"/><label for="pwr_field_type_motorcycle">🏍️ Moto</label></li>
+              <li><input type="radio" id="pwr_field_type_truck" name="pwr_field_type" value="3"/><label for="pwr_field_type_truck">🚛 Caminhão</label></li>
+            </ul>
           </div>
-        </form>
+          <div class="pwr-row2">
+            <div class="form-group">
+              <label>Marca</label>
+              <select id="pwr_field_brand"></select>
+            </div>
+            <div class="form-group">
+              <label>Ano</label>
+              <select id="pwr_field_year"></select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Modelo</label>
+            <select id="pwr_field_model"></select>
+          </div>
+          <div class="pwr-btn-row">
+            <button class="btn-back" id="pwr_step_2_back" type="button">←</button>
+            <button class="btn-simular" id="pwr_step_2_next" type="button">Próximo →</button>
+          </div>
+        </div>
+
+        <!-- Etapa 3: Localização -->
+        <div class="step" style="display:none" id="pwr_step_3">
+          <div class="form-group">
+            <label>Estado</label>
+            <select id="pwr_field_state"></select>
+          </div>
+          <div class="form-group">
+            <label>Cidade</label>
+            <select id="pwr_field_city"></select>
+          </div>
+          <div class="form-group">
+            <label>Usa o veículo em Taxi ou Aplicativo?</label>
+            <div class="pwr-check">
+              <input id="pwr_field_uber" type="checkbox" />
+              <label for="pwr_field_uber">Sim <small>(deixe desmarcado se não usar)</small></label>
+            </div>
+          </div>
+          <div class="pwr-btn-row">
+            <button class="btn-back" id="pwr_step_3_back" type="button">←</button>
+            <button class="btn-simular" id="pwr_step_3_go" type="button">🔍 Receber Cotação</button>
+          </div>
+        </div>
+
+        <div class="form-seguro">
+          <svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2zm-2 14l-3-3 1.4-1.4L10 13.2l5.6-5.6L17 9l-7 7z"/></svg>
+          Seus dados estão seguros. Sem spam.
+        </div>
       </div>
     </div>
 
@@ -573,19 +635,6 @@
 <!-- WHATSAPP FAB -->
 <a href="https://wa.me/5531992395859?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Hélios%20Proteção%20Veicular." class="whatsapp-fab" target="_blank" aria-label="WhatsApp">💬</a>
 
-<!-- MODAL SUCESSO -->
-<div class="modal-overlay" id="modalSucesso">
-  <div class="modal">
-    <div class="modal-icon">🎉</div>
-    <h3>Recebemos sua solicitação!</h3>
-    <p>Em breve um consultor da Hélios vai entrar em contato pelo WhatsApp com a sua simulação personalizada.</p>
-    <a class="btn-wa" href="https://wa.me/5531992395859?text=Olá!%20Acabei%20de%20preencher%20o%20formulário%20no%20site%20e%20gostaria%20da%20minha%20simulação." target="_blank">
-      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Chamar no WhatsApp agora
-    </a>
-    <button class="modal-fechar" onclick="fecharModal()">Fechar e aguardar contato</button>
-  </div>
-</div>
 
 <script>
   const navbar  = document.getElementById('navbar');
@@ -607,46 +656,22 @@
   offcanvasClose.addEventListener('click', closeMenu);
   menuOverlay.addEventListener('click', closeMenu);
 
-  document.getElementById('tel').addEventListener('input', function(e) {
-    let v = e.target.value.replace(/\D/g, '');
-    if (v.length <= 10) v = v.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
-    else                v = v.replace(/(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
-    e.target.value = v;
-  });
-
-  function enviarLead(e) {
-    e.preventDefault();
-    const form = document.getElementById('formLead');
-    const btn  = document.getElementById('btnSimular');
-    btn.textContent = 'Enviando...';
-    btn.disabled = true;
-
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(new FormData(form)).toString()
-    })
-    .then(() => {
-      gtag('event', 'conversion', {
-        'send_to': 'AW-18080438684/gTrpCIG9_b0cEJyztq1D',
-        'value': 1.0,
-        'currency': 'BRL'
+  document.addEventListener('DOMContentLoaded', function() {
+    var btnGo = document.getElementById('pwr_step_3_go');
+    if (btnGo) {
+      btnGo.addEventListener('click', function() {
+        setTimeout(function() {
+          if (typeof gtag === 'function') {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-18080438684/gTrpCIG9_b0cEJyztq1D',
+              'value': 1.0,
+              'currency': 'BRL'
+            });
+          }
+        }, 800);
       });
-      document.getElementById('modalSucesso').classList.add('aberto');
-      form.reset();
-    })
-    .catch(() => {
-      document.getElementById('modalSucesso').classList.add('aberto');
-    })
-    .finally(() => {
-      btn.textContent = '🔍 Simular meu plano gratuitamente';
-      btn.disabled = false;
-    });
-  }
-
-  function fecharModal() {
-    document.getElementById('modalSucesso').classList.remove('aberto');
-  }
+    }
+  });
 
   document.addEventListener('click', function(e) {
     var link = e.target.closest('a[href*="wa.me"]');

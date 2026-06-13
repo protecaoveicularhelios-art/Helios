@@ -498,7 +498,46 @@ body .box-input label small{
   color:#a9b1bb;
   font-size: 1.4rem;
 }
-/* Boxs header */
+/* Steps dentro do texto */
+.banner-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+.banner-steps .box-banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.banner-steps .number {
+  border: 2px solid rgba(255,255,255,0.4);
+  width: 46px;
+  height: 46px;
+  font-size: 2rem;
+  font-family: 'bold', Arial, Helvetica, sans-serif;
+  color: #FFF;
+  margin-right: 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.banner-steps .text-box span {
+  color: #FFF;
+  font-size: 1.6rem;
+  font-family: 'bold', Arial, Helvetica, sans-serif;
+  display: block;
+}
+.banner-steps .text-box p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.4rem;
+  font-family: 'regular', Arial, Helvetica, sans-serif;
+  margin-top: 2px;
+}
+
+/* Boxs header (legado) */
 .banner footer{
   margin: auto;
   width: 100%;

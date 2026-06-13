@@ -3,52 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title class="pwrContentName"></title>
-  <!-- <script src="src/scripts/pwr.js"></script> -->
+  <title>Cotação Gratuita | Hélios Proteção Veicular</title>
+  <link rel="icon" href="../assets/images/helios_ico.png" type="image/png">
   <script src="https://app.powercrm.com.br/assets/external/js/pwr_power.js"></script>
-  
-  <link rel="icon" type="image/png" class="cmpnFvIcn" />
-  
   <script>function loadPage(){PowerCRM.init(['helios337']);}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      /* A cor principal e uma variação dela, serve para o gradient do Banner */
-      --corDefault: #177ef3;  
-      --corDefaultDark: #0064d6;
-      /* Cor Botão */
-      --corButtonBanner: #2ecc71;
-      /* Usado para a borda do número no Banner */
+      --corDefault: #00122b;
+      --corDefaultDark: #002255;
+      --corButtonBanner: #ffcc00;
       --corDefaultOpacity: #ffffff;
-      /* Cor dos Ícones */
-      --corDefaultIcons: #177ef3;  
-      /* Cor do Rodapé */
-      --corFooter: #2c3e53;  
-      /* Usado para a borda no rodapé */
-      --corDefaultIconsOpacity: rgba(255, 255, 255, 0.15);
+      --corDefaultIcons: #ffcc00;
+      --corFooter: #060f20;
+      --corDefaultIconsOpacity: rgba(255,255,255,0.15);
+    }
+
+    /* ── TOPBAR ── */
+    .helios-topbar {
+      background: #fff; border-bottom: 1px solid #e8eaf0;
+      padding: 0 40px; height: 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .helios-topbar-left { font-size: .72rem; font-weight: 800; color: #00122b; letter-spacing: 1.5px; text-transform: uppercase; }
+    .helios-topbar-center { display: flex; align-items: center; gap: 24px; }
+    .helios-topbar-item { display: flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 600; color: #00122b; letter-spacing: .5px; text-transform: uppercase; white-space: nowrap; }
+    .helios-topbar-item span { color: #555; font-weight: 700; }
+    .helios-topbar-item a { color: #00122b; font-weight: 800; text-decoration: none; }
+    .helios-topbar-dot { color: #bbb; }
+    .helios-topbar-right { font-size: .72rem; font-weight: 800; color: #00122b; letter-spacing: 1px; text-transform: uppercase; }
+    @media (max-width: 768px) {
+      .helios-topbar { padding: 0 12px; justify-content: center; }
+      .helios-topbar-left, .helios-topbar-right { display: none; }
+      .helios-topbar-center { gap: 8px; }
+      .helios-topbar-item { font-size: .62rem; }
+    }
+
+    /* ── NAVBAR ── */
+    .helios-navbar {
+      background: #00122b;
+      padding: 14px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      font-family: 'Montserrat', sans-serif;
+      box-shadow: 0 4px 24px rgba(0,0,0,.3);
+    }
+    .helios-nav-logo img { height: 48px; display: block; }
+    .helios-nav-links { display: flex; align-items: center; gap: 28px; list-style: none; margin: 0; padding: 0; }
+    .helios-nav-links a { color: rgba(255,255,255,.85); text-decoration: none; font-size: .82rem; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; }
+    .helios-nav-links a:hover { color: #ffcc00; }
+    .helios-nav-cta { background: #ffcc00 !important; color: #00122b !important; padding: 10px 22px !important; border-radius: 50px; font-weight: 800 !important; }
+    @media (max-width: 768px) {
+      .helios-navbar { padding: 12px 20px; }
+      .helios-nav-links { display: none; }
     }
   </style>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./src/styles/bootstrap.css">
-
 </head>
 <body>
-  <div id="app">
+  <!-- TOPBAR HÉLIOS -->
+  <div class="helios-topbar">
+    <div class="helios-topbar-left">Hélios Proteção Veicular</div>
+    <div class="helios-topbar-center">
+      <div class="helios-topbar-item"><span>Assistência 24H</span><a href="tel:08004900190">0800 490 0190</a></div>
+      <span class="helios-topbar-dot">•</span>
+      <div class="helios-topbar-item"><span>Geral</span><a href="tel:+5531972593075">(31) 97259-3075</a></div>
+    </div>
+    <div class="helios-topbar-right">heliosprotecaoveicular</div>
+  </div>
 
-    <!-- Início do Header -->
-    <header class="header-page">
-      <div class="container">
-        <img style="display:none;" class="pwrImgLogo" id="logo" alt="Logo">
-        <a style="display:none;" href="javascript:void(0)" target="_blank" class="button-whatsapp pwrConsultantExists">
-          <i class="icon-whatsapp"></i>
-          <span>
-            <small>WhatsApp do consultor</small>
-            <p class="pwrConsultantPhone"></p>
-          </span>
-        </a>
-      </div>
+  <!-- NAVBAR HÉLIOS -->
+  <nav class="helios-navbar">
+    <a href="/index.html" class="helios-nav-logo">
+      <img src="../assets/images/logo-helios.png" alt="Hélios Proteção Veicular">
+    </a>
+    <ul class="helios-nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/quem-somos.html">Quem Somos</a></li>
+      <li><a href="/servicos.html">Serviços</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contato.html">Contato</a></li>
+      <li><a href="/cotacao.html" class="helios-nav-cta">Faça sua cotação</a></li>
+    </ul>
+  </nav>
+
+  <div id="app">
+    <!-- Header PowerCRM (oculto — substituído pelo navbar Hélios) -->
+    <header class="header-page" style="display:none;">
+      <div class="container"></div>
     </header>
-    <!-- Fim do Header -->
 
     <!-- Banner -->
     <section class="banner pwrBackColor">

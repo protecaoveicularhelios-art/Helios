@@ -339,7 +339,8 @@ select{
     Altere a logo pelo painel do Power. 
 -----------------------------------------------------------------------------*/
 header.header-page{
-  height: 100px;
+  height: 0;
+  overflow: hidden;
 }
 
 header.header-page .container{

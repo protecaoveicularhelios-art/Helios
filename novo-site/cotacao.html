@@ -19,7 +19,10 @@
   </script>
   <!-- PowerCRM -->
   <script src="https://app.powercrm.com.br/assets/external/js/pwr_power.js"></script>
-  <script>function loadPage(){PowerCRM.init(['helios337']);}</script>
+  <script>
+    function loadPage(){ if(typeof PowerCRM !== 'undefined') PowerCRM.init(['helios337']); }
+    document.addEventListener('DOMContentLoaded', loadPage);
+  </script>
   <title>Cotação Gratuita | Hélios Proteção Veicular</title>
   <meta name="description" content="Simule seu plano de proteção veicular gratuitamente. Cobertura contra furto, roubo e colisão com assistência 24h e rastreamento incluído.">
   <link rel="icon" href="assets/images/helios_ico.png" type="image/png">

@@ -369,12 +369,9 @@ header.header-page .container img{
   Banner
 -----------------------------------------------------------------------------*/
 .banner{
-  min-height: 690px;
-
-
- 
+  min-height: auto;
+  padding: 30px 0 40px;
   background: #00122b;
-  
 }
 .banner .container{
   display: flex;
@@ -383,9 +380,9 @@ header.header-page .container img{
 }
 
 .banner .container header{
-  min-height: 515px;
+  min-height: auto;
   flex: 1;
-
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;

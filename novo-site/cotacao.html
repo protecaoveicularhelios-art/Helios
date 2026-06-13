@@ -17,9 +17,6 @@
     gtag('js', new Date());
     gtag('config', 'AW-18080438684');
   </script>
-  <!-- PowerCRM -->
-  <script src="https://app.powercrm.com.br/assets/external/js/pwr_power.js"></script>
-  <script>function loadPage(){ if(typeof PowerCRM !== 'undefined') PowerCRM.init(['helios337']); }</script>
   <title>Cotação Gratuita | Hélios Proteção Veicular</title>
   <meta name="description" content="Simule seu plano de proteção veicular gratuitamente. Cobertura contra furto, roubo e colisão com assistência 24h e rastreamento incluído.">
   <link rel="icon" href="assets/images/helios_ico.png" type="image/png">
@@ -408,79 +405,23 @@
 
     <!-- DIREITA: Formulário PowerCRM -->
     <div class="hero-form-col">
-      <div class="form-card pwr_form">
+      <div class="form-card">
         <h2>Simule seu plano agora</h2>
         <p>Preencha abaixo e receba sua proposta em minutos</p>
 
-        <!-- Etapa 1: Dados pessoais -->
-        <div class="step" id="pwr_step_1">
-          <div class="form-group">
-            <label>Seu nome</label>
-            <input type="text" id="pwr_field_name" placeholder="Ex: João Silva" />
-          </div>
-          <div class="form-group">
-            <label>E-mail</label>
-            <input type="text" id="pwr_field_email" placeholder="seu@email.com" />
-          </div>
-          <div class="form-group">
-            <label>WhatsApp</label>
-            <input type="text" id="pwr_field_mobile" placeholder="(31) 9 0000-0000" />
-          </div>
-          <button class="btn-simular" id="pwr_step_1_next" type="button">Próximo →</button>
+        <div class="form-group">
+          <label>Seu nome</label>
+          <input type="text" id="f_nome" placeholder="Ex: João Silva" />
         </div>
-
-        <!-- Etapa 2: Veículo -->
-        <div class="step" style="display:none" id="pwr_step_2">
-          <div class="form-group">
-            <label>Tipo de veículo</label>
-            <ul class="pwr-tipos">
-              <li><input type="radio" id="pwr_field_type_car" name="pwr_field_type" value="1"/><label for="pwr_field_type_car">🚗 Carro</label></li>
-              <li><input type="radio" id="pwr_field_type_motorcycle" name="pwr_field_type" value="2"/><label for="pwr_field_type_motorcycle">🏍️ Moto</label></li>
-              <li><input type="radio" id="pwr_field_type_truck" name="pwr_field_type" value="3"/><label for="pwr_field_type_truck">🚛 Caminhão</label></li>
-            </ul>
-          </div>
-          <div class="pwr-row2">
-            <div class="form-group">
-              <label>Marca</label>
-              <select id="pwr_field_brand"></select>
-            </div>
-            <div class="form-group">
-              <label>Ano</label>
-              <select id="pwr_field_year"></select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Modelo</label>
-            <select id="pwr_field_model"></select>
-          </div>
-          <div class="pwr-btn-row">
-            <button class="btn-back" id="pwr_step_2_back" type="button">←</button>
-            <button class="btn-simular" id="pwr_step_2_next" type="button">Próximo →</button>
-          </div>
+        <div class="form-group">
+          <label>E-mail</label>
+          <input type="email" id="f_email" placeholder="seu@email.com" />
         </div>
-
-        <!-- Etapa 3: Localização -->
-        <div class="step" style="display:none" id="pwr_step_3">
-          <div class="form-group">
-            <label>Estado</label>
-            <select id="pwr_field_state"></select>
-          </div>
-          <div class="form-group">
-            <label>Cidade</label>
-            <select id="pwr_field_city"></select>
-          </div>
-          <div class="form-group">
-            <label>Usa o veículo em Taxi ou Aplicativo?</label>
-            <div class="pwr-check">
-              <input id="pwr_field_uber" type="checkbox" />
-              <label for="pwr_field_uber">Sim <small>(deixe desmarcado se não usar)</small></label>
-            </div>
-          </div>
-          <div class="pwr-btn-row">
-            <button class="btn-back" id="pwr_step_3_back" type="button">←</button>
-            <button class="btn-simular" id="pwr_step_3_go" type="button">🔍 Receber Cotação</button>
-          </div>
+        <div class="form-group">
+          <label>WhatsApp</label>
+          <input type="tel" id="f_fone" placeholder="(31) 9 0000-0000" />
         </div>
+        <button class="btn-simular" id="btn_cotar" type="button">Simular gratuitamente →</button>
 
         <div class="form-seguro">
           <svg viewBox="0 0 24 24"><path d="M12 2L3 7v6c0 5.25 3.75 10.15 9 11.25C17.25 23.15 21 18.25 21 13V7L12 2zm-2 14l-3-3 1.4-1.4L10 13.2l5.6-5.6L17 9l-7 7z"/></svg>
@@ -657,47 +598,23 @@
   menuOverlay.addEventListener('click', closeMenu);
 
   document.addEventListener('DOMContentLoaded', function() {
-    // Inicializa PowerCRM após DOM pronto
-    loadPage();
+    document.getElementById('btn_cotar').addEventListener('click', function() {
+      var nome  = document.getElementById('f_nome').value.trim();
+      var email = document.getElementById('f_email').value.trim();
+      var fone  = document.getElementById('f_fone').value.trim();
+      if (!nome || !email || !fone) { alert('Preencha todos os campos para continuar.'); return; }
 
-    // Navegação manual entre steps (garante funcionamento independente do PowerCRM)
-    function showStep(n) {
-      [1,2,3].forEach(function(i) {
-        var el = document.getElementById('pwr_step_' + i);
-        if (el) el.style.display = (i === n) ? 'block' : 'none';
-      });
-    }
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18080438684/gTrpCIG9_b0cEJyztq1D',
+          'value': 1.0,
+          'currency': 'BRL'
+        });
+      }
 
-    var s1n = document.getElementById('pwr_step_1_next');
-    var s2n = document.getElementById('pwr_step_2_next');
-    var s2b = document.getElementById('pwr_step_2_back');
-    var s3b = document.getElementById('pwr_step_3_back');
-    var s3g = document.getElementById('pwr_step_3_go');
-
-    if (s1n) s1n.addEventListener('click', function(e) {
-      var name  = document.getElementById('pwr_field_name').value.trim();
-      var email = document.getElementById('pwr_field_email').value.trim();
-      var phone = document.getElementById('pwr_field_mobile').value.trim();
-      if (!name || !email || !phone) { alert('Preencha todos os campos.'); return; }
-      showStep(2);
+      var params = new URLSearchParams({ n: nome, e: email, p: fone });
+      window.location.href = '/leads/?' + params.toString();
     });
-    if (s2n) s2n.addEventListener('click', function(e) { showStep(3); });
-    if (s2b) s2b.addEventListener('click', function(e) { showStep(1); });
-    if (s3b) s3b.addEventListener('click', function(e) { showStep(2); });
-
-    if (s3g) {
-      s3g.addEventListener('click', function() {
-        setTimeout(function() {
-          if (typeof gtag === 'function') {
-            gtag('event', 'conversion', {
-              'send_to': 'AW-18080438684/gTrpCIG9_b0cEJyztq1D',
-              'value': 1.0,
-              'currency': 'BRL'
-            });
-          }
-        }, 800);
-      });
-    }
   });
 
   document.addEventListener('click', function(e) {

@@ -546,5 +546,14 @@
     <!-- /Modal -->
 
   </div>
+<script>
+  window.addEventListener('load', function() {
+    var p = new URLSearchParams(window.location.search);
+    var n = p.get('n'), e = p.get('e'), ph = p.get('p');
+    if (n) { var fn = document.getElementById('pwr_field_name'); if(fn) fn.value = n; }
+    if (e) { var fe = document.getElementById('pwr_field_email'); if(fe) fe.value = e; }
+    if (ph) { var fp = document.getElementById('pwr_field_mobile'); if(fp) fp.value = ph; }
+  });
+</script>
 </body>
 </html>

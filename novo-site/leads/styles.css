@@ -537,7 +537,7 @@ body .box-input label small{
 }
 .banner-steps .text-box span {
   color: #FFF !important;
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important;
   font-family: 'bold', Arial, Helvetica, sans-serif;
   display: block;
   line-height: 1.3;
@@ -545,10 +545,10 @@ body .box-input label small{
 .banner-steps .text-box p {
   display: block !important;
   color: rgba(255,255,255,0.65) !important;
-  font-size: 1.1rem !important;
+  font-size: 1.2rem !important;
   font-family: 'regular', Arial, Helvetica, sans-serif;
   margin-top: 3px !important;
-  line-height: 1.3;
+  line-height: 1.35;
 }
 
 /* Boxs header (legado) */

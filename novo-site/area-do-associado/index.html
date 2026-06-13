@@ -52,25 +52,10 @@
     .nav-cta { background: #f5c400 !important; color: #0b1a35 !important; padding: 10px 22px !important; border-radius: 50px; font-weight: 800 !important; }
     .nav-cta:hover { background: #e6b800 !important; }
 
-    /* IFRAME */
-    .iframe-wrap {
+    /* HERO */
+    .hero {
       flex: 1;
       display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-    #sga-frame {
-      flex: 1;
-      width: 100%;
-      border: none;
-      min-height: calc(100vh - 112px);
-      display: block;
-    }
-
-    /* HERO (fallback — oculto por padrão) */
-    .hero {
-      display: none;
-      flex: 1;
       align-items: center;
       justify-content: center;
       padding: 60px 20px;
@@ -78,7 +63,6 @@
       position: relative;
       overflow: hidden;
     }
-    .hero.show { display: flex; }
     .hero::before {
       content: '';
       position: absolute;
@@ -227,18 +211,7 @@
     </ul>
   </nav>
 
-  <!-- IFRAME SGA -->
-  <div class="iframe-wrap" id="iframe-wrap">
-    <iframe
-      id="sga-frame"
-      src="https://area-sistemas.hinova.com.br/sga/area/v5/login/"
-      title="Área do Associado Hélios"
-      allow="fullscreen"
-    ></iframe>
-  </div>
-
-  <!-- CARD FALLBACK (exibido se iframe for bloqueado) -->
-  <div class="hero" id="hero-fallback">
+  <div class="hero">
     <div class="card">
       <img class="card-logo" src="/assets/images/logo-helios.png" alt="Hélios Proteção Veicular">
 
@@ -289,31 +262,6 @@
     </div>
   </div>
 
-  <script>
-    const frame  = document.getElementById('sga-frame');
-    const wrap   = document.getElementById('iframe-wrap');
-    const fallback = document.getElementById('hero-fallback');
-
-    function showFallback() {
-      wrap.style.display = 'none';
-      fallback.classList.add('show');
-    }
-
-    frame.addEventListener('load', function () {
-      try {
-        // Se cross-origin carregou, contentWindow.location joga SecurityError = sucesso
-        const _ = frame.contentWindow.location.href;
-        // Chegou aqui sem erro = página same-origin (erro do browser) = bloqueado
-        showFallback();
-      } catch (e) {
-        // SecurityError = conteúdo cross-origin carregou com sucesso = iframe funcionando
-      }
-    });
-
-    // Segurança: se não disparar load em 5s, mostra fallback
-    const t = setTimeout(showFallback, 5000);
-    frame.addEventListener('load', function () { clearTimeout(t); });
-  </script>
 
 </body>
 </html>

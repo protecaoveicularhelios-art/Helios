@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Associado | Hélios Proteção Veicular</title>
+  <meta name="description" content="Acesse a área do associado Hélios Proteção Veicular. Consulte seu contrato, boletos e informações do seu veículo protegido.">
+  <link rel="icon" href="/assets/images/helios_ico.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; overflow-x: hidden; }
+    body { font-family: 'Montserrat', sans-serif; background: #f4f6f9; display: flex; flex-direction: column; }
+
+    /* TOPBAR */
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid #e8eaf0;
+      padding: 0 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .topbar-left { font-size: 11px; font-weight: 800; color: #0b1a35; letter-spacing: 1.5px; text-transform: uppercase; }
+    .topbar-center { display: flex; align-items: center; gap: 24px; }
+    .topbar-item { display: flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600; color: #0b1a35; letter-spacing: .5px; text-transform: uppercase; white-space: nowrap; }
+    .topbar-item a { color: #0b1a35; font-weight: 800; text-decoration: none; }
+    .topbar-item a:hover { color: #f5c400; }
+    .topbar-dot { color: #bbb; font-size: 13px; }
+    .topbar-right { font-size: 11px; font-weight: 800; color: #0b1a35; letter-spacing: 1px; text-transform: uppercase; }
+
+    /* NAVBAR */
+    .navbar {
+      background: #0b1a35;
+      padding: 0 40px;
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .nav-logo img { height: 48px; display: block; }
+    .nav-links { list-style: none; display: flex; align-items: center; gap: 32px; }
+    .nav-links a { color: #fff; text-decoration: none; font-size: 13px; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover { color: #f5c400; }
+    .nav-links a.active { color: #f5c400; }
+    .nav-cta {
+      background: #f5c400 !important;
+      color: #0b1a35 !important;
+      padding: 10px 22px !important;
+      border-radius: 50px;
+      font-weight: 800 !important;
+      font-size: 13px !important;
+    }
+    .nav-cta:hover { background: #e6b800 !important; color: #0b1a35 !important; }
+
+    /* CONTEÚDO */
+    .page-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* IFRAME */
+    #sga-frame {
+      width: 100%;
+      flex: 1;
+      border: none;
+      display: block;
+      min-height: calc(100vh - 112px);
+    }
+
+    /* FALLBACK (oculto por padrão) */
+    #fallback {
+      display: none;
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      background: #f4f6f9;
+    }
+    .fallback-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 56px 48px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(11,26,53,.10);
+    }
+    .fallback-logo { height: 56px; margin-bottom: 32px; }
+    .fallback-card h2 { font-size: 22px; font-weight: 800; color: #0b1a35; margin-bottom: 12px; }
+    .fallback-card p { font-size: 14px; color: #4a5568; line-height: 1.6; margin-bottom: 32px; }
+    .btn-acessar {
+      display: inline-block;
+      background: #f5c400;
+      color: #0b1a35;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      letter-spacing: .5px;
+      transition: background .2s;
+    }
+    .btn-acessar:hover { background: #e6b800; }
+    .fallback-note { margin-top: 20px; font-size: 12px; color: #aaa; }
+
+    /* Botão flutuante "abrir em nova aba" */
+    .btn-nova-aba {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0b1a35;
+      color: #f5c400;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,.25);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 999;
+      transition: opacity .2s;
+    }
+    .btn-nova-aba:hover { opacity: .85; }
+    .btn-nova-aba svg { width: 14px; height: 14px; fill: #f5c400; }
+
+    @media (max-width: 768px) {
+      .topbar { display: none; }
+      .navbar { padding: 0 20px; }
+      .nav-links { display: none; }
+      #sga-frame { min-height: calc(100vh - 72px); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="topbar-left">Hélios Proteção Veicular</div>
+    <div class="topbar-center">
+      <div class="topbar-item">
+        <span>Assistência 24H</span>
+        <a href="tel:08004900190">0800 490 0190</a>
+      </div>
+      <span class="topbar-dot">•</span>
+      <div class="topbar-item">
+        <span>Geral</span>
+        <a href="tel:+5531972593075">(31) 97259-3075</a>
+      </div>
+    </div>
+    <div class="topbar-right">heliosprotecaoveicular</div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="/index.html" class="nav-logo">
+      <img src="/assets/images/logo-helios.png" alt="Hélios Proteção Veicular">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/quem-somos.html">Quem Somos</a></li>
+      <li><a href="/servicos.html">Serviços</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/contato.html">Contato</a></li>
+      <li><a href="/area-do-associado/" class="active">Área do Associado</a></li>
+      <li><a href="/leads/" class="nav-cta">Faça sua cotação</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <div class="page-content">
+    <iframe
+      id="sga-frame"
+      src="https://area-sistemas.hinova.com.br/sga/area/v5/auth/ffb9fb91639c51eb1ed7b05724fada11fb326977f7fdd784c914bb6559c3788f575cb8de1d0edfe3a3641d3b25f648424c5b2d4c576fb57b3a3985eb6d29ab6afe1de0508ef4d8f66c11d4863109cbed"
+      title="Área do Associado Hélios"
+      allow="fullscreen"
+    ></iframe>
+
+    <!-- FALLBACK: exibido automaticamente se iframe for bloqueado -->
+    <div id="fallback">
+      <div class="fallback-card">
+        <img class="fallback-logo" src="/assets/images/logo-helios.png" alt="Hélios">
+        <h2>Área do Associado</h2>
+        <p>Acesse seu portal para consultar seu contrato, boletos e informações sobre o seu veículo protegido.</p>
+        <a href="https://area-sistemas.hinova.com.br/sga/area/v5/auth/ffb9fb91639c51eb1ed7b05724fada11fb326977f7fdd784c914bb6559c3788f575cb8de1d0edfe3a3641d3b25f648424c5b2d4c576fb57b3a3985eb6d29ab6afe1de0508ef4d8f66c11d4863109cbed" target="_blank" class="btn-acessar">
+          Acessar minha área
+        </a>
+        <p class="fallback-note">Você será redirecionado para o portal seguro da Hélios.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão flutuante abrir em nova aba -->
+  <a id="btn-nova-aba" class="btn-nova-aba" href="https://area-sistemas.hinova.com.br/sga/area/v5/auth/ffb9fb91639c51eb1ed7b05724fada11fb326977f7fdd784c914bb6559c3788f575cb8de1d0edfe3a3641d3b25f648424c5b2d4c576fb57b3a3985eb6d29ab6afe1de0508ef4d8f66c11d4863109cbed" target="_blank" style="display:none">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42L17.59 5H14V3zM5 5h6v2H7v10h10v-4h2v6H5V5z"/></svg>
+    Abrir em nova aba
+  </a>
+
+  <script>
+    const frame = document.getElementById('sga-frame');
+    const fallback = document.getElementById('fallback');
+    const btnNova = document.getElementById('btn-nova-aba');
+
+    frame.addEventListener('load', function () {
+      try {
+        // Se cross-origin e carregou, mostra botão de nova aba como conveniência
+        const _ = frame.contentWindow.location.href;
+      } catch (e) {
+        // Cross-origin carregado com sucesso — mostra botão flutuante
+        btnNova.style.display = 'flex';
+      }
+    });
+
+    // Após 6 segundos sem load, assume que foi bloqueado e exibe fallback
+    const timeout = setTimeout(function () {
+      frame.style.display = 'none';
+      fallback.style.display = 'flex';
+    }, 6000);
+
+    frame.addEventListener('load', function () {
+      clearTimeout(timeout);
+    });
+  </script>
+
+</body>
+</html>

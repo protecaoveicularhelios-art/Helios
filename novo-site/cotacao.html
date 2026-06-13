@@ -19,10 +19,7 @@
   </script>
   <!-- PowerCRM -->
   <script src="https://app.powercrm.com.br/assets/external/js/pwr_power.js"></script>
-  <script>
-    function loadPage(){ if(typeof PowerCRM !== 'undefined') PowerCRM.init(['helios337']); }
-    document.addEventListener('DOMContentLoaded', loadPage);
-  </script>
+  <script>function loadPage(){ if(typeof PowerCRM !== 'undefined') PowerCRM.init(['helios337']); }</script>
   <title>Cotação Gratuita | Hélios Proteção Veicular</title>
   <meta name="description" content="Simule seu plano de proteção veicular gratuitamente. Cobertura contra furto, roubo e colisão com assistência 24h e rastreamento incluído.">
   <link rel="icon" href="assets/images/helios_ico.png" type="image/png">
@@ -660,9 +657,36 @@
   menuOverlay.addEventListener('click', closeMenu);
 
   document.addEventListener('DOMContentLoaded', function() {
-    var btnGo = document.getElementById('pwr_step_3_go');
-    if (btnGo) {
-      btnGo.addEventListener('click', function() {
+    // Inicializa PowerCRM após DOM pronto
+    loadPage();
+
+    // Navegação manual entre steps (garante funcionamento independente do PowerCRM)
+    function showStep(n) {
+      [1,2,3].forEach(function(i) {
+        var el = document.getElementById('pwr_step_' + i);
+        if (el) el.style.display = (i === n) ? 'block' : 'none';
+      });
+    }
+
+    var s1n = document.getElementById('pwr_step_1_next');
+    var s2n = document.getElementById('pwr_step_2_next');
+    var s2b = document.getElementById('pwr_step_2_back');
+    var s3b = document.getElementById('pwr_step_3_back');
+    var s3g = document.getElementById('pwr_step_3_go');
+
+    if (s1n) s1n.addEventListener('click', function(e) {
+      var name  = document.getElementById('pwr_field_name').value.trim();
+      var email = document.getElementById('pwr_field_email').value.trim();
+      var phone = document.getElementById('pwr_field_mobile').value.trim();
+      if (!name || !email || !phone) { alert('Preencha todos os campos.'); return; }
+      showStep(2);
+    });
+    if (s2n) s2n.addEventListener('click', function(e) { showStep(3); });
+    if (s2b) s2b.addEventListener('click', function(e) { showStep(1); });
+    if (s3b) s3b.addEventListener('click', function(e) { showStep(2); });
+
+    if (s3g) {
+      s3g.addEventListener('click', function() {
         setTimeout(function() {
           if (typeof gtag === 'function') {
             gtag('event', 'conversion', {

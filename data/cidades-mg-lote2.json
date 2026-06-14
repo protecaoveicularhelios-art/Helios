@@ -1,0 +1,876 @@
+[
+  {
+    "slug": "uberlandia",
+    "nome": "Uberlândia",
+    "estado": "MG",
+    "regiao": "Triângulo Mineiro",
+    "urgency": "Uberlândia está entre as cidades com maior índice de roubos de veículos do interior de Minas Gerais.",
+    "heroSub": "No coração do Triângulo Mineiro, a Hélios oferece proteção veicular completa para todos os bairros de Uberlândia. Sem carência, sem vistoria, ativo no mesmo dia da adesão.",
+    "bairros": ["Tibery", "Tabajaras", "Shopping Park", "Saraiva", "Tubalina", "Mansour", "Morada da Colina", "Santa Maria", "Custódio Pereira", "Lídice", "Jardim Karaíba", "Segismundo Pereira"],
+    "vizinhas": ["Araguari", "Uberaba", "Ituiutaba", "Frutal"],
+    "testimonials": [
+      {"initials": "JP", "name": "João P.", "bairro": "Tibery, Uberlândia", "text": "Cotei pelo WhatsApp em 10 minutos e no mesmo dia já estava com meu carro protegido. Preço muito abaixo do seguro que eu tinha antes. Super recomendo!"},
+      {"initials": "CR", "name": "Carla R.", "bairro": "Saraiva, Uberlândia", "text": "Tive um sinistro e a Hélios resolveu tudo rapidamente. O suporte foi excelente do início ao fim. Não troco mais por nenhum seguro convencional."},
+      {"initials": "PT", "name": "Paulo T.", "bairro": "Mansour, Uberlândia", "text": "Processo 100% digital, sem burocracia. Protegi meu veículo em 15 minutos pelo celular. A assistência 24h já me salvou na estrada."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende motoristas de aplicativo em Uberlândia?",
+      "a": "Sim! Oferecemos planos específicos para motoristas de Uber, 99 e InDriver em Uberlândia, com cobertura adaptada para uso profissional do veículo."
+    }
+  },
+  {
+    "slug": "juiz-de-fora",
+    "nome": "Juiz de Fora",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "urgency": "Juiz de Fora registra alto volume de sinistros veiculares, especialmente roubos e colisões em vias movimentadas da cidade.",
+    "heroSub": "Na maior cidade da Zona da Mata mineira, a Hélios oferece proteção veicular completa com ativação no mesmo dia. Cobertura em todos os bairros de Juiz de Fora.",
+    "bairros": ["São Mateus", "Cascatinha", "Teixeiras", "Benfica", "Alto dos Passos", "Santa Luzia", "São Pedro", "Graminha", "Santa Efigênia", "Mariano Procópio", "Dom Bosco", "Progresso"],
+    "vizinhas": ["Muriaé", "Ubá", "Cataguases", "Barbacena", "Viçosa"],
+    "testimonials": [
+      {"initials": "MS", "name": "Marcos S.", "bairro": "São Mateus, Juiz de Fora", "text": "Em Juiz de Fora o trânsito é pesado e os riscos são reais. Com a Hélios me sinto tranquilo. Processo rápido, sem vistoria e com assistência 24h real."},
+      {"initials": "LB", "name": "Luana B.", "bairro": "Cascatinha, Juiz de Fora", "text": "Meu carro foi amassado no estacionamento e a Hélios resolveu tudo sem estresse. Atendimento humano e processo muito mais simples do que eu esperava."},
+      {"initials": "RP", "name": "Roberto P.", "bairro": "Benfica, Juiz de Fora", "text": "Pago menos da metade do que pagava no seguro com a mesma cobertura. Sem carência foi o que me convenceu. Recomendo para todos em JF!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos nos túneis e vias expressas de Juiz de Fora?",
+      "a": "Sim! A proteção veicular da Hélios cobre seu veículo em todos os trajetos de Juiz de Fora, incluindo vias expressas, túneis e rodovias de acesso à cidade. Cobertura válida em todo o Brasil."
+    }
+  },
+  {
+    "slug": "montes-claros",
+    "nome": "Montes Claros",
+    "estado": "MG",
+    "regiao": "Norte de Minas",
+    "urgency": "Montes Claros, maior cidade do Norte de Minas, registra crescimento constante nos índices de furtos e roubos de veículos.",
+    "heroSub": "Na capital do Norte de Minas Gerais, a Hélios oferece proteção veicular completa com ativação imediata e sem burocracia. Atendemos todos os bairros de Montes Claros.",
+    "bairros": ["Todos os Santos", "Major Prates", "Ibituruna", "Morada do Sol", "Cândida Câmara", "Delfino Magalhães", "Jardim Eldorado", "Mário Avelar", "Planalto", "Cintra", "Renascença", "Melo"],
+    "vizinhas": ["Governador Valadares", "Patos de Minas", "Unaí", "Curvelo"],
+    "testimonials": [
+      {"initials": "FA", "name": "Felipe A.", "bairro": "Major Prates, Montes Claros", "text": "Em Montes Claros o risco de furto é alto. A Hélios me protege com custo muito menor que o seguro tradicional. Contratei pelo WhatsApp em menos de 20 minutos!"},
+      {"initials": "GS", "name": "Gabriela S.", "bairro": "Ibituruna, Montes Claros", "text": "Recomendei para toda a família após minha experiência positiva com a Hélios. Atendimento excelente e a cobertura é completa mesmo sem pagar caro."},
+      {"initials": "NL", "name": "Nelson L.", "bairro": "Morada do Sol, Montes Claros", "text": "Sem carência foi fundamental. Precisei acionar o seguro no segundo mês e tudo foi coberto sem problemas. Equipe comprometida e honesta."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios protege veículos na rodovia BR-365 que cruza Montes Claros?",
+      "a": "Sim! A cobertura da Hélios é válida em todo o território brasileiro, incluindo a BR-365 e todas as rodovias que cruzam Montes Claros. Você está protegido 24h por dia, em qualquer trajeto."
+    }
+  },
+  {
+    "slug": "uberaba",
+    "nome": "Uberaba",
+    "estado": "MG",
+    "regiao": "Triângulo Mineiro",
+    "urgency": "Uberaba registra índices elevados de sinistros veiculares, especialmente no entorno de vias de acesso ao centro e distritos industriais.",
+    "heroSub": "Na Princesa do Triângulo Mineiro, a Hélios oferece proteção veicular completa sem carência. Ative sua proteção hoje mesmo pelo WhatsApp, sem sair de casa.",
+    "bairros": ["Mercês", "Abadia", "São Benedito", "Parque São Geraldo", "Jundiaí", "Leblon", "Bonsucesso", "Fabrício", "Nova Uberaba", "Boa Vista", "Lídice", "Portal das Laranjeiras"],
+    "vizinhas": ["Uberlândia", "Araguari", "Frutal", "Ituiutaba"],
+    "testimonials": [
+      {"initials": "WR", "name": "Walter R.", "bairro": "Mercês, Uberaba", "text": "Trabalho com bovinocultura e meu veículo fica muito na estrada. A Hélios me dá cobertura nacional com um preço justo. Contratei e estou satisfeito!"},
+      {"initials": "KC", "name": "Karina C.", "bairro": "Jundiaí, Uberaba", "text": "Processo todo pelo celular, sem burocracia. Em meia hora já estava com o carro protegido. O atendimento via WhatsApp é muito ágil e prestativo."},
+      {"initials": "EM", "name": "Eduardo M.", "bairro": "Fabrício, Uberaba", "text": "Economizo muito comparado ao seguro que tinha antes. Sem carência foi o diferencial. A assistência 24h já me ajudou com pane na MG-050."}
+    ],
+    "faqEspecifico": {
+      "q": "A proteção da Hélios cobre veículos usados em fazendas e estradas vicinais de Uberaba?",
+      "a": "Sim! Nossa cobertura é válida em todo o território nacional, incluindo estradas vicinais e áreas rurais de Uberaba. Entre em contato pelo WhatsApp para verificar as condições específicas do seu veículo."
+    }
+  },
+  {
+    "slug": "governador-valadares",
+    "nome": "Governador Valadares",
+    "estado": "MG",
+    "regiao": "Vale do Rio Doce",
+    "urgency": "Governador Valadares registra alto índice de roubos e furtos de veículos no Vale do Rio Doce, especialmente nas proximidades de vias de acesso à cidade.",
+    "heroSub": "No coração do Vale do Rio Doce, a Hélios protege seu veículo com cobertura completa, sem carência e com assistência 24h. Ative sua proteção ainda hoje.",
+    "bairros": ["Grão-Mogol", "Carapina", "Altinópolis", "Bom Retiro", "Esplanada", "Turmalina", "Belvedere", "São Cristóvão", "Ibituruna", "Fátima", "Vila Bretas", "Minas Brasília"],
+    "vizinhas": ["Ipatinga", "Caratinga", "Teófilo Otoni", "João Monlevade"],
+    "testimonials": [
+      {"initials": "BF", "name": "Breno F.", "bairro": "Turmalina, Gov. Valadares", "text": "Carro roubado e a Hélios cumpriu tudo que prometeu. Processo de indenização rápido e sem complicação. Já indiquei para vários amigos!"},
+      {"initials": "IC", "name": "Iris C.", "bairro": "Altinópolis, Gov. Valadares", "text": "Não precisei de vistoria e paguei menos da metade do seguro anterior. A cobertura é completa e o atendimento é humanizado. Excelente escolha!"},
+      {"initials": "JP", "name": "Júlio P.", "bairro": "Carapina, Gov. Valadares", "text": "Atendo muito na BR-381 e a assistência 24h da Hélios me salvou com pane na estrada. Chegaram rápido e resolveram na hora. Vale cada centavo!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre meu veículo durante viagens entre Governador Valadares e Belo Horizonte?",
+      "a": "Sim! A proteção da Hélios é válida em todo o Brasil, incluindo a BR-381 entre Governador Valadares e Belo Horizonte. Sua cobertura funciona 24h por dia em qualquer trajeto."
+    }
+  },
+  {
+    "slug": "ipatinga",
+    "nome": "Ipatinga",
+    "estado": "MG",
+    "regiao": "Vale do Aço",
+    "urgency": "Ipatinga registra índices elevados de sinistros veiculares no Vale do Aço, com destaque para furtos em vias de grande movimento.",
+    "heroSub": "No dinâmico Vale do Aço, a Hélios oferece proteção veicular completa em Ipatinga com ativação no mesmo dia. Cobertura para todo o Corredor Industrial.",
+    "bairros": ["Horto", "Cariru", "Bom Retiro", "Veneza", "Bethânia", "Iguaçu", "Alto Limoeiro", "Canaã", "Cachoeira dos Macacos", "Ferrugem", "Esperança", "Residencial Caravelas"],
+    "vizinhas": ["Coronel Fabriciano", "Timóteo", "Governador Valadares", "João Monlevade"],
+    "testimonials": [
+      {"initials": "FC", "name": "Fábio C.", "bairro": "Horto, Ipatinga", "text": "Trabalho na usina e uso o carro diariamente no Vale do Aço. A Hélios me protege com um preço muito justo e sem toda aquela burocracia do seguro."},
+      {"initials": "AP", "name": "Aline P.", "bairro": "Bethânia, Ipatinga", "text": "Nunca tinha contratado proteção veicular antes. A Hélios me explicou tudo e o processo foi rápido. Estou protegida desde o mesmo dia!"},
+      {"initials": "RM", "name": "Rogério M.", "bairro": "Canaã, Ipatinga", "text": "Meu carro foi roubado e a Hélios indenizou pelo valor FIPE sem discussão. Recomendo para qualquer trabalhador do Vale do Aço!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende toda a região do Vale do Aço incluindo Ipatinga?",
+      "a": "Sim! Atendemos Ipatinga e toda a região do Vale do Aço, incluindo Coronel Fabriciano, Timóteo e Santana do Paraíso. Nossa cobertura é válida em todo o território nacional."
+    }
+  },
+  {
+    "slug": "pocos-de-caldas",
+    "nome": "Poços de Caldas",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "Poços de Caldas registra crescimento nos índices de furtos de veículos, especialmente na região central e em áreas turísticas.",
+    "heroSub": "Na famosa cidade das termas do Sul de Minas, a Hélios protege seu veículo com cobertura completa e sem carência. Ative sua proteção em minutos pelo WhatsApp.",
+    "bairros": ["Centro", "Vila São Paulo", "Jardim Paraíso", "Santa Cecília", "Jardim Esperança", "Lenheiro", "Parque Paineiras", "Carlos Prates", "Residencial Serrano", "Jardim Quisisana", "Cascatinha", "Jardim Centenário"],
+    "vizinhas": ["Pouso Alegre", "Alfenas", "Três Corações", "Varginha"],
+    "testimonials": [
+      {"initials": "TS", "name": "Tiago S.", "bairro": "Lenheiro, Poços de Caldas", "text": "Turistas e moradores têm muito problema de furto aqui. A Hélios me protege com custo acessível e sem aquela papelada toda do seguro. Ótima escolha!"},
+      {"initials": "MC", "name": "Márcia C.", "bairro": "Jardim Paraíso, Poços de Caldas", "text": "Processo todo pelo WhatsApp, sem sair de casa. Em menos de 30 minutos já estava protegida. A assistência 24h é real e funciona quando precisei."},
+      {"initials": "LV", "name": "Lucas V.", "bairro": "Santa Cecília, Poços de Caldas", "text": "Sem carência foi o decisivo. Já saí protegido no mesmo dia sem pagar o absurdo que os seguros cobram. Indico para todos em Poços!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos de moradores e turistas em Poços de Caldas?",
+      "a": "Sim! Nossa proteção atende residentes de Poços de Caldas com cobertura completa. A proteção é válida em todo o Brasil, perfeita para quem viaja com frequência."
+    }
+  },
+  {
+    "slug": "patos-de-minas",
+    "nome": "Patos de Minas",
+    "estado": "MG",
+    "regiao": "Alto Paranaíba",
+    "urgency": "Patos de Minas registra aumento no número de sinistros veiculares na região do Alto Paranaíba nos últimos anos.",
+    "heroSub": "No Alto Paranaíba, a Hélios é a escolha certa para proteger seu veículo com custo acessível e ativação no mesmo dia. Atendemos toda a região de Patos de Minas.",
+    "bairros": ["Maracanã", "Planalto", "São Sebastião", "Rio Paranaíba", "Santa Terezinha", "Caiçaras", "Bela Vista", "Vilage", "Jardim São Paulo", "Alvorada", "Dom Bosco", "Padre Eustáquio"],
+    "vizinhas": ["Araxá", "Patrocínio", "Unaí", "Paracatu"],
+    "testimonials": [
+      {"initials": "DF", "name": "Diego F.", "bairro": "Maracanã, Patos de Minas", "text": "Processo bem simples e rápido. Fiz tudo pelo celular e em menos de meia hora já estava com a proteção ativa. Ótimo custo-benefício!"},
+      {"initials": "RA", "name": "Renata A.", "bairro": "Planalto, Patos de Minas", "text": "Meu marido já era associado e me indicou. Agora os dois carros da família estão protegidos pela Hélios. Atendimento excelente sempre que precisei."},
+      {"initials": "SC", "name": "Sílvio C.", "bairro": "São Sebastião, Patos de Minas", "text": "Sem carência foi decisivo para eu contratar. Pago menos da metade do seguro e tenho cobertura completa. A assistência 24h já funcionou duas vezes."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende municípios próximos a Patos de Minas?",
+      "a": "Sim! Além de Patos de Minas, atendemos toda a região do Alto Paranaíba, incluindo Lagoa Formosa, Presidente Olegário e municípios vizinhos. A cobertura é válida em todo o Brasil."
+    }
+  },
+  {
+    "slug": "pouso-alegre",
+    "nome": "Pouso Alegre",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "Pouso Alegre registra crescimento nos índices de furto de veículos no Sul de Minas, com atenção especial para a região do anel viário.",
+    "heroSub": "No Sul de Minas Gerais, a Hélios oferece proteção completa para o seu veículo com preço acessível e ativação imediata. Sem carência, sem vistoria, ativo no mesmo dia.",
+    "bairros": ["Paissandu", "Nova Suíça", "Bortolan", "Santa Luzia", "Aeroporto", "Aracy", "Jardim das Oliveiras", "São João", "Trevo", "Vila Rica", "Santa Rosa", "Campos Elíseos"],
+    "vizinhas": ["Varginha", "Itajubá", "Três Corações", "Poços de Caldas", "Alfenas"],
+    "testimonials": [
+      {"initials": "TV", "name": "Thiago V.", "bairro": "Paissandu, Pouso Alegre", "text": "Fiz a cotação e no mesmo dia já estava protegido. Sem burocracia, sem vistoria. Atendimento pelo WhatsApp muito ágil e prestativo."},
+      {"initials": "NR", "name": "Natália R.", "bairro": "Bortolan, Pouso Alegre", "text": "Meu carro foi danificado em uma colisão e a Hélios cuidou de tudo. Processo mais simples do que eu imaginava. Super recomendo!"},
+      {"initials": "GM", "name": "Gustavo M.", "bairro": "Nova Suíça, Pouso Alegre", "text": "Economizo R$150 por mês comparado ao seguro antigo com a mesma cobertura. Sem carência foi o que me convenceu a contratar na hora."}
+    ],
+    "faqEspecifico": {
+      "q": "A proteção da Hélios é válida para quem viaja de Pouso Alegre para São Paulo?",
+      "a": "Sim! A cobertura é válida em todo o Brasil. Seja nas viagens pela Fernão Dias ou em qualquer outro trajeto, você está protegido 24h por dia, incluindo os principais percursos do Sul de Minas."
+    }
+  },
+  {
+    "slug": "varginha",
+    "nome": "Varginha",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "Varginha registra aumento nos registros de sinistros veiculares na região do Sul de Minas nos últimos anos.",
+    "heroSub": "Na capital do café do Sul de Minas, a Hélios protege seu veículo com cobertura completa, ativação no mesmo dia e preço que cabe no bolso.",
+    "bairros": ["Jardim Andere", "São Tomé", "Bela Vista", "Santa Inês", "Jaraguá", "Novo Horizonte", "Monte Belo", "Esplanada", "Colônia", "Vila Pinto", "Fátima", "São Judas"],
+    "vizinhas": ["Três Corações", "Alfenas", "Lavras", "Pouso Alegre"],
+    "testimonials": [
+      {"initials": "FS", "name": "Felipe S.", "bairro": "Jaraguá, Varginha", "text": "Cotei pelo WhatsApp e em 15 minutos já tinha o preço. No mesmo dia assinei tudo pelo celular. Muito mais fácil do que qualquer seguro que já contratei."},
+      {"initials": "AT", "name": "Aline T.", "bairro": "São Tomé, Varginha", "text": "Excelente atendimento! Quando precisei acionar tive uma resposta rápida e sem estresse. Vale muito a pena para quem quer proteção real com preço justo."},
+      {"initials": "ML", "name": "Márcio L.", "bairro": "Bela Vista, Varginha", "text": "Sem carência foi o ponto decisivo. Já estava desprotegido há meses com medo do custo. A Hélios me surpreendeu positivamente em tudo."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende frota de veículos em Varginha?",
+      "a": "Sim! Atendemos veículos de passeio, SUVs, motos e também consultas para frotas em Varginha e região Sul de Minas. Entre em contato pelo WhatsApp para uma proposta personalizada."
+    }
+  },
+  {
+    "slug": "barbacena",
+    "nome": "Barbacena",
+    "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "urgency": "Barbacena registra índices crescentes de furto de veículos na região do Campo das Vertentes, especialmente nas proximidades da BR-040.",
+    "heroSub": "Na Cidade das Rosas, a Hélios cuida do que mais importa: a proteção do seu veículo, com ativação imediata e preço muito mais acessível que o seguro tradicional.",
+    "bairros": ["São Sebastião", "Jardim das Rosas", "Nova Vista", "Alterosa", "Pio XII", "Lourdes", "Padre Dehon", "Santa Terezinha", "Bom Jesus", "Paraíso", "Moreira", "Junco"],
+    "vizinhas": ["Conselheiro Lafaiete", "São João del-Rei", "Lavras", "Juiz de Fora"],
+    "testimonials": [
+      {"initials": "ER", "name": "Eduardo R.", "bairro": "São Sebastião, Barbacena", "text": "Processo rapidíssimo. Fiz tudo pelo WhatsApp sem sair de casa. No mesmo dia já estava com o carro protegido. Muito melhor que o seguro!"},
+      {"initials": "VM", "name": "Vanessa M.", "bairro": "Alterosa, Barbacena", "text": "Nunca pensei que contratar proteção veicular fosse tão simples. Sem vistoria, sem papelada. Recomendo para todo mundo em Barbacena!"},
+      {"initials": "RF", "name": "Ricardo F.", "bairro": "Nova Vista, Barbacena", "text": "A assistência 24h já me ajudou com pane seca na estrada para BH. Atendimento impecável e rápido. Vale cada centavo da mensalidade."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende municípios próximos a Barbacena como Conselheiro Lafaiete?",
+      "a": "Sim! Atendemos Barbacena e toda a região do Campo das Vertentes, incluindo cidades vizinhas. Nossa cobertura é válida em todo o Brasil, perfeita para os deslocamentos frequentes pela BR-040."
+    }
+  },
+  {
+    "slug": "vespasiano",
+    "nome": "Vespasiano",
+    "estado": "MG",
+    "regiao": "Grande BH",
+    "urgency": "Vespasiano registra crescimento nos índices de furtos de veículos na Grande BH, especialmente nas vias de ligação com a capital.",
+    "heroSub": "A poucos minutos de Belo Horizonte, Vespasiano merece proteção veicular completa. A Hélios atende toda a região norte da Grande BH com ativação no mesmo dia.",
+    "bairros": ["Centro", "Paraíso", "Palmital", "Jardim Alterosas", "Progresso", "Jardim Guanabara", "Alto das Pedras", "São Pedro", "Jardim Pampulha", "Nova Esperança", "Primavera", "Jardim das Flores"],
+    "vizinhas": ["Lagoa Santa", "Belo Horizonte", "Pedro Leopoldo", "Santa Luzia", "Ribeirão das Neves"],
+    "testimonials": [
+      {"initials": "TN", "name": "Tiago N.", "bairro": "Paraíso, Vespasiano", "text": "Moro em Vespasiano e trabalho em BH. Tenho proteção válida nos dois lugares com um preço que cabe no bolso. A Hélios resolveu meu problema!"},
+      {"initials": "SC", "name": "Sandra C.", "bairro": "Jardim Alterosas, Vespasiano", "text": "Fiz tudo pelo WhatsApp em 20 minutos. Sem vistoria e sem burocracia. A assistência já funcionou quando precisei de chaveiro. Recomendo muito!"},
+      {"initials": "MR", "name": "Marcelo R.", "bairro": "Alto das Pedras, Vespasiano", "text": "Economizo muito em relação ao seguro. Sem carência foi o ponto decisivo. Protejo meu carro com custo justo e cobertura completa."}
+    ],
+    "faqEspecifico": {
+      "q": "A proteção da Hélios cobre meu trajeto diário entre Vespasiano e Belo Horizonte?",
+      "a": "Sim! A cobertura é válida em todo o trajeto, incluindo as rodovias e vias urbanas entre Vespasiano e BH. Você está protegido 24h por dia em qualquer deslocamento."
+    }
+  },
+  {
+    "slug": "araguari",
+    "nome": "Araguari",
+    "estado": "MG",
+    "regiao": "Triângulo Mineiro",
+    "urgency": "Araguari registra crescimento no número de sinistros veiculares no Triângulo Mineiro, com atenção às vias de acesso ao polo industrial.",
+    "heroSub": "No Triângulo Mineiro, a Hélios oferece proteção veicular completa em Araguari com ativação no mesmo dia. Sem carência, sem vistoria, processo 100% digital.",
+    "bairros": ["Santa Luzia", "São Jorge", "Jardim América", "Bom Jesus", "Tabajaras", "Planalto", "Riviera", "São Rafael", "Ipiranga", "Brasília", "Centro", "Avenida Espírito Santo"],
+    "vizinhas": ["Uberlândia", "Uberaba", "Patos de Minas"],
+    "testimonials": [
+      {"initials": "PP", "name": "Pedro P.", "bairro": "Santa Luzia, Araguari", "text": "Trabalho entre Araguari e Uberlândia toda semana. A Hélios me dá segurança nos dois trajetos com uma mensalidade muito acessível. Recomendo!"},
+      {"initials": "CC", "name": "Cíntia C.", "bairro": "Jardim América, Araguari", "text": "Processo todo pelo WhatsApp, sem complicação. Em 25 minutos já estava com minha proteção ativa. Melhor escolha que fiz para meu carro!"},
+      {"initials": "LT", "name": "Leandro T.", "bairro": "Planalto, Araguari", "text": "Preço bem abaixo do seguro tradicional com a mesma cobertura. A assistência 24h já me ajudou com pane na BR-050. Nota 10!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre meu veículo nos trajetos entre Araguari e Uberlândia?",
+      "a": "Sim! A proteção da Hélios é válida em todo o Brasil, incluindo os trajetos pela BR-050 e demais rodovias entre Araguari e Uberlândia. Cobertura 24h em qualquer trajeto."
+    }
+  },
+  {
+    "slug": "itabira",
+    "nome": "Itabira",
+    "estado": "MG",
+    "regiao": "Rio Doce",
+    "urgency": "Itabira registra índices de sinistros veiculares crescentes, especialmente nas proximidades das minas e vias industriais da cidade.",
+    "heroSub": "Na cidade de Carlos Drummond de Andrade, a Hélios protege seu veículo com cobertura completa e sem burocracia. Ative sua proteção hoje mesmo pelo WhatsApp.",
+    "bairros": ["Centro", "Melo Franco", "Cauê", "Duque de Caxias", "Boa Vista", "Santa Luzia", "Alto São João", "Palmeiras", "São Cristóvão", "Esperança", "Nações", "Vila Rica"],
+    "vizinhas": ["João Monlevade", "Ipatinga", "Sete Lagoas", "Coronel Fabriciano"],
+    "testimonials": [
+      {"initials": "AF", "name": "André F.", "bairro": "Melo Franco, Itabira", "text": "Trabalho na mineração e sempre estou na estrada. A Hélios me protege com cobertura nacional e um preço muito mais justo que o seguro. Recomendo!"},
+      {"initials": "RS", "name": "Rodrigo S.", "bairro": "Cauê, Itabira", "text": "Tive um acidente na BR-381 e a Hélios cobriu tudo sem estresse. Processo de indenização mais rápido do que eu esperava. Nota 10!"},
+      {"initials": "PM", "name": "Patrícia M.", "bairro": "Santa Luzia, Itabira", "text": "Sem carência foi fundamental para minha escolha. Já saí protegida no mesmo dia sem pagar o absurdo que os seguros cobram em Itabira."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos utilizados no acesso às minas em Itabira?",
+      "a": "Sim! A proteção da Hélios é válida em todos os trajetos, incluindo estradas de acesso às áreas industriais e de mineração de Itabira. Cobertura em todo o território nacional."
+    }
+  },
+  {
+    "slug": "conselheiro-lafaiete",
+    "nome": "Conselheiro Lafaiete",
+    "estado": "MG",
+    "regiao": "Quadrilátero Ferrífero",
+    "urgency": "Conselheiro Lafaiete registra aumento nos índices de roubo e furto de veículos na região do Quadrilátero Ferrífero.",
+    "heroSub": "No coração do Quadrilátero Ferrífero, a Hélios oferece proteção completa para o seu veículo com ativação no mesmo dia da adesão.",
+    "bairros": ["Guanabara", "Coqueiros", "Nova Floresta", "Esperança", "Bom Retiro", "Vila Aparecida", "Santo Antônio", "Jardim dos Ipês", "Morro do Engenho", "Santa Cruz", "Palmeiras", "São Judas"],
+    "vizinhas": ["Congonhas", "Barbacena", "Ouro Preto", "Itabira"],
+    "testimonials": [
+      {"initials": "BA", "name": "Bruno A.", "bairro": "Guanabara, Cons. Lafaiete", "text": "Indicado por um colega que já era associado. Processo simples e rápido pelo WhatsApp. Proteção ativa no mesmo dia, sem nenhuma burocracia!"},
+      {"initials": "SR", "name": "Simone R.", "bairro": "Coqueiros, Cons. Lafaiete", "text": "Tive um sinistro meses atrás e fui muito bem atendida. O processo de indenização foi mais ágil do que eu esperava. Recomendo de olhos fechados."},
+      {"initials": "HM", "name": "Henrique M.", "bairro": "Nova Floresta, Cons. Lafaiete", "text": "Economizo bastante em relação ao seguro tradicional. Sem carência e com carro reserva incluso. A assistência 24h já funcionou quando precisei."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre trajetos entre Conselheiro Lafaiete e Belo Horizonte?",
+      "a": "Sim! A cobertura é válida em todo o Brasil, incluindo o trajeto pela BR-040 entre Conselheiro Lafaiete e BH. Você está protegido em qualquer estrada ou cidade do país."
+    }
+  },
+  {
+    "slug": "coronel-fabriciano",
+    "nome": "Coronel Fabriciano",
+    "estado": "MG",
+    "regiao": "Vale do Aço",
+    "urgency": "O Vale do Aço registra alto volume de sinistros veiculares, especialmente em Coronel Fabriciano e na região do Corredor Industrial.",
+    "heroSub": "No dinâmico Vale do Aço, a Hélios protege seu veículo com cobertura completa, sem carência e com ativação imediata pelo celular.",
+    "bairros": ["Caladão", "Industrial", "Primavera", "Nova Esperança", "Vale Verde", "Boa Vista", "Santa Cruz", "Limoeiro", "Centro", "Novo Horizonte", "Aparecida", "São Judas"],
+    "vizinhas": ["Ipatinga", "Timóteo", "Governador Valadares", "João Monlevade"],
+    "testimonials": [
+      {"initials": "FC", "name": "Fábio C.", "bairro": "Caladão, Coronel Fabriciano", "text": "Trabalho na indústria e sempre viajo entre cidades do Vale do Aço. A Hélios me dá tranquilidade em todos esses deslocamentos. Atendimento excelente!"},
+      {"initials": "CB", "name": "Cristiane B.", "bairro": "Primavera, Coronel Fabriciano", "text": "Nunca imaginei contratar proteção veicular tão fácil. Tudo pelo WhatsApp, sem vistoria, sem papelada. Estou muito satisfeita com a cobertura!"},
+      {"initials": "LS", "name": "Leandro S.", "bairro": "Industrial, Coronel Fabriciano", "text": "Pago menos da metade do que pagava no seguro com a mesma cobertura. A assistência 24h já me ajudou duas vezes. Não volto mais para o seguro tradicional."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende toda a região do Vale do Aço?",
+      "a": "Sim! Além de Coronel Fabriciano, atendemos Ipatinga, Timóteo, Santana do Paraíso e toda a região do Vale do Aço. Nossa cobertura é válida em todo o território nacional."
+    }
+  },
+  {
+    "slug": "muriae",
+    "nome": "Muriaé",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "urgency": "Muriaé e a Zona da Mata registram crescimento nos índices de sinistros veiculares nos últimos anos.",
+    "heroSub": "Na Zona da Mata de Minas Gerais, a Hélios protege seu veículo com cobertura completa, processo 100% digital e preço que surpreende.",
+    "bairros": ["São Judas", "Santa Cruz", "Jequitibá", "Planalto", "Novo Horizonte", "Bom Pastor", "Fátima", "Triângulo", "Aeroporto", "São Lourenço", "Liberdade", "São José"],
+    "vizinhas": ["Cataguases", "Juiz de Fora", "Ubá", "Caratinga"],
+    "testimonials": [
+      {"initials": "AM", "name": "Adriano M.", "bairro": "São Judas, Muriaé", "text": "Fui indicado e não me arrependi. Cotação rápida, sem vistoria e proteção ativa no mesmo dia. Preço muito melhor que qualquer seguro da região!"},
+      {"initials": "PR", "name": "Priscila R.", "bairro": "Santa Cruz, Muriaé", "text": "Quando meu carro foi batido, a Hélios resolveu tudo com muita agilidade. Atendimento humano e eficiente do início ao fim. Super recomendo!"},
+      {"initials": "NT", "name": "Nelson T.", "bairro": "Planalto, Muriaé", "text": "Sem carência foi o que me convenceu. Agora tenho cobertura completa pagando muito menos. A assistência 24h é real e funciona quando precisamos."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende municípios da Zona da Mata próximos a Muriaé?",
+      "a": "Sim! Atendemos Muriaé e toda a Zona da Mata mineira, incluindo Leopoldina, Cataguases e municípios vizinhos. A cobertura é válida em todo o território nacional."
+    }
+  },
+  {
+    "slug": "teofilo-otoni",
+    "nome": "Teófilo Otoni",
+    "estado": "MG",
+    "regiao": "Vale do Mucuri",
+    "urgency": "Teófilo Otoni concentra boa parte dos registros de roubo de veículos do Nordeste de Minas Gerais.",
+    "heroSub": "No Vale do Mucuri, a Hélios garante proteção completa para o seu veículo. Processo 100% digital, ativo no mesmo dia da adesão.",
+    "bairros": ["Plato", "Santo Antônio", "Santa Clara", "Boa Vista", "Fátima", "Jardim Primavera", "Bela Vista", "Altino Barbosa", "Kennedy", "Panorama", "Alvorada", "São Cristóvão"],
+    "vizinhas": ["Governador Valadares", "Caratinga", "Muriaé"],
+    "testimonials": [
+      {"initials": "AS", "name": "André S.", "bairro": "Plato, Teófilo Otoni", "text": "Indicado por um colega de trabalho. Contratei pelo celular em menos de 20 minutos. Atendimento rápido e preço justo. Vale muito a pena!"},
+      {"initials": "JM", "name": "Juliana M.", "bairro": "Santo Antônio, Teófilo Otoni", "text": "Tive um problema com meu carro na estrada e o guincho chegou em tempo recorde. A assistência 24h funciona de verdade. Muito satisfeita!"},
+      {"initials": "CB", "name": "Carlos B.", "bairro": "Fátima, Teófilo Otoni", "text": "Não precisei fazer vistoria e já saí protegido no mesmo dia. O preço é bem mais acessível do que o seguro que eu tinha antes. Recomendo!"}
+    ],
+    "faqEspecifico": {
+      "q": "A proteção da Hélios cobre toda a região de Teófilo Otoni?",
+      "a": "Sim! Atendemos Teófilo Otoni e toda a região do Vale do Mucuri. A cobertura é válida em todo o território nacional, incluindo viagens e deslocamentos para outras cidades."
+    }
+  },
+  {
+    "slug": "araxa",
+    "nome": "Araxá",
+    "estado": "MG",
+    "regiao": "Alto Paranaíba",
+    "urgency": "Araxá registra crescimento nos índices de sinistros veiculares no Alto Paranaíba, impulsionado pelo aumento da frota e do trânsito local.",
+    "heroSub": "Na cidade das águas termais do Alto Paranaíba, a Hélios protege seu veículo com cobertura completa e ativação no mesmo dia. Sem carência, processo digital.",
+    "bairros": ["Santa Maria", "Olinda", "Santo Antônio", "São Geraldo", "Barreiro", "Bandeirantes", "Brasília", "Chácara Barreiro", "Paraíso", "Ipiranga", "Fonte Colombo", "São José"],
+    "vizinhas": ["Patos de Minas", "Patrocínio", "Uberaba", "Uberlândia"],
+    "testimonials": [
+      {"initials": "HB", "name": "Hugo B.", "bairro": "Olinda, Araxá", "text": "Carro da família protegido em menos de 1 hora sem sair de casa. A Hélios tornou tudo muito simples. Preço justo e cobertura real. Recomendo!"},
+      {"initials": "VP", "name": "Viviane P.", "bairro": "Santo Antônio, Araxá", "text": "Veio indicação de amiga e não decepcionou. Tudo pelo WhatsApp, sem papelada. Quando precisei da assistência, o atendimento foi rápido e eficiente."},
+      {"initials": "DA", "name": "Diego A.", "bairro": "Barreiro, Araxá", "text": "Economizo mais de R$200 por mês em relação ao seguro. Sem carência e com cobertura nacional. Melhor custo-benefício que encontrei para meu veículo."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende veículos de servidores da CBMM e do Complexo Thermas em Araxá?",
+      "a": "Sim! Atendemos todos os moradores e trabalhadores de Araxá, independente do setor em que atuam. Cotação gratuita pelo WhatsApp com resposta em minutos."
+    }
+  },
+  {
+    "slug": "passos",
+    "nome": "Passos",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "Passos registra aumento nos registros de furtos de veículos no Sul de Minas, especialmente nas regiões centrais e periféricas da cidade.",
+    "heroSub": "No Sul de Minas Gerais, a Hélios oferece proteção veicular completa em Passos com ativação imediata e preço acessível. Processo 100% pelo WhatsApp.",
+    "bairros": ["Centro", "Jardim Santa Rosa", "Santa Maria", "Beija-Flor", "São Cristóvão", "São Benedito", "São Jorge", "Brasília", "Boa Vista", "Vila Esperança", "São José", "Laranjeiras"],
+    "vizinhas": ["São Sebastião do Paraíso", "Três Corações", "Lavras", "Alfenas"],
+    "testimonials": [
+      {"initials": "JR", "name": "João R.", "bairro": "Jardim Santa Rosa, Passos", "text": "Não sabia que existia algo melhor que o seguro até conhecer a Hélios. Pago muito menos e tenho a mesma cobertura. Processo rápido e sem complicação!"},
+      {"initials": "CF", "name": "Cláudia F.", "bairro": "São Benedito, Passos", "text": "Meu carro foi roubado e a Hélios me indenizou pelo valor FIPE sem discussão. Atendimento humanizado e ágil. Não troco por nada!"},
+      {"initials": "EL", "name": "Evandro L.", "bairro": "Centro, Passos", "text": "Sem carência foi o ponto que me convenceu. Já saí protegido no mesmo dia e quando precisei da assistência tudo funcionou perfeitamente."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos em trajetos entre Passos e outras cidades do Sul de Minas?",
+      "a": "Sim! A proteção da Hélios é válida em todo o território nacional. Seja em viagens para Alfenas, São Sebastião do Paraíso ou qualquer outra cidade, você está sempre protegido."
+    }
+  },
+  {
+    "slug": "uba",
+    "nome": "Ubá",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "urgency": "Ubá registra crescimento nos índices de sinistros veiculares na Zona da Mata mineira, refletindo o aumento da frota na região moveleira.",
+    "heroSub": "Na capital do móvel da Zona da Mata mineira, a Hélios protege seu veículo com cobertura completa e sem burocracia. Cotação gratuita em minutos.",
+    "bairros": ["Centro", "Estrela do Sul", "Santa Bernadete", "Eldorado", "João XXIII", "Serra Verde", "Distrito Industrial", "São Benedito", "Sagrado Coração", "Juca Félix", "São Geraldo", "Malheiros"],
+    "vizinhas": ["Juiz de Fora", "Muriaé", "Cataguases", "Viçosa"],
+    "testimonials": [
+      {"initials": "WS", "name": "Wagner S.", "bairro": "Estrela do Sul, Ubá", "text": "Trabalho no polo moveleiro e viajo muito. A Hélios me protege em toda a Zona da Mata e no Brasil inteiro com um preço que cabe no bolso. Recomendo!"},
+      {"initials": "BL", "name": "Bruna L.", "bairro": "João XXIII, Ubá", "text": "Processo simples e rápido. Em 20 minutos já estava protegida sem sair de casa. Quando precisei do guincho, chegou em menos de 1 hora. Ótimo!"},
+      {"initials": "SM", "name": "Sérgio M.", "bairro": "Distrito Industrial, Ubá", "text": "Economizo muito em relação ao seguro que tinha antes. Sem carência e sem vistoria. A Hélios tornou a proteção veicular acessível para todos em Ubá."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende trabalhadores do polo moveleiro de Ubá?",
+      "a": "Sim! Atendemos todos os moradores e trabalhadores de Ubá, incluindo os que atuam no polo moveleiro. Temos planos para uso profissional e particular com ativação no mesmo dia."
+    }
+  },
+  {
+    "slug": "lavras",
+    "nome": "Lavras",
+    "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "urgency": "Lavras registra índices de furto de veículos crescentes no Campo das Vertentes, impulsionados pelo aumento da frota universitária e estudantil.",
+    "heroSub": "Na cidade universitária do Campo das Vertentes, a Hélios oferece proteção veicular com ativação no mesmo dia e preço que estudantes e profissionais podem pagar.",
+    "bairros": ["Centro", "João Pessoa", "Aquenta Sol", "Bom Pastor", "Boa Vista", "Centenário", "São Francisco", "São João", "Santa Margarida", "Jardim Aeroporto", "São Luís", "UFLA"],
+    "vizinhas": ["Barbacena", "Varginha", "São João del-Rei", "Três Corações"],
+    "testimonials": [
+      {"initials": "FP", "name": "Felipe P.", "bairro": "João Pessoa, Lavras", "text": "Estudante da UFLA e não podia pagar seguro caro. A Hélios me ofereceu proteção completa com um preço muito acessível. Processo rápido pelo WhatsApp!"},
+      {"initials": "AO", "name": "Amanda O.", "bairro": "Centenário, Lavras", "text": "Professora universitária e proteção veicular era uma preocupação. A Hélios resolveu com preço justo e sem complicação. Indico para todo o campus!"},
+      {"initials": "GN", "name": "Gabriel N.", "bairro": "Boa Vista, Lavras", "text": "Moto roubada e a Hélios indenizou pela tabela FIPE sem problemas. Atendimento ágil e transparente. Já recomendei para amigos em Lavras."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios tem planos específicos para estudantes universitários em Lavras?",
+      "a": "Sim! Nossos planos atendem estudantes, professores e moradores de Lavras com preços acessíveis e cobertura completa. Entre em contato pelo WhatsApp para encontrar o plano ideal para você."
+    }
+  },
+  {
+    "slug": "ituiutaba",
+    "nome": "Ituiutaba",
+    "estado": "MG",
+    "regiao": "Triângulo Mineiro",
+    "urgency": "Ituiutaba registra crescimento no número de sinistros veiculares no Pontal do Triângulo Mineiro, especialmente furtos em áreas comerciais.",
+    "heroSub": "No Pontal do Triângulo Mineiro, a Hélios protege seu veículo com cobertura completa e ativação imediata. Sem carência, sem vistoria, processo 100% digital.",
+    "bairros": ["Centro", "Novo Mundo", "Minaslândia", "Platina", "Fabrício", "Jardim Independência", "São Benedito", "Bom Jesus", "Parque São João", "Querência", "Brasil", "Umuarama"],
+    "vizinhas": ["Uberlândia", "Uberaba", "Frutal"],
+    "testimonials": [
+      {"initials": "RB", "name": "Roberto B.", "bairro": "Novo Mundo, Ituiutaba", "text": "Cotei pelo WhatsApp e fiquei surpreso com o preço. Em 30 minutos já estava protegido sem precisar de vistoria. A Hélios mudou o jogo no Triângulo!"},
+      {"initials": "JA", "name": "Jéssica A.", "bairro": "Platina, Ituiutaba", "text": "Carro da família protegido sem complicação. A equipe da Hélios explicou tudo com clareza e o processo foi muito rápido. Super satisfeita!"},
+      {"initials": "OC", "name": "Oswaldo C.", "bairro": "Fabrício, Ituiutaba", "text": "Agricultor e meu veículo fica muito na estrada. A cobertura nacional da Hélios me dá tranquilidade. Preço justo e assistência real quando precisei."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos agrícolas e de uso rural em Ituiutaba?",
+      "a": "A Hélios atende veículos de passeio, SUVs e motos em Ituiutaba. Para veículos de uso estritamente rural, entre em contato pelo WhatsApp para verificar as opções disponíveis."
+    }
+  },
+  {
+    "slug": "paracatu",
+    "nome": "Paracatu",
+    "estado": "MG",
+    "regiao": "Noroeste de Minas",
+    "urgency": "Paracatu registra índices de sinistros veiculares crescentes no Noroeste de Minas, especialmente nas vias de acesso ao polo minerador.",
+    "heroSub": "No Noroeste de Minas Gerais, a Hélios protege seu veículo em Paracatu com cobertura completa e sem carência. Ative sua proteção hoje mesmo pelo WhatsApp.",
+    "bairros": ["Centro", "Paracatuzinho", "Gávea", "São Francisco", "Santa Maria", "Alvorada", "Macaúbas", "Residencial Canaã", "Brasília", "Nações", "Tabajara", "São Geraldo"],
+    "vizinhas": ["Unaí", "Patos de Minas", "Montes Claros"],
+    "testimonials": [
+      {"initials": "WT", "name": "Wagner T.", "bairro": "Gávea, Paracatu", "text": "Trabalho na mineração e meu carro fica muito em estradas. A Hélios me dá proteção nacional com um preço que não encontro em nenhum seguro. Recomendo!"},
+      {"initials": "KS", "name": "Kátia S.", "bairro": "São Francisco, Paracatu", "text": "Processo simples e rápido. Não precisei de vistoria e no mesmo dia já estava com proteção ativa. Atendimento atencioso pelo WhatsApp!"},
+      {"initials": "JB", "name": "Jonas B.", "bairro": "Alvorada, Paracatu", "text": "Sem carência foi decisivo. Em Paracatu estamos longe de tudo e precisamos de assistência confiável. A Hélios entregou quando precisei!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos nos percursos do interior do Noroeste de Minas?",
+      "a": "Sim! A cobertura da Hélios é válida em todo o território nacional, incluindo estradas do Noroeste de Minas. Nosso serviço de assistência 24h atende em qualquer localidade."
+    }
+  },
+  {
+    "slug": "itajuba",
+    "nome": "Itajubá",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "Itajubá registra crescimento nos índices de furtos de veículos no Sul de Minas, com destaque para a região central e universitária.",
+    "heroSub": "Na cidade da tecnologia e da UNIFEI no Sul de Minas, a Hélios oferece proteção veicular completa com ativação no mesmo dia. Sem burocracia, processo digital.",
+    "bairros": ["Centro", "Jardim Itatiaia", "Estiva", "São João", "Anhumas", "São Benedito", "Santa Cruz", "Rebourgeon", "Residencial Itajubá", "Bom Pastor", "Antônio Esteves", "Jardim Esperança"],
+    "vizinhas": ["Pouso Alegre", "Três Corações", "Poços de Caldas"],
+    "testimonials": [
+      {"initials": "BM", "name": "Bruno M.", "bairro": "Jardim Itatiaia, Itajubá", "text": "Professor da UNIFEI e a Hélios me ofereceu proteção completa com preço muito acessível. Processo rápido, sem burocracia. Recomendo para toda a comunidade!"},
+      {"initials": "CS", "name": "Carolina S.", "bairro": "São João, Itajubá", "text": "Moto roubada e a Hélios me indenizou pelo valor FIPE em tempo recorde. Atendimento transparente e eficiente. Não troco por nenhum seguro!"},
+      {"initials": "LF", "name": "Lucas F.", "bairro": "Estiva, Itajubá", "text": "Economizo muito em relação ao seguro. Sem carência e sem vistoria. Em Itajubá a Hélios é a melhor opção com certeza!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos de estudantes e professores da UNIFEI em Itajubá?",
+      "a": "Sim! Atendemos toda a comunidade de Itajubá, incluindo estudantes e professores universitários. Nossos planos são acessíveis e a ativação é no mesmo dia, sem vistoria ou burocracia."
+    }
+  },
+  {
+    "slug": "sao-joao-del-rei",
+    "nome": "São João del-Rei",
+    "estado": "MG",
+    "regiao": "Campo das Vertentes",
+    "urgency": "São João del-Rei registra índices de furtos de veículos crescentes no Campo das Vertentes, especialmente na temporada turística.",
+    "heroSub": "Na histórica São João del-Rei, a Hélios protege seu veículo com cobertura completa e sem carência. Ativo no mesmo dia, processo 100% digital pelo WhatsApp.",
+    "bairros": ["Centro", "Matozinhos", "Tejuco", "Santos Dumont", "Santa Cruz", "Fábricas", "Colônia do Marçal", "Cascatinha", "Bonfim", "São Sebastião", "Senhor dos Montes", "Jardim das Acácias"],
+    "vizinhas": ["Barbacena", "Lavras", "Conselheiro Lafaiete"],
+    "testimonials": [
+      {"initials": "MV", "name": "Marcos V.", "bairro": "Tejuco, São João del-Rei", "text": "Cidade turística tem muito trânsito e risco. A Hélios me protegeu com custo muito menor que o seguro e sem a burocracia toda. Excelente!"},
+      {"initials": "IA", "name": "Isabela A.", "bairro": "Santa Cruz, São João del-Rei", "text": "Processo rápido e fácil pelo WhatsApp. Em 25 minutos já estava protegida sem sair de casa. Quando precisei da assistência, tudo correu bem!"},
+      {"initials": "CP", "name": "Carlos P.", "bairro": "Fábricas, São João del-Rei", "text": "Sem carência foi fundamental. Cidade histórica com muita movimentação. A Hélios me dá tranquilidade para circular por São João del-Rei."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos durante eventos e festividades em São João del-Rei?",
+      "a": "Sim! A proteção da Hélios é válida durante todo o ano, incluindo períodos de alta temporada turística e eventos em São João del-Rei. Cobertura 24h em qualquer situação."
+    }
+  },
+  {
+    "slug": "caratinga",
+    "nome": "Caratinga",
+    "estado": "MG",
+    "regiao": "Vale do Rio Doce",
+    "urgency": "Caratinga registra crescimento nos índices de sinistros veiculares no Vale do Rio Doce, especialmente em trechos da BR-116.",
+    "heroSub": "No Vale do Rio Doce, a Hélios protege seu veículo em Caratinga com cobertura completa e assistência 24h. Sem carência, processo digital, ativo no mesmo dia.",
+    "bairros": ["Centro", "Dôres", "São João Batista", "Santa Cruz", "São Francisco", "Sapucaia", "Limoeiro", "Bitácora", "Doutor Raimundo", "Esperança", "Bom Pastor", "Tobiásia"],
+    "vizinhas": ["Governador Valadares", "Ipatinga", "Muriaé", "Teófilo Otoni"],
+    "testimonials": [
+      {"initials": "AT", "name": "Antônio T.", "bairro": "Dôres, Caratinga", "text": "Viajo muito pela BR-116 e precisava de proteção confiável. A Hélios me cobre em todo o Brasil com um preço muito mais justo que o seguro. Ótima escolha!"},
+      {"initials": "NV", "name": "Natália V.", "bairro": "Santa Cruz, Caratinga", "text": "Processo fácil e rápido. Sem vistoria e proteção ativa no mesmo dia. Quando o carro foi amassado, a Hélios resolveu sem estresse. Recomendo!"},
+      {"initials": "GC", "name": "Guilherme C.", "bairro": "São João Batista, Caratinga", "text": "Economizo mais de R$180 por mês em relação ao seguro antigo. Sem carência foi o decisivo. A Hélios entrega tudo que promete."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre acidentes na BR-116 que passa por Caratinga?",
+      "a": "Sim! A proteção da Hélios cobre colisões, roubos e sinistros em qualquer rodovia, incluindo a BR-116. Nossa assistência 24h atende em qualquer localidade do Brasil."
+    }
+  },
+  {
+    "slug": "patrocinio",
+    "nome": "Patrocínio",
+    "estado": "MG",
+    "regiao": "Alto Paranaíba",
+    "urgency": "Patrocínio registra índices crescentes de furto de veículos no Alto Paranaíba, especialmente no período de colheita do café.",
+    "heroSub": "No coração da cafeicultura do Alto Paranaíba, a Hélios protege seu veículo com cobertura completa e sem carência. Ativo no mesmo dia, sem burocracia.",
+    "bairros": ["Centro", "Ipiranga", "Nações", "Santa Maria", "São José", "Alvorada", "São Benedito", "Boa Vista", "São João", "Morumbi", "Bela Vista", "Residencial Patrocínio"],
+    "vizinhas": ["Patos de Minas", "Araxá", "Uberlândia"],
+    "testimonials": [
+      {"initials": "PS", "name": "Paulo S.", "bairro": "Ipiranga, Patrocínio", "text": "Trabalho no agro e meu veículo fica muito na roça. A Hélios me protege com cobertura nacional e um preço que nenhum seguro consegue oferecer. Recomendo!"},
+      {"initials": "LR", "name": "Lara R.", "bairro": "Santa Maria, Patrocínio", "text": "Em 15 minutos cotei e fechei tudo pelo WhatsApp. Sem vistoria e proteção ativa no mesmo dia. Muito melhor que qualquer seguro que tive antes!"},
+      {"initials": "EN", "name": "Edson N.", "bairro": "Nações, Patrocínio", "text": "Sem carência foi fundamental. Na safra do café ficamos muito vulneráveis e a Hélios nos protege com um custo muito acessível. Recomendo para todos!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos utilizados em propriedades rurais de Patrocínio?",
+      "a": "A Hélios atende veículos de passeio, caminhonetes e motos em Patrocínio. Para uso estritamente agrícola, entre em contato pelo WhatsApp para verificar as condições específicas."
+    }
+  },
+  {
+    "slug": "nova-serrana",
+    "nome": "Nova Serrana",
+    "estado": "MG",
+    "regiao": "Oeste de Minas",
+    "urgency": "Nova Serrana registra crescimento nos índices de sinistros veiculares no Oeste de Minas, refletindo o aumento da frota no polo calçadista.",
+    "heroSub": "Na capital do calçado do Oeste de Minas, a Hélios protege seu veículo com cobertura completa e ativação imediata. Processo 100% digital pelo WhatsApp.",
+    "bairros": ["Centro", "Industrial", "Parque Industrial II", "Santa Rita", "São Francisco", "Jardim Alvorada", "Santo Inácio", "Parque Brasil", "Nações", "Bela Vista", "Santa Cruz", "Braúnas"],
+    "vizinhas": ["Divinópolis", "Pará de Minas", "Formiga", "Campo Belo"],
+    "testimonials": [
+      {"initials": "RC", "name": "Roberto C.", "bairro": "Industrial, Nova Serrana", "text": "Trabalho no polo calçadista e a Hélios me protege com um preço que cabe no bolso. Processo rápido e sem burocracia. Muito melhor que o seguro!"},
+      {"initials": "AM", "name": "Adriana M.", "bairro": "Santa Rita, Nova Serrana", "text": "Nunca imaginei que seria tão fácil ter proteção veicular. Tudo pelo WhatsApp, sem vistoria. Proteção ativa no mesmo dia. Super recomendo!"},
+      {"initials": "ES", "name": "Everton S.", "bairro": "Nações, Nova Serrana", "text": "Economizo muito em relação ao seguro. Sem carência e assistência 24h que funciona de verdade. A Hélios é a melhor escolha para quem mora em Nova Serrana!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende trabalhadores do polo calçadista de Nova Serrana?",
+      "a": "Sim! Atendemos todos os moradores e trabalhadores de Nova Serrana, incluindo os do polo industrial calçadista. Planos acessíveis com ativação no mesmo dia, sem vistoria."
+    }
+  },
+  {
+    "slug": "timoteo",
+    "nome": "Timóteo",
+    "estado": "MG",
+    "regiao": "Vale do Aço",
+    "urgency": "Timóteo registra índices de sinistros veiculares elevados no Vale do Aço, especialmente nas proximidades das plantas industriais da região.",
+    "heroSub": "No Vale do Aço, a Hélios oferece proteção veicular completa em Timóteo com ativação no mesmo dia. Cobertura para trabalhadores e moradores da região.",
+    "bairros": ["Cidade Nobre", "Caladinho", "Limoeiro", "Bom Jardim", "São Pedro", "Limoeiro Sul", "Santa Luzia", "Bom Retiro", "Residencial Acapulco", "Palmeiras", "Ipiranga", "Santa Isabel"],
+    "vizinhas": ["Ipatinga", "Coronel Fabriciano", "Governador Valadares"],
+    "testimonials": [
+      {"initials": "VN", "name": "Vitor N.", "bairro": "Cidade Nobre, Timóteo", "text": "Trabalho na Acesita e viajo muito pelo Vale do Aço. A Hélios me protege em todos os trajetos com um preço muito mais justo que o seguro. Excelente!"},
+      {"initials": "TD", "name": "Tatiana D.", "bairro": "Limoeiro, Timóteo", "text": "Processo todo digital e sem burocracia. Em 20 minutos já estava protegida sem precisar de vistoria. Quando precisei da assistência, atenderam rápido!"},
+      {"initials": "HO", "name": "Hugo O.", "bairro": "Bom Jardim, Timóteo", "text": "Sem carência foi o decisivo. Economizo bastante em relação ao seguro e tenho a mesma cobertura. A Hélios entrega o que promete no Vale do Aço!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre trabalhadores industriais que moram em Timóteo e trabalham em Ipatinga?",
+      "a": "Sim! A cobertura da Hélios é válida em todo o trajeto, incluindo os deslocamentos diários entre Timóteo e as cidades do Vale do Aço. Você está protegido 24h por dia."
+    }
+  },
+  {
+    "slug": "unai",
+    "nome": "Unaí",
+    "estado": "MG",
+    "regiao": "Noroeste de Minas",
+    "urgency": "Unaí registra crescimento nos índices de sinistros veiculares no Noroeste de Minas, impulsionado pela expansão do agronegócio e aumento da frota local.",
+    "heroSub": "No Noroeste de Minas Gerais, a Hélios protege seu veículo em Unaí com cobertura completa e assistência 24h. Sem carência, ativo no mesmo dia da adesão.",
+    "bairros": ["Centro", "Jardim Vitória", "Aeroporto", "São Francisco", "Santa Maria", "São Cristóvão", "Planalto", "Brasília", "Ipiranga", "João XXIII", "Nova Unaí", "Canaã"],
+    "vizinhas": ["Paracatu", "Montes Claros", "Patos de Minas"],
+    "testimonials": [
+      {"initials": "AF", "name": "Alexandre F.", "bairro": "Jardim Vitória, Unaí", "text": "Agricultor e meu carro fica muito nas fazendas do Noroeste. A Hélios me cobre em todo o Brasil com um preço que não encontro em nenhum seguro tradicional!"},
+      {"initials": "DS", "name": "Daniela S.", "bairro": "São Francisco, Unaí", "text": "Processo rápido e simples. Cotei pelo WhatsApp e no mesmo dia já estava com proteção ativa. Sem vistoria e sem papelada. Recomendo muito!"},
+      {"initials": "FL", "name": "Fernando L.", "bairro": "Planalto, Unaí", "text": "Sem carência foi fundamental. Precisei da assistência 24h em uma estrada do cerrado e a equipe chegou no prazo prometido. Nota 10!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos utilizados em fazendas e propriedades rurais de Unaí?",
+      "a": "A Hélios atende veículos de passeio, caminhonetes e motos em Unaí. Para uso em propriedades rurais, entre em contato pelo WhatsApp para verificar as condições específicas do seu veículo."
+    }
+  },
+  {
+    "slug": "vicosa",
+    "nome": "Viçosa",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "urgency": "Viçosa registra crescimento nos índices de furtos de veículos na Zona da Mata, especialmente na área universitária da UFV.",
+    "heroSub": "Na cidade universitária da UFV na Zona da Mata, a Hélios oferece proteção veicular completa com preço acessível para estudantes e moradores. Sem carência.",
+    "bairros": ["Centro", "Ramos", "Silvestre", "Nova Viçosa", "PNR", "Santo Antônio", "São Sebastião", "Sagrado Coração", "São José", "Amoras", "Bom Jesus", "Campus UFV"],
+    "vizinhas": ["Juiz de Fora", "Ubá", "Muriaé", "Cataguases"],
+    "testimonials": [
+      {"initials": "TP", "name": "Thiago P.", "bairro": "Silvestre, Viçosa", "text": "Professor da UFV e a Hélios me ofereceu a melhor relação custo-benefício para proteção veicular. Processo digital rápido e sem burocracia. Recomendo!"},
+      {"initials": "RS", "name": "Renata S.", "bairro": "Ramos, Viçosa", "text": "Estudante de pós-graduação e não podia pagar seguro caro. A Hélios me protege com um preço que cabe no meu orçamento. Proteção ativa no mesmo dia!"},
+      {"initials": "HB", "name": "Hugo B.", "bairro": "Santo Antônio, Viçosa", "text": "Moto furtada e a Hélios indenizou sem complicação. Atendimento muito atencioso e transparente. Não troco por nenhum seguro tradicional!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios tem planos para estudantes e professores da UFV em Viçosa?",
+      "a": "Sim! Atendemos toda a comunidade acadêmica e moradores de Viçosa com planos acessíveis. A ativação é no mesmo dia, sem vistoria. Entre em contato pelo WhatsApp para a sua cotação."
+    }
+  },
+  {
+    "slug": "tres-coracoes",
+    "nome": "Três Corações",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "Três Corações registra aumento nos índices de sinistros veiculares no Sul de Minas, especialmente nas rodovias de ligação regional.",
+    "heroSub": "Na terra de Pelé no Sul de Minas, a Hélios protege seu veículo com cobertura completa e ativação imediata. Processo 100% digital, sem carência, sem vistoria.",
+    "bairros": ["Centro", "Jardim Santos Dumont", "Aparecida", "São Benedito", "Fátima", "Barão do Rio Branco", "Olímpia", "Rio Verde", "São Francisco", "Padre Eustáquio", "Jardim Esperança", "São João"],
+    "vizinhas": ["Varginha", "Alfenas", "Lavras", "Pouso Alegre", "Passos"],
+    "testimonials": [
+      {"initials": "GL", "name": "Gilson L.", "bairro": "Aparecida, Três Corações", "text": "Processo simples e rápido. Tudo pelo WhatsApp em 20 minutos. Proteção ativa no mesmo dia sem nenhuma burocracia. A Hélios é top!"},
+      {"initials": "AC", "name": "Aparecida C.", "bairro": "São Benedito, Três Corações", "text": "Meu carro foi amassado e a Hélios cobriu tudo sem estresse. Processo mais ágil do que eu esperava. Super recomendo para quem está em Três Corações!"},
+      {"initials": "RM", "name": "Rubens M.", "bairro": "Fátima, Três Corações", "text": "Economizo bastante em relação ao seguro. Sem carência e com carro reserva incluso. A assistência 24h já funcionou quando precisei na rodovia."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos nos trajetos regionais saindo de Três Corações?",
+      "a": "Sim! A proteção da Hélios é válida em todo o Brasil. Seja nas rodovias para Varginha, Alfenas, Lavras ou qualquer outra cidade, você está protegido 24h por dia."
+    }
+  },
+  {
+    "slug": "alfenas",
+    "nome": "Alfenas",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "Alfenas registra crescimento nos índices de furtos de veículos no Sul de Minas, com destaque para as vias de acesso ao polo universitário.",
+    "heroSub": "No Sul de Minas Gerais, a Hélios protege seu veículo em Alfenas com cobertura completa e preço acessível. Sem carência, ativo no mesmo dia, processo digital.",
+    "bairros": ["Centro", "Jardim Brasília", "Nossa Senhora Aparecida", "São José", "São Paulo", "Santa Rita", "Jardim Eldorado", "Boa Vista", "São Judas", "Bom Pastor", "Jardim Mateus", "Poças"],
+    "vizinhas": ["Varginha", "Poços de Caldas", "Três Corações", "Pouso Alegre"],
+    "testimonials": [
+      {"initials": "CL", "name": "Celso L.", "bairro": "Jardim Brasília, Alfenas", "text": "Processo todo pelo celular e sem burocracia. Em 15 minutos já estava protegido. A Hélios é a melhor opção de proteção veicular em Alfenas. Recomendo!"},
+      {"initials": "VM", "name": "Valéria M.", "bairro": "Nossa Senhora Aparecida, Alfenas", "text": "Estava com medo de contratar proteção veicular online, mas a Hélios foi transparente em tudo. Quando precisei da assistência, atenderam rapidamente!"},
+      {"initials": "IC", "name": "Igor C.", "bairro": "Santa Rita, Alfenas", "text": "Estudante universitário e não tinha como pagar seguro caro. A Hélios me ofereceu proteção completa com um preço justo. Nota 10!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende estudantes universitários em Alfenas?",
+      "a": "Sim! A Hélios tem planos acessíveis para estudantes, professores e todos os moradores de Alfenas. Cotação gratuita pelo WhatsApp, ativação no mesmo dia, sem vistoria."
+    }
+  },
+  {
+    "slug": "joao-monlevade",
+    "nome": "João Monlevade",
+    "estado": "MG",
+    "regiao": "Vale do Rio Doce",
+    "urgency": "João Monlevade registra índices de sinistros veiculares crescentes no Vale do Rio Doce, especialmente nas proximidades das plantas siderúrgicas.",
+    "heroSub": "Na cidade do aço no Vale do Rio Doce, a Hélios protege seu veículo com cobertura completa e ativação no mesmo dia. Sem carência, processo 100% digital.",
+    "bairros": ["Centro", "São José", "Industrial", "Santa Branca", "Ipiranga", "Ouro Fino", "Bela Vista", "Altamira", "Nossa Senhora das Graças", "Distrito", "Piabas", "Novo Cruzeiro"],
+    "vizinhas": ["Ipatinga", "Itabira", "Governador Valadares", "Coronel Fabriciano"],
+    "testimonials": [
+      {"initials": "OS", "name": "Otávio S.", "bairro": "Industrial, João Monlevade", "text": "Trabalho na ArcelorMittal e a Hélios me protege em toda a região do Vale do Aço com um preço que nenhum seguro consegue. Recomendo para todos!"},
+      {"initials": "RF", "name": "Roberta F.", "bairro": "São José, João Monlevade", "text": "Processo rápido e fácil pelo WhatsApp. Sem vistoria e proteção ativa no mesmo dia. Quando precisei da assistência, o guincho chegou em tempo recorde!"},
+      {"initials": "MN", "name": "Marcos N.", "bairro": "Ipiranga, João Monlevade", "text": "Economizo mais de R$200 por mês em relação ao seguro. Sem carência foi o decisivo. A Hélios entrega cobertura completa com preço justo."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre trabalhadores siderúrgicos que moram em João Monlevade?",
+      "a": "Sim! Atendemos todos os moradores e trabalhadores de João Monlevade, incluindo os do setor siderúrgico. Planos acessíveis com ativação no mesmo dia, sem necessidade de vistoria."
+    }
+  },
+  {
+    "slug": "cataguases",
+    "nome": "Cataguases",
+    "estado": "MG",
+    "regiao": "Zona da Mata",
+    "urgency": "Cataguases registra crescimento nos índices de sinistros veiculares na Zona da Mata mineira, especialmente nas vias industriais da cidade.",
+    "heroSub": "Na histórica cidade industrial da Zona da Mata, a Hélios protege seu veículo com cobertura completa e ativação imediata. Processo digital, sem burocracia.",
+    "bairros": ["Centro", "Bom Pastor", "São Benedito", "São José", "Vila Teresa", "Recanto Serrano", "Morro da Glória", "Vila Ozanan", "Nova Cataguases", "São Dimas", "Usina", "Liberdade"],
+    "vizinhas": ["Muriaé", "Juiz de Fora", "Ubá"],
+    "testimonials": [
+      {"initials": "PS", "name": "Paulo S.", "bairro": "Bom Pastor, Cataguases", "text": "Processo todo pelo WhatsApp, rápido e sem complicação. Em 20 minutos já estava protegido sem precisar fazer vistoria. A Hélios é excelente!"},
+      {"initials": "MD", "name": "Miriam D.", "bairro": "São José, Cataguases", "text": "Quando meu carro foi arranhado no estacionamento, a Hélios cobriu o reparo sem estresse. Processo simples e atendimento muito humano. Recomendo!"},
+      {"initials": "LS", "name": "Luiz S.", "bairro": "Vila Teresa, Cataguases", "text": "Economizo bastante em relação ao seguro. Sem carência e assistência 24h real. Em Cataguases, a Hélios é a melhor opção com certeza!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende trabalhadores das indústrias têxteis de Cataguases?",
+      "a": "Sim! Atendemos todos os moradores e trabalhadores de Cataguases. Nossos planos são acessíveis para qualquer perfil, com ativação no mesmo dia e sem necessidade de vistoria."
+    }
+  },
+  {
+    "slug": "curvelo",
+    "nome": "Curvelo",
+    "estado": "MG",
+    "regiao": "Região Central de Minas",
+    "urgency": "Curvelo registra índices crescentes de sinistros veiculares na Região Central de Minas, especialmente nas rodovias de acesso à cidade.",
+    "heroSub": "Na Região Central de Minas Gerais, a Hélios protege seu veículo em Curvelo com cobertura completa e ativação no mesmo dia. Sem carência, processo digital.",
+    "bairros": ["Centro", "Grão-Mogol", "São Judas", "Manga", "Santo Antônio", "Bela Vista", "Chácara São Benedito", "Santa Luzia", "São João", "Esperança", "Cerrado", "Primavera"],
+    "vizinhas": ["Sete Lagoas", "Montes Claros", "Pará de Minas"],
+    "testimonials": [
+      {"initials": "GP", "name": "Geraldo P.", "bairro": "Grão-Mogol, Curvelo", "text": "Fazendeiro que sempre viaja pelo cerrado. A Hélios me protege em todos os trajetos com um preço muito mais justo. Processo rápido e sem complicação!"},
+      {"initials": "EA", "name": "Eliana A.", "bairro": "Santo Antônio, Curvelo", "text": "Nunca pensei que seria tão fácil ter proteção completa. Tudo pelo WhatsApp em 25 minutos. Sem vistoria e ativo no mesmo dia. Excelente!"},
+      {"initials": "DS", "name": "Daniel S.", "bairro": "Bela Vista, Curvelo", "text": "Economizo muito em relação ao seguro. Sem carência e assistência 24h que funciona quando preciso. A Hélios é a melhor opção em Curvelo!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos nos trajetos entre Curvelo e Belo Horizonte pela BR-135?",
+      "a": "Sim! A proteção da Hélios é válida em todo o Brasil, incluindo a BR-135 e todas as rodovias que partem de Curvelo. Você está protegido 24h por dia em qualquer trajeto."
+    }
+  },
+  {
+    "slug": "ouro-preto",
+    "nome": "Ouro Preto",
+    "estado": "MG",
+    "regiao": "Quadrilátero Ferrífero",
+    "urgency": "Ouro Preto registra crescimento nos índices de furtos de veículos, especialmente nas áreas turísticas e universitárias da cidade histórica.",
+    "heroSub": "Na Patrimônio Mundial da Humanidade, a Hélios protege seu veículo com cobertura completa e sem carência. Ativo no mesmo dia, processo digital pelo WhatsApp.",
+    "bairros": ["Ouro Preto Centro", "Bauxita", "Antônio Dias", "Pilar", "Santa Efigênia", "Passa Dez", "Saramenha", "UFOP", "Cachoeira do Campo", "São Bartolomeu", "Amarantina", "Rodrigo Silva"],
+    "vizinhas": ["Congonhas", "Conselheiro Lafaiete", "Itabira", "Nova Lima"],
+    "testimonials": [
+      {"initials": "RT", "name": "Ricardo T.", "bairro": "Bauxita, Ouro Preto", "text": "Cidade turística tem muito risco para veículos. A Hélios me protege com um custo que nenhum seguro consegue. Processo rápido e sem burocracia!"},
+      {"initials": "CS", "name": "Carolina S.", "bairro": "Antônio Dias, Ouro Preto", "text": "Estudante da UFOP e precisava de proteção acessível. A Hélios foi a solução certa. Tudo pelo WhatsApp em 20 minutos. Sem vistoria!"},
+      {"initials": "JA", "name": "José A.", "bairro": "Santa Efigênia, Ouro Preto", "text": "Morador de Ouro Preto e trabalhador da mineração. A Hélios me cobre em todos os trajetos com preço justo. Nota 10 para a equipe!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos nas serras e estradas históricas de Ouro Preto?",
+      "a": "Sim! A proteção da Hélios é válida em todos os trajetos de Ouro Preto, incluindo as estradas históricas e serras. Nossa assistência 24h atende em qualquer localidade."
+    }
+  },
+  {
+    "slug": "sao-sebastiao-do-paraiso",
+    "nome": "São Sebastião do Paraíso",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "São Sebastião do Paraíso registra crescimento nos índices de sinistros veiculares no Sul de Minas, especialmente nas vias de acesso ao polo comercial.",
+    "heroSub": "No Sul de Minas Gerais, a Hélios protege seu veículo em São Sebastião do Paraíso com cobertura completa e ativação imediata. Processo digital, sem carência.",
+    "bairros": ["Centro", "Jardim Itaparica", "São Geraldo", "Belo Horizonte", "Jardim Brasil", "Planalto", "Santa Lúcia", "Afonso Pena", "Jardim Abadia", "Bairro dos Pinos", "Santa Cruz", "São Judas"],
+    "vizinhas": ["Passos", "Alfenas", "Três Pontas"],
+    "testimonials": [
+      {"initials": "EM", "name": "Edson M.", "bairro": "Jardim Brasil, São S. do Paraíso", "text": "Processo simples e rápido. Cotei e fechei em 20 minutos pelo WhatsApp. Sem vistoria e com proteção ativa no mesmo dia. Excelente custo-benefício!"},
+      {"initials": "VM", "name": "Valéria M.", "bairro": "Centro, São S. do Paraíso", "text": "Quando precisei do guincho em uma estrada do Sul de Minas, a Hélios atendeu rápido. Assistência 24h que funciona de verdade. Recomendo!"},
+      {"initials": "HL", "name": "Hugo L.", "bairro": "Planalto, São S. do Paraíso", "text": "Economizo muito em relação ao seguro. Sem carência e com carro reserva incluso. A Hélios entrega o que promete para quem mora no Sul de Minas."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre meu veículo nos trajetos entre São Sebastião do Paraíso e outras cidades do Sul de Minas?",
+      "a": "Sim! A cobertura é válida em todo o Brasil. Seja nas rodovias para Passos, Alfenas ou qualquer outra cidade, você está protegido 24h por dia com a Hélios."
+    }
+  },
+  {
+    "slug": "formiga",
+    "nome": "Formiga",
+    "estado": "MG",
+    "regiao": "Oeste de Minas",
+    "urgency": "Formiga registra crescimento nos índices de furtos de veículos no Oeste de Minas, especialmente na região do polo industrial da cidade.",
+    "heroSub": "No Oeste de Minas Gerais, a Hélios protege seu veículo em Formiga com cobertura completa e ativação imediata. Sem carência, sem vistoria, processo digital.",
+    "bairros": ["Centro", "Córrego de Dentro", "Ilha do Telles", "Córrego das Pedras", "São João", "Campo das Vertentes", "Itapecuru", "São Sebastião", "Bom Pastor", "Jardim Europa", "Santa Cruz", "Nações"],
+    "vizinhas": ["Divinópolis", "Campo Belo", "Itaúna", "Nova Serrana"],
+    "testimonials": [
+      {"initials": "JC", "name": "Jonatas C.", "bairro": "Córrego de Dentro, Formiga", "text": "Processo todo pelo celular, simples e rápido. Em menos de 30 minutos já estava protegido sem precisar de vistoria. A Hélios é excelente para Formiga!"},
+      {"initials": "CL", "name": "Cláudia L.", "bairro": "São João, Formiga", "text": "Tive um acidente e a Hélios cobriu tudo sem estresse. Processo mais ágil do que eu esperava. Recomendo para todos que moram no Oeste de Minas!"},
+      {"initials": "NF", "name": "Nelson F.", "bairro": "Campo das Vertentes, Formiga", "text": "Economizo mais de R$150 por mês em relação ao seguro. Sem carência e assistência real. A Hélios é a melhor escolha para quem mora em Formiga!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre trajetos entre Formiga e Belo Horizonte pela BR-494?",
+      "a": "Sim! A proteção da Hélios é válida em todo o Brasil, incluindo a BR-494 e todas as rodovias que partem de Formiga. Você está protegido 24h por dia em qualquer trajeto."
+    }
+  },
+  {
+    "slug": "pedro-leopoldo",
+    "nome": "Pedro Leopoldo",
+    "estado": "MG",
+    "regiao": "Grande BH",
+    "urgency": "Pedro Leopoldo registra crescimento nos índices de furtos de veículos na Grande BH, especialmente nas vias de acesso à capital.",
+    "heroSub": "Na Grande BH, a Hélios protege seu veículo em Pedro Leopoldo com cobertura completa e ativação no mesmo dia. Sem carência, processo digital, sem vistoria.",
+    "bairros": ["Centro", "Jardim Novo Horizonte", "Jardim América", "São José", "Padre Agostinho", "Industrial", "Santa Luzia", "São Francisco", "Avenida das Palmeiras", "Jardim das Acácias", "Residencial Pedra Branca", "Lagoa do Sino"],
+    "vizinhas": ["Lagoa Santa", "Vespasiano", "Sete Lagoas", "Ribeirão das Neves"],
+    "testimonials": [
+      {"initials": "AB", "name": "André B.", "bairro": "Jardim América, Pedro Leopoldo", "text": "Moro em Pedro Leopoldo e trabalho em BH. A Hélios me protege nos dois lugares com um preço muito melhor que o seguro. Processo rápido e sem burocracia!"},
+      {"initials": "SR", "name": "Solange R.", "bairro": "São José, Pedro Leopoldo", "text": "Fui indicada por uma vizinha e não me arrependi. Tudo pelo WhatsApp em 25 minutos. Proteção ativa no mesmo dia. Excelente atendimento!"},
+      {"initials": "PM", "name": "Paulo M.", "bairro": "Industrial, Pedro Leopoldo", "text": "Economizo bastante em relação ao seguro. Sem carência e com assistência 24h real. A Hélios é a melhor opção para quem mora na região norte da Grande BH!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre meu trajeto diário entre Pedro Leopoldo e Belo Horizonte?",
+      "a": "Sim! A cobertura é válida em todo o trajeto entre Pedro Leopoldo e BH, incluindo rodovias e vias urbanas. Você está protegido 24h por dia em qualquer deslocamento."
+    }
+  },
+  {
+    "slug": "frutal",
+    "nome": "Frutal",
+    "estado": "MG",
+    "regiao": "Triângulo Mineiro",
+    "urgency": "Frutal registra crescimento nos índices de sinistros veiculares no Triângulo Mineiro, especialmente nas rodovias de escoamento do agronegócio.",
+    "heroSub": "No coração do Triângulo Mineiro, a Hélios protege seu veículo em Frutal com cobertura completa e ativação imediata. Sem carência, processo digital pelo WhatsApp.",
+    "bairros": ["Centro", "Bairro dos Estados", "Cidade Jardim", "São Benedito", "Jardim das Flores", "São Paulo", "Residencial São José", "Morada dos Pássaros", "Parque Brasil", "Anhanguera", "Brasil", "Nova Esperança"],
+    "vizinhas": ["Ituiutaba", "Uberaba", "Uberlândia"],
+    "testimonials": [
+      {"initials": "RF", "name": "Rafael F.", "bairro": "Cidade Jardim, Frutal", "text": "Agricultor do Triângulo e meu caminhonete fica muito na estrada. A Hélios me protege com cobertura nacional e um preço justo. Recomendo muito!"},
+      {"initials": "AS", "name": "Ana S.", "bairro": "Jardim das Flores, Frutal", "text": "Processo simples e rápido. Cotei pelo WhatsApp e no mesmo dia já estava com proteção ativa. Sem vistoria e sem complicação. Muito satisfeita!"},
+      {"initials": "TC", "name": "Thiago C.", "bairro": "São Paulo, Frutal", "text": "Economizo muito em relação ao seguro. Sem carência e assistência 24h que funciona. Em Frutal, a Hélios é a melhor opção com certeza!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre caminhonetes e veículos usados no agronegócio em Frutal?",
+      "a": "A Hélios atende caminhonetes, veículos de passeio e motos em Frutal. Para verificar a cobertura específica para seu veículo, entre em contato pelo WhatsApp para uma cotação gratuita."
+    }
+  },
+  {
+    "slug": "lagoa-santa",
+    "nome": "Lagoa Santa",
+    "estado": "MG",
+    "regiao": "Grande BH",
+    "urgency": "Lagoa Santa registra crescimento nos índices de furtos de veículos na Grande BH, especialmente na região do Aeroporto de Confins e rodovias de acesso.",
+    "heroSub": "Na Grande BH, próxima ao Aeroporto Internacional de Confins, a Hélios protege seu veículo em Lagoa Santa com cobertura completa e ativação no mesmo dia.",
+    "bairros": ["Centro", "Jardim Quatro Estações", "Morada Real", "São Benedito", "Ouro Verde", "Estância das Flores", "Portal das Palmeiras", "Lagoa das Rosas", "Dom Pedro I", "Residencial Jatobá", "Parque Dom Pedro", "Alphaville"],
+    "vizinhas": ["Vespasiano", "Pedro Leopoldo", "Belo Horizonte", "Ribeirão das Neves"],
+    "testimonials": [
+      {"initials": "CM", "name": "Cíntia M.", "bairro": "Morada Real, Lagoa Santa", "text": "Moro em Lagoa Santa e viajo muito pelo aeroporto de Confins. A Hélios me protege em todo o percurso com um preço muito melhor que o seguro!"},
+      {"initials": "FL", "name": "Fernando L.", "bairro": "Ouro Verde, Lagoa Santa", "text": "Processo rápido e digital. Em 20 minutos já estava protegido sem sair de casa. A assistência 24h já me ajudou com pane na MG-10. Ótimo!"},
+      {"initials": "AP", "name": "Arlete P.", "bairro": "Jardim Quatro Estações, Lagoa Santa", "text": "Sem carência foi fundamental. Aqui perto do aeroporto o risco é alto. A Hélios me dá tranquilidade com um preço que qualquer um pode pagar."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos nas proximidades do Aeroporto Internacional de Confins?",
+      "a": "Sim! A proteção da Hélios é válida em Lagoa Santa e em toda a região do Aeroporto de Confins. Cobertura 24h em qualquer situação, incluindo estacionamentos e áreas de risco próximas ao aeroporto."
+    }
+  },
+  {
+    "slug": "campo-belo",
+    "nome": "Campo Belo",
+    "estado": "MG",
+    "regiao": "Oeste de Minas",
+    "urgency": "Campo Belo registra índices crescentes de sinistros veiculares no Oeste de Minas, especialmente nas rodovias da região agropecuária.",
+    "heroSub": "No Oeste de Minas Gerais, a Hélios protege seu veículo em Campo Belo com cobertura completa e ativação no mesmo dia. Sem carência, processo 100% digital.",
+    "bairros": ["Centro", "Flamengo", "São João", "Santa Luzia", "São Paulo", "São Francisco", "Industrial", "Boa Vista", "Santa Rita", "Jardim São Judas", "Alvorada", "São Cristóvão"],
+    "vizinhas": ["Formiga", "Nova Serrana", "Divinópolis"],
+    "testimonials": [
+      {"initials": "AD", "name": "Antônio D.", "bairro": "Flamengo, Campo Belo", "text": "Não sabia que existia uma opção melhor que o seguro até conhecer a Hélios. Preço muito mais acessível com a mesma cobertura. Processo rápido!"},
+      {"initials": "KL", "name": "Kelly L.", "bairro": "São João, Campo Belo", "text": "Fui indicada por um familiar e não me arrependi. Tudo pelo WhatsApp em 20 minutos. Proteção ativa no mesmo dia sem precisar de vistoria!"},
+      {"initials": "NB", "name": "Nelson B.", "bairro": "Industrial, Campo Belo", "text": "Economizo muito em relação ao seguro. Sem carência e assistência 24h real. A Hélios é a melhor escolha para quem mora em Campo Belo e região!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos nos trajetos rurais do Oeste de Minas saindo de Campo Belo?",
+      "a": "Sim! A proteção da Hélios é válida em todo o território nacional, incluindo estradas vicinais e rodovias do Oeste de Minas. Nossa assistência 24h atende em qualquer localidade."
+    }
+  },
+  {
+    "slug": "tres-pontas",
+    "nome": "Três Pontas",
+    "estado": "MG",
+    "regiao": "Sul de Minas",
+    "urgency": "Três Pontas registra crescimento nos índices de sinistros veiculares no Sul de Minas, especialmente nas rodovias cafeeiras da região.",
+    "heroSub": "No coração do café do Sul de Minas, a Hélios protege seu veículo em Três Pontas com cobertura completa e ativação no mesmo dia. Processo digital e sem carência.",
+    "bairros": ["Centro", "São Benedito", "Jardim Brasil", "Santa Rita", "São Francisco", "Fátima", "Nossa Senhora das Graças", "Jardim São Luís", "Boa Vista", "Santo Antônio", "Parque Industrial", "São Geraldo"],
+    "vizinhas": ["Varginha", "Três Corações", "Lavras", "São Sebastião do Paraíso"],
+    "testimonials": [
+      {"initials": "HA", "name": "Hugo A.", "bairro": "São Benedito, Três Pontas", "text": "Cafeicultor do Sul de Minas e a Hélios me protege em todos os trajetos com um preço que nenhum seguro consegue. Processo rápido e sem complicação!"},
+      {"initials": "CS", "name": "Cristiane S.", "bairro": "Santa Rita, Três Pontas", "text": "Tudo pelo WhatsApp em 20 minutos. Proteção ativa no mesmo dia sem precisar de vistoria. Excelente atendimento da equipe da Hélios!"},
+      {"initials": "AM", "name": "Alessandro M.", "bairro": "Jardim Brasil, Três Pontas", "text": "Economizo bastante em relação ao seguro. Sem carência e com carro reserva incluso. A Hélios é a melhor opção para o Sul de Minas!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos usados na colheita de café em Três Pontas?",
+      "a": "A Hélios atende veículos de passeio, caminhonetes e motos em Três Pontas. Para verificar cobertura para veículos de uso agrícola específico, entre em contato pelo WhatsApp para uma cotação."
+    }
+  },
+  {
+    "slug": "congonhas",
+    "nome": "Congonhas",
+    "estado": "MG",
+    "regiao": "Quadrilátero Ferrífero",
+    "urgency": "Congonhas registra índices de sinistros veiculares crescentes no Quadrilátero Ferrífero, especialmente nas vias do polo minerador da cidade.",
+    "heroSub": "Na cidade do Aleijadinho no Quadrilátero Ferrífero, a Hélios protege seu veículo com cobertura completa e ativação no mesmo dia. Sem carência, processo digital.",
+    "bairros": ["Congonhas Centro", "Bichinho", "Lobo Leite", "Mato Dentro", "Vila Rica", "Pedreira", "Cruzeiro", "Santa Rita", "São Judas", "São Cristóvão", "Jardim Paraíso", "Industrial"],
+    "vizinhas": ["Conselheiro Lafaiete", "Ouro Preto", "Nova Lima"],
+    "testimonials": [
+      {"initials": "MS", "name": "Marcelo S.", "bairro": "Lobo Leite, Congonhas", "text": "Trabalho na Vale e meu carro fica muito na estrada. A Hélios me protege com cobertura nacional e um preço muito mais justo que o seguro. Recomendo!"},
+      {"initials": "JR", "name": "Joana R.", "bairro": "Cruzeiro, Congonhas", "text": "Processo todo pelo WhatsApp, simples e rápido. Em 20 minutos já estava protegida sem precisar de vistoria. Assistência 24h funciona de verdade!"},
+      {"initials": "ED", "name": "Edson D.", "bairro": "Vila Rica, Congonhas", "text": "Economizo muito em relação ao seguro. Sem carência e com carro reserva incluso. A Hélios é a melhor opção para quem trabalha no Quadrilátero!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre trabalhadores das mineradoras que moram em Congonhas?",
+      "a": "Sim! Atendemos todos os moradores e trabalhadores de Congonhas, incluindo os que atuam na mineração. Planos acessíveis com ativação no mesmo dia, sem vistoria obrigatória."
+    }
+  }
+]

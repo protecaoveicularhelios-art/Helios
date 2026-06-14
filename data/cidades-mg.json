@@ -1,0 +1,325 @@
+[
+  {
+    "slug": "betim",
+    "nome": "Betim",
+    "estado": "MG",
+    "regiao": "Grande BH",
+    "urgency": "Betim está entre as cidades com maior índice de roubo e furto de veículos da Grande BH.",
+    "heroSub": "Na maior cidade industrial de Minas Gerais, a Hélios oferece proteção veicular completa contra roubo, furto e colisão. Sem carência, sem vistoria, ativo no mesmo dia da adesão.",
+    "bairros": ["Citrolândia", "PTB", "Braúnas", "Imbiruçu", "Dumaville", "Jardim das Alterosas", "Ressaca", "Amazônia", "Jardim Teresópolis", "Petrobras", "Ikeda", "Alvorada"],
+    "vizinhas": ["Contagem", "Ibirité", "Sarzedo", "Mario Campos"],
+    "testimonials": [
+      {"initials": "JC", "name": "João C.", "bairro": "Citrolândia, Betim", "text": "Cotei pelo WhatsApp em 10 minutos e no mesmo dia já estava com meu carro protegido. Preço muito abaixo do que eu pagava antes. Super recomendo para todos em Betim!"},
+      {"initials": "MR", "name": "Mariana R.", "bairro": "PTB, Betim", "text": "Tive meu carro roubado e a Hélios resolveu tudo rapidamente. Atendimento humanizado e processo bem mais simples do que eu esperava. Nota 10!"},
+      {"initials": "CS", "name": "Carlos S.", "bairro": "Dumaville, Betim", "text": "Sem carência foi o que me convenceu. Sem vistoria, ativei no mesmo dia. Pago menos da metade e tenho a mesma cobertura completa."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende todos os bairros de Betim?",
+      "a": "Sim! Atendemos todos os bairros de Betim, incluindo Citrolândia, PTB, Braúnas, Imbiruçu, Dumaville, Jardim das Alterosas e região. Nossa cobertura é válida em todo o território nacional."
+    }
+  },
+  {
+    "slug": "contagem",
+    "nome": "Contagem",
+    "estado": "MG",
+    "regiao": "Grande BH",
+    "urgency": "Contagem registra alto índice de roubo e furto de veículos na região metropolitana de BH.",
+    "heroSub": "Em Contagem, uma das maiores cidades industriais do Brasil, a Hélios oferece proteção veicular completa com ativação imediata e preço que cabe no orçamento.",
+    "bairros": ["Industrial", "Eldorado", "Riacho", "Nacional", "Cabral", "Petrolândia", "Céu Azul", "Ressaca", "Vargem Grande", "Sede", "Água Branca", "Novo Riacho"],
+    "vizinhas": ["Belo Horizonte", "Betim", "Esmeraldas", "Ribeirão das Neves"],
+    "testimonials": [
+      {"initials": "FT", "name": "Fábio T.", "bairro": "Industrial, Contagem", "text": "Processo 100% digital, fiz tudo pelo celular em 15 minutos. No mesmo dia já estava com a proteção ativa. Muito mais rápido e barato do que qualquer seguro!"},
+      {"initials": "LP", "name": "Luciana P.", "bairro": "Eldorado, Contagem", "text": "Meu carro foi furtado e a Hélios cumpriu tudo que prometeu. Atendimento excelente do início ao fim. Não troco mais pela concorrência."},
+      {"initials": "WS", "name": "Wagner S.", "bairro": "Nacional, Contagem", "text": "Indiquei para minha esposa e agora os dois carros da família estão protegidos pela Hélios. Pago menos do que pagava antes com muito mais benefício."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos em toda a região de Contagem?",
+      "a": "Sim! Atendemos todos os bairros de Contagem, incluindo Industrial, Eldorado, Nacional, Riacho, Cabral e região. Nossa cobertura é válida em todo o Brasil."
+    }
+  },
+  {
+    "slug": "belo-horizonte",
+    "nome": "Belo Horizonte",
+    "estado": "MG",
+    "regiao": "Grande BH",
+    "urgency": "Belo Horizonte lidera os índices de roubo e furto de veículos de Minas Gerais. Proteja-se agora.",
+    "heroSub": "Na capital mineira, a Hélios oferece proteção veicular completa para todos os bairros de BH — do Savassi ao Barreiro, da Pampulha à Venda Nova. Ativo no 1° dia, sem burocracia.",
+    "bairros": ["Savassi", "Buritis", "Pampulha", "Barreiro", "Venda Nova", "Santa Efigênia", "Serra", "Lourdes", "Funcionários", "Castelo", "Sion", "Contorno"],
+    "vizinhas": ["Contagem", "Betim", "Nova Lima", "Sabará"],
+    "testimonials": [
+      {"initials": "RC", "name": "Rodrigo C.", "bairro": "Savassi, BH", "text": "Fiz a cotação em menos de 10 minutos pelo WhatsApp. No mesmo dia já estava protegido. Atendimento excelente e preço muito melhor do que o seguro que eu tinha."},
+      {"initials": "AF", "name": "Ana F.", "bairro": "Buritis, BH", "text": "Tive meu carro roubado na Pampulha e a Hélios resolveu tudo rapidinho. Processo muito mais simples do que eu esperava. Recomendo muito!"},
+      {"initials": "MS", "name": "Marcos S.", "bairro": "Venda Nova, BH", "text": "Sem carência foi o que me convenceu. Troquei o seguro pela Hélios e pago quase metade. A assistência 24h já me ajudou duas vezes com pane na estrada."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende todos os bairros de Belo Horizonte?",
+      "a": "Sim! Atendemos todos os bairros de BH: Savassi, Lourdes, Buritis, Pampulha, Barreiro, Venda Nova, Santa Efigênia, Serra, Funcionários e todos os outros. Cobertura válida em todo o Brasil."
+    }
+  },
+  {
+    "slug": "ibirite",
+    "nome": "Ibirité",
+    "estado": "MG",
+    "regiao": "Grande BH",
+    "urgency": "Ibirité registra crescimento nos índices de roubo e furto de veículos na Grande BH Sul.",
+    "heroSub": "Em Ibirité, na Grande BH Sul, a Hélios oferece proteção veicular completa sem carência e com ativação imediata. Proteja seu veículo hoje mesmo.",
+    "bairros": ["Centro", "Paulo VI", "Rosário", "Jatobá", "Minas Caixa", "Córrego das Pedras", "Salgado Filho", "Nova Contagem", "Parque São João", "Bela Vista", "São Judas", "Novo Horizonte"],
+    "vizinhas": ["Betim", "Contagem", "Sarzedo", "Mario Campos"],
+    "testimonials": [
+      {"initials": "AP", "name": "Adriano P.", "bairro": "Paulo VI, Ibirité", "text": "Nunca pensei que contratar proteção veicular fosse tão fácil. Fiz pelo WhatsApp em menos de 20 minutos e sai protegido no mesmo dia. Recomendo!"},
+      {"initials": "SR", "name": "Sandra R.", "bairro": "Jatobá, Ibirité", "text": "Tive uma colisão e a Hélios resolveu tudo sem estresse. Atendimento rápido e processo simples. Muito melhor do que o seguro que eu tinha antes."},
+      {"initials": "EM", "name": "Eduardo M.", "bairro": "Rosário, Ibirité", "text": "Sem carência e sem vistória foram os fatores decisivos. Ativei no mesmo dia e pago menos da metade. Super satisfeito com a Hélios!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende motoristas de Ibirité que trabalham em BH?",
+      "a": "Sim! Nossa cobertura é válida em todo o Brasil, independente de onde você dirija. Moradores de Ibirité que trabalham em BH, Contagem ou Betim ficam cobertos em todos os trajetos."
+    }
+  },
+  {
+    "slug": "sarzedo",
+    "nome": "Sarzedo",
+    "estado": "MG",
+    "regiao": "Grande BH Oeste",
+    "urgency": "Sarzedo registra aumento nos índices de furto de veículos na região industrial da Grande BH.",
+    "heroSub": "Em Sarzedo, cidade industrial da Grande BH, a Hélios oferece proteção veicular completa sem carência. Ative hoje e proteja seu veículo imediatamente.",
+    "bairros": ["Centro", "Industrial", "Copasa", "Jardim São Francisco", "Villa Verde", "Novo Sarzedo", "Primavera", "Nova Esperança", "Santa Cruz", "Jardim das Flores", "Parque Verde", "Estrela do Vale"],
+    "vizinhas": ["Betim", "Mario Campos", "Ibirité", "Juatuba"],
+    "testimonials": [
+      {"initials": "DL", "name": "Davi L.", "bairro": "Industrial, Sarzedo", "text": "Processo rapidíssimo pelo WhatsApp. Em 15 minutos tinha o orçamento e no mesmo dia assinei tudo pelo celular. Excelente custo-benefício!"},
+      {"initials": "RM", "name": "Rose M.", "bairro": "Centro, Sarzedo", "text": "Meu marido já era associado e me indicou. Agora os dois carros da família estão protegidos. Atendimento sempre muito ágil."},
+      {"initials": "JA", "name": "Jonas A.", "bairro": "Primavera, Sarzedo", "text": "A assistência 24h já me ajudou com pane seca na estrada para BH. Chegaram rápido e sem custo adicional. Vale muito a pena!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre os trajetos de Sarzedo para Betim e BH?",
+      "a": "Sim! Nossa cobertura é válida em todo o território nacional. Seja no trajeto diário de Sarzedo para Betim, BH ou qualquer outro destino, você está sempre protegido."
+    }
+  },
+  {
+    "slug": "mario-campos",
+    "nome": "Mario Campos",
+    "estado": "MG",
+    "regiao": "Grande BH Oeste",
+    "urgency": "Mario Campos registra crescimento nos índices de sinistros veiculares na região oeste da Grande BH.",
+    "heroSub": "Em Mario Campos, a Hélios oferece proteção veicular completa para moradores e trabalhadores da região. Sem carência, ativo no mesmo dia, preço acessível.",
+    "bairros": ["Centro", "Vereda dos Bandeirantes", "Jardim São Paulo", "Santa Teresa", "Nova Betim", "Industrial", "Recanto Verde", "Pedra do Sino", "Monte Belo", "Estrela Dalva"],
+    "vizinhas": ["Sarzedo", "Betim", "Ibirité", "Itaúna"],
+    "testimonials": [
+      {"initials": "GF", "name": "Guilherme F.", "bairro": "Centro, Mario Campos", "text": "Fiz tudo pelo celular sem precisar sair de casa. Em menos de meia hora já estava com proteção ativa. Preço muito justo para a cobertura que tenho."},
+      {"initials": "VN", "name": "Vera N.", "bairro": "Jardim São Paulo, Mario Campos", "text": "Indicada por uma amiga de Betim. Processo muito simples e rápido. Sem burocracia, sem papelada. Altamente recomendo para todos em Mario Campos!"},
+      {"initials": "BT", "name": "Bruno T.", "bairro": "Industrial, Mario Campos", "text": "Trabalho em Betim e queria proteção para o trajeto diário. A Hélios resolveu isso perfeitamente. Sem carência, coberto desde o 1° dia."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende moradores de Mario Campos que trabalham na Grande BH?",
+      "a": "Sim! Nossa cobertura é nacional. Moradores de Mario Campos que trabalham em Betim, Contagem, BH ou qualquer outra cidade ficam protegidos em todos os trajetos, 24h por dia."
+    }
+  },
+  {
+    "slug": "juatuba",
+    "nome": "Juatuba",
+    "estado": "MG",
+    "regiao": "Grande BH Oeste",
+    "urgency": "Juatuba registra aumento nos registros de roubo de veículos na região da Grande BH Oeste.",
+    "heroSub": "Em Juatuba, cidade em crescimento da Grande BH Oeste, a Hélios protege seu veículo com cobertura completa, sem carência e com ativação no mesmo dia.",
+    "bairros": ["Centro", "Lagoa Grande", "Forquilha", "São João", "Campo Verde", "Parque Comercial", "Vale Verde", "Santa Rita", "Jardim Felicidade", "Recanto das Pedras"],
+    "vizinhas": ["Mateus Leme", "Sarzedo", "Esmeraldas", "Contagem"],
+    "testimonials": [
+      {"initials": "TM", "name": "Thiago M.", "bairro": "Lagoa Grande, Juatuba", "text": "Cotei pelo WhatsApp e em 20 minutos já tinha o preço. No mesmo dia assinei e saí com proteção ativa. Processo incrível, sem burocracia nenhuma!"},
+      {"initials": "CA", "name": "Carla A.", "bairro": "Centro, Juatuba", "text": "Minha moto foi roubada e a Hélios resolveu rapidamente. Atendimento atencioso e processo simples. Não troco por nenhum seguro convencional."},
+      {"initials": "PS", "name": "Pedro S.", "bairro": "Forquilha, Juatuba", "text": "Sem carência e preço acessível foram os pontos decisivos. Trabalho em Contagem e queria proteção no trajeto. A Hélios resolveu perfeitamente."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre o trajeto de Juatuba para Contagem e BH?",
+      "a": "Sim! Nossa proteção veicular é válida em todo o Brasil. Você está coberto no trajeto de Juatuba para qualquer cidade — Contagem, BH, Mateus Leme ou onde precisar."
+    }
+  },
+  {
+    "slug": "mateus-leme",
+    "nome": "Mateus Leme",
+    "estado": "MG",
+    "regiao": "região de Divinópolis",
+    "urgency": "Mateus Leme registra crescimento nos índices de roubo de veículos na região oeste de MG.",
+    "heroSub": "Em Mateus Leme, na região de Divinópolis, a Hélios oferece proteção veicular completa contra roubo, furto e colisão. Ativo no 1° dia, sem vistoria, sem burocracia.",
+    "bairros": ["Centro", "Jardim Boa Vista", "São José", "Industrial", "Jardim São Francisco", "Parque das Flores", "São Pedro", "Santa Cruz", "Novo Mundo", "Colina Verde"],
+    "vizinhas": ["Juatuba", "Divinópolis", "Itaúna", "Pará de Minas"],
+    "testimonials": [
+      {"initials": "HC", "name": "Henrique C.", "bairro": "Centro, Mateus Leme", "text": "Processo 100% digital e sem vistoria. Fiz tudo pelo WhatsApp em 15 minutos. Muito mais simples e barato do que o seguro que eu tinha antes. Recomendo!"},
+      {"initials": "PP", "name": "Paula P.", "bairro": "São José, Mateus Leme", "text": "Meu carro foi batido e a Hélios resolveu tudo sem estresse. Atendimento excelente e rápido. Nota 10, voltaria a contratar com certeza!"},
+      {"initials": "NS", "name": "Nilton S.", "bairro": "Industrial, Mateus Leme", "text": "Sem carência foi decisivo para mim. Estava sem proteção e precisava de algo imediato. A Hélios ativou no mesmo dia. Excelente serviço!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende municípios próximos a Mateus Leme como Juatuba e Itaúna?",
+      "a": "Sim! Atendemos Mateus Leme e toda a região, incluindo Juatuba, Itaúna, Divinópolis e municípios vizinhos. Nossa cobertura é válida em todo o território nacional."
+    }
+  },
+  {
+    "slug": "esmeraldas",
+    "nome": "Esmeraldas",
+    "estado": "MG",
+    "regiao": "Grande BH Norte",
+    "urgency": "Esmeraldas registra aumento nos índices de furto de veículos na região norte da Grande BH.",
+    "heroSub": "Em Esmeraldas, na região norte da Grande BH, a Hélios oferece proteção veicular completa com preço acessível e ativação no mesmo dia. Sem carência, sem burocracia.",
+    "bairros": ["Centro", "Boa Vista", "Industrial", "Lago Azul", "Parque das Pedras", "Riviera", "São Marcos", "Nova Califórnia", "Jardim Santa Cruz", "Recanto das Flores"],
+    "vizinhas": ["Contagem", "Ribeirão das Neves", "Juatuba", "Mateus Leme"],
+    "testimonials": [
+      {"initials": "LG", "name": "Lucas G.", "bairro": "Lago Azul, Esmeraldas", "text": "Fui indicado por um amigo de Contagem. Processo simples, rápido e sem papelada. Já estou protegido há 4 meses e super satisfeito. Vale muito a pena!"},
+      {"initials": "IS", "name": "Isabela S.", "bairro": "Centro, Esmeraldas", "text": "Minha moto foi roubada e a Hélios cumpriu tudo que prometeu. Indenização rápida e atendimento muito humano. Recomendo para todos em Esmeraldas!"},
+      {"initials": "RO", "name": "Roberto O.", "bairro": "Industrial, Esmeraldas", "text": "Pago menos da metade do que pagava no seguro e tenho cobertura completa. Sem carência foi o ponto decisivo. Super satisfeito!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende moradores de Esmeraldas que trabalham em Contagem ou BH?",
+      "a": "Sim! Nossa cobertura é válida em todo o Brasil. Moradores de Esmeraldas ficam protegidos no trajeto diário para Contagem, BH e qualquer outra cidade do país."
+    }
+  },
+  {
+    "slug": "ribeirao-das-neves",
+    "nome": "Ribeirão das Neves",
+    "estado": "MG",
+    "regiao": "Grande BH",
+    "urgency": "Ribeirão das Neves registra altos índices de roubo e furto de veículos na Grande BH Norte.",
+    "heroSub": "Em Ribeirão das Neves, uma das maiores cidades da Grande BH, a Hélios oferece proteção veicular completa com ativação imediata e preço que cabe no bolso.",
+    "bairros": ["Veneza", "Justinópolis", "Centro", "São Rafael", "Providência", "São Paulo", "Palmito", "Padre Eustáquio", "Rosa das Pedras", "San Remo", "Jardim Brasília", "Riacho das Pedras"],
+    "vizinhas": ["Contagem", "Santa Luzia", "Esmeraldas", "Vespasiano"],
+    "testimonials": [
+      {"initials": "MV", "name": "Márcio V.", "bairro": "Justinópolis, Ribeirão das Neves", "text": "Cotei pelo WhatsApp e em menos de 10 minutos tinha o preço. No mesmo dia já estava com proteção ativa. Sem vistoria, sem burocracia. Perfeito!"},
+      {"initials": "KS", "name": "Kátia S.", "bairro": "Veneza, Ribeirão das Neves", "text": "Fui roubada e a Hélios cuidou de tudo com muita agilidade. Atendimento atencioso e processo simples. Não troco mais por nenhum seguro convencional."},
+      {"initials": "OM", "name": "Osvaldo M.", "bairro": "São Rafael, Ribeirão das Neves", "text": "Processo digital completo sem sair de casa. Em meia hora estava protegido. Preço muito acessível para a cobertura que recebi. Recomendo!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende todos os bairros de Ribeirão das Neves?",
+      "a": "Sim! Atendemos todos os bairros de Ribeirão das Neves, incluindo Veneza, Justinópolis, São Rafael, Providência, Palmito e toda a região. Nossa cobertura é nacional."
+    }
+  },
+  {
+    "slug": "santa-luzia",
+    "nome": "Santa Luzia",
+    "estado": "MG",
+    "regiao": "Grande BH Norte",
+    "urgency": "Santa Luzia registra crescimento nos índices de roubo e furto de veículos na Grande BH Norte.",
+    "heroSub": "Em Santa Luzia, na Grande BH Norte, a Hélios protege seu veículo com cobertura completa contra roubo, furto e colisão. Sem carência, ativo no mesmo dia.",
+    "bairros": ["Centro", "Palmira", "Planalto", "São Benedito", "Petrolândia", "Copacabana", "Braúnas", "Arapoanga", "Jardim Atlântico", "Novo Horizonte", "São José", "Esperança"],
+    "vizinhas": ["Belo Horizonte", "Sabará", "Ribeirão das Neves", "Vespasiano"],
+    "testimonials": [
+      {"initials": "NF", "name": "Nelson F.", "bairro": "Planalto, Santa Luzia", "text": "Recomendado por um colega de trabalho. Fiz tudo pelo celular em 20 minutos. Sem vistoria, sem papelada, protegido no mesmo dia. Excelente experiência!"},
+      {"initials": "CR", "name": "Cristina R.", "bairro": "Copacabana, Santa Luzia", "text": "Meu carro foi furtado e a Hélios resolveu tudo com muita eficiência. Processo claro e atendimento humanizado. Voltaria a contratar sem hesitar."},
+      {"initials": "HB", "name": "Hélio B.", "bairro": "Palmira, Santa Luzia", "text": "Sem carência e preço justo foram os fatores decisivos. Pago menos do que pagava no seguro com cobertura superior. Muito satisfeito com a Hélios!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende moradores de Santa Luzia que se deslocam para BH diariamente?",
+      "a": "Sim! Nossa cobertura é válida em todo o Brasil, 24h por dia. Moradores de Santa Luzia ficam protegidos no trajeto diário para BH, Sabará, Ribeirão das Neves e qualquer destino."
+    }
+  },
+  {
+    "slug": "nova-lima",
+    "nome": "Nova Lima",
+    "estado": "MG",
+    "regiao": "Grande BH Sul",
+    "urgency": "Nova Lima registra crescimento nos índices de furto de veículos, especialmente em condomínios e áreas nobres.",
+    "heroSub": "Em Nova Lima, cidade nobre da Grande BH Sul, a Hélios oferece proteção veicular completa para todos os tipos de veículo, dos populares aos de alto valor. Sem carência.",
+    "bairros": ["Centro", "Vale do Sereno", "Vila da Serra", "Jardim Canadá", "Retiro das Pedras", "Alphaville", "Mangueiras", "Miragem", "São Sebastião", "Honório Bicalho", "Jardim Montanhas", "Parque das Mangabeiras"],
+    "vizinhas": ["Belo Horizonte", "Brumadinho", "Raposos", "Caeté"],
+    "testimonials": [
+      {"initials": "FS", "name": "Felipe S.", "bairro": "Vale do Sereno, Nova Lima", "text": "Cotei pelo WhatsApp e recebi o preço em minutos. Mesmo dia com proteção ativa, sem vistoria e sem burocracia. Muito melhor do que o seguro convencional!"},
+      {"initials": "BL", "name": "Beatriz L.", "bairro": "Jardim Canadá, Nova Lima", "text": "Tinha receio de proteção veicular mas a Hélios me surpreendeu. Processo simples, atendimento excelente e preço muito justo. Recomendo com toda certeza!"},
+      {"initials": "AL", "name": "Anderson L.", "bairro": "Alphaville, Nova Lima", "text": "Proteção completa para meu SUV por muito menos do que eu pagava. Sem carência e com assistência 24h incluída. A Hélios é a melhor escolha da região!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos de alto valor em Nova Lima?",
+      "a": "Sim! Protegemos veículos de todos os perfis em Nova Lima, dos populares aos de alto valor. O valor da indenização é baseado na tabela FIPE do seu veículo. Solicite uma cotação personalizada."
+    }
+  },
+  {
+    "slug": "sabara",
+    "nome": "Sabará",
+    "estado": "MG",
+    "regiao": "Grande BH Leste",
+    "urgency": "Sabará registra aumento nos índices de roubo e furto de veículos na Grande BH Leste.",
+    "heroSub": "Em Sabará, cidade histórica da Grande BH Leste, a Hélios oferece proteção veicular completa com ativação imediata. Sem carência, sem vistoria, processo 100% digital.",
+    "bairros": ["Centro Histórico", "Mestre Caetano", "Borges", "Roças Velhas", "Esplanada", "Cardoso", "São Sebastião", "Industrial", "Jardim Primavera", "Palmeiras", "Olaria", "Barreiro"],
+    "vizinhas": ["Belo Horizonte", "Santa Luzia", "Raposos", "Nova Lima"],
+    "testimonials": [
+      {"initials": "EM", "name": "Evandro M.", "bairro": "Mestre Caetano, Sabará", "text": "Processo rapidíssimo, fiz tudo pelo WhatsApp sem sair de casa. No mesmo dia já estava com o carro protegido. Muito melhor que o seguro convencional!"},
+      {"initials": "VM", "name": "Vanessa M.", "bairro": "Centro, Sabará", "text": "Nunca imaginei que contratar proteção veicular fosse tão simples. Sem vistoria, sem papelada. Recomendo para todo mundo em Sabará e região!"},
+      {"initials": "RF", "name": "Renato F.", "bairro": "Borges, Sabará", "text": "A assistência 24h já me ajudou com pane seca na estrada para BH. Atendimento impecável e rápido. Vale cada centavo da mensalidade. Nota 10!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende moradores de Sabará que trabalham em Belo Horizonte?",
+      "a": "Sim! Nossa cobertura é nacional. Moradores de Sabará ficam totalmente protegidos no trajeto diário para BH, Santa Luzia, Nova Lima e qualquer outra cidade do país."
+    }
+  },
+  {
+    "slug": "sete-lagoas",
+    "nome": "Sete Lagoas",
+    "estado": "MG",
+    "regiao": "região de Sete Lagoas",
+    "urgency": "Sete Lagoas registra crescimento nos índices de furto de veículos na região metropolitana norte de BH.",
+    "heroSub": "A cidade das nascentes merece a melhor proteção para o seu veículo. Em Sete Lagoas, a Hélios oferece cobertura completa sem carência, ativação no mesmo dia e preço acessível.",
+    "bairros": ["Várzea", "São João", "Jardim Paulista", "Industrial", "Alto Paraíso", "Bom Jesus", "Nossa Sra. das Dores", "Barreiro", "Eldorado", "São Geraldo", "Santos Dumont", "Xangri-lá"],
+    "vizinhas": ["Matozinhos", "Capim Branco", "Pedro Leopoldo", "Paraopeba"],
+    "testimonials": [
+      {"initials": "LM", "name": "Lucas M.", "bairro": "Várzea, Sete Lagoas", "text": "Fui indicado por um amigo e não me arrependo. Processo simples, rápido e sem papelada. Já estou protegido há 6 meses e super satisfeito!"},
+      {"initials": "PG", "name": "Patrícia G.", "bairro": "Jardim Paulista, Sete Lagoas", "text": "Minha moto foi roubada e a Hélios cumpriu tudo que prometeu. Atendimento humanizado e rápido. Nota 10, não troco por nenhum seguro convencional!"},
+      {"initials": "RN", "name": "Roberto N.", "bairro": "Industrial, Sete Lagoas", "text": "Pago menos da metade do que pagava no seguro e tenho a mesma cobertura. Sem carência foi o principal fator da minha escolha. Recomendo muito!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios cobre veículos usados em Sete Lagoas?",
+      "a": "Sim! Protegemos veículos de diversas faixas de ano em Sete Lagoas. Fale conosco pelo WhatsApp e receba uma cotação personalizada para o seu veículo, sem compromisso."
+    }
+  },
+  {
+    "slug": "divinopolis",
+    "nome": "Divinópolis",
+    "estado": "MG",
+    "regiao": "Centro-Oeste de MG",
+    "urgency": "Divinópolis registra crescimento nos índices de roubo de veículos no Centro-Oeste de Minas Gerais.",
+    "heroSub": "Em Divinópolis, capital do Centro-Oeste mineiro, a Hélios oferece proteção veicular completa contra roubo, furto e colisão. Sem carência, ativo no mesmo dia.",
+    "bairros": ["Centro", "Interlagos", "Padre Libério", "Niterói", "Manoa", "São Lucas", "Nova Floresta", "Sidil", "Danilo Passos", "Eldorado", "Dom Bosco", "Jaraguá"],
+    "vizinhas": ["Mateus Leme", "Itaúna", "Carmo do Cajuru", "Santo Antônio do Monte"],
+    "testimonials": [
+      {"initials": "EA", "name": "Eduardo A.", "bairro": "Interlagos, Divinópolis", "text": "Fiz a cotação pelo WhatsApp e em 15 minutos já tinha o preço. Ativei no mesmo dia sem vistoria. Processo incrível, muito mais simples que qualquer seguro!"},
+      {"initials": "MO", "name": "Michele O.", "bairro": "Centro, Divinópolis", "text": "Meu carro foi batido e a Hélios resolveu tudo com agilidade. Atendimento excelente do início ao fim. Recomendo com toda certeza para quem está em Divinópolis!"},
+      {"initials": "FB", "name": "Fernando B.", "bairro": "Padre Libério, Divinópolis", "text": "Sem carência e preço acessível foram os fatores decisivos. Economizo R$120 por mês em relação ao seguro e tenho cobertura superior. Muito satisfeito!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende municípios próximos a Divinópolis como Itaúna e Mateus Leme?",
+      "a": "Sim! Atendemos Divinópolis e toda a região do Centro-Oeste mineiro, incluindo Itaúna, Mateus Leme, Carmo do Cajuru e cidades vizinhas. Nossa cobertura é válida em todo o Brasil."
+    }
+  },
+  {
+    "slug": "itauna",
+    "nome": "Itaúna",
+    "estado": "MG",
+    "regiao": "Centro-Oeste de MG",
+    "urgency": "Itaúna registra aumento nos índices de sinistros veiculares na região do Centro-Oeste mineiro.",
+    "heroSub": "Em Itaúna, cidade em crescimento no Centro-Oeste de MG, a Hélios oferece proteção veicular completa com processo 100% digital e ativação imediata. Sem carência.",
+    "bairros": ["Centro", "Jardim Europa", "Belvedere", "Pinheiro", "São Lucas", "Bela Vista", "Santo Antônio", "Jardim das Flores", "Vila Rica", "Estrela Dalva", "Nova Itaúna", "Paraíso"],
+    "vizinhas": ["Divinópolis", "Mateus Leme", "Carmo do Cajuru", "Córrego Fundo"],
+    "testimonials": [
+      {"initials": "CF", "name": "Cristiano F.", "bairro": "Belvedere, Itaúna", "text": "Processo muito ágil e sem burocracia. Fiz tudo pelo celular em 20 minutos. No mesmo dia já estava com proteção ativa. Preço excelente para a cobertura!"},
+      {"initials": "AR", "name": "Amanda R.", "bairro": "Centro, Itaúna", "text": "Indicada por minha cunhada de Divinópolis. Atendimento excelente e processo simples. Nunca imaginei que seria tão fácil proteger meu veículo!"},
+      {"initials": "MN", "name": "Marcos N.", "bairro": "Santo Antônio, Itaúna", "text": "Sem carência foi determinante. Estava sem proteção e precisava resolver rapidamente. A Hélios ativou no mesmo dia. Economizo muito em relação ao seguro."}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios tem atendimento em Itaúna e cidades vizinhas?",
+      "a": "Sim! Atendemos Itaúna e toda a região, incluindo Divinópolis, Mateus Leme, Carmo do Cajuru e municípios próximos. Nossa cobertura é válida em todo o território nacional."
+    }
+  },
+  {
+    "slug": "para-de-minas",
+    "nome": "Pará de Minas",
+    "estado": "MG",
+    "regiao": "Centro-Oeste de MG",
+    "urgency": "Pará de Minas registra crescimento nos índices de roubo e furto de veículos na região Centro-Oeste.",
+    "heroSub": "Em Pará de Minas, cidade polo do Centro-Oeste mineiro, a Hélios oferece proteção veicular completa com cobertura nacional e ativação no mesmo dia da adesão.",
+    "bairros": ["Centro", "Palmeira", "Santa Cruz", "Juca Vieira", "Jardim das Bandeiras", "Industrial", "Planalto", "São Cristóvão", "Palmeiras", "São José", "Brasília", "Nova Lima"],
+    "vizinhas": ["Mateus Leme", "Martinho Campos", "Pitangui", "Morada Nova de Minas"],
+    "testimonials": [
+      {"initials": "RP", "name": "Rafael P.", "bairro": "Palmeira, Pará de Minas", "text": "Fiz cotação pelo WhatsApp e em 10 minutos tinha a resposta. No mesmo dia ativei sem nenhuma vistoria. Processo perfeito, muito mais simples que o seguro!"},
+      {"initials": "KA", "name": "Karen A.", "bairro": "Centro, Pará de Minas", "text": "Meu carro foi furtado e a Hélios resolveu tudo com muita rapidez. Atendimento atencioso e processo claro. Recomendo para todos em Pará de Minas!"},
+      {"initials": "ES", "name": "Edson S.", "bairro": "Juca Vieira, Pará de Minas", "text": "Pago menos da metade do que pagava no seguro com cobertura completa. Sem carência e sem vistoria foram os fatores que me convenceram. Excelente escolha!"}
+    ],
+    "faqEspecifico": {
+      "q": "A Hélios atende municípios próximos a Pará de Minas?",
+      "a": "Sim! Atendemos Pará de Minas e toda a região do Centro-Oeste, incluindo Mateus Leme, Pitangui, Martinho Campos e municípios vizinhos. Nossa cobertura é válida em todo o Brasil."
+    }
+  }
+]

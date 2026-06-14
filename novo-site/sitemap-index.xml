@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <sitemap>
+    <loc>https://heliosprotecaoveicular.com.br/sitemap.xml</loc>
+    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://heliosprotecaoveicular.com.br/sitemap-cidades.xml</loc>
+    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://heliosprotecaoveicular.com.br/sitemap-motoristas-app.xml</loc>
+    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://heliosprotecaoveicular.com.br/sitemap-motos.xml</loc>
+    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://heliosprotecaoveicular.com.br/sitemap-servicos.xml</loc>
+    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+  </sitemap>
+</sitemapindex>

@@ -8,4 +8,5 @@ Disallow: /cidades-atendidas
 Disallow: /_next/
 Disallow: /*.txt$
 
+Sitemap: https://heliosprotecaoveicular.com.br/sitemap-index.xml
 Sitemap: https://heliosprotecaoveicular.com.br/sitemap.xml

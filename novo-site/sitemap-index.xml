@@ -3,22 +3,30 @@
 
   <sitemap>
     <loc>https://heliosprotecaoveicular.com.br/sitemap.xml</loc>
-    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-15T00:00:00.000Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://heliosprotecaoveicular.com.br/sitemap-cidades.xml</loc>
-    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-15T00:00:00.000Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://heliosprotecaoveicular.com.br/sitemap-motoristas-app.xml</loc>
-    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-15T00:00:00.000Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://heliosprotecaoveicular.com.br/sitemap-motos.xml</loc>
-    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-15T00:00:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://heliosprotecaoveicular.com.br/sitemap-veiculos.xml</loc>
+    <lastmod>2026-06-15T00:00:00.000Z</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://heliosprotecaoveicular.com.br/sitemap-segmentos.xml</loc>
+    <lastmod>2026-06-15T00:00:00.000Z</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://heliosprotecaoveicular.com.br/sitemap-servicos.xml</loc>
-    <lastmod>2026-06-14T00:00:00.000Z</lastmod>
+    <lastmod>2026-06-15T00:00:00.000Z</lastmod>
   </sitemap>
 </sitemapindex>

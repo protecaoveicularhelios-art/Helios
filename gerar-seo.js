@@ -385,14 +385,14 @@ const TIPOS = [
     slugFn:     c => `associacao-veicular-${c.slug}-mg`,
     titleFn:    c => `Associação Veicular em ${c.nome} MG | Hélios Proteção Veicular`,
     descFn:     c => `Associação veicular em ${c.nome}. Saiba como funciona o modelo mutualista de proteção veicular. Hélios é a associação de confiança em ${c.regiao}. Cotação grátis.`,
-    h1Fn:       c => `Associação Veicular em ${c.nome}`,
-    emphFn:     c => `o modelo mutualista que protege mais`,
-    heroSubFn:  c => `Entenda como funciona a associação veicular em ${c.nome}. A Hélios usa o modelo mutualista — associados protegem uns aos outros, com cobertura completa por um custo muito menor.`,
+    h1Fn:       c => `Proteção Veicular em ${c.nome}`,
+    emphFn:     c => `pelo modelo associativo e mutualista`,
+    heroSubFn:  c => `Proteção veicular em ${c.nome} pelo modelo associativo. A Hélios é uma associação mutualista onde os membros protegem uns aos outros — cobertura completa por um custo muito menor que o seguro tradicional.`,
     canonicalFn: () => null,
     sitemap:    'segmentos',
-    badge:      'ASSOCIAÇÃO VEICULAR',
-    seoNoteFn:  c => `Buscou por <em>"associação veicular em ${c.nome}"</em>? A Hélios é uma associação de proteção veicular que funciona pelo modelo mutualista — diferente do seguro tradicional, com mais vantagens e custo menor.`,
-    seoLabel:   'Associação Veicular',
+    badge:      'PROTEÇÃO VEICULAR',
+    seoNoteFn:  c => `Buscou por <em>"associação veicular em ${c.nome}"</em>? A Hélios oferece <strong>proteção veicular</strong> pelo modelo mutualista — diferente do seguro tradicional, com mais vantagens e custo menor.`,
+    seoLabel:   'Proteção Veicular',
     faqExtra:   () => ({ q: 'Qual a diferença entre associação veicular e seguro?', a: 'Uma associação veicular como a Hélios funciona pelo sistema mutualista: os associados contribuem mensalmente e formam um fundo coletivo para cobrir sinistros. É mais acessível, com menos burocracia e sem as exigências das seguradoras.' }),
     priority:   '0.8',
   },
@@ -1031,8 +1031,8 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
   <div class="container">
     <div class="section-head">
       <span class="label">Simples assim</span>
-      <h2>Como funciona a proteção Hélios</h2>
-      <p>Sem letras miúdas, sem pegadinhas. Proteção real em 3 passos.</p>
+      <h2>Como funciona a proteção veicular em ${cidade.nome}</h2>
+      <p>Sem letras miúdas, sem pegadinhas. Proteção real em 3 passos para quem está em ${cidade.nome}.</p>
     </div>
     <div class="steps">
       <div class="step-card" data-step="1">
@@ -1060,7 +1060,7 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
     <div class="section-head">
       <span class="label">Cobertura completa</span>
       <h2>${tipo.id === 'assistencia' || tipo.id === 'guincho' || tipo.id === 'reboque' ? 'Serviços de assistência incluídos' : tipo.id === 'moto' || tipo.id === 'motocicleta' ? 'Cobertura completa para sua moto' : 'Tudo que seu veículo precisa'}</h2>
-      <p>Proteção real com cobertura completa pelo preço que cabe no seu bolso.</p>
+      <p>A proteção veicular em ${cidade.nome} oferece cobertura completa pelo preço que cabe no seu bolso.</p>
     </div>
     <div class="services-grid">
       ${servicosHtml}
@@ -1080,7 +1080,7 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
     <div class="section-head">
       <span class="label">Onde atuamos</span>
       <h2>Atendemos toda ${cidade.nome}</h2>
-      <p>Nossa cobertura alcança todos os bairros de ${cidade.nome} e toda a ${cidade.regiao}.</p>
+      <p>A proteção veicular em ${cidade.nome} cobre todos os bairros e toda a ${cidade.regiao}.</p>
     </div>
     <div class="benefits-grid">
       <div class="benefit">

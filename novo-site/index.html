@@ -1447,6 +1447,19 @@ document.addEventListener('click', function(e) {
   }
 });
 </script>
-<!-- End WhatsApp Click Tracking -->
+<!-- Phone Click Tracking -->
+<script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href^="tel:"]');
+  if (link) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'phone_click',
+      phone_number: link.getAttribute('href').replace('tel:', '')
+    });
+  }
+});
+</script>
+<!-- End Conversion Tracking -->
 </body>
 </html>

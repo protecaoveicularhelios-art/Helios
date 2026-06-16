@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NSQ5MDW2');</script>
+  <!-- End Google Tag Manager -->
   <title>Proteção Veicular em BH sem Carência | Hélios</title>
   <meta name="description" content="Proteja seu veículo em BH a partir de hoje. Sem carência, sem burocracia. Cobertura completa contra roubo, furto e colisão. Faça sua cotação grátis agora.">
   <link rel="icon" href="assets/images/helios_ico.png" type="image/png">
@@ -249,6 +256,10 @@
   </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSQ5MDW2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- TOPBAR -->
 <header class="topbar">
@@ -554,5 +565,32 @@
     });
   });
 </script>
+<!-- WhatsApp Click Tracking -->
+<script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href*="wa.me"]');
+  if (link) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'whatsapp_click',
+      whatsapp_page: window.location.pathname
+    });
+  }
+});
+</script>
+<!-- Phone Click Tracking -->
+<script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href^="tel:"]');
+  if (link) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'phone_click',
+      phone_number: link.getAttribute('href').replace('tel:', '')
+    });
+  }
+});
+</script>
+<!-- End Conversion Tracking -->
 </body>
 </html>

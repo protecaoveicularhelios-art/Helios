@@ -1,0 +1,13 @@
+{
+  "offset": 200,
+  "enviadas": 200,
+  "historico": [
+    {
+      "data": "2026-06-16",
+      "lote": 200,
+      "ok": 200,
+      "fail": 0,
+      "offset_inicio": 0
+    }
+  ]
+}

@@ -426,8 +426,8 @@
     /* ── CTA ── */
     #cta {
       background: linear-gradient(135deg, #00122b 0%, var(--navy2) 100%);
-      text-align: center; padding: 100px 40px;
-      min-height: 55vh; display: flex; align-items: center;
+      text-align: center; padding: 80px 40px;
+      display: flex; align-items: center;
     }
     #cta .container { width: 100%; }
     #cta .section-label { color: var(--yellow); text-align: center; font-size: .65rem; margin-bottom: 10px; }
@@ -539,38 +539,40 @@
     }
 
     /* ── BUSCA CIDADES ── */
-    #busca-cidades { background: #00122b; padding: 80px 40px; text-align: center; }
-    #busca-cidades .section-label { color: var(--yellow); }
-    #busca-cidades .section-title { color: #fff; }
-    #busca-cidades .section-sub { color: rgba(255,255,255,.65); margin: 0 auto; }
-    .cidade-search-wrap { position: relative; max-width: 640px; margin: 40px auto 0; }
+    #busca-cidades { background: var(--gray); padding: 72px 40px; text-align: center; }
+    #busca-cidades .section-label { color: var(--yellow2); }
+    #busca-cidades .section-title { color: var(--text); }
+    #busca-cidades .section-sub { color: var(--mid); margin: 0 auto; }
+    .cidade-search-wrap { position: relative; max-width: 640px; margin: 36px auto 0; }
     .cidade-search-box {
       display: flex; align-items: center;
-      background: rgba(255,255,255,.08);
-      border: 1.5px solid rgba(255,255,255,.2);
+      background: #fff;
+      border: 1.5px solid #dde2ea;
       border-radius: 12px; overflow: hidden;
-      transition: border-color .2s;
+      transition: border-color .2s, box-shadow .2s;
+      box-shadow: 0 4px 16px rgba(0,0,0,.07);
     }
-    .cidade-search-box:focus-within { border-color: var(--yellow); background: rgba(255,255,255,.12); }
+    .cidade-search-box:focus-within { border-color: var(--yellow); box-shadow: 0 4px 20px rgba(245,196,0,.2); }
     .cidade-search-box input {
       flex: 1; background: none; border: none; outline: none;
       padding: 18px 22px; font-family: 'Montserrat', sans-serif;
-      font-size: .95rem; color: #fff;
+      font-size: .95rem; color: var(--text);
     }
-    .cidade-search-box input::placeholder { color: rgba(255,255,255,.35); }
+    .cidade-search-box input::placeholder { color: #aab0be; }
     .cidade-search-btn {
-      background: var(--yellow); border: none;
+      background: var(--navy); border: none;
       padding: 0 26px; height: 58px; cursor: pointer;
-      color: var(--navy); display: flex; align-items: center; justify-content: center;
+      color: #fff; display: flex; align-items: center; justify-content: center;
       transition: background .2s; flex-shrink: 0;
     }
-    .cidade-search-btn:hover { background: var(--yellow2); }
+    .cidade-search-btn:hover { background: var(--navy2); }
     .cidade-dropdown {
       position: absolute; top: calc(100% + 8px); left: 0; right: 0;
       background: #fff; border-radius: 14px;
-      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      box-shadow: 0 20px 60px rgba(0,0,0,.18);
       max-height: 420px; overflow-y: auto;
       z-index: 300; display: none; text-align: left;
+      border: 1px solid #e8ecf2;
     }
     .cidade-dropdown.open { display: block; }
     .cidade-item {
@@ -598,21 +600,22 @@
     .cidade-page-link.pv-main { background: var(--yellow); color: var(--navy); border-color: var(--yellow); font-size: .72rem; }
     .cidade-page-link.pv-main:hover { background: var(--yellow2); border-color: var(--yellow2); }
     .cidade-empty { padding: 28px 20px; text-align: center; color: var(--mid); font-size: .85rem; }
-    .cidades-destaque { margin-top: 32px; }
+    .cidades-destaque { margin-top: 28px; }
     .cidades-destaque-label {
-      font-size: .65rem; font-weight: 700; color: rgba(255,255,255,.35);
+      font-size: .65rem; font-weight: 700; color: #9aa3b2;
       letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px;
     }
     .cidade-chip {
       display: inline-block; margin: 4px;
       font-size: .74rem; font-weight: 700; padding: 7px 16px;
-      border-radius: 50px; border: 1.5px solid rgba(255,255,255,.15);
-      color: rgba(255,255,255,.65); background: none; cursor: pointer;
+      border-radius: 50px; border: 1.5px solid #dde2ea;
+      color: var(--mid); background: #fff; cursor: pointer;
       transition: border-color .2s, color .2s, background .2s; font-family: 'Montserrat', sans-serif;
+      box-shadow: 0 1px 4px rgba(0,0,0,.06);
     }
-    .cidade-chip:hover { border-color: var(--yellow); color: var(--yellow); background: rgba(245,196,0,.08); }
+    .cidade-chip:hover { border-color: var(--navy); color: var(--navy); background: #f0f4ff; }
     @media (max-width: 768px) {
-      #busca-cidades { padding: 60px 20px; }
+      #busca-cidades { padding: 56px 20px; }
       .cidade-search-box input { font-size: .85rem; padding: 15px 16px; }
       .cidade-search-btn { padding: 0 18px; height: 52px; }
     }

@@ -22,10 +22,10 @@ const TIPOS = [
     id: 'cidade',
     slugFn:     c => `protecao-veicular-${c.slug}-mg`,
     titleFn:    c => `Proteção Veicular em ${c.nome} MG sem Carência | Hélios`,
-    descFn:     c => `Proteção veicular em ${c.nome} com cobertura completa contra roubo, furto e colisão. Sem carência, sem vistoria, ativo no 1° dia. Hélios atende toda a ${c.regiao}. Cotação grátis.`,
+    descFn:     c => `Proteção veicular em ${c.nome} com cobertura completa contra roubo, furto e colisão. Sem carência, processo 100% digital. Hélios atende toda a ${c.regiao}. Cotação grátis.`,
     h1Fn:       c => `Proteção Veicular em ${c.nome}`,
-    emphFn:     c => `sem carência e sem burocracia`,
-    heroSubFn:  c => c.heroSub,
+    emphFn:     c => `simples, digital e sem burocracia`,
+    heroSubFn:  c => `Proteção veicular em ${c.nome} sem complicação: fale no WhatsApp, assine pelo celular e sua cobertura começa no mesmo dia — sem carência, sem papelada, sem burocracia.`,
     canonicalFn: (c, slug) => null,
     sitemap:    'cidades',
     badge:      'COBERTURA COMPLETA',
@@ -105,7 +105,7 @@ const TIPOS = [
     descFn:     c => `Proteção veicular para moto em ${c.nome}. Cobertura contra roubo, furto e colisão sem carência. Hélios protege sua motocicleta. Cotação grátis pelo WhatsApp.`,
     h1Fn:       c => `Proteção Veicular para Moto em ${c.nome}`,
     emphFn:     c => `sua moto protegida sem carência`,
-    heroSubFn:  c => `Proteja sua moto em ${c.nome} com cobertura completa contra roubo, furto e colisão. Sem carência, sem vistoria, ativo no mesmo dia da adesão.`,
+    heroSubFn:  c => `Proteja sua moto em ${c.nome} com cobertura completa contra roubo, furto e colisão. Sem carência, processo 100% digital, ativo no mesmo dia da adesão.`,
     canonicalFn: (c, slug) => null,
     sitemap:    'motos',
     badge:      'PROTEÇÃO PARA MOTO',
@@ -118,7 +118,7 @@ const TIPOS = [
     id: 'motocicleta',
     slugFn:     c => `protecao-veicular-motocicleta-${c.slug}-mg`,
     titleFn:    c => `Proteção Veicular para Motocicleta em ${c.nome} | Hélios`,
-    descFn:     c => `Proteção veicular para motocicleta em ${c.nome} MG. Cobertura completa sem carência e sem vistória. Cotação grátis.`,
+    descFn:     c => `Proteção veicular para motocicleta em ${c.nome} MG. Cobertura completa sem carência, processo 100% digital. Cotação grátis.`,
     h1Fn:       c => `Proteção Veicular para Motocicleta em ${c.nome}`,
     emphFn:     c => `cobertura completa sem carência`,
     heroSubFn:  c => `Sua motocicleta merece proteção completa em ${c.nome}. Sem carência, sem burocracia, ativo no mesmo dia da adesão.`,
@@ -204,7 +204,7 @@ const TIPOS = [
     id: 'taxi',
     slugFn:     c => `protecao-veicular-taxi-${c.slug}-mg`,
     titleFn:    c => `Proteção Veicular para Táxi em ${c.nome} | Sem Carência | Hélios`,
-    descFn:     c => `Taxista em ${c.nome}? Proteção veicular completa para táxi sem carência, sem vistoria, com cobertura durante o uso profissional. Mais barato que o seguro. Cotação grátis.`,
+    descFn:     c => `Taxista em ${c.nome}? Proteção veicular completa para táxi sem carência, com cobertura durante o uso profissional. Processo 100% digital. Cotação grátis.`,
     h1Fn:       c => `Proteção Veicular para Táxi em ${c.nome}`,
     emphFn:     c => `cobertura para taxistas`,
     heroSubFn:  c => `Taxista em ${c.nome}? A Hélios oferece proteção veicular específica para táxi com cobertura completa, sem carência e ativação no mesmo dia da adesão.`,
@@ -240,10 +240,10 @@ const TIPOS = [
     id: 'caminhonete',
     slugFn:     c => `protecao-veicular-caminhonete-${c.slug}-mg`,
     titleFn:    c => `Proteção Veicular para Caminhonete em ${c.nome} | Hélios`,
-    descFn:     c => `Proteção veicular para caminhonete e picape em ${c.nome}. Cobertura completa sem carência e sem vistoria. Hélios protege sua caminhonete. Cotação grátis.`,
+    descFn:     c => `Proteção veicular para caminhonete e picape em ${c.nome}. Cobertura completa sem carência, processo 100% digital. Hélios protege sua caminhonete. Cotação grátis.`,
     h1Fn:       c => `Proteção Veicular para Caminhonete em ${c.nome}`,
     emphFn:     c => `caminhonete protegida sem carência`,
-    heroSubFn:  c => `Tem uma caminhonete ou picape em ${c.nome}? A Hélios oferece proteção veicular completa — sem carência, sem vistoria, ativo no 1° dia da adesão.`,
+    heroSubFn:  c => `Tem uma caminhonete ou picape em ${c.nome}? A Hélios oferece proteção veicular completa — sem carência, processo 100% digital, ativo no 1° dia da adesão.`,
     canonicalFn: () => null,
     sitemap:    'veiculos',
     badge:      'PARA CAMINHONETES',
@@ -312,7 +312,7 @@ const TIPOS = [
     id: 'mulher',
     slugFn:     c => `protecao-veicular-mulher-${c.slug}-mg`,
     titleFn:    c => `Proteção Veicular para Mulher em ${c.nome} | Hélios`,
-    descFn:     c => `Proteção veicular para mulher em ${c.nome}. Cobertura completa sem carência, sem vistoria. A Hélios é a escolha das motoristas de ${c.nome}. Cotação grátis.`,
+    descFn:     c => `Proteção veicular para mulher em ${c.nome}. Cobertura completa sem carência, processo 100% digital. A Hélios é a escolha das motoristas de ${c.nome}. Cotação grátis.`,
     h1Fn:       c => `Proteção Veicular para Mulher em ${c.nome}`,
     emphFn:     c => `proteção feita para você`,
     heroSubFn:  c => `Mulher motorista em ${c.nome}? A Hélios oferece proteção veicular completa — sem carência, sem burocracia e com o atendimento humanizado que você merece.`,
@@ -817,7 +817,7 @@ function servicos(tipoId) {
 const faqsGenericos = [
   { q: 'O que significa "sem carência"?', a: 'Significa que sua proteção começa a valer no mesmo dia da adesão. Diferente do seguro tradicional, que tem um período de espera antes de você poder acionar a cobertura. Com a Hélios, você está protegido desde o 1° dia.' },
   { q: 'Qual o valor da mensalidade?', a: 'O valor varia de acordo com o modelo, ano, cidade e tipo de uso do seu veículo. É possível ter cobertura completa por muito menos do que um seguro tradicional. Fale conosco pelo WhatsApp para receber sua cotação gratuita em minutos.' },
-  { q: 'Preciso fazer vistoria do veículo?', a: 'Não. O processo na Hélios é 100% digital e sem necessidade de vistoria prévia. Você assina tudo pelo celular e sua proteção fica ativa no mesmo dia, sem burocracia.' },
+  { q: 'Como é feita a vistoria do veículo?', a: 'Nosso processo é 100% digital e simplificado. A vistoria é feita por você mesmo, em vídeo, de onde estiver — sem agendamento, sem deslocamento, em poucos minutos. Simples assim.' },
   { q: 'A cobertura é válida em todo o Brasil?', a: 'Sim! A proteção veicular da Hélios é válida em todo o território nacional. Seja em viagem para outro estado, em outra cidade ou no seu trajeto diário, você está sempre protegido.' },
   { q: 'Como funciona em caso de roubo ou colisão?', a: 'Basta entrar em contato com nossa central de assistência 24h pelo WhatsApp ou telefone. Nossa equipe orienta todos os passos. O processo é simples, transparente e sem burocracia excessiva.' },
 ];
@@ -879,7 +879,11 @@ function gerarHTML(cidade, tipo) {
   const seoNote    = tipo.seoNoteFn ? tipo.seoNoteFn(cidade) : null;
   const svcs       = servicos(tipo.id);
   const extra      = tipo.faqExtra(cidade);
-  const faqs       = [...faqsGenericos, extra];
+  const faqCidade  = {
+    q: `Como funciona a proteção veicular em ${cidade.nome}?`,
+    a: `A proteção veicular em ${cidade.nome} funciona pelo modelo associativo mutualista: você se torna associado da Hélios, contribui mensalmente e tem cobertura completa contra roubo, furto e colisão. O processo é 100% digital — cotação pelo WhatsApp, assinatura digital e vistoria rápida por vídeo de onde você estiver. Sem carência, sem papelada, sem precisar sair de casa.`,
+  };
+  const faqs       = [faqCidade, ...faqsGenericos, extra];
   const schemasHtml = schemas(cidade, tipo, pageUrl, title, faqs);
 
   const wppMsg     = encodeURIComponent(`Olá! Vi o anúncio e quero fazer uma cotação para meu veículo em ${cidade.nome}.`);
@@ -1043,7 +1047,7 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
       <div class="step-card" data-step="2">
         <div class="step-icon">📋</div>
         <h3>Assine e ative</h3>
-        <p>Processo 100% digital. Sem burocracia, sem vistoria demorada. Sua proteção fica ativa no mesmo dia.</p>
+        <p>Processo 100% digital. Sem burocracia, sem papelada. Vistoria rápida por vídeo, de onde você estiver.</p>
       </div>
       <div class="step-card" data-step="3">
         <div class="step-icon">🛡️</div>
@@ -1155,9 +1159,9 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
           <td class="col-helios"><span class="check">✓</span> Até 70% mais barato</td>
         </tr>
         <tr>
-          <td>Sem vistoria prévia</td>
-          <td class="col-seg"><span class="cross">✗</span> Vistoria obrigatória</td>
-          <td class="col-helios"><span class="check">✓</span> Sem vistoria</td>
+          <td>Vistoria</td>
+          <td class="col-seg"><span class="cross">✗</span> Vistoria presencial obrigatória</td>
+          <td class="col-helios"><span class="check">✓</span> Vistoria rápida por vídeo</td>
         </tr>
         <tr>
           <td>Assistência 24h</td>
@@ -1220,7 +1224,7 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
 <section class="cta-final">
   <div class="container">
     <h2>Seu veículo protegido em ${cidade.nome} <em>ainda hoje</em></h2>
-    <p>Sem carência · Sem vistoria · Processo 100% digital · Resposta em minutos</p>
+    <p>Sem carência · Processo 100% digital · Sem papelada · Resposta em minutos</p>
     <a class="btn-wpp" href="${WPP_COT}?text=${wppMsg}" target="_blank" rel="noopener noreferrer">
       ${SVG_WPP}
       Fazer cotação gratuita agora

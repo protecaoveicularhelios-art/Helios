@@ -538,6 +538,85 @@
       .app-store-btn { flex: 1 1 auto; }
     }
 
+    /* ── BUSCA CIDADES ── */
+    #busca-cidades { background: #00122b; padding: 80px 40px; text-align: center; }
+    #busca-cidades .section-label { color: var(--yellow); }
+    #busca-cidades .section-title { color: #fff; }
+    #busca-cidades .section-sub { color: rgba(255,255,255,.65); margin: 0 auto; }
+    .cidade-search-wrap { position: relative; max-width: 640px; margin: 40px auto 0; }
+    .cidade-search-box {
+      display: flex; align-items: center;
+      background: rgba(255,255,255,.08);
+      border: 1.5px solid rgba(255,255,255,.2);
+      border-radius: 12px; overflow: hidden;
+      transition: border-color .2s;
+    }
+    .cidade-search-box:focus-within { border-color: var(--yellow); background: rgba(255,255,255,.12); }
+    .cidade-search-box input {
+      flex: 1; background: none; border: none; outline: none;
+      padding: 18px 22px; font-family: 'Montserrat', sans-serif;
+      font-size: .95rem; color: #fff;
+    }
+    .cidade-search-box input::placeholder { color: rgba(255,255,255,.35); }
+    .cidade-search-btn {
+      background: var(--yellow); border: none;
+      padding: 0 26px; height: 58px; cursor: pointer;
+      color: var(--navy); display: flex; align-items: center; justify-content: center;
+      transition: background .2s; flex-shrink: 0;
+    }
+    .cidade-search-btn:hover { background: var(--yellow2); }
+    .cidade-dropdown {
+      position: absolute; top: calc(100% + 8px); left: 0; right: 0;
+      background: #fff; border-radius: 14px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      max-height: 420px; overflow-y: auto;
+      z-index: 300; display: none; text-align: left;
+    }
+    .cidade-dropdown.open { display: block; }
+    .cidade-item {
+      padding: 14px 18px; border-bottom: 1px solid #f0f2f6;
+      transition: background .15s;
+    }
+    .cidade-item:last-child { border-bottom: none; }
+    .cidade-item:hover { background: #f7f9fc; }
+    .cidade-item-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .cidade-item-name { font-size: .9rem; font-weight: 800; color: var(--navy); }
+    .cidade-item-regiao { font-size: .7rem; color: var(--mid); font-weight: 600; background: #eef0f6; padding: 3px 8px; border-radius: 20px; }
+    .cidade-item-pages { display: flex; flex-wrap: wrap; gap: 6px; }
+    .cidade-page-link {
+      font-size: .68rem; font-weight: 700; padding: 5px 11px;
+      border-radius: 20px; text-decoration: none;
+      background: #f0f2f8; color: var(--navy);
+      border: 1px solid #dde2f0;
+      transition: background .15s, color .15s, border-color .15s;
+      white-space: nowrap;
+    }
+    .cidade-page-link:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+    .cidade-page-link.pv-main { background: var(--yellow); color: var(--navy); border-color: var(--yellow); font-size: .72rem; }
+    .cidade-page-link.pv-main:hover { background: var(--yellow2); border-color: var(--yellow2); }
+    .cidade-empty { padding: 28px 20px; text-align: center; color: var(--mid); font-size: .85rem; }
+    .cidades-destaque { margin-top: 32px; }
+    .cidades-destaque-label {
+      font-size: .65rem; font-weight: 700; color: rgba(255,255,255,.35);
+      letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px;
+    }
+    .cidade-chip {
+      display: inline-block; margin: 4px;
+      font-size: .74rem; font-weight: 700; padding: 7px 16px;
+      border-radius: 50px; border: 1.5px solid rgba(255,255,255,.15);
+      color: rgba(255,255,255,.65); background: none; cursor: pointer;
+      transition: border-color .2s, color .2s, background .2s; font-family: 'Montserrat', sans-serif;
+    }
+    .cidade-chip:hover { border-color: var(--yellow); color: var(--yellow); background: rgba(245,196,0,.08); }
+    @media (max-width: 768px) {
+      #busca-cidades { padding: 60px 20px; }
+      .cidade-search-box input { font-size: .85rem; padding: 15px 16px; }
+      .cidade-search-btn { padding: 0 18px; height: 52px; }
+    }
+
     /* ── FOOTER ── */
     footer { background: #060f20; padding: 60px 40px 32px; }
     .footer-inner { max-width: 1200px; margin: 0 auto; }
@@ -1301,6 +1380,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- BUSCA CIDADES -->
+<section id="busca-cidades">
+  <div class="container">
+    <p class="section-label">Minas Gerais</p>
+    <h2 class="section-title">Encontre proteção veicular <span>na sua cidade</span></h2>
+    <p class="section-sub">Atendemos 182 cidades em todo o estado. Digite o nome da sua cidade e veja as opções de proteção disponíveis.</p>
+
+    <div class="cidade-search-wrap">
+      <div class="cidade-search-box">
+        <input type="text" id="cidadeInput" placeholder="Ex: Belo Horizonte, Uberlândia, Juiz de Fora..." autocomplete="off" spellcheck="false">
+        <button class="cidade-search-btn" aria-label="Buscar cidade" onclick="document.getElementById('cidadeInput').focus()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+      <div class="cidade-dropdown" id="cidadeDropdown"></div>
+    </div>
+
+    <div class="cidades-destaque">
+      <div class="cidades-destaque-label">Cidades em destaque</div>
+      <button class="cidade-chip" data-nome="Belo Horizonte">Belo Horizonte</button>
+      <button class="cidade-chip" data-nome="Betim">Betim</button>
+      <button class="cidade-chip" data-nome="Contagem">Contagem</button>
+      <button class="cidade-chip" data-nome="Uberlândia">Uberlândia</button>
+      <button class="cidade-chip" data-nome="Juiz de Fora">Juiz de Fora</button>
+      <button class="cidade-chip" data-nome="Montes Claros">Montes Claros</button>
+      <button class="cidade-chip" data-nome="Ribeirão das Neves">Ribeirão das Neves</button>
+      <button class="cidade-chip" data-nome="Uberaba">Uberaba</button>
+      <button class="cidade-chip" data-nome="Governador Valadares">Governador Valadares</button>
+      <button class="cidade-chip" data-nome="Ipatinga">Ipatinga</button>
+      <button class="cidade-chip" data-nome="Sete Lagoas">Sete Lagoas</button>
+      <button class="cidade-chip" data-nome="Divinópolis">Divinópolis</button>
+      <button class="cidade-chip" data-nome="Poços de Caldas">Poços de Caldas</button>
+      <button class="cidade-chip" data-nome="Pouso Alegre">Pouso Alegre</button>
+      <button class="cidade-chip" data-nome="Varginha">Varginha</button>
+      <button class="cidade-chip" data-nome="Barbacena">Barbacena</button>
+      <button class="cidade-chip" data-nome="Ouro Preto">Ouro Preto</button>
+      <button class="cidade-chip" data-nome="Itaúna">Itaúna</button>
+      <button class="cidade-chip" data-nome="Pará de Minas">Pará de Minas</button>
+      <button class="cidade-chip" data-nome="Nova Lima">Nova Lima</button>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section id="cta">
   <div class="container">
@@ -1462,6 +1584,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 
 
+</script>
+<!-- Busca Cidades -->
+<script>
+(function () {
+  const CIDADES = [{"s":"betim","n":"Betim","r":"Grande BH"},{"s":"contagem","n":"Contagem","r":"Grande BH"},{"s":"belo-horizonte","n":"Belo Horizonte","r":"Grande BH"},{"s":"ibirite","n":"Ibirité","r":"Grande BH"},{"s":"sarzedo","n":"Sarzedo","r":"Grande BH Oeste"},{"s":"mario-campos","n":"Mario Campos","r":"Grande BH Oeste"},{"s":"juatuba","n":"Juatuba","r":"Grande BH Oeste"},{"s":"mateus-leme","n":"Mateus Leme","r":"Divinópolis"},{"s":"esmeraldas","n":"Esmeraldas","r":"Grande BH Norte"},{"s":"ribeirao-das-neves","n":"Ribeirão das Neves","r":"Grande BH"},{"s":"santa-luzia","n":"Santa Luzia","r":"Grande BH Norte"},{"s":"nova-lima","n":"Nova Lima","r":"Grande BH Sul"},{"s":"sabara","n":"Sabará","r":"Grande BH Leste"},{"s":"sete-lagoas","n":"Sete Lagoas","r":"Sete Lagoas"},{"s":"divinopolis","n":"Divinópolis","r":"Centro-Oeste de MG"},{"s":"itauna","n":"Itaúna","r":"Centro-Oeste de MG"},{"s":"para-de-minas","n":"Pará de Minas","r":"Centro-Oeste de MG"},{"s":"uberlandia","n":"Uberlândia","r":"Triângulo Mineiro"},{"s":"juiz-de-fora","n":"Juiz de Fora","r":"Zona da Mata"},{"s":"montes-claros","n":"Montes Claros","r":"Norte de Minas"},{"s":"uberaba","n":"Uberaba","r":"Triângulo Mineiro"},{"s":"governador-valadares","n":"Governador Valadares","r":"Vale do Rio Doce"},{"s":"ipatinga","n":"Ipatinga","r":"Vale do Aço"},{"s":"pocos-de-caldas","n":"Poços de Caldas","r":"Sul de Minas"},{"s":"patos-de-minas","n":"Patos de Minas","r":"Alto Paranaíba"},{"s":"pouso-alegre","n":"Pouso Alegre","r":"Sul de Minas"},{"s":"varginha","n":"Varginha","r":"Sul de Minas"},{"s":"barbacena","n":"Barbacena","r":"Campo das Vertentes"},{"s":"vespasiano","n":"Vespasiano","r":"Grande BH"},{"s":"araguari","n":"Araguari","r":"Triângulo Mineiro"},{"s":"itabira","n":"Itabira","r":"Rio Doce"},{"s":"conselheiro-lafaiete","n":"Conselheiro Lafaiete","r":"Quadrilátero Ferrífero"},{"s":"coronel-fabriciano","n":"Coronel Fabriciano","r":"Vale do Aço"},{"s":"muriae","n":"Muriaé","r":"Zona da Mata"},{"s":"teofilo-otoni","n":"Teófilo Otoni","r":"Vale do Mucuri"},{"s":"araxa","n":"Araxá","r":"Alto Paranaíba"},{"s":"passos","n":"Passos","r":"Sul de Minas"},{"s":"uba","n":"Ubá","r":"Zona da Mata"},{"s":"lavras","n":"Lavras","r":"Campo das Vertentes"},{"s":"ituiutaba","n":"Ituiutaba","r":"Triângulo Mineiro"},{"s":"paracatu","n":"Paracatu","r":"Noroeste de Minas"},{"s":"itajuba","n":"Itajubá","r":"Sul de Minas"},{"s":"sao-joao-del-rei","n":"São João del-Rei","r":"Campo das Vertentes"},{"s":"caratinga","n":"Caratinga","r":"Vale do Rio Doce"},{"s":"patrocinio","n":"Patrocínio","r":"Alto Paranaíba"},{"s":"nova-serrana","n":"Nova Serrana","r":"Oeste de Minas"},{"s":"timoteo","n":"Timóteo","r":"Vale do Aço"},{"s":"unai","n":"Unaí","r":"Noroeste de Minas"},{"s":"vicosa","n":"Viçosa","r":"Zona da Mata"},{"s":"tres-coracoes","n":"Três Corações","r":"Sul de Minas"},{"s":"alfenas","n":"Alfenas","r":"Sul de Minas"},{"s":"joao-monlevade","n":"João Monlevade","r":"Vale do Rio Doce"},{"s":"cataguases","n":"Cataguases","r":"Zona da Mata"},{"s":"curvelo","n":"Curvelo","r":"Central de MG"},{"s":"ouro-preto","n":"Ouro Preto","r":"Quadrilátero Ferrífero"},{"s":"sao-sebastiao-do-paraiso","n":"São Sebastião do Paraíso","r":"Sul de Minas"},{"s":"formiga","n":"Formiga","r":"Oeste de Minas"},{"s":"pedro-leopoldo","n":"Pedro Leopoldo","r":"Grande BH"},{"s":"frutal","n":"Frutal","r":"Triângulo Mineiro"},{"s":"lagoa-santa","n":"Lagoa Santa","r":"Grande BH"},{"s":"campo-belo","n":"Campo Belo","r":"Oeste de Minas"},{"s":"tres-pontas","n":"Três Pontas","r":"Sul de Minas"},{"s":"congonhas","n":"Congonhas","r":"Quadrilátero Ferrífero"},{"s":"brumadinho","n":"Brumadinho","r":"Grande BH Sul"},{"s":"igarape","n":"Igarapé","r":"Grande BH Oeste"},{"s":"sao-joaquim-de-bicas","n":"São Joaquim de Bicas","r":"Grande BH Oeste"},{"s":"caete","n":"Caeté","r":"Grande BH Leste"},{"s":"itabirito","n":"Itabirito","r":"Grande BH Sul"},{"s":"santa-barbara","n":"Santa Bárbara","r":"Itabira"},{"s":"rio-piracicaba","n":"Rio Piracicaba","r":"Itabira"},{"s":"matozinhos","n":"Matozinhos","r":"Grande BH Norte"},{"s":"paraopeba","n":"Paraopeba","r":"Sete Lagoas"},{"s":"sao-lourenco","n":"São Lourenço","r":"Sul de Minas"},{"s":"andradas","n":"Andradas","r":"Sul de Minas"},{"s":"machado","n":"Machado","r":"Sul de Minas"},{"s":"guaxupe","n":"Guaxupé","r":"Sul de Minas"},{"s":"santa-rita-do-sapucai","n":"Santa Rita do Sapucaí","r":"Sul de Minas"},{"s":"extrema","n":"Extrema","r":"Sul de Minas"},{"s":"jacutinga","n":"Jacutinga","r":"Sul de Minas"},{"s":"cambui","n":"Cambuí","r":"Sul de Minas"},{"s":"eloi-mendes","n":"Elói Mendes","r":"Sul de Minas"},{"s":"nepomuceno","n":"Nepomuceno","r":"Sul de Minas"},{"s":"caxambu","n":"Caxambu","r":"Sul de Minas"},{"s":"lambari","n":"Lambari","r":"Sul de Minas"},{"s":"monte-siao","n":"Monte Sião","r":"Sul de Minas"},{"s":"boa-esperanca","n":"Boa Esperança","r":"Sul de Minas"},{"s":"carmo-do-rio-claro","n":"Carmo do Rio Claro","r":"Sul de Minas"},{"s":"muzambinho","n":"Muzambinho","r":"Sul de Minas"},{"s":"sao-goncalo-do-sapucai","n":"São Gonçalo do Sapucaí","r":"Sul de Minas"},{"s":"paraguacu","n":"Paraguaçu","r":"Sul de Minas"},{"s":"alterosa","n":"Alterosa","r":"Sul de Minas"},{"s":"cassia","n":"Cássia","r":"Sul de Minas"},{"s":"piumhi","n":"Piumhi","r":"Sul de Minas"},{"s":"baependi","n":"Baependi","r":"Sul de Minas"},{"s":"conceicao-do-rio-verde","n":"Conceição do Rio Verde","r":"Sul de Minas"},{"s":"iturama","n":"Iturama","r":"Triângulo Mineiro"},{"s":"monte-carmelo","n":"Monte Carmelo","r":"Alto Paranaíba"},{"s":"sao-gotardo","n":"São Gotardo","r":"Alto Paranaíba"},{"s":"coromandel","n":"Coromandel","r":"Alto Paranaíba"},{"s":"sacramento","n":"Sacramento","r":"Triângulo Mineiro"},{"s":"lagoa-formosa","n":"Lagoa Formosa","r":"Alto Paranaíba"},{"s":"tupaciguara","n":"Tupaciguara","r":"Triângulo Mineiro"},{"s":"prata","n":"Prata","r":"Triângulo Mineiro"},{"s":"capinopolis","n":"Capinópolis","r":"Triângulo Mineiro"},{"s":"carmo-do-paranaiba","n":"Carmo do Paranaíba","r":"Alto Paranaíba"},{"s":"presidente-olegario","n":"Presidente Olegário","r":"Alto Paranaíba"},{"s":"monte-alegre-de-minas","n":"Monte Alegre de Minas","r":"Triângulo Mineiro"},{"s":"campina-verde","n":"Campina Verde","r":"Triângulo Mineiro"},{"s":"conceicao-das-alagoas","n":"Conceição das Alagoas","r":"Triângulo Mineiro"},{"s":"janauba","n":"Janaúba","r":"Norte de Minas"},{"s":"januaria","n":"Januária","r":"Norte de Minas"},{"s":"pirapora","n":"Pirapora","r":"Norte de Minas"},{"s":"sao-francisco","n":"São Francisco","r":"Norte de Minas"},{"s":"bocaiuva","n":"Bocaiúva","r":"Norte de Minas"},{"s":"varzea-da-palma","n":"Várzea da Palma","r":"Norte de Minas"},{"s":"coracao-de-jesus","n":"Coração de Jesus","r":"Norte de Minas"},{"s":"porteirinha","n":"Porteirinha","r":"Norte de Minas"},{"s":"monte-azul","n":"Monte Azul","r":"Norte de Minas"},{"s":"salinas","n":"Salinas","r":"Norte de Minas"},{"s":"francisco-sa","n":"Francisco Sá","r":"Norte de Minas"},{"s":"brasilia-de-minas","n":"Brasília de Minas","r":"Norte de Minas"},{"s":"espinosa","n":"Espinosa","r":"Norte de Minas"},{"s":"jaiba","n":"Jaíba","r":"Norte de Minas"},{"s":"manga","n":"Manga","r":"Norte de Minas"},{"s":"rio-pardo-de-minas","n":"Rio Pardo de Minas","r":"Norte de Minas"},{"s":"taiobeiras","n":"Taiobeiras","r":"Norte de Minas"},{"s":"ponte-nova","n":"Ponte Nova","r":"Vale do Rio Doce"},{"s":"manhuacu","n":"Manhuaçu","r":"Zona da Mata"},{"s":"mariana","n":"Mariana","r":"Ouro Preto"},{"s":"ouro-branco","n":"Ouro Branco","r":"Campo das Vertentes"},{"s":"rio-pomba","n":"Rio Pomba","r":"Zona da Mata"},{"s":"visconde-do-rio-branco","n":"Visconde do Rio Branco","r":"Zona da Mata"},{"s":"carangola","n":"Carangola","r":"Zona da Mata"},{"s":"itambacuri","n":"Itambacuri","r":"Vale do Rio Doce"},{"s":"aimores","n":"Aimorés","r":"Vale do Rio Doce"},{"s":"manhumirim","n":"Manhumirim","r":"Zona da Mata"},{"s":"resplendor","n":"Resplendor","r":"Vale do Rio Doce"},{"s":"conselheiro-pena","n":"Conselheiro Pena","r":"Vale do Rio Doce"},{"s":"belo-oriente","n":"Belo Oriente","r":"Vale do Aço"},{"s":"raul-soares","n":"Raul Soares","r":"Vale do Rio Doce"},{"s":"pecanha","n":"Peçanha","r":"Vale do Rio Doce"},{"s":"sao-joao-evangelista","n":"São João Evangelista","r":"Vale do Rio Doce"},{"s":"sabinopolis","n":"Sabinópolis","r":"Vale do Rio Doce"},{"s":"simonesia","n":"Simonésia","r":"Zona da Mata"},{"s":"bom-jesus-do-galho","n":"Bom Jesus do Galho","r":"Vale do Rio Doce"},{"s":"inhapim","n":"Inhapim","r":"Vale do Rio Doce"},{"s":"alem-paraiba","n":"Além Paraíba","r":"Zona da Mata"},{"s":"santos-dumont","n":"Santos Dumont","r":"Zona da Mata"},{"s":"leopoldina","n":"Leopoldina","r":"Zona da Mata"},{"s":"sao-joao-nepomuceno","n":"São João Nepomuceno","r":"Zona da Mata"},{"s":"eugenopolis","n":"Eugenópolis","r":"Zona da Mata"},{"s":"divino","n":"Divino","r":"Zona da Mata"},{"s":"mirai","n":"Miraí","r":"Zona da Mata"},{"s":"diamantina","n":"Diamantina","r":"Jequitinhonha"},{"s":"almenara","n":"Almenara","r":"Jequitinhonha"},{"s":"aracuai","n":"Araçuaí","r":"Jequitinhonha"},{"s":"pedra-azul","n":"Pedra Azul","r":"Jequitinhonha"},{"s":"nanuque","n":"Nanuque","r":"Vale do Mucuri"},{"s":"carlos-chagas","n":"Carlos Chagas","r":"Vale do Mucuri"},{"s":"novo-cruzeiro","n":"Novo Cruzeiro","r":"Vale do Mucuri"},{"s":"medina","n":"Medina","r":"Jequitinhonha"},{"s":"itaobim","n":"Itaobim","r":"Jequitinhonha"},{"s":"ladainha","n":"Ladainha","r":"Vale do Mucuri"},{"s":"capelinha","n":"Capelinha","r":"Jequitinhonha"},{"s":"serro","n":"Serro","r":"Jequitinhonha"},{"s":"bom-despacho","n":"Bom Despacho","r":"Centro-Oeste de MG"},{"s":"bambui","n":"Bambuí","r":"Centro-Oeste de MG"},{"s":"lagoa-da-prata","n":"Lagoa da Prata","r":"Centro-Oeste de MG"},{"s":"abaete","n":"Abaeté","r":"Centro-Oeste de MG"},{"s":"papagaios","n":"Papagaios","r":"Centro-Oeste de MG"},{"s":"joao-pinheiro","n":"João Pinheiro","r":"Noroeste de MG"},{"s":"buritis","n":"Buritis","r":"Noroeste de MG"},{"s":"santo-antonio-do-monte","n":"Santo Antônio do Monte","r":"Centro-Oeste de MG"},{"s":"arcos","n":"Arcos","r":"Centro-Oeste de MG"},{"s":"oliveira","n":"Oliveira","r":"Centro-Oeste de MG"},{"s":"itapecerica","n":"Itapecerica","r":"Centro-Oeste de MG"},{"s":"pompeu","n":"Pompéu","r":"Centro-Oeste de MG"},{"s":"entre-rios-de-minas","n":"Entre Rios de Minas","r":"Campo das Vertentes"},{"s":"barroso","n":"Barroso","r":"Campo das Vertentes"},{"s":"corinto","n":"Corinto","r":"Central de MG"},{"s":"tres-marias","n":"Três Marias","r":"Central de MG"},{"s":"buritizeiro","n":"Buritizeiro","r":"Norte de Minas"}];
+
+  const TIPOS = [
+    { l: 'Proteção Veicular', u: c => '/protecao-veicular-' + c.s + '-mg/', main: true },
+    { l: 'Motos', u: c => '/protecao-veicular-moto-' + c.s + '-mg/' },
+    { l: 'Motorista de App', u: c => '/protecao-veicular-uber-' + c.s + '-mg/' },
+    { l: 'Delivery', u: c => '/protecao-veicular-delivery-' + c.s + '-mg/' },
+    { l: 'Caminhonete/SUV', u: c => '/protecao-veicular-caminhonete-' + c.s + '-mg/' },
+    { l: 'Assistência 24h', u: c => '/assistencia-24-horas-' + c.s + '-mg/' },
+  ];
+
+  function norm(s) {
+    return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  }
+
+  var input = document.getElementById('cidadeInput');
+  var dropdown = document.getElementById('cidadeDropdown');
+
+  function renderDropdown(query) {
+    var q = norm(query.trim());
+    if (!q) { dropdown.classList.remove('open'); return; }
+    var matches = CIDADES.filter(function(c) { return norm(c.n).indexOf(q) !== -1; }).slice(0, 8);
+    if (matches.length === 0) {
+      dropdown.innerHTML = '<div class="cidade-empty">Nenhuma cidade encontrada para "' + query + '".<br>Tente outra cidade de Minas Gerais.</div>';
+    } else {
+      dropdown.innerHTML = matches.map(function(c) {
+        var links = TIPOS.map(function(t) {
+          return '<a href="' + t.u(c) + '" class="cidade-page-link' + (t.main ? ' pv-main' : '') + '">' + t.l + '</a>';
+        }).join('');
+        return '<div class="cidade-item"><div class="cidade-item-header"><span class="cidade-item-name">' + c.n + '</span><span class="cidade-item-regiao">' + c.r + ' · MG</span></div><div class="cidade-item-pages">' + links + '</div></div>';
+      }).join('');
+    }
+    dropdown.classList.add('open');
+  }
+
+  input.addEventListener('input', function() { renderDropdown(input.value); });
+  input.addEventListener('focus', function() { if (input.value.trim()) renderDropdown(input.value); });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.cidade-search-wrap')) dropdown.classList.remove('open');
+  });
+
+  document.querySelectorAll('.cidade-chip').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      input.value = chip.dataset.nome;
+      input.focus();
+      renderDropdown(chip.dataset.nome);
+    });
+  });
+})();
 </script>
 <!-- WhatsApp Click Tracking -->
 <script>

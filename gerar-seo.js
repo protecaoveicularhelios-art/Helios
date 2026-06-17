@@ -1116,6 +1116,15 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
         </div>
       </div>
     </div>
+    <div style="margin-top: 32px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(11,26,53,.1);">
+      <iframe
+        src="https://maps.google.com/maps?q=${encodeURIComponent(cidade.nome + ', MG')}&output=embed"
+        width="100%" height="350" style="border:0; display:block;"
+        loading="lazy"
+        title="Mapa de ${cidade.nome}, MG"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
   </div>
 </section>
 

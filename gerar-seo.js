@@ -1042,7 +1042,7 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
       <div class="step-card" data-step="1">
         <div class="step-icon">💬</div>
         <h3>Fale conosco</h3>
-        <p>Entre em contato pelo WhatsApp. Nosso time responde em minutos e faz a cotação do seu veículo gratuitamente.</p>
+        <p>Entre em contato pelo WhatsApp. Nosso time responde em minutos — seja você de ${cidade.bairros.slice(0,3).join(', ')} ou qualquer bairro de ${cidade.nome}.</p>
       </div>
       <div class="step-card" data-step="2">
         <div class="step-icon">📋</div>
@@ -1069,6 +1069,9 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
     <div class="services-grid">
       ${servicosHtml}
     </div>
+    <p style="text-align:center; margin-top: 24px; font-size: .82rem; color: var(--mid); max-width: 680px; margin-left: auto; margin-right: auto;">
+      💡 Cobertura disponível para associados de ${cidade.bairros.slice(0,3).join(', ')} e todos os demais bairros de ${cidade.nome} — sem sair de casa, pelo WhatsApp.
+    </p>
     <div style="text-align:center; margin-top: 32px;">
       <a class="btn-wpp" href="${WPP_COT}?text=${wppMsg}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;">
         ${SVG_WPP_SM}
@@ -1186,6 +1189,11 @@ ${seoNote ? `<div class="seo-note"><div class="seo-note-inner">💡 ${seoNote}</
           <td>Processo 100% digital</td>
           <td class="col-seg"><span class="cross">✗</span> Muita burocracia</td>
           <td class="col-helios"><span class="check">✓</span> Tudo pelo celular</td>
+        </tr>
+        <tr>
+          <td>Atendimento local</td>
+          <td class="col-seg"><span class="cross">✗</span> Requer agente presencial</td>
+          <td class="col-helios"><span class="check">✓</span> Atende ${cidade.bairros[0]} e toda ${cidade.nome} via WhatsApp</td>
         </tr>
       </tbody>
     </table>

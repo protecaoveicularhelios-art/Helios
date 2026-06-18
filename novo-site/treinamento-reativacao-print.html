@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fluxo de Reativação — Hélios | Impressão</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:    #00122b;
+      --navy2:   #001a3a;
+      --yellow:  #ffcc00;
+      --yellow2: #e6b800;
+      --green:   #25d366;
+      --white:   #ffffff;
+      --gray:    #f4f6f9;
+      --mid:     #4a5568;
+      --text:    #1a2332;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #ddd;
+      color: var(--text);
+    }
+
+    /* ── PRÉVIA (tela) ── */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: #fff;
+      margin: 16px auto;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,.25);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── FORÇA CORES NA IMPRESSÃO ── */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      color-adjust: exact !important;
+    }
+
+    /* ── IMPRESSÃO ── */
+    @page { size: A4; margin: 0; }
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
+      body { background: none; }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        page-break-after: always;
+        break-after: page;
+        width: 210mm;
+        min-height: 297mm;
+      }
+      .page:last-child { page-break-after: avoid; break-after: avoid; }
+      .print-btn { display: none !important; }
+    }
+
+    /* ── BOTÃO DE IMPRESSÃO (tela) ── */
+    .print-btn {
+      position: fixed; top: 16px; right: 16px; z-index: 999;
+      background: var(--yellow); color: var(--navy);
+      border: none; border-radius: 50px; cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-size: .82rem; font-weight: 900;
+      padding: 10px 24px; letter-spacing: .3px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.3);
+    }
+
+    /* ── HEADER PADRÃO (páginas de conteúdo) ── */
+    .page-header {
+      background: var(--navy);
+      padding: 18px 28px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .page-header .logo-area { display: flex; align-items: center; gap: 10px; }
+    .page-header .logo-area img { height: 28px; filter: brightness(0) invert(1); }
+    .page-header .logo-text { font-size: .65rem; color: rgba(255,255,255,.5); font-weight: 600; letter-spacing: 1px; text-transform: uppercase; }
+    .page-header .section-tag {
+      font-size: .6rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--yellow); background: rgba(255,204,0,.1);
+      border: 1px solid rgba(255,204,0,.25); border-radius: 50px;
+      padding: 4px 12px;
+    }
+
+    /* ── BODY DAS PÁGINAS ── */
+    .page-body {
+      flex: 1;
+      padding: 26px 28px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── FOOTER PADRÃO ── */
+    .page-footer {
+      background: var(--navy2);
+      padding: 8px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .page-footer p { font-size: .58rem; color: rgba(255,255,255,.35); font-weight: 600; letter-spacing: .8px; text-transform: uppercase; }
+    .page-footer .pgnum { color: var(--yellow); font-weight: 900; }
+
+    /* ── TIPOGRAFIA ── */
+    .page-title {
+      font-size: 1.15rem; font-weight: 900; color: var(--navy);
+      margin-bottom: 4px; line-height: 1.2;
+    }
+    .page-title em { color: var(--yellow2); font-style: normal; }
+    .page-subtitle { font-size: .72rem; color: var(--mid); font-weight: 600; margin-bottom: 18px; line-height: 1.5; }
+    .section-label {
+      font-size: .58rem; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase;
+      color: var(--yellow2); display: block; margin-bottom: 6px;
+    }
+
+    /* ════════════════════════
+       PÁGINA 1 — CAPA
+    ════════════════════════ */
+    .cover {
+      background: linear-gradient(160deg, #00122b 0%, #001a3a 50%, #001f4d 100%);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 0;
+    }
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: -60px; left: -60px; right: -60px; bottom: -60px;
+      background: radial-gradient(ellipse at 50% 30%, rgba(255,204,0,.07) 0%, transparent 60%);
+    }
+    .cover-inner { position: relative; z-index: 1; padding: 40px 48px; }
+    .cover-logo { margin-bottom: 32px; }
+    .cover-logo img { height: 52px; filter: brightness(0) invert(1); }
+    .cover-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,204,0,.1); border: 1px solid rgba(255,204,0,.3);
+      color: var(--yellow); font-size: .62rem; font-weight: 800;
+      letter-spacing: 2px; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 50px; margin-bottom: 22px;
+    }
+    .cover-tag::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--yellow); display: inline-block; }
+    .cover h1 {
+      font-size: 2.4rem; font-weight: 900; color: #fff;
+      line-height: 1.08; margin-bottom: 10px;
+    }
+    .cover h1 em { color: var(--yellow); font-style: normal; display: block; }
+    .cover-sub { font-size: .82rem; color: rgba(255,255,255,.55); margin-bottom: 36px; line-height: 1.6; max-width: 380px; margin-left: auto; margin-right: auto; }
+    .cover-stats {
+      display: flex; justify-content: center; gap: 0;
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 28px;
+    }
+    .cover-stat {
+      text-align: center; padding: 0 24px;
+      border-right: 1px solid rgba(255,255,255,.1);
+    }
+    .cover-stat:last-child { border-right: none; }
+    .cover-stat .num { font-size: 1.8rem; font-weight: 900; color: var(--yellow); display: block; line-height: 1; }
+    .cover-stat .lbl { font-size: .6rem; font-weight: 700; color: rgba(255,255,255,.4); text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; display: block; }
+    .cover-footer-bar {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: var(--yellow); padding: 10px 28px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .cover-footer-bar p { font-size: .65rem; font-weight: 800; color: var(--navy); letter-spacing: .5px; }
+
+    /* ════════════════════════
+       PÁGINA 2 — SUMÁRIO
+    ════════════════════════ */
+    .sumario-cover-header {
+      background: var(--navy);
+      padding: 20px 28px 18px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .sumario-cover-header img { height: 26px; filter: brightness(0) invert(1); }
+    .sumario-title {
+      font-size: 1.1rem; font-weight: 900; color: var(--navy);
+      margin-bottom: 18px; padding-top: 4px;
+    }
+    .sumario-list { display: flex; flex-direction: column; gap: 0; flex: 1; }
+    .sumario-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e2e8f0;
+      gap: 8px;
+    }
+    .sumario-item:last-child { border-bottom: none; }
+    .sumario-item .s-num {
+      width: 26px; height: 26px; border-radius: 50%;
+      background: var(--yellow); color: var(--navy);
+      font-weight: 900; font-size: .72rem;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .sumario-item .s-title { font-size: .82rem; font-weight: 700; color: var(--navy); flex: 1; margin-left: 12px; }
+    .sumario-item .s-page { font-size: .72rem; font-weight: 800; color: var(--mid); }
+    .sumario-item .s-badge {
+      font-size: .6rem; font-weight: 700; padding: 2px 8px; border-radius: 50px; flex-shrink: 0;
+    }
+    .s-badge.wpp { background: rgba(37,211,102,.12); color: #1a9e52; }
+    .s-badge.tel { background: rgba(0,18,43,.08); color: var(--navy); }
+    .s-badge.info { background: rgba(255,204,0,.15); color: #8a6800; }
+
+    /* ════════════════════════
+       TABELA DO FLUXO
+    ════════════════════════ */
+    .flow-table {
+      width: 100%; border-collapse: collapse; border-radius: 12px; overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,18,43,.1);
+      margin-bottom: 16px;
+    }
+    .flow-table thead tr { background: var(--navy); }
+    .flow-table thead th {
+      padding: 11px 14px; font-size: .65rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 1px; color: var(--yellow); text-align: left;
+    }
+    .flow-table tbody tr { border-bottom: 1px solid #eee; background: #fff; }
+    .flow-table tbody tr:nth-child(even) { background: #fafbfc; }
+    .flow-table tbody tr:last-child { border-bottom: none; }
+    .flow-table tbody td { padding: 10px 14px; font-size: .78rem; color: var(--text); }
+    .flow-table tbody td:first-child { font-weight: 900; }
+    .t-num {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--yellow); color: var(--navy);
+      font-weight: 900; font-size: .72rem;
+    }
+    .c-wpp { color: #1a9e52; font-weight: 700; }
+    .c-tel { color: var(--navy2); font-weight: 700; }
+
+    /* ════════════════════════
+       GATILHOS
+    ════════════════════════ */
+    .triggers-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; flex: 1;
+    }
+    .trigger-card {
+      background: #f8f9fc; border-left: 3px solid var(--yellow);
+      border-radius: 0 10px 10px 0; padding: 12px 14px;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .trigger-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 1px; }
+    .trigger-card h3 { font-size: .78rem; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+    .trigger-card p { font-size: .7rem; color: var(--mid); line-height: 1.55; }
+    .trigger-card.full { grid-column: 1 / -1; }
+
+    /* ════════════════════════
+       TOUCH PAGES
+    ════════════════════════ */
+    .touch-day-bar {
+      background: var(--yellow); padding: 6px 28px;
+      display: flex; align-items: center; gap: 12px;
+      flex-shrink: 0;
+    }
+    .touch-day-bar .day-label { font-size: .65rem; font-weight: 800; color: var(--navy); text-transform: uppercase; letter-spacing: 1px; }
+    .touch-day-bar .day-val { font-size: .82rem; font-weight: 900; color: var(--navy); }
+    .touch-day-bar .canal-tag {
+      margin-left: auto; font-size: .65rem; font-weight: 800;
+      background: rgba(0,18,43,.12); color: var(--navy); padding: 3px 10px; border-radius: 50px;
+    }
+
+    .script-block {
+      background: #f4f7fa; border-left: 4px solid var(--yellow);
+      border-radius: 0 10px 10px 0; padding: 16px 18px; flex: 1;
+      margin-bottom: 14px;
+    }
+    .script-block .script-label {
+      font-size: .58rem; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--yellow2); margin-bottom: 10px; display: block;
+    }
+    .script-block p {
+      font-size: .8rem; color: var(--text); line-height: 1.7;
+    }
+    .script-block p + p { margin-top: 8px; }
+    .script-block .rule-box {
+      background: rgba(255,204,0,.18); border-radius: 8px;
+      padding: 10px 14px; margin-top: 12px;
+      font-size: .76rem; font-weight: 700; color: var(--navy);
+      display: flex; align-items: flex-start; gap: 8px;
+    }
+    .neuro-row { display: flex; flex-wrap: wrap; gap: 6px; }
+    .neuro-tag {
+      background: rgba(0,18,43,.06); border: 1px solid rgba(0,18,43,.1);
+      border-radius: 50px; padding: 3px 10px;
+      font-size: .65rem; font-weight: 700; color: var(--navy2);
+    }
+    .obj-section { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+    .obj-block {
+      border-left: 3px solid var(--yellow); border-radius: 0 10px 10px 0;
+      background: #f8f9fc; padding: 12px 16px;
+    }
+    .obj-block .obj-q { font-size: .8rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+    .obj-block p { font-size: .74rem; color: var(--mid); line-height: 1.6; }
+    .obj-block .obj-cta {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--navy); color: var(--yellow);
+      padding: 4px 12px; border-radius: 50px;
+      font-size: .65rem; font-weight: 800;
+      margin-top: 8px;
+    }
+    .obj-block .obj-sub { font-size: .72rem; color: var(--mid); line-height: 1.6; margin-bottom: 4px; }
+    .obj-block .obj-sub strong { color: var(--navy); }
+
+    /* ════════════════════════
+       REGRAS
+    ════════════════════════ */
+    .rules-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; flex: 1; }
+    .rules-col { border-radius: 12px; overflow: hidden; }
+    .rules-col-head {
+      padding: 12px 18px; font-size: .72rem; font-weight: 900;
+      letter-spacing: 1px; text-transform: uppercase;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .rules-col-head.nunca { background: #fee2e2; color: #b91c1c; }
+    .rules-col-head.sempre { background: var(--yellow); color: var(--navy); }
+    .rules-col-body { background: #fff; border: 1px solid #eee; border-top: none; padding: 14px 18px; display: flex; flex-direction: column; gap: 10px; }
+    .rule-row { display: flex; align-items: flex-start; gap: 10px; font-size: .78rem; color: var(--text); line-height: 1.5; }
+    .rule-row .ri { flex-shrink: 0; }
+
+    /* ════════════════════════
+       CTAs
+    ════════════════════════ */
+    .ctas-intro {
+      font-size: .8rem; color: var(--mid); line-height: 1.6;
+      margin-bottom: 18px; padding: 14px 18px;
+      background: rgba(255,204,0,.08); border-radius: 10px;
+      border-left: 3px solid var(--yellow);
+    }
+    .ctas-list { display: flex; flex-direction: column; gap: 12px; flex: 1; }
+    .cta-row {
+      display: flex; align-items: flex-start; gap: 14px;
+      background: #f8f9fc; border-radius: 12px; padding: 14px 18px;
+      border-left: 3px solid var(--navy);
+    }
+    .cta-arrow { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+    .cta-row .cta-text { font-size: .88rem; font-weight: 800; color: var(--navy); margin-bottom: 4px; }
+    .cta-row .cta-why { font-size: .72rem; color: var(--mid); }
+
+    .end-band {
+      background: var(--yellow); padding: 22px 28px; text-align: center; flex-shrink: 0;
+    }
+    .end-band h2 { font-size: 1rem; font-weight: 900; color: var(--navy); margin-bottom: 4px; }
+    .end-band p { font-size: .72rem; color: rgba(0,18,43,.65); }
+  </style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">🖨️ Salvar como PDF</button>
+
+<!-- ════ PÁGINA 1 — CAPA ════ -->
+<div class="page cover">
+  <div class="cover-inner">
+    <div class="cover-logo">
+      <img src="assets/images/logo-helios.png" alt="Hélios Proteção Veicular" onerror="this.style.display='none';this.nextSibling.style.display='block'">
+      <div style="display:none;font-size:1.4rem;font-weight:900;color:#ffcc00;letter-spacing:2px;">HÉLIOS</div>
+    </div>
+    <div class="cover-tag">Treinamento de Vendas</div>
+    <h1>Fluxo de Cadência<em>Reativação de Ex-Associados</em></h1>
+    <p class="cover-sub">Scripts prontos, mapa de objeções e gatilhos de neuromarketing para reconquistar ex-associados com naturalidade.</p>
+    <div class="cover-stats">
+      <div class="cover-stat">
+        <span class="num">7</span>
+        <span class="lbl">Touchpoints</span>
+      </div>
+      <div class="cover-stat">
+        <span class="num">15</span>
+        <span class="lbl">Dias</span>
+      </div>
+      <div class="cover-stat">
+        <span class="num">5</span>
+        <span class="lbl">Objeções</span>
+      </div>
+      <div class="cover-stat">
+        <span class="num">7</span>
+        <span class="lbl">Gatilhos</span>
+      </div>
+    </div>
+  </div>
+  <div class="cover-footer-bar">
+    <p>HÉLIOS PROTEÇÃO VEICULAR</p>
+    <p>Material Exclusivo de Treinamento · Uso Interno</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 2 — SUMÁRIO ════ -->
+<div class="page">
+  <div class="sumario-cover-header">
+    <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.9rem;\'>HÉLIOS</span>'">
+    <span style="font-size:.6rem;font-weight:800;letter-spacing:2px;color:rgba(255,255,255,.4);text-transform:uppercase;">Sumário</span>
+  </div>
+  <div class="page-body">
+    <p class="section-label">Índice do Treinamento</p>
+    <h2 class="sumario-title">O que você vai aprender</h2>
+    <div class="sumario-list">
+      <div class="sumario-item">
+        <div class="s-num">1</div>
+        <span class="s-title">Estrutura Geral do Fluxo</span>
+        <span class="s-badge info">📊 Visão Geral</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">2</div>
+        <span class="s-title">Psicologia e Gatilhos Utilizados</span>
+        <span class="s-badge info">🧠 Neuromarketing</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">3</div>
+        <span class="s-title">Touch 1 — WhatsApp (Reabertura)</span>
+        <span class="s-badge wpp">💬 WhatsApp · D0</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">4</div>
+        <span class="s-title">Touch 2 — Ligação (Diagnóstico)</span>
+        <span class="s-badge tel">📞 Ligação · D1</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">5</div>
+        <span class="s-title">Mapa de Objeções e Contornos</span>
+        <span class="s-badge info">🗺️ 5 Objeções</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">6</div>
+        <span class="s-title">Touch 3 — WhatsApp (Valor)</span>
+        <span class="s-badge wpp">💬 WhatsApp · D3</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">7</div>
+        <span class="s-title">Touch 4 — Ligação (Reversão)</span>
+        <span class="s-badge tel">📞 Ligação · D5</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">8</div>
+        <span class="s-title">Touch 5 — WhatsApp (Oportunidade)</span>
+        <span class="s-badge wpp">💬 WhatsApp · D8</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">9</div>
+        <span class="s-title">Touch 6 — Ligação (Fechamento)</span>
+        <span class="s-badge tel">📞 Ligação · D12</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">10</div>
+        <span class="s-title">Touch 7 — WhatsApp (Encerramento)</span>
+        <span class="s-badge wpp">💬 WhatsApp · D15</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">11</div>
+        <span class="s-title">Regras de Conversão</span>
+        <span class="s-badge info">⚡ Inegociável</span>
+      </div>
+      <div class="sumario-item">
+        <div class="s-num">12</div>
+        <span class="s-title">CTAs Mais Fortes</span>
+        <span class="s-badge info">🎯 Alta Conversão</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">2</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 3 — ESTRUTURA GERAL ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Estrutura Geral</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Visão Geral do Fluxo</span>
+    <h2 class="page-title">Os <em>7 Touches</em> da Cadência de Reativação</h2>
+    <p class="page-subtitle">7 touchpoints distribuídos em 15 dias, combinando WhatsApp e ligações. Cada etapa tem objetivo específico e gatilhos de neuromarketing.</p>
+    <table class="flow-table">
+      <thead>
+        <tr>
+          <th>Touch</th>
+          <th>Dia</th>
+          <th>Canal</th>
+          <th>Objetivo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="t-num">T1</span></td>
+          <td><strong>D0</strong></td>
+          <td class="c-wpp">💬 WhatsApp</td>
+          <td>Reabertura + curiosidade</td>
+        </tr>
+        <tr>
+          <td><span class="t-num">T2</span></td>
+          <td><strong>D1</strong></td>
+          <td class="c-tel">📞 Ligação</td>
+          <td>Diagnóstico emocional e racional</td>
+        </tr>
+        <tr>
+          <td><span class="t-num">T3</span></td>
+          <td><strong>D3</strong></td>
+          <td class="c-wpp">💬 WhatsApp</td>
+          <td>Oferta de reavaliação com valor</td>
+        </tr>
+        <tr>
+          <td><span class="t-num">T4</span></td>
+          <td><strong>D5</strong></td>
+          <td class="c-tel">📞 Ligação</td>
+          <td>Reversão de objeções com exclusividade</td>
+        </tr>
+        <tr>
+          <td><span class="t-num">T5</span></td>
+          <td><strong>D8</strong></td>
+          <td class="c-wpp">💬 WhatsApp</td>
+          <td>Gatilho de oportunidade</td>
+        </tr>
+        <tr>
+          <td><span class="t-num">T6</span></td>
+          <td><strong>D12</strong></td>
+          <td class="c-tel">📞 Ligação</td>
+          <td>Fechamento / recuperação</td>
+        </tr>
+        <tr>
+          <td><span class="t-num">T7</span></td>
+          <td><strong>D15</strong></td>
+          <td class="c-wpp">💬 WhatsApp</td>
+          <td>Encerramento respeitoso ou indicação</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="background:rgba(255,204,0,.1);border-radius:10px;padding:14px 18px;margin-top:auto;border-left:3px solid var(--yellow);">
+      <p style="font-size:.78rem;font-weight:700;color:var(--navy);">⚡ Regra de Ouro</p>
+      <p style="font-size:.74rem;color:var(--mid);margin-top:5px;line-height:1.6;">Escute antes de vender. O diagnóstico emocional e racional no T2 é a base de toda a estratégia de reversão — nunca pule essa etapa.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">3</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 4 — GATILHOS ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Neuromarketing</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Psicologia Aplicada</span>
+    <h2 class="page-title">Gatilhos <em>Psicológicos</em> do Fluxo</h2>
+    <p class="page-subtitle">Reduzem a resistência do ex-associado e facilitam o retorno de forma natural, sem pressão.</p>
+    <div class="triggers-grid" style="flex:1;">
+      <div class="trigger-card">
+        <span class="trigger-icon">🤝</span>
+        <div>
+          <h3>Reciprocidade</h3>
+          <p>"Queremos entender como podemos melhorar" — gera obrigação positiva no contato, criando abertura para o diálogo.</p>
+        </div>
+      </div>
+      <div class="trigger-card">
+        <span class="trigger-icon">🏆</span>
+        <div>
+          <h3>Autoridade</h3>
+          <p>Usar o histórico anterior como ex-associado reforça a credibilidade e o vínculo com a Hélios.</p>
+        </div>
+      </div>
+      <div class="trigger-card">
+        <span class="trigger-icon">🏠</span>
+        <div>
+          <h3>Pertencimento</h3>
+          <p>"Você já fez parte da Hélios" — ativa a identidade anterior e reduz a resistência inicial do contato.</p>
+        </div>
+      </div>
+      <div class="trigger-card">
+        <span class="trigger-icon">⚠️</span>
+        <div>
+          <h3>Perda</h3>
+          <p>"Não ficar desprotegido" — o medo de perda é mais motivador que a perspectiva de ganho.</p>
+        </div>
+      </div>
+      <div class="trigger-card">
+        <span class="trigger-icon">🔍</span>
+        <div>
+          <h3>Curiosidade</h3>
+          <p>Desperta interesse sem revelar tudo de uma vez, mantendo o contato engajado ao longo da cadência.</p>
+        </div>
+      </div>
+      <div class="trigger-card">
+        <span class="trigger-icon">⭐</span>
+        <div>
+          <h3>Exclusividade</h3>
+          <p>Condição especial apenas para ex-associados — quem já fez parte tem prioridade e condições melhores.</p>
+        </div>
+      </div>
+      <div class="trigger-card full">
+        <span class="trigger-icon">⏱️</span>
+        <div>
+          <h3>Urgência Controlada</h3>
+          <p>Janela de tempo sem agressividade — cria senso de oportunidade real, sem pressionar o ex-associado.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">4</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 5 — TOUCH 1 ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Touch 1 de 7</span>
+  </div>
+  <div class="touch-day-bar">
+    <span class="day-label">Dia</span>
+    <span class="day-val">0 (D0)</span>
+    <span class="canal-tag">💬 WhatsApp</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Primeiro Contato</span>
+    <h2 class="page-title">Touch 1 — <em>Reabertura</em></h2>
+    <p class="page-subtitle">Reabrir a conversa com leveza, ativando a identidade anterior do ex-associado sem gerar resistência.</p>
+    <div class="script-block" style="flex:1;">
+      <span class="script-label">📋 Script — Copie e adapte</span>
+      <p>Oi, [nome]! Tudo bem? 😊</p>
+      <p>Aqui é o [seu nome], da Hélios Proteção Veicular.</p>
+      <p>Você já fez parte da nossa associação e estamos fazendo um contato especial com alguns ex-associados.</p>
+      <p>Queria entender como estão as coisas hoje com seu veículo e te apresentar algumas novidades que podem fazer sentido pra você.</p>
+      <p><strong>Me responde uma coisa: hoje você ainda está com veículo?</strong></p>
+    </div>
+    <div style="margin-bottom:14px;">
+      <p style="font-size:.7rem;font-weight:800;color:var(--mid);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Neuromarketing Aplicado</p>
+      <div class="neuro-row">
+        <span class="neuro-tag">✦ Ativa identidade anterior</span>
+        <span class="neuro-tag">✦ Baixa resistência com linguagem leve</span>
+        <span class="neuro-tag">✦ Pergunta simples de qualificação</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">5</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 6 — TOUCH 2 ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Touch 2 de 7</span>
+  </div>
+  <div class="touch-day-bar">
+    <span class="day-label">Dia</span>
+    <span class="day-val">1 (D1)</span>
+    <span class="canal-tag">📞 Ligação</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Escuta Ativa</span>
+    <h2 class="page-title">Touch 2 — <em>Diagnóstico</em></h2>
+    <p class="page-subtitle">Antes de qualquer oferta, entenda o motivo real da saída. O diagnóstico emocional é a base da reversão.</p>
+    <div class="script-block" style="flex:1;">
+      <span class="script-label">📋 Script — Ligação</span>
+      <p>"Oi, [nome], tudo bem? Aqui é [seu nome], da Hélios."</p>
+      <p>"Vi aqui que você já foi associado nosso e estamos fazendo uma ação especial de reaproximação com antigos associados."</p>
+      <p><strong>"Antes de qualquer coisa, queria entender: o que te levou a sair na época?"</strong></p>
+      <div class="rule-box">
+        🔑 <span><strong>REGRA DE OURO:</strong> Aqui você escuta primeiro. Não interrompa. O diagnóstico emocional e racional é a base de toda a estratégia de reversão. Só depois de entender o motivo real você apresenta qualquer oferta.</span>
+      </div>
+    </div>
+    <div style="margin-bottom:14px;">
+      <p style="font-size:.7rem;font-weight:800;color:var(--mid);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Neuromarketing Aplicado</p>
+      <div class="neuro-row">
+        <span class="neuro-tag">✦ Escuta ativa</span>
+        <span class="neuro-tag">✦ Nenhuma oferta antes do diagnóstico</span>
+        <span class="neuro-tag">✦ Reciprocidade</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">6</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 7 — MAPA DE OBJEÇÕES ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Mapa de Objeções</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Contornos</span>
+    <h2 class="page-title">Como responder às <em>5 objeções</em> mais comuns</h2>
+    <p class="page-subtitle" style="margin-bottom:16px;">Nunca rebata — escute, valide e redirecione com os contornos abaixo.</p>
+    <div class="obj-section">
+      <div class="obj-block">
+        <div class="obj-q">💬 "Vendi o veículo"</div>
+        <p>Entendi. E hoje, você está com outro veículo ou pensa em adquirir em breve?</p>
+        <p class="obj-sub" style="margin-top:6px;"><strong>SIM:</strong> Ótimo momento pra te atualizar nas condições atuais. <strong>NÃO:</strong> Se lembrar de alguém que precise proteger, posso ajudar e deixar uma condição especial.</p>
+      </div>
+      <div class="obj-block">
+        <div class="obj-q">💬 "Na época apertei financeiramente"</div>
+        <p>Faz sentido, [nome]. Muita gente passou por isso. Ajustamos as condições e temos formatos mais flexíveis hoje.</p>
+        <span class="obj-cta">➡ "Posso recalcular agora e te mostrar?"</span>
+      </div>
+      <div class="obj-block">
+        <div class="obj-q">💬 "Migrei para outra associação"</div>
+        <p>Entendi. E como está sendo sua experiência lá? [Escutar] Muitos ex-associados voltaram pela diferença em atendimento e agilidade.</p>
+        <span class="obj-cta">➡ "Se eu te mostrar o que mudou, você compara sem compromisso?"</span>
+      </div>
+      <div class="obj-block">
+        <div class="obj-q">💬 "Tive uma experiência ruim"</div>
+        <p>Obrigado por falar com sinceridade. Muita coisa mudou — processos, atendimento e acompanhamento. [Nunca rebater]</p>
+        <span class="obj-cta">➡ "Me dá uma oportunidade de te mostrar essa evolução?"</span>
+      </div>
+      <div class="obj-block">
+        <div class="obj-q">💬 "Hoje tenho seguro"</div>
+        <p>Ótimo, isso mostra que você continua priorizando proteção. Muitos associados vieram justamente do seguro pelo custo-benefício.</p>
+        <span class="obj-cta">➡ "Vale comparar antes da próxima renovação. Posso preparar?"</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">7</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 8 — TOUCH 3 ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Touch 3 de 7</span>
+  </div>
+  <div class="touch-day-bar">
+    <span class="day-label">Dia</span>
+    <span class="day-val">3 (D3)</span>
+    <span class="canal-tag">💬 WhatsApp</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Prova Social Interna</span>
+    <h2 class="page-title">Touch 3 — <em>Reabertura com Valor</em></h2>
+    <p class="page-subtitle">Usa o histórico do ex-associado como âncora de confiança e apresenta as novidades da Hélios.</p>
+    <div class="script-block" style="flex:1;">
+      <span class="script-label">📋 Script — WhatsApp</span>
+      <p>[Nome], olhando seu histórico aqui, vi que você já confiou na Hélios antes. Hoje temos algumas condições e melhorias que não existiam quando você saiu. Se fizer sentido, posso reavaliar seu perfil sem compromisso. 😊</p>
+    </div>
+    <div style="margin-bottom:14px;">
+      <p style="font-size:.7rem;font-weight:800;color:var(--mid);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Neuromarketing Aplicado</p>
+      <div class="neuro-row">
+        <span class="neuro-tag">✦ Histórico como prova social interna</span>
+        <span class="neuro-tag">✦ Novidade como argumento de retorno</span>
+        <span class="neuro-tag">✦ "Sem compromisso" reduz risco percebido</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">8</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 9 — TOUCH 4 ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Touch 4 de 7</span>
+  </div>
+  <div class="touch-day-bar">
+    <span class="day-label">Dia</span>
+    <span class="day-val">5 (D5)</span>
+    <span class="canal-tag">📞 Ligação</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Exclusividade</span>
+    <h2 class="page-title">Touch 4 — <em>Reversão de Objeções</em></h2>
+    <p class="page-subtitle">Ligação com condição especial de reativação. O gatilho principal aqui é a exclusividade para ex-associados.</p>
+    <div class="script-block" style="flex:1;">
+      <span class="script-label">📋 Script — Ligação</span>
+      <p>"Oi, [nome]. Estou te ligando porque queria te apresentar uma condição especial de reativação que estamos liberando pra ex-associados."</p>
+      <p>"Como você já fez parte da casa, conseguimos facilitar bastante esse retorno."</p>
+      <div class="rule-box">
+        ⭐ <span><strong>GATILHO FORTE — EXCLUSIVIDADE:</strong> A condição especial está disponível apenas para quem já foi associado. Deixe claro que esse benefício é exclusivo e que o contato tem prioridade por já ter feito parte da Hélios.</span>
+      </div>
+      <p style="margin-top:12px;"><strong>➡ CTA: "Quer que eu veja agora como ficaria?"</strong></p>
+    </div>
+    <div style="margin-bottom:14px;">
+      <div class="neuro-row">
+        <span class="neuro-tag">✦ Exclusividade</span>
+        <span class="neuro-tag">✦ Condição especial</span>
+        <span class="neuro-tag">✦ Pertencimento — "já fez parte da casa"</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">9</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 10 — TOUCH 5 ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Touch 5 de 7</span>
+  </div>
+  <div class="touch-day-bar">
+    <span class="day-label">Dia</span>
+    <span class="day-val">8 (D8)</span>
+    <span class="canal-tag">💬 WhatsApp</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Urgência + Facilidade</span>
+    <h2 class="page-title">Touch 5 — <em>Oportunidade</em></h2>
+    <p class="page-subtitle">Mensagem com senso de oportunidade e facilidade no processo de retorno para o ex-associado.</p>
+    <div class="script-block" style="flex:1;">
+      <span class="script-label">📋 Script — WhatsApp</span>
+      <p>[Nome], passando pra te avisar porque não quero que você perca essa oportunidade: estamos liberando algumas condições especiais de retorno para antigos associados.</p>
+      <p>Como você já conhece a Hélios, o processo fica bem mais simples.</p>
+      <p><strong>Quer que eu veja sua condição hoje?</strong></p>
+    </div>
+    <div style="margin-bottom:14px;">
+      <p style="font-size:.7rem;font-weight:800;color:var(--mid);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Neuromarketing Aplicado</p>
+      <div class="neuro-row">
+        <span class="neuro-tag">✦ Urgência — janela de oportunidade</span>
+        <span class="neuro-tag">✦ Facilidade — processo simplificado</span>
+        <span class="neuro-tag">✦ Personalização — condição específica para ele</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">10</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 11 — TOUCH 6 ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Touch 6 de 7</span>
+  </div>
+  <div class="touch-day-bar">
+    <span class="day-label">Dia</span>
+    <span class="day-val">12 (D12)</span>
+    <span class="canal-tag">📞 Ligação</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Fechamento</span>
+    <h2 class="page-title">Touch 6 — <em>Fechamento / Recuperação</em></h2>
+    <p class="page-subtitle">Ligação de fechamento. O gatilho é o encerramento da janela de oportunidade — escassez de tempo controlada.</p>
+    <div class="script-block" style="flex:1;">
+      <span class="script-label">📋 Script — Ligação de Fechamento</span>
+      <p>"Oi, [nome]. Tudo bem? Estou fechando essa campanha de reativação e queria saber se faz sentido avançarmos ou se prefere deixar pra outro momento."</p>
+      <div class="rule-box" style="margin-top:14px;">
+        💡 <span><strong>Se hesitar:</strong> "Sem compromisso. Só queria garantir que você tivesse a oportunidade de avaliar antes de encerrarmos."</span>
+      </div>
+    </div>
+    <div style="margin-bottom:14px;">
+      <p style="font-size:.7rem;font-weight:800;color:var(--mid);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Neuromarketing Aplicado</p>
+      <div class="neuro-row">
+        <span class="neuro-tag">✦ Fechamento de janela</span>
+        <span class="neuro-tag">✦ Escassez de tempo</span>
+        <span class="neuro-tag">✦ Sem pressão — decisão do cliente</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">11</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 12 — TOUCH 7 ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Touch 7 de 7</span>
+  </div>
+  <div class="touch-day-bar">
+    <span class="day-label">Dia</span>
+    <span class="day-val">15 (D15)</span>
+    <span class="canal-tag">💬 WhatsApp</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Porta Aberta + Indicação</span>
+    <h2 class="page-title">Touch 7 — <em>Encerramento Respeitoso</em></h2>
+    <p class="page-subtitle">Manter a porta aberta e ativar o gatilho de pertencimento. Aproveitar para solicitar indicações.</p>
+    <div class="script-block" style="flex:1;">
+      <span class="script-label">📋 Script — WhatsApp</span>
+      <p>[Nome], vou encerrar seu atendimento por aqui pra não ser inconveniente 😊</p>
+      <p>Mas queria deixar registrado: como ex-associado, você sempre terá prioridade nas nossas campanhas de retorno.</p>
+      <p><strong>Se precisar ou quiser indicar alguém, estou por aqui.</strong></p>
+    </div>
+    <div style="margin-bottom:14px;">
+      <p style="font-size:.7rem;font-weight:800;color:var(--mid);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px;">Neuromarketing Aplicado</p>
+      <div class="neuro-row">
+        <span class="neuro-tag">✦ Pertencimento — família Hélios</span>
+        <span class="neuro-tag">✦ Reciprocidade — prioridade garantida</span>
+        <span class="neuro-tag">✦ Porta aberta — sem pressão</span>
+        <span class="neuro-tag">✦ Solicitação de indicação</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">12</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 13 — REGRAS ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Inegociável</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">Regras de Conversão</span>
+    <h2 class="page-title">O que <em>nunca</em> e o que <em>sempre</em> fazer</h2>
+    <p class="page-subtitle" style="margin-bottom:18px;">Violar essas regras compromete a confiança e reduz drasticamente a chance de conversão.</p>
+    <div class="rules-wrap" style="flex:1;align-content:start;">
+      <div class="rules-col">
+        <div class="rules-col-head nunca">❌ NUNCA Faça</div>
+        <div class="rules-col-body">
+          <div class="rule-row"><span class="ri">🚫</span><span>Discutir o passado com o ex-associado</span></div>
+          <div class="rule-row"><span class="ri">🚫</span><span>Rebater reclamações — escute e valide</span></div>
+          <div class="rule-row"><span class="ri">🚫</span><span>Vender antes de diagnosticar</span></div>
+          <div class="rule-row"><span class="ri">🚫</span><span>Pressionar com urgência agressiva</span></div>
+          <div class="rule-row"><span class="ri">🚫</span><span>Minimizar ou ignorar a experiência anterior</span></div>
+        </div>
+      </div>
+      <div class="rules-col">
+        <div class="rules-col-head sempre">✅ SEMPRE Faça</div>
+        <div class="rules-col-body">
+          <div class="rule-row"><span class="ri">✅</span><span>Ouvir o motivo real da saída antes de qualquer oferta</span></div>
+          <div class="rule-row"><span class="ri">✅</span><span>Usar o histórico anterior a favor da conversa</span></div>
+          <div class="rule-row"><span class="ri">✅</span><span>Oferecer condições de retorno facilitadas</span></div>
+          <div class="rule-row"><span class="ri">✅</span><span>Usar linguagem de "volta pra casa"</span></div>
+          <div class="rule-row"><span class="ri">✅</span><span>Construir reconexão genuína antes de fechar</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="background:rgba(255,204,0,.1);border-radius:10px;padding:14px 18px;margin-top:16px;border-left:3px solid var(--yellow);">
+      <p style="font-size:.78rem;font-weight:700;color:var(--navy);margin-bottom:4px;">⚡ Lembre-se</p>
+      <p style="font-size:.74rem;color:var(--mid);line-height:1.6;">Este fluxo foi desenvolvido com base em neuromarketing e psicologia de vendas. O respeito ao histórico e a construção de reconexão genuína são os pilares da reativação.</p>
+    </div>
+  </div>
+  <div class="page-footer">
+    <p>Hélios Proteção Veicular · Treinamento de Vendas</p>
+    <p class="pgnum">13</p>
+  </div>
+</div>
+
+<!-- ════ PÁGINA 14 — CTAs ════ -->
+<div class="page">
+  <div class="page-header">
+    <div class="logo-area">
+      <img src="assets/images/logo-helios.png" alt="Hélios" onerror="this.outerHTML='<span style=\'color:#ffcc00;font-weight:900;font-size:.85rem;\'>HÉLIOS</span>'">
+      <span class="logo-text">Proteção Veicular</span>
+    </div>
+    <span class="section-tag">Alta Conversão</span>
+  </div>
+  <div class="page-body">
+    <span class="section-label">CTAs Mais Fortes</span>
+    <h2 class="page-title">As 5 frases que <em>mais convertem</em></h2>
+    <div class="ctas-intro">
+      Esses CTAs convertem mais porque <strong>reduzem o risco percebido</strong> e mantêm a decisão sempre nas mãos do ex-associado. Use ao final de cada touch.
+    </div>
+    <div class="ctas-list">
+      <div class="cta-row">
+        <span class="cta-arrow">➡</span>
+        <div>
+          <p class="cta-text">"Posso recalcular agora?"</p>
+          <p class="cta-why">Reduz atrito — ação imediata sem exigir compromisso do cliente</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <span class="cta-arrow">➡</span>
+        <div>
+          <p class="cta-text">"Quer comparar sem compromisso?"</p>
+          <p class="cta-why">Elimina o risco percebido de tomar uma decisão precipitada</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <span class="cta-arrow">➡</span>
+        <div>
+          <p class="cta-text">"Me dá 2 minutos e você decide."</p>
+          <p class="cta-why">Apresenta baixo custo de tempo — fácil de dizer sim</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <span class="cta-arrow">➡</span>
+        <div>
+          <p class="cta-text">"Vale a pena pelo menos revisar."</p>
+          <p class="cta-why">A palavra "pelo menos" suaviza e torna o sim automático</p>
+        </div>
+      </div>
+      <div class="cta-row">
+        <span class="cta-arrow">➡</span>
+        <div>
+          <p class="cta-text">"Se fizer sentido, avançamos."</p>
+          <p class="cta-why">Condicional devolve o controle total ao ex-associado</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="end-band">
+    <h2>Hélios Proteção Veicular</h2>
+    <p>Material exclusivo de treinamento · Reconecte com excelência · Use com responsabilidade</p>
+  </div>
+</div>
+
+</body>
+</html>

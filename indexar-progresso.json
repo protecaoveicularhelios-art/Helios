@@ -1,6 +1,6 @@
 {
-  "offset": 394,
-  "enviadas": 394,
+  "offset": 594,
+  "enviadas": 594,
   "historico": [
     {
       "data": "2026-06-16",
@@ -15,6 +15,13 @@
       "ok": 194,
       "fail": 6,
       "offset_inicio": 200
+    },
+    {
+      "data": "2026-06-18",
+      "lote": 200,
+      "ok": 200,
+      "fail": 0,
+      "offset_inicio": 394
     }
   ]
 }

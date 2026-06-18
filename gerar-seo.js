@@ -890,7 +890,7 @@ function gerarHTML(cidade, tipo) {
 
   // links internos: outras páginas desta cidade + cidades vizinhas
   const outrasPaginas = TIPOS
-    .filter(t => t.id !== tipo.id && !tipo.canonicalFn(cidade, slug))
+    .filter(t => t.id !== tipo.id && !tipo.canonicalFn(cidade, slug) && !t.canonicalFn(cidade, slug))
     .slice(0, 5)
     .map(t => `<a href="${BASE_URL}/${t.slugFn(cidade)}/">${t.seoLabel} em ${cidade.nome}</a>`)
     .join('\n            ');

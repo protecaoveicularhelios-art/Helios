@@ -728,6 +728,65 @@
       .footer-bottom { flex-direction: column; text-align: center; }
       footer { padding: 48px 20px 24px; }
     }
+
+    /* ── MODAL COTAÇÃO ── */
+    .modal-overlay {
+      position: fixed; inset: 0; background: rgba(11,26,53,.72);
+      display: none; align-items: center; justify-content: center;
+      z-index: 1000; padding: 16px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-card {
+      background: #fff; border-radius: 18px; max-width: 420px; width: 100%;
+      position: relative; box-shadow: 0 30px 60px rgba(0,0,0,.35);
+      overflow: hidden; animation: modalPop .25s ease;
+    }
+    @keyframes modalPop { from { transform: scale(.92); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .modal-close {
+      position: absolute; top: 14px; right: 14px; background: #f4f6f9;
+      border: none; color: #4a5568; width: 30px; height: 30px;
+      border-radius: 50%; font-size: 1rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; z-index: 2;
+    }
+    .modal-header { background: #fff; padding: 32px 28px 18px; text-align: center; position: relative; }
+    .modal-header h2 { color: var(--navy); font-size: 1.3rem; font-weight: 900; line-height: 1.3; }
+    .modal-header h2 em { color: var(--yellow); font-style: normal; }
+    .modal-header p { color: #4a5568; font-size: .82rem; margin-top: 8px; }
+    .modal-body { padding: 18px 28px 28px; }
+    .modal-body .form-group { margin-bottom: 16px; }
+    .modal-body label {
+      display: block; font-size: .75rem; font-weight: 700;
+      color: #4a5568; margin-bottom: 6px; letter-spacing: .2px;
+    }
+    .modal-body input {
+      width: 100%; padding: 13px 14px; border: 1.5px solid #e1e5ec; border-radius: 10px;
+      font-family: 'Montserrat', sans-serif; font-size: .92rem; color: #1a2332;
+      transition: border-color .15s;
+    }
+    .modal-body input:focus { outline: none; border-color: #25d366; }
+    .modal-body .btn-submit {
+      width: 100%; background: #25d366; color: #fff; border: none;
+      padding: 15px; border-radius: 50px; font-family: 'Montserrat', sans-serif;
+      font-weight: 800; font-size: .95rem; cursor: pointer; transition: background .2s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      margin-top: 4px; animation: btnPulse 1.8s infinite;
+    }
+    .modal-body .btn-submit:hover { background: #1ebe5d; }
+    .modal-body .btn-submit:disabled { animation: none; opacity: .7; cursor: default; }
+    @keyframes btnPulse {
+      0%   { box-shadow: 0 0 0 0 rgba(37,211,102,.55); }
+      70%  { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+    }
+    .modal-foot-note { text-align: center; font-size: .68rem; color: #9aa3b2; margin-top: 14px; line-height: 1.4; }
+    .modal-success { text-align: center; padding: 12px 0; }
+    .modal-success .check {
+      width: 52px; height: 52px; border-radius: 50%; background: #25d366;
+      color: #fff; font-size: 1.6rem; display: flex; align-items: center;
+      justify-content: center; margin: 0 auto 14px;
+    }
+    .modal-success h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 8px; }
+    .modal-success p { color: #4a5568; font-size: .85rem; }
   </style>
   <script type="application/ld+json">
   {
@@ -1669,5 +1728,96 @@ document.addEventListener('click', function(e) {
 });
 </script>
 <!-- End Conversion Tracking -->
+
+<!-- MODAL COTAÇÃO -->
+<div class="modal-overlay" id="modalCotacao">
+  <div class="modal-card">
+    <button class="modal-close" id="modalCloseBtn" aria-label="Fechar">✕</button>
+    <div class="modal-header">
+      <h2>Receba sua <em>cotação grátis</em><br>em poucos minutos</h2>
+      <p>Deixe seu contato e nossa equipe te chama no WhatsApp</p>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <form id="formCotacao">
+        <div class="form-group">
+          <label for="modalNome">Nome</label>
+          <input type="text" id="modalNome" name="nome" placeholder="Seu nome completo" required>
+        </div>
+        <div class="form-group">
+          <label for="modalTelefone">WhatsApp</label>
+          <input type="tel" id="modalTelefone" name="telefone" placeholder="(31) 9 9999-9999" required>
+        </div>
+        <button type="submit" class="btn-submit" id="modalSubmitBtn">Quero minha cotação grátis →</button>
+      </form>
+      <p class="modal-foot-note">Seus dados estão seguros e usados apenas para contato sobre sua cotação.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Cotação: exibição + envio -->
+<script>
+(function() {
+  var FORMSPREE_ENDPOINT = 'https://formspree.io/f/meebjrnk';
+
+  var overlay = document.getElementById('modalCotacao');
+  var closeBtn = document.getElementById('modalCloseBtn');
+  var form = document.getElementById('formCotacao');
+  var body = document.getElementById('modalBody');
+  var submitBtn = document.getElementById('modalSubmitBtn');
+
+  function openModal() {
+    if (sessionStorage.getItem('modalCotacaoFechado')) return;
+    overlay.classList.add('open');
+  }
+
+  function closeModal() {
+    overlay.classList.remove('open');
+    sessionStorage.setItem('modalCotacaoFechado', '1');
+  }
+
+  setTimeout(openModal, 9000);
+
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeModal();
+  });
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+
+    var nome = document.getElementById('modalNome').value;
+    var telefone = document.getElementById('modalTelefone').value;
+
+    fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ nome: nome, telefone: telefone, origem: 'index.html - Modal Cotação' })
+    })
+    .then(function() {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'form_submit_cotacao', form_name: 'modal_cotacao' });
+
+      body.innerHTML =
+        '<div class="modal-success">' +
+        '<div class="check">✓</div>' +
+        '<h3>Recebemos seu contato!</h3>' +
+        '<p>Abrindo o WhatsApp para confirmar sua cotação...</p>' +
+        '</div>';
+
+      var msg = 'Olá! Meu nome é ' + nome + ', vi o site da Hélios e quero uma cotação grátis. Meu telefone: ' + telefone;
+      window.open('https://wa.me/5531992395859?text=' + encodeURIComponent(msg), '_blank');
+
+      setTimeout(closeModal, 4000);
+    })
+    .catch(function() {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Quero minha cotação grátis →';
+      alert('Não foi possível enviar agora. Tente novamente ou fale direto pelo WhatsApp.');
+    });
+  });
+})();
+</script>
 </body>
 </html>

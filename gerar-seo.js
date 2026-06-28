@@ -855,9 +855,8 @@ function schemas(cidade, tipo, pageUrl, title, faqs) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Início', item: BASE_URL + '/' },
-      { '@type': 'ListItem', position: 2, name: 'Proteção Veicular MG', item: BASE_URL + '/belo-horizonte/' },
-      { '@type': 'ListItem', position: 3, name: cidade.nome, item: BASE_URL + `/${cidade.slug}/` },
-      { '@type': 'ListItem', position: 4, name: tipo.seoLabel, item: pageUrl },
+      { '@type': 'ListItem', position: 2, name: cidade.nome, item: BASE_URL + `/protecao-veicular-${cidade.slug}-mg/` },
+      { '@type': 'ListItem', position: 3, name: tipo.seoLabel, item: pageUrl },
     ],
   };
 
@@ -992,8 +991,7 @@ function gerarHTML(cidade, tipo) {
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <ol class="breadcrumb-list">
     <li><a href="${BASE_URL}/">Início</a></li>
-    <li><a href="${BASE_URL}/belo-horizonte/">Proteção Veicular MG</a></li>
-    <li><a href="${BASE_URL}/${cidade.slug}/">${cidade.nome}</a></li>
+    <li><a href="${BASE_URL}/protecao-veicular-${cidade.slug}-mg/">${cidade.nome}</a></li>
     <li aria-current="page">${tipo.seoLabel}</li>
   </ol>
 </nav>

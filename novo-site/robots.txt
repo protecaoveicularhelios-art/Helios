@@ -3,6 +3,8 @@ Allow: /
 Disallow: /b/
 Disallow: /l/
 Disallow: /a/
+Disallow: /m/
+Disallow: /p/
 Disallow: /city-seventy/
 Disallow: /cidades-atendidas
 Disallow: /_next/

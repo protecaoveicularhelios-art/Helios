@@ -1,6 +1,6 @@
 {
-  "offset": 594,
-  "enviadas": 594,
+  "offset": 1223,
+  "enviadas": 1223,
   "historico": [
     {
       "data": "2026-06-16",
@@ -22,6 +22,34 @@
       "ok": 200,
       "fail": 0,
       "offset_inicio": 394
+    },
+    {
+      "data": "2026-06-24",
+      "lote": 200,
+      "ok": 200,
+      "fail": 0,
+      "offset_inicio": 594
+    },
+    {
+      "data": "2026-06-28",
+      "lote": 200,
+      "ok": 200,
+      "fail": 0,
+      "offset_inicio": 794
+    },
+    {
+      "data": "2026-06-29",
+      "lote": 200,
+      "ok": 29,
+      "fail": 171,
+      "offset_inicio": 994
+    },
+    {
+      "data": "2026-07-02",
+      "lote": 200,
+      "ok": 200,
+      "fail": 0,
+      "offset_inicio": 1023
     }
   ]
 }

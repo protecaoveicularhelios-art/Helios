@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RPO ENGENHARIA — Engenharia, Confiabilidade e Gestão de Ativos</title>
+<meta name="description" content="RPO Engenharia: consultoria e engenharia especializada em gestão de ativos, confiabilidade e manutenção industrial. Planos de manutenção, CMMS/EAM, SAP PM, engenharia de confiabilidade e adequação normativa." />
+
+<!-- Google Fonts (CDN). Para uso 100% offline, baixe os arquivos .woff2 de Poppins e Inter
+     e troque este <link> por @font-face local apontando para /fonts/ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+
+<!-- O botão "Baixar PDF" usa a impressão nativa do navegador (window.print()),
+     controlada pelas regras de @media print em style.css — não depende de CDN
+     nem de internet. Se preferir gerar o PDF via captura de tela em vez da
+     impressão nativa, é possível reativar uma lib como o html2pdf.js
+     (https://github.com/eKoopmans/html2pdf.js) adicionando o <script> aqui
+     e ajustando script.js, mas isso tende a ignorar as regras de @media print. -->
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852 1 1.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+      </span>
+      <span>
+        RPO ENGENHARIA
+        <small>Confiabilidade &amp; Gestão de Ativos</small>
+      </span>
+    </div>
+
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#sobre">Quem Somos</a>
+      <a href="#institucional">Institucional</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#setores">Setores</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn btn-primary no-print" id="btnDownloadPdfTop" type="button" title="Abre a janela de impressão — escolha 'Salvar como PDF'">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 19h16"/></svg>
+        <span class="btn-text-full">Baixar PDF</span>
+      </button>
+      <button class="nav-toggle no-print" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu no-print" id="mobileMenu">
+  <a href="#sobre">Quem Somos</a>
+  <a href="#institucional">Institucional</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#diferenciais">Diferenciais</a>
+  <a href="#setores">Setores</a>
+  <a href="#contato">Contato</a>
+</div>
+
+<!-- ============ CONTEÚDO PARA GERAR O PDF ============ -->
+<div id="pdf-content">
+
+<!-- ============ 1. HERO ============ -->
+<section class="hero" id="topo">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        Engenharia · Confiabilidade · Gestão de Ativos
+      </span>
+      <h1>Engenharia que gera <span class="accent">Confiabilidade, Eficiência e Resultados.</span></h1>
+      <p class="hero-sub">
+        A RPO ENGENHARIA é especializada em gestão da manutenção, confiabilidade operacional e
+        otimização de ativos industriais — aumentando a disponibilidade dos equipamentos, reduzindo
+        custos e elevando a produtividade da sua planta.
+      </p>
+
+      <div class="btn-row">
+        <button class="btn btn-primary btn-lg no-print" id="btnDownloadPdfHero" type="button" title="Abre a janela de impressão — escolha 'Salvar como PDF'">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 19h16"/></svg>
+          Baixar apresentação em PDF
+        </button>
+        <a class="btn btn-ghost btn-lg" href="#contato">Falar com um especialista</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">10<span>+</span></div>
+          <div class="stat-label">Frentes de atuação em engenharia</div>
+        </div>
+        <div>
+          <div class="stat-num">7<span></span></div>
+          <div class="stat-label">Setores industriais atendidos</div>
+        </div>
+        <div>
+          <div class="stat-num">NR<span>10/12</span></div>
+          <div class="stat-label">Conformidade normativa garantida</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h4>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#2dd4a7"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        O que entregamos
+      </h4>
+      <div class="hero-chip-grid">
+        <div class="hero-chip">
+          <strong>Planos de Manutenção</strong>
+          <p>Preventiva, preditiva e lubrificação</p>
+        </div>
+        <div class="hero-chip">
+          <strong>CMMS/EAM &amp; SAP PM</strong>
+          <p>Implantação e parametrização</p>
+        </div>
+        <div class="hero-chip">
+          <strong>Confiabilidade</strong>
+          <p>FMEA, RCA, RCM e criticidade</p>
+        </div>
+        <div class="hero-chip">
+          <strong>Preditiva</strong>
+          <p>Vibração, termografia, óleo, ultrassom</p>
+        </div>
+        <div class="hero-chip">
+          <strong>Normas Regulamentadoras</strong>
+          <p>NR-10, NR-12 e adequações</p>
+        </div>
+        <div class="hero-chip">
+          <strong>Engenharia de Projetos</strong>
+          <p>Comissionamento e paradas industriais</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="container">
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+      Conformidade com normas ABNT
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      NR-10 e NR-12
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg>
+      Especialização em SAP PM
+    </span>
+    <span class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+      Metodologias reconhecidas internacionalmente
+    </span>
+  </div>
+</div>
+
+<!-- ============ 2. QUEM SOMOS ============ -->
+<section class="section" id="sobre">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="section-head" style="margin-bottom:0">
+          <span class="eyebrow">Quem somos</span>
+          <h2>Consultoria e engenharia especializada em ativos industriais</h2>
+          <p class="lede" style="margin-top:16px">
+            A RPO ENGENHARIA é especializada em soluções de engenharia voltadas para a gestão da
+            manutenção, confiabilidade operacional e otimização de ativos industriais. Atuamos de forma
+            estratégica, integrando tecnologia, processos e conhecimento técnico para transformar a
+            manutenção em um diferencial competitivo para nossos clientes.
+          </p>
+        </div>
+
+        <div class="about-points">
+          <div class="about-point">
+            <span class="check-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <div>
+              <strong>O que fazemos</strong>
+              <p>Aumentamos a disponibilidade dos equipamentos, reduzimos custos operacionais e elevamos a produtividade por meio de metodologias modernas de manutenção e confiabilidade.</p>
+            </div>
+          </div>
+          <div class="about-point">
+            <span class="check-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <div>
+              <strong>Para quem é indicado</strong>
+              <p>Indústrias com ativos críticos e alta dependência de disponibilidade operacional, de empresas a órgãos públicos e clientes particulares.</p>
+            </div>
+          </div>
+          <div class="about-point">
+            <span class="check-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg>
+            </span>
+            <div>
+              <strong>Qual problema resolve</strong>
+              <p>Falta de confiabilidade dos ativos, custos de manutenção fora de controle e dificuldade de adequação às normas técnicas e regulamentadoras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="audience-card">
+        <h4>Onde atuamos</h4>
+        <ul class="audience-list">
+          <li>Indústrias com ativos críticos, alta dependência de disponibilidade e processos contínuos</li>
+          <li>Plantas que utilizam ou pretendem implantar CMMS/EAM ou SAP PM</li>
+          <li>Empresas que precisam de adequação a NR-10, NR-12 e demais normas regulamentadoras</li>
+          <li>Empresas, indústrias, condomínios, órgãos públicos e clientes particulares com demandas de engenharia</li>
+          <li>Gestores de manutenção que buscam transformar a área em diferencial competitivo, não em centro de custo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. INSTITUCIONAL: MISSÃO / VISÃO / VALORES ============ -->
+<section class="section section-dark" id="institucional">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Institucional</span>
+      <h2>Missão, visão e valores</h2>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar-card">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        </div>
+        <h3>Missão</h3>
+        <p>Desenvolver soluções de engenharia que promovam eficiência operacional, segurança, confiabilidade e sustentabilidade dos ativos industriais, agregando valor aos processos produtivos de nossos clientes.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>
+        </div>
+        <h3>Visão</h3>
+        <p>Ser reconhecida como referência nacional em engenharia de manutenção, gestão de ativos e consultoria técnica, destacando-se pela excelência, inovação e geração de resultados.</p>
+      </div>
+      <div class="pillar-card">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+        </div>
+        <h3>Valores</h3>
+        <p>Os princípios que orientam cada decisão e cada entrega da RPO ENGENHARIA.</p>
+      </div>
+    </div>
+
+    <div class="values-row">
+      <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Ética e transparência</span>
+      <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Segurança em primeiro lugar</span>
+      <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Excelência técnica</span>
+      <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Compromisso com resultados</span>
+      <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Inovação</span>
+      <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Sustentabilidade</span>
+      <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Melhoria contínua</span>
+      <span class="value-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg>Valorização das pessoas</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. NOSSOS SERVIÇOS ============ -->
+<section class="section section-alt" id="servicos">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Nossos serviços</span>
+      <h2>10 frentes de atuação para a confiabilidade dos seus ativos</h2>
+      <p class="lede" style="margin-top:16px">Clique em cada frente para ver o detalhamento completo das entregas.</p>
+    </div>
+
+    <div class="service-grid">
+
+      <details class="service-item" open>
+        <summary>
+          <span class="service-num">01</span>
+          <span class="service-summary-text">
+            <h3>Gestão da Manutenção</h3>
+            <p>Estruturação completa da função manutenção, da estratégia aos indicadores.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Planos de Manutenção Preventiva</li>
+            <li>Planos de Manutenção Preditiva</li>
+            <li>Planos de Lubrificação</li>
+            <li>Engenharia de Manutenção</li>
+            <li>Indicadores (KPIs)</li>
+            <li>Planejamento e Controle da Manutenção (PCM)</li>
+            <li>Procedimentos Operacionais e de Manutenção</li>
+            <li>Padronização de Processos</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">02</span>
+          <span class="service-summary-text">
+            <h3>Implantação de Sistemas (CMMS/EAM)</h3>
+            <p>Implementação e parametrização de softwares de manutenção.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Cadastro técnico de ativos</li>
+            <li>Estrutura de equipamentos</li>
+            <li>Planos de manutenção</li>
+            <li>Ordens de serviço</li>
+            <li>Gestão de materiais</li>
+            <li>Indicadores de desempenho</li>
+            <li>Dashboards gerenciais</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">03</span>
+          <span class="service-summary-text">
+            <h3>Consultoria SAP PM</h3>
+            <p>Especialização em processos de manutenção utilizando SAP PM.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Estruturação de dados mestres</li>
+            <li>Cadastro de equipamentos e locais de instalação</li>
+            <li>Planos de manutenção</li>
+            <li>Estratégias de manutenção</li>
+            <li>Ordens de serviço</li>
+            <li>Indicadores</li>
+            <li>Otimização de processos de manutenção</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">04</span>
+          <span class="service-summary-text">
+            <h3>Engenharia de Confiabilidade</h3>
+            <p>Metodologias para aumento da confiabilidade dos ativos.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Análise de Falhas</li>
+            <li>FMEA</li>
+            <li>RCA</li>
+            <li>Criticidade de Equipamentos</li>
+            <li>RCM</li>
+            <li>Otimização dos Planos de Manutenção</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">05</span>
+          <span class="service-summary-text">
+            <h3>Manutenção Preditiva</h3>
+            <p>Contratos especializados de monitoramento de condição.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Análise de Vibração</li>
+            <li>Termografia</li>
+            <li>Ultrassom Industrial</li>
+            <li>Análise de Óleo Lubrificante</li>
+            <li>Monitoramento de Condição</li>
+            <li>Diagnóstico de Equipamentos Rotativos</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">06</span>
+          <span class="service-summary-text">
+            <h3>Gestão de Estoques de Manutenção</h3>
+            <p>Redução de capital imobilizado com inteligência de sobressalentes.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Análise de sobressalentes</li>
+            <li>Classificação ABC</li>
+            <li>Redução de capital imobilizado</li>
+            <li>Estoque mínimo e máximo</li>
+            <li>Padronização de materiais</li>
+            <li>Otimização do almoxarifado</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">07</span>
+          <span class="service-summary-text">
+            <h3>Engenharia de Processos e Procedimentos</h3>
+            <p>Padronização e documentação das operações.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Procedimentos Operacionais</li>
+            <li>Procedimentos de Manutenção</li>
+            <li>Instruções Técnicas</li>
+            <li>Fluxos Operacionais</li>
+            <li>Padronização de Atividades</li>
+            <li>Gestão Documental</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">08</span>
+          <span class="service-summary-text">
+            <h3>Segurança e Normas Regulamentadoras</h3>
+            <p>Adequação às principais NRs e gestão de risco.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>NR-10 — Segurança em Instalações Elétricas</li>
+            <li>NR-12 — Segurança em Máquinas e Equipamentos</li>
+            <li>Inventários</li>
+            <li>Prontuários</li>
+            <li>Análises de Risco</li>
+            <li>Procedimentos de Segurança</li>
+            <li>Planos de Adequação</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">09</span>
+          <span class="service-summary-text">
+            <h3>Engenharia de Projetos</h3>
+            <p>Do projeto industrial ao start-up dos equipamentos.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Desenvolvimento de Projetos Industriais</li>
+            <li>Acompanhamento Técnico</li>
+            <li>Fiscalização de Obras</li>
+            <li>Gerenciamento de Projetos</li>
+            <li>Comissionamento</li>
+            <li>Start-up de Equipamentos</li>
+            <li>Apoio Técnico em Paradas Industriais</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="service-item">
+        <summary>
+          <span class="service-num">10</span>
+          <span class="service-summary-text">
+            <h3>Contratos de Engenharia</h3>
+            <p>Prestação de serviços contínuos de manutenção e confiabilidade.</p>
+          </span>
+          <svg class="service-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </summary>
+        <div class="service-body">
+          <ul class="service-tags">
+            <li>Engenharia de Manutenção</li>
+            <li>PCM</li>
+            <li>Planejamento</li>
+            <li>Inspeção</li>
+            <li>Engenharia de Confiabilidade</li>
+            <li>Supervisão Técnica</li>
+            <li>Gestão de Ativos</li>
+          </ul>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. DIFERENCIAIS ============ -->
+<section class="section" id="diferenciais">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Diferenciais</span>
+      <h2>Por que escolher a RPO ENGENHARIA</h2>
+    </div>
+
+    <div class="diff-grid">
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Equipe altamente especializada, com forte experiência em manutenção industrial</p>
+      </div>
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Especialização em SAP PM, um diferencial técnico raro no mercado</p>
+      </div>
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Foco declarado na redução de custos operacionais</p>
+      </div>
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Soluções orientadas por indicadores (KPIs), não por achismo</p>
+      </div>
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Atendimento personalizado e soluções sob medida</p>
+      </div>
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Conformidade com normas técnicas e regulamentadoras</p>
+      </div>
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Metodologias reconhecidas internacionalmente (FMEA, RCA, RCM)</p>
+      </div>
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Compromisso com disponibilidade, confiabilidade e segurança dos ativos</p>
+      </div>
+      <div class="diff-check">
+        <span class="check-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 13l4 4L19 7"/></svg></span>
+        <p>Responsabilidade técnica garantida, do diagnóstico à entrega final</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. SETORES DE ATUAÇÃO ============ -->
+<section class="section section-alt" id="setores">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Setores de atuação</span>
+      <h2>Indústrias que confiam em soluções RPO</h2>
+    </div>
+
+    <div class="sector-chips">
+      <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V10l7-7 7 7v11M9 21v-6h6v6"/></svg>Mineração</span>
+      <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="4" height="11"/><rect x="10" y="6" width="4" height="15"/><rect x="16" y="3" width="4" height="18"/></svg>Siderurgia</span>
+      <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg>Metalurgia</span>
+      <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg>Papel e Celulose</span>
+      <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v8M8 6l4-4 4 4"/><circle cx="12" cy="16" r="6"/></svg>Alimentício</span>
+      <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>Cimento</span>
+      <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2v6L4 18a3 3 0 003 4h10a3 3 0 003-4l-5-10V2"/></svg>Química</span>
+    </div>
+
+    <p class="sector-note">
+      Atendemos também empresas, condomínios, órgãos públicos e clientes particulares, oferecendo
+      soluções completas em engenharia, desde o diagnóstico inicial até a entrega final do serviço.
+    </p>
+  </div>
+</section>
+
+<!-- ============ 7. NOSSO COMPROMISSO ============ -->
+<section class="section" id="compromisso">
+  <div class="container">
+    <div class="commitment-block">
+      <span class="eyebrow">Nosso compromisso</span>
+      <p>
+        Mais do que executar serviços de engenharia, a <strong>RPO ENGENHARIA</strong> atua como
+        parceira estratégica de seus clientes, promovendo ganhos de produtividade, aumento da
+        confiabilidade operacional, redução de custos de manutenção e melhoria contínua dos
+        processos industriais.
+      </p>
+      <p>Nosso foco é transformar a manutenção em um elemento estratégico para a competitividade e a sustentabilidade das organizações.</p>
+      <div class="commitment-tagline">RPO ENGENHARIA — Engenharia que gera Confiabilidade, Eficiência e Resultados.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. CHAMADA PARA REUNIÃO ============ -->
+<section class="section section-alt" id="contato">
+  <div class="container">
+    <div class="cta-section">
+      <span class="tag">Vamos conversar</span>
+      <h2>Pronto para transformar a manutenção em diferencial competitivo?</h2>
+      <p>
+        Agende uma conversa sem compromisso e descubra como a RPO ENGENHARIA pode aumentar a
+        confiabilidade e a disponibilidade dos seus ativos em [CIDADE/UF].
+      </p>
+      <div class="btn-row">
+        <a class="btn btn-cta-dark btn-lg" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l5-1.4A10 10 0 1012 2zm5.6 14.3c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-1.7-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3 0-1.4.7-2.1 1-2.4.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.2.4-.4.6-.6.9-.2.2-.4.4-.2.8.3.6 1 1.4 1.7 2 .9.8 1.6 1.1 1.9 1.2.3.1.5.1.7-.1.2-.3.7-.8.9-1.1.2-.3.4-.2.7-.1.3.1 1.8.9 2.1 1 .3.2.5.2.6.4.1.2.1.7-.1 1.3z"/></svg>
+          Falar no WhatsApp: [TELEFONE]
+        </a>
+        <a class="btn btn-cta-outline btn-lg" href="mailto:[EMAIL]">
+          Enviar e-mail: [EMAIL]
+        </a>
+        <button class="btn btn-cta-outline btn-lg no-print" id="btnDownloadPdfCta" type="button" title="Abre a janela de impressão — escolha 'Salvar como PDF'">
+          Baixar PDF
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div> <!-- fim #pdf-content -->
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852 1 1.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          </span>
+          <span>RPO ENGENHARIA<small>Confiabilidade &amp; Gestão de Ativos</small></span>
+        </div>
+        <p>Engenharia, confiabilidade e gestão de ativos para indústrias que não podem parar.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li>RPO ENGENHARIA E CONSULTORIA LTDA</li>
+          <li>CNPJ: 57.200.343/0001-17</li>
+          <li>Responsável: Reginaldo de Paula Oliveira</li>
+          <li>Contagem/MG</li>
+          <li><a href="tel:[TELEFONE]">[TELEFONE]</a></li>
+          <li><a href="mailto:[EMAIL]">[EMAIL]</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Quem somos</a></li>
+          <li><a href="#servicos">Nossos serviços</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#setores">Setores de atuação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="ano-atual"></span> RPO ENGENHARIA — Todos os direitos reservados.</span>
+      <span>"Transformando desafios em soluções de engenharia."</span>
+    </div>
+    <p class="footer-note">
+      Este material é uma apresentação institucional e comercial elaborada a partir do portfólio de
+      serviços da RPO ENGENHARIA. Dados de contato (telefone e e-mail) ainda precisam ser confirmados
+      antes do envio a clientes. Valores, prazos e condições comerciais específicos devem ser tratados
+      em proposta própria para cada cliente.
+    </p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

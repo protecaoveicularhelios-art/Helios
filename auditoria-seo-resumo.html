@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resumo de Estudo — Auditoria de SEO | Hélios Proteção Veicular</title>
+<style>
+  :root{
+    --bg:#0f172a; --card:#ffffff; --ink:#0f172a; --muted:#64748b;
+    --red:#dc2626; --red-bg:#fef2f2; --orange:#ea580c; --orange-bg:#fff7ed;
+    --yellow:#ca8a04; --yellow-bg:#fefce8; --green:#16a34a; --green-bg:#f0fdf4;
+    --blue:#2563eb; --blue-bg:#eff6ff; --border:#e2e8f0;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    background:#f1f5f9; color:var(--ink); line-height:1.5;
+  }
+  header.top{
+    background:linear-gradient(135deg,#0f172a,#1e3a5f); color:#fff;
+    padding:40px 24px 32px;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 20px;}
+  header.top .wrap{padding:0 4px;}
+  header.top h1{margin:0 0 6px; font-size:26px;}
+  header.top p{margin:0; opacity:.85; font-size:14px;}
+  .badge{
+    display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.3);
+    padding:3px 10px; border-radius:999px; font-size:12px; margin-top:10px;
+  }
+
+  .kpis{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin:-20px auto 0; max-width:1080px;
+    padding:0 20px;
+  }
+  .kpi{
+    background:var(--card); border-radius:10px; padding:16px 14px; box-shadow:0 4px 14px rgba(0,0,0,.08);
+    text-align:center;
+  }
+  .kpi .v{font-size:22px; font-weight:800;}
+  .kpi .l{font-size:11px; color:var(--muted); margin-top:4px; text-transform:uppercase; letter-spacing:.03em;}
+  .kpi.red .v{color:var(--red);}
+  .kpi.orange .v{color:var(--orange);}
+  .kpi.green .v{color:var(--green);}
+
+  main{max-width:1080px; margin:0 auto; padding:36px 20px 60px;}
+
+  section{margin-bottom:34px;}
+  h2{
+    font-size:19px; margin:0 0 14px; padding-bottom:8px; border-bottom:2px solid var(--border);
+    display:flex; align-items:center; gap:8px;
+  }
+  h2 .num{
+    background:var(--ink); color:#fff; width:24px; height:24px; border-radius:6px;
+    display:inline-flex; align-items:center; justify-content:center; font-size:13px;
+  }
+  p.lead{color:var(--muted); font-size:14.5px; margin-top:0;}
+
+  .fire-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;}
+  .fire{
+    border-radius:10px; padding:16px; border:1px solid var(--border); background:var(--card);
+    border-top:4px solid var(--red);
+  }
+  .fire h3{margin:0 0 6px; font-size:15px;}
+  .fire .num-big{font-size:28px; font-weight:800; color:var(--red); display:block; margin-bottom:2px;}
+  .fire p{font-size:13px; color:var(--muted); margin:6px 0 0;}
+
+  table{width:100%; border-collapse:collapse; background:var(--card); border-radius:10px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.06);}
+  th,td{padding:10px 12px; text-align:left; font-size:13.5px; border-bottom:1px solid var(--border);}
+  th{background:#f8fafc; font-size:11.5px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted);}
+  tr:last-child td{border-bottom:none;}
+
+  .pill{display:inline-block; padding:2px 9px; border-radius:999px; font-size:11.5px; font-weight:700;}
+  .pill.critica{background:var(--red-bg); color:var(--red);}
+  .pill.alta{background:var(--orange-bg); color:var(--orange);}
+  .pill.media{background:var(--yellow-bg); color:var(--yellow);}
+  .pill.baixa{background:var(--green-bg); color:var(--green);}
+
+  .chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px;}
+  .chip{
+    background:var(--red-bg); color:var(--red); font-size:12px; font-weight:600;
+    padding:4px 9px; border-radius:6px; border:1px solid #fecaca;
+  }
+  .chip.sec{background:#f1f5f9; color:var(--muted); border-color:var(--border); font-weight:500;}
+
+  .timeline{position:relative; padding-left:26px; border-left:3px solid var(--border); margin-top:18px;}
+  .tl-item{margin-bottom:22px; position:relative;}
+  .tl-item::before{
+    content:''; position:absolute; left:-32px; top:2px; width:14px; height:14px; border-radius:50%;
+    background:var(--blue); border:3px solid #fff; box-shadow:0 0 0 2px var(--blue);
+  }
+  .tl-item.urgent::before{background:var(--red); box-shadow:0 0 0 2px var(--red);}
+  .tl-item .when{font-size:12px; font-weight:700; color:var(--blue); text-transform:uppercase;}
+  .tl-item.urgent .when{color:var(--red);}
+  .tl-item h4{margin:2px 0 6px; font-size:15px;}
+  .tl-item ul{margin:0; padding-left:18px; font-size:13.5px; color:#334155;}
+  .tl-item li{margin-bottom:3px;}
+
+  .cw-compare{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .cw-card{background:var(--card); border-radius:10px; padding:16px; border:1px solid var(--border);}
+  .cw-card h4{margin:0 0 10px; font-size:14px;}
+  .cw-row{display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px solid var(--border); font-size:13.5px;}
+  .cw-row:last-child{border-bottom:none;}
+  .ok{color:var(--green); font-weight:700;}
+  .bad{color:var(--red); font-weight:700;}
+  .warn{color:var(--yellow); font-weight:700;}
+
+  .callout{
+    background:var(--blue-bg); border:1px solid #bfdbfe; border-radius:10px; padding:16px 18px; font-size:14px;
+  }
+  .callout b{color:var(--blue);}
+  .callout.danger{background:var(--red-bg); border-color:#fecaca;}
+  .callout.danger b{color:var(--red);}
+
+  footer{text-align:center; padding:24px; color:var(--muted); font-size:12px;}
+
+  @media (max-width:760px){
+    .kpis{grid-template-columns:repeat(2,1fr);}
+    .fire-grid{grid-template-columns:1fr;}
+    .cw-compare{grid-template-columns:1fr;}
+    table{font-size:12.5px;}
+  }
+  @media print{
+    body{background:#fff;}
+    .kpi, .fire, table, .cw-card{box-shadow:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>📊 Resumo de Estudo — Auditoria de SEO</h1>
+    <p>heliosprotecaoveicular.com.br · Rastreamento Ubersuggest de 27/06/2026 às 03h33 · 3.840 páginas analisadas</p>
+    <span class="badge">Diagnóstico geral: ATENÇÃO MÁXIMA — 3 problemas críticos simultâneos</span>
+  </div>
+</header>
+
+<div class="kpis">
+  <div class="kpi red"><div class="v">52–58</div><div class="l">SEO score real (não 87)</div></div>
+  <div class="kpi red"><div class="v">38</div><div class="l">páginas-chave com noindex</div></div>
+  <div class="kpi orange"><div class="v">~6.200</div><div class="l">links internos quebrados</div></div>
+  <div class="kpi red"><div class="v">24,8s</div><div class="l">LCP mobile (ideal &lt;2,5s)</div></div>
+  <div class="kpi orange"><div class="v">54</div><div class="l">visitas orgânicas / mês</div></div>
+</div>
+
+<main>
+
+  <section>
+    <h2><span class="num">1</span>O que essa auditoria realmente mostra</h2>
+    <p class="lead">O Ubersuggest dá nota 87/100, mas essa nota é superficial — ela não pesa adequadamente os 3 problemas abaixo, que juntos explicam por que um site com <b>3.840 páginas</b> gera só <b>54 visitas/mês</b> e <b>1 palavra-chave</b> orgânica.</p>
+
+    <div class="fire-grid">
+      <div class="fire">
+        <h3>🚫 Cidades-chave bloqueadas</h3>
+        <span class="num-big">38</span>
+        <p>BH, Contagem, Uberlândia, Juiz de Fora, Betim e mais 33 cidades estão com <code>noindex</code>. O Google nunca vai mostrar essas páginas. Inclui também <b>/leads/</b>, a página de conversão.</p>
+      </div>
+      <div class="fire">
+        <h3>🔗 Links internos quebrados</h3>
+        <span class="num-big">3.640</span>
+        <p>Quase todas as páginas <code>/assistencia-24-horas-[cidade]-mg/</code> linkam para a versão curta <code>/[cidade]/</code>, que está 404 ou noindex. É um bug de template, não um caso isolado.</p>
+      </div>
+      <div class="fire">
+        <h3>🐌 Site muito lento no celular</h3>
+        <span class="num-big">24,8s</span>
+        <p>LCP mobile de 24,8s (ideal: até 2,5s) — 10x acima do limite. No desktop está ótimo (0,78s). O site foi testado em desktop e nunca otimizado para mobile, que é a maioria do tráfego.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span>Saúde geral do site</h2>
+    <table>
+      <tr><th>Status</th><th>Qtd.</th><th>% do total</th><th>Situação</th></tr>
+      <tr><td>✅ Páginas válidas</td><td>3.654</td><td>95,2%</td><td>Rastreadas sem erro de servidor — mas com links quebrados e conteúdo duplicado</td></tr>
+      <tr><td>🔴 Erro 404 (quebradas)</td><td>148</td><td>3,9%</td><td>Formato antigo <code>/[cidade]/</code> sem redirecionamento</td></tr>
+      <tr><td>🚫 Bloqueadas (noindex)</td><td>38</td><td>1,0%</td><td>Maiores cidades de MG + página /leads/</td></tr>
+      <tr><td>🔀 Redirecionamentos</td><td>0</td><td>0%</td><td>Nenhum redirect configurado onde deveria haver</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span>As 38 páginas com noindex (as mais importantes)</h2>
+    <p class="lead">Estas são as cidades com maior volume de busca em MG — exatamente as que mais importam para o negócio:</p>
+    <div class="chips">
+      <span class="chip">belo-horizonte</span>
+      <span class="chip">contagem</span>
+      <span class="chip">uberlandia</span>
+      <span class="chip">juiz-de-fora</span>
+      <span class="chip">betim</span>
+      <span class="chip">montes-claros</span>
+      <span class="chip">governador-valadares</span>
+      <span class="chip">ipatinga</span>
+      <span class="chip">uberaba</span>
+      <span class="chip">pocos-de-caldas</span>
+      <span class="chip">divinopolis</span>
+      <span class="chip">leads (página de conversão!)</span>
+      <span class="chip sec">+ 26 outras cidades da região metropolitana de BH e interior</span>
+    </div>
+    <div class="callout danger" style="margin-top:14px;">
+      <b>Por que isso é o problema #1:</b> a tag <code>&lt;meta name="robots" content="noindex"&gt;</code> nessas páginas provavelmente foi esquecida de um ambiente de desenvolvimento/testes. É a correção de maior retorno de toda a auditoria — leva minutos para corrigir.
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span>Core Web Vitals: desktop ótimo, mobile crítico</h2>
+    <div class="cw-compare">
+      <div class="cw-card">
+        <h4>🖥️ Desktop</h4>
+        <div class="cw-row"><span>LCP (carregamento)</span><span class="ok">0,78s ✅</span></div>
+        <div class="cw-row"><span>INP (interatividade)</span><span class="ok">177ms ✅</span></div>
+        <div class="cw-row"><span>CLS (estabilidade)</span><span class="ok">0,01 ✅</span></div>
+      </div>
+      <div class="cw-card">
+        <h4>📱 Mobile</h4>
+        <div class="cw-row"><span>LCP (carregamento)</span><span class="bad">24,80s 🔴</span></div>
+        <div class="cw-row"><span>INP (interatividade)</span><span class="warn">249ms 🟡</span></div>
+        <div class="cw-row"><span>CLS (estabilidade)</span><span class="ok">0,01 ✅</span></div>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:12px;">Suspeitas mais prováveis para o LCP mobile: imagem hero sem versão otimizada para celular, script de terceiros (GTM/Pixel) bloqueando o carregamento, ausência de <code>fetchpriority="high"</code> e de Critical CSS inline.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span>Plano de ação priorizado</h2>
+    <table>
+      <tr><th>#</th><th>Ação</th><th>Prioridade</th><th>Esforço</th></tr>
+      <tr><td>1</td><td>Remover <code>noindex</code> das 38 páginas de cidades + /leads/</td><td><span class="pill critica">Crítica</span></td><td>Baixo — 1–2h</td></tr>
+      <tr><td>2</td><td>Corrigir/redirecionar <code>/cotacao.html</code> (404, página de conversão)</td><td><span class="pill critica">Crítica</span></td><td>Baixo — 30min</td></tr>
+      <tr><td>3</td><td>Corrigir o template para parar de gerar ~6.200 links internos quebrados</td><td><span class="pill critica">Crítica</span></td><td>Médio — 2–4h</td></tr>
+      <tr><td>4</td><td>Redirect 301 em massa das 148 páginas <code>/[cidade]/</code> → <code>/assistencia-24-horas-[cidade]-mg/</code></td><td><span class="pill alta">Alta</span></td><td>Médio — 3–6h</td></tr>
+      <tr><td>5</td><td>Resolver LCP mobile de 24,8s (otimizar imagem hero, scripts, critical CSS)</td><td><span class="pill critica">Crítica</span></td><td>Médio-Alto</td></tr>
+      <tr><td>6</td><td>Encurtar title da homepage (79 → ~41 caracteres) + 5 titles longos do blog/cidades</td><td><span class="pill alta">Alta</span></td><td>Baixo — 1h</td></tr>
+      <tr><td>7</td><td>Implementar Schema LocalBusiness + Organization na home e páginas de cidade</td><td><span class="pill alta">Alta</span></td><td>Médio — 4–8h</td></tr>
+      <tr><td>8</td><td>Atualizar sitemap.xml (remover 404 e noindex) + checar robots.txt</td><td><span class="pill media">Média</span></td><td>Baixo — 1h</td></tr>
+      <tr><td>9</td><td>Schema Article (blog), FAQPage e BreadcrumbList em todas as páginas</td><td><span class="pill media">Média</span></td><td>Médio — 4–6h</td></tr>
+      <tr><td>10</td><td>Diversificar conteúdo das páginas programáticas (reduzir near-duplicate content)</td><td><span class="pill media">Média</span></td><td>Alto — semanas</td></tr>
+      <tr><td>11</td><td>Link building — sair de 3 backlinks (diretórios locais, imprensa, parceiros)</td><td><span class="pill alta">Alta</span></td><td>Contínuo</td></tr>
+      <tr><td>12</td><td>Criar hub pages por região (ex: Região Metropolitana de BH, Triângulo Mineiro) + página <code>/minas-gerais/</code></td><td><span class="pill baixa">Baixa</span></td><td>Alto — 1–2 sem.</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span>Cronograma sugerido</h2>
+    <div class="timeline">
+      <div class="tl-item urgent">
+        <div class="when">Semana 1 · Emergência</div>
+        <h4>Parar a sangria</h4>
+        <ul>
+          <li>Remover noindex das 38 páginas + /leads/</li>
+          <li>Redirect 301 de /cotacao.html</li>
+          <li>Redirect 301 em massa das 148 páginas /[cidade]/</li>
+        </ul>
+      </div>
+      <div class="tl-item urgent">
+        <div class="when">Semana 2 · Técnico</div>
+        <h4>Corrigir a estrutura</h4>
+        <ul>
+          <li>Corrigir template de links internos (3.640 páginas)</li>
+          <li>Resolver LCP mobile (24,8s → meta &lt;2,5s)</li>
+          <li>Ajustar titles longos/curtos, atualizar sitemap.xml e robots.txt</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="when">Semanas 3–4 · Rich Results</div>
+        <h4>Schemas e dados estruturados</h4>
+        <ul>
+          <li>LocalBusiness, Organization, Service, Article, FAQPage, BreadcrumbList</li>
+          <li>Open Graph e Twitter Cards completos</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="when">Mês 2 · Conteúdo e autoridade</div>
+        <h4>Diferenciar e crescer</h4>
+        <ul>
+          <li>Enriquecer páginas de cidade (depoimentos, dados locais, FAQ específico)</li>
+          <li>Criar hub pages regionais + /minas-gerais/</li>
+          <li>Iniciar link building e completar o Google Meu Negócio</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="when">Mês 3+ · Monitoramento</div>
+        <h4>Medir e escalar</h4>
+        <ul>
+          <li>Acompanhar Search Console semanalmente</li>
+          <li>Publicar 2+ artigos de blog/mês</li>
+          <li>Expandir o modelo programático com novos termos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span>Ganho esperado</h2>
+    <table>
+      <tr><th>Métrica</th><th>Hoje</th><th>3–6 meses</th><th>12 meses</th></tr>
+      <tr><td>Palavras-chave orgânicas</td><td>1</td><td>50–80</td><td>150–500+</td></tr>
+      <tr><td>Tráfego orgânico/mês</td><td>54 visitas</td><td>300–800</td><td>2.000–8.000</td></tr>
+      <tr><td>Leads orgânicos/mês</td><td>&lt; 5 (estimado)</td><td>15–40</td><td>80–200</td></tr>
+      <tr><td>LCP mobile</td><td>24,8s</td><td>&lt; 4s</td><td>&lt; 2,5s</td></tr>
+      <tr><td>Crawl budget aproveitado</td><td>~95%</td><td>100%</td><td>100%</td></tr>
+    </table>
+    <div class="callout" style="margin-top:14px;">
+      <b>Maior alavanca isolada:</b> liberar o noindex de Belo Horizonte, Contagem e Uberlândia pode representar 40–60% do volume total de buscas por proteção veicular em MG — e é também a correção mais rápida e barata da lista.
+    </div>
+    <div class="callout danger" style="margin-top:10px;">
+      <b>Limitação real:</b> com apenas 3 backlinks, o teto de crescimento orgânico fica entre 300–1.000 visitas/mês sem uma estratégia ativa de link building — autoridade de domínio é o único fator que as correções técnicas não resolvem por conta própria.
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Resumo gerado a partir da auditoria Ubersuggest de 27/06/2026 · Documento interno de estudo — não publicar/indexar.
+</footer>
+
+</body>
+</html>

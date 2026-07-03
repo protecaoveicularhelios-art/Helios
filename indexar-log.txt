@@ -1,0 +1,862 @@
+📄 sitemap-cidades.xml: 182 URLs
+📄 sitemap-motoristas-app.xml: 728 URLs
+📄 sitemap-motos.xml: 364 URLs
+📄 sitemap-veiculos.xml: 546 URLs
+📄 sitemap-cidades.xml: 182 URLs
+📄 sitemap-motoristas-app.xml: 728 URLs
+📄 sitemap-motos.xml: 364 URLs
+📄 sitemap-veiculos.xml: 546 URLs
+📄 sitemap-segmentos.xml: 1092 URLs
+📄 sitemap-servicos.xml: 728 URLs
+
+📊 Total de URLs indexáveis: 3640
+✅ Já enviadas: 794
+📋 Restantes:  2846
+📦 Este lote:  200 URLs (offset 794 → 993)
+
+🔑 Obtendo token...
+✅ Token obtido!
+
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-diamantina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-diamantina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-diamantina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-diamantina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-almenara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-almenara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-almenara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-almenara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-aracuai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-aracuai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-aracuai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-aracuai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-pedra-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-pedra-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-pedra-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-pedra-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-nanuque-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-nanuque-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-nanuque-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-nanuque-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-carlos-chagas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-carlos-chagas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-carlos-chagas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-carlos-chagas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-novo-cruzeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-novo-cruzeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-novo-cruzeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-novo-cruzeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-medina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-medina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-medina-mg/
+^C📄 sitemap-cidades.xml: 182 URLs
+📄 sitemap-motoristas-app.xml: 728 URLs
+📄 sitemap-motos.xml: 364 URLs
+📄 sitemap-veiculos.xml: 546 URLs
+📄 sitemap-segmentos.xml: 1092 URLs
+📄 sitemap-servicos.xml: 728 URLs
+
+📊 Total de URLs indexáveis: 3640
+✅ Já enviadas: 794
+📋 Restantes:  2846
+📦 Este lote:  200 URLs (offset 794 → 993)
+
+🔑 Obtendo token...
+✅ Token obtido!
+
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-diamantina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-diamantina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-diamantina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-diamantina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-almenara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-almenara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-almenara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-almenara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-aracuai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-aracuai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-aracuai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-aracuai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-pedra-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-pedra-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-pedra-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-pedra-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-nanuque-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-nanuque-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-nanuque-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-nanuque-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-carlos-chagas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-carlos-chagas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-carlos-chagas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-carlos-chagas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-novo-cruzeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-novo-cruzeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-novo-cruzeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-novo-cruzeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-medina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-medina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-medina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-medina-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-itaobim-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-itaobim-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-itaobim-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-itaobim-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-ladainha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-ladainha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-ladainha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-ladainha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-capelinha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-capelinha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-capelinha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-capelinha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-serro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-serro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-serro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-serro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-bom-despacho-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-bom-despacho-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-bom-despacho-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-bom-despacho-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-bambui-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-bambui-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-bambui-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-bambui-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-lagoa-da-prata-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-lagoa-da-prata-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-lagoa-da-prata-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-lagoa-da-prata-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-abaete-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-abaete-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-abaete-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-abaete-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-papagaios-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-papagaios-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-papagaios-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-papagaios-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-joao-pinheiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-joao-pinheiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-joao-pinheiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-joao-pinheiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-buritis-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-buritis-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-buritis-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-buritis-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-santo-antonio-do-monte-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-santo-antonio-do-monte-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-santo-antonio-do-monte-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-santo-antonio-do-monte-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-arcos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-arcos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-arcos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-arcos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-oliveira-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-oliveira-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-oliveira-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-oliveira-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-itapecerica-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-itapecerica-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-itapecerica-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-itapecerica-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-pompeu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-pompeu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-pompeu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-pompeu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-entre-rios-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-entre-rios-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-entre-rios-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-entre-rios-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-barroso-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-barroso-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-barroso-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-barroso-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-corinto-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-corinto-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-corinto-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-corinto-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-tres-marias-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-tres-marias-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-tres-marias-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-tres-marias-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-uber-buritizeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motorista-aplicativo-buritizeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-delivery-buritizeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-taxi-buritizeiro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-betim-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-betim-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-contagem-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-contagem-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-belo-horizonte-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-belo-horizonte-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ibirite-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ibirite-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sarzedo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sarzedo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-mario-campos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-mario-campos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-juatuba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-juatuba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-mateus-leme-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-mateus-leme-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-esmeraldas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-esmeraldas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ribeirao-das-neves-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ribeirao-das-neves-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-santa-luzia-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-santa-luzia-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-nova-lima-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-nova-lima-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sabara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sabara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sete-lagoas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sete-lagoas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-divinopolis-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-divinopolis-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-itauna-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-itauna-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-para-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-para-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-uberlandia-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-uberlandia-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-juiz-de-fora-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-juiz-de-fora-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-montes-claros-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-montes-claros-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-uberaba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-uberaba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-governador-valadares-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-governador-valadares-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ipatinga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ipatinga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-pocos-de-caldas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-pocos-de-caldas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-patos-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-patos-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-pouso-alegre-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-pouso-alegre-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-varginha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-varginha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-barbacena-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-barbacena-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-vespasiano-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-vespasiano-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-araguari-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-araguari-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-itabira-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-itabira-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-conselheiro-lafaiete-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-conselheiro-lafaiete-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-coronel-fabriciano-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-coronel-fabriciano-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-muriae-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-muriae-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-teofilo-otoni-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-teofilo-otoni-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-araxa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-araxa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-passos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-passos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-uba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-uba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-lavras-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-lavras-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ituiutaba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ituiutaba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-paracatu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-paracatu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-itajuba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-itajuba-mg/
+
+──────────────────────────────────────────────────────
+✅ Enviadas com sucesso: 200/200
+📊 Total enviado até agora: 994/3640
+📋 Restam: 2646 URLs (14 dias)
+──────────────────────────────────────────────────────
+
+⏰ Rode novamente amanhã após as 4h da manhã:
+   node indexar-novas-paginas.js
+
+📄 sitemap-cidades.xml: 182 URLs
+📄 sitemap-motoristas-app.xml: 728 URLs
+📄 sitemap-motos.xml: 364 URLs
+📄 sitemap-veiculos.xml: 546 URLs
+📄 sitemap-segmentos.xml: 1092 URLs
+📄 sitemap-servicos.xml: 728 URLs
+
+📊 Total de URLs indexáveis: 3640
+✅ Já enviadas: 994
+📋 Restantes:  2646
+📦 Este lote:  200 URLs (offset 994 → 1193)
+
+🔑 Obtendo token...
+Erro fatal: getaddrinfo ENOTFOUND oauth2.googleapis.com
+📄 sitemap-cidades.xml: 182 URLs
+📄 sitemap-motoristas-app.xml: 728 URLs
+📄 sitemap-motos.xml: 364 URLs
+📄 sitemap-veiculos.xml: 546 URLs
+📄 sitemap-segmentos.xml: 1092 URLs
+📄 sitemap-servicos.xml: 728 URLs
+
+📊 Total de URLs indexáveis: 3640
+✅ Já enviadas: 994
+📋 Restantes:  2646
+📦 Este lote:  200 URLs (offset 994 → 1193)
+
+🔑 Obtendo token...
+✅ Token obtido!
+
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-joao-del-rei-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-joao-del-rei-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-caratinga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-caratinga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-patrocinio-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-patrocinio-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-nova-serrana-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-nova-serrana-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-timoteo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-timoteo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-unai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-unai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-vicosa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-vicosa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-tres-coracoes-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-tres-coracoes-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-alfenas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-alfenas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-joao-monlevade-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-joao-monlevade-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-cataguases-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-cataguases-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-curvelo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-curvelo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ouro-preto-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ouro-preto-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-sebastiao-do-paraiso-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-sebastiao-do-paraiso-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-formiga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-formiga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-pedro-leopoldo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-pedro-leopoldo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-frutal-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-frutal-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-lagoa-santa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-lagoa-santa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-campo-belo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-campo-belo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-tres-pontas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-tres-pontas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-congonhas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-congonhas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-brumadinho-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-brumadinho-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-igarape-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-igarape-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-joaquim-de-bicas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-joaquim-de-bicas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-caete-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-caete-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-itabirito-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-itabirito-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-santa-barbara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-santa-barbara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-rio-piracicaba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-rio-piracicaba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-matozinhos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-matozinhos-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-paraopeba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-paraopeba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-lourenco-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-lourenco-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-andradas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-andradas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-machado-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-machado-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-guaxupe-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-guaxupe-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-santa-rita-do-sapucai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-santa-rita-do-sapucai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-extrema-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-extrema-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-jacutinga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-jacutinga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-cambui-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-cambui-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-eloi-mendes-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-eloi-mendes-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-nepomuceno-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-nepomuceno-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-caxambu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-caxambu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-lambari-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-lambari-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-monte-siao-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-monte-siao-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-boa-esperanca-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-boa-esperanca-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-carmo-do-rio-claro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-carmo-do-rio-claro-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-muzambinho-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-muzambinho-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-goncalo-do-sapucai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-goncalo-do-sapucai-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-paraguacu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-paraguacu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-alterosa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-alterosa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-cassia-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-cassia-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-piumhi-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-piumhi-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-baependi-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-baependi-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-conceicao-do-rio-verde-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-conceicao-do-rio-verde-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-iturama-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-iturama-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-monte-carmelo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-monte-carmelo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-gotardo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-gotardo-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-coromandel-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-coromandel-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sacramento-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sacramento-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-lagoa-formosa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-lagoa-formosa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-tupaciguara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-tupaciguara-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-prata-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-prata-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-capinopolis-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-capinopolis-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-carmo-do-paranaiba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-carmo-do-paranaiba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-presidente-olegario-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-presidente-olegario-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-monte-alegre-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-monte-alegre-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-campina-verde-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-campina-verde-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-conceicao-das-alagoas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-conceicao-das-alagoas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-janauba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-janauba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-januaria-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-januaria-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-pirapora-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-pirapora-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-francisco-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-francisco-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-bocaiuva-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-bocaiuva-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-varzea-da-palma-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-varzea-da-palma-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-coracao-de-jesus-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-coracao-de-jesus-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-porteirinha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-porteirinha-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-monte-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-monte-azul-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-salinas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-salinas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-francisco-sa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-francisco-sa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-brasilia-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-brasilia-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-espinosa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-espinosa-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-jaiba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-jaiba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-manga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-manga-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-rio-pardo-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-rio-pardo-de-minas-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-taiobeiras-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-taiobeiras-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ponte-nova-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ponte-nova-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-manhuacu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-manhuacu-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-mariana-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-mariana-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ouro-branco-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ouro-branco-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-rio-pomba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-rio-pomba-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-visconde-do-rio-branco-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-visconde-do-rio-branco-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-carangola-mg/
+✅ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-carangola-mg/
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-itambacuri-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-itambacuri-mg/
+   Erro: Quota exceeded for quota metric 'Publi❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-formiga-mg/
+   Erro: Quota exceeded for quota metric 'Publish requ✅ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-aimores-mg/
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-aimores-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-manhumirim-mg/
+   Erro: Quota exceeded for quota metric 'Publish r❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-pedro-leopoldo-mg/
+   Erro: Quota exceeded for quota metric❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-manhumirim-mg/
+   Erro: Quota exceeded for quota metric 'Publish reque❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-frutal-mg/
+   Erro: Quota exceeded for quota metric 'Publi❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-resplendor-mg/
+   Erro: Quota exceeded for quota metric 'Publish r❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-frutal-mg/
+   Erro: Quota exceeded for quota metric 'Publis❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-resplendor-mg/
+   Erro: Quota exceeded for quota metric 'Publi❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-lagoa-santa-mg/
+   Erro: Quota exceeded for quota metric 'Publish ❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-conselheiro-pena-mg/
+   Erro: Quota exceeded for quota metric '❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-lagoa-santa-mg/
+   Erro: Quota exceeded for quota metric 'Publish re❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-conselheiro-pena-mg/
+   Erro: Quota exceeded for quota met❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-campo-belo-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' a❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-belo-oriente-mg/
+   Erro: Quota exceeded for quota m❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-campo-belo-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' ❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-belo-oriente-mg/
+   Erro: Quota exceeded for quota❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-tres-pontas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and ❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-raul-soares-mg/
+   Erro: Quota exceeded for quota❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-tres-pontas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' a❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-raul-soares-mg/
+   Erro: Quota exceeded for quota❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-congonhas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and li❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-pecanha-mg/
+   Erro: Quota exceeded for quota m❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-congonhas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' a❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-pecanha-mg/
+   Erro: Quota exceeded for quota met❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-brumadinho-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' a❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-joao-evangelista-mg/
+   Erro: Quota exceeded for❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-brumadinho-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limi❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-joao-evangelista-mg/
+   Erro: Quota ex❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-igarape-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-igarape-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-joaquim-de-bicas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-joaquim-de-bicas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-caete-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-caete-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-itabirito-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-itabirito-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-santa-barbara-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-santa-barbara-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-rio-piracicaba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-rio-piracicaba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-matozinhos-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-matozinhos-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-paraopeba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-paraopeba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-lourenco-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-lourenco-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-andradas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-andradas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-machado-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-machado-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-guaxupe-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-guaxupe-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-santa-rita-do-sapucai-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-santa-rita-do-sapucai-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-extrema-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-extrema-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-jacutinga-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-jacutinga-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-cambui-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-cambui-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-eloi-mendes-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-eloi-mendes-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-nepomuceno-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-nepomuceno-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-caxambu-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-caxambu-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-lambari-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-lambari-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-monte-siao-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-monte-siao-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-boa-esperanca-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-boa-esperanca-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-carmo-do-rio-claro-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-carmo-do-rio-claro-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-muzambinho-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-muzambinho-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-goncalo-do-sapucai-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-goncalo-do-sapucai-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-paraguacu-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-paraguacu-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-alterosa-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-alterosa-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-cassia-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-cassia-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-piumhi-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-piumhi-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-baependi-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-baependi-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-conceicao-do-rio-verde-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-conceicao-do-rio-verde-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-iturama-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-iturama-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-monte-carmelo-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-monte-carmelo-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-gotardo-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-gotardo-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-coromandel-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-coromandel-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sacramento-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sacramento-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-lagoa-formosa-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-lagoa-formosa-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-tupaciguara-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-tupaciguara-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-prata-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-prata-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-capinopolis-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-capinopolis-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-carmo-do-paranaiba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-carmo-do-paranaiba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-presidente-olegario-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-presidente-olegario-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-monte-alegre-de-minas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-monte-alegre-de-minas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-campina-verde-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-campina-verde-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-conceicao-das-alagoas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-conceicao-das-alagoas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-janauba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-janauba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-januaria-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-januaria-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-pirapora-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-pirapora-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-francisco-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-francisco-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-bocaiuva-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-bocaiuva-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-varzea-da-palma-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-varzea-da-palma-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-coracao-de-jesus-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-coracao-de-jesus-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-porteirinha-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-porteirinha-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-monte-azul-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-monte-azul-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-salinas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-salinas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-francisco-sa-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-francisco-sa-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-brasilia-de-minas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-brasilia-de-minas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-espinosa-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-espinosa-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-jaiba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-jaiba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-manga-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-manga-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-rio-pardo-de-minas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-rio-pardo-de-minas-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-taiobeiras-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-taiobeiras-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ponte-nova-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ponte-nova-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-manhuacu-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-manhuacu-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-mariana-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-mariana-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-ouro-branco-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-ouro-branco-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-rio-pomba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-rio-pomba-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-visconde-do-rio-branco-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-visconde-do-rio-branco-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-carangola-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-carangola-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-itambacuri-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-itambacuri-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-aimores-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-aimores-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-manhumirim-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-manhumirim-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-resplendor-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-resplendor-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-conselheiro-pena-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-conselheiro-pena-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-belo-oriente-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-belo-oriente-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-raul-soares-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-raul-soares-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-pecanha-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-pecanha-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-moto-sao-joao-evangelista-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+❌ https://heliosprotecaoveicular.com.br/protecao-veicular-motoboy-sao-joao-evangelista-mg/
+   Erro: Quota exceeded for quota metric 'Publish requests' and limit 'Publish requests per day' of service 'indexing.googleapis.com' for consumer 'project_number:956089225734'.
+
+──────────────────────────────────────────────────────
+✅ Enviadas com sucesso: 29/200
+❌ Falhas: 171
+📊 Total enviado até agora: 1023/3640
+📋 Restam: 2617 URLs (14 dias)
+──────────────────────────────────────────────────────
+
+⏰ Rode novamente amanhã após as 4h da manhã:
+   node indexar-novas-paginas.js
+
+📄 sitemap-cidades.xml: 182 URLs
+📄 sitemap-motoristas-app.xml: 728 URLs
+📄 sitemap-motos.xml: 364 URLs
+📄 sitemap-veiculos.xml: 546 URLs
+📄 sitemap-segmentos.xml: 1092 URLs
+📄 sitemap-servicos.xml: 728 URLs
+
+📊 Total de URLs indexáveis: 3640
+✅ Já enviadas: 1023
+📋 Restantes:  2617
+📦 Este lote:  200 URLs (offset 1023 → 1222)
+
+🔑 Obtendo token...
+Erro fatal: getaddrinfo ENOTFOUND oauth2.googleapis.com
+📄 sitemap-cidades.xml: 182 URLs
+📄 sitemap-motoristas-app.xml: 728 URLs
+📄 sitemap-motos.xml: 364 URLs
+📄 sitemap-veiculos.xml: 546 URLs
+^C

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório Executivo de Resultados — 1º Semestre 2026 | Hélios Proteção Veicular</title>
+<style>
+  :root{
+    --navy-deep:#00122b; --navy:#0b1a35; --navy-2:#0d2250;
+    --gold:#f5c400; --gold-dark:#e6b800;
+    --ink:#1a2332; --muted:#4a5568; --bg:#f4f6f9; --card:#ffffff; --border:#e8eaf0;
+    --green:#16a34a; --green-bg:#f0fdf4;
+    --red:#dc2626; --red-bg:#fef2f2;
+    --orange:#ea580c; --orange-bg:#fff7ed;
+    --blue:#2563eb; --blue-bg:#eff6ff;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.55;}
+  .wrap{max-width:1140px; margin:0 auto; padding:0 22px;}
+
+  /* ===== COVER ===== */
+  header.cover{
+    background:linear-gradient(150deg,var(--navy-deep) 0%, var(--navy) 55%, var(--navy-2) 100%);
+    color:#fff; padding:54px 24px 64px; position:relative; overflow:hidden;
+  }
+  header.cover::after{
+    content:''; position:absolute; right:-80px; bottom:-120px; width:340px; height:340px;
+    border-radius:50%; background:radial-gradient(circle, rgba(245,196,0,.18), transparent 70%);
+  }
+  .cover-top{display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;}
+  .cover-top img{height:46px;}
+  .cover-tag{background:rgba(245,196,0,.15); border:1px solid rgba(245,196,0,.5); color:var(--gold);
+    padding:5px 14px; border-radius:999px; font-size:12px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;}
+  h1.title{font-size:32px; margin:34px 0 8px; font-weight:800; max-width:760px;}
+  .cover p.sub{margin:0; font-size:15px; opacity:.8; max-width:680px;}
+  .gold-rule{width:64px; height:4px; background:var(--gold); border-radius:2px; margin:22px 0 0;}
+
+  /* ===== KPI STRIP ===== */
+  .kpis{display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin:-34px auto 0; max-width:1140px; padding:0 22px; position:relative; z-index:2;}
+  .kpi{background:var(--card); border-radius:12px; padding:18px 14px; box-shadow:0 8px 24px rgba(0,18,43,.12); text-align:center; border-top:4px solid var(--gold);}
+  .kpi .v{font-size:21px; font-weight:800; color:var(--navy);}
+  .kpi .l{font-size:10.5px; color:var(--muted); margin-top:5px; text-transform:uppercase; letter-spacing:.03em; line-height:1.3;}
+  .kpi.alert{border-top-color:var(--red);}
+  .kpi.alert .v{color:var(--red);}
+  .kpi.ok{border-top-color:var(--green);}
+  .kpi.ok .v{color:var(--green);}
+
+  main{max-width:1140px; margin:0 auto; padding:54px 22px 60px;}
+  section{margin-bottom:46px;}
+  h2{font-size:21px; margin:0 0 6px; display:flex; align-items:center; gap:10px; color:var(--navy);}
+  h2 .num{background:var(--navy); color:var(--gold); width:28px; height:28px; border-radius:8px; display:inline-flex; align-items:center; justify-content:center; font-size:14px; font-weight:800; flex:none;}
+  h2 + p.lead{margin-top:0; margin-bottom:18px;}
+  p.lead{color:var(--muted); font-size:14.5px; max-width:880px;}
+  h3{font-size:15.5px; color:var(--navy); margin:22px 0 10px;}
+
+  table{width:100%; border-collapse:collapse; background:var(--card); border-radius:10px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.06);}
+  th,td{padding:10px 12px; text-align:left; font-size:13.5px; border-bottom:1px solid var(--border);}
+  th{background:#f8fafc; font-size:11px; text-transform:uppercase; letter-spacing:.03em; color:var(--muted); font-weight:700;}
+  tr:last-child td{border-bottom:none;}
+  td.num, th.num{text-align:right; font-variant-numeric:tabular-nums;}
+  tr.tot td{font-weight:800; background:#f8fafc;}
+
+  .pill{display:inline-block; padding:2px 9px; border-radius:999px; font-size:11.5px; font-weight:700;}
+  .pill.critica{background:var(--red-bg); color:var(--red);}
+  .pill.alta{background:var(--orange-bg); color:var(--orange);}
+  .pill.media{background:#fefce8; color:#ca8a04;}
+  .pill.baixa{background:var(--green-bg); color:var(--green);}
+
+  .ok{color:var(--green); font-weight:700;}
+  .bad{color:var(--red); font-weight:700;}
+  .warn{color:var(--orange); font-weight:700;}
+
+  .callout{background:var(--blue-bg); border:1px solid #bfdbfe; border-radius:10px; padding:16px 18px; font-size:14px; margin-top:14px;}
+  .callout b{color:var(--blue);}
+  .callout.danger{background:var(--red-bg); border-color:#fecaca;}
+  .callout.danger b{color:var(--red);}
+  .callout.gold{background:#fffbea; border-color:#fde68a;}
+  .callout.gold b{color:#92400e;}
+  .callout.success{background:var(--green-bg); border-color:#bbf7d0;}
+  .callout.success b{color:var(--green);}
+
+  /* chart bars */
+  .chart{background:var(--card); border-radius:10px; padding:20px 18px 10px; box-shadow:0 1px 4px rgba(0,0,0,.06);}
+  .chart .bars{display:flex; align-items:flex-end; gap:10px; height:180px; padding:0 4px;}
+  .chart .bar-col{flex:1; display:flex; flex-direction:column; align-items:center; justify-content:flex-end; height:100%;}
+  .chart .bar{width:100%; max-width:46px; border-radius:6px 6px 0 0; position:relative;}
+  .chart .bar span.bv{position:absolute; top:-20px; left:0; right:0; text-align:center; font-size:11.5px; font-weight:700; color:var(--navy); white-space:nowrap;}
+  .chart .bar-label{margin-top:8px; font-size:11.5px; color:var(--muted); text-align:center;}
+  .bar.navy{background:linear-gradient(180deg,var(--navy-2),var(--navy));}
+  .bar.gold{background:linear-gradient(180deg,var(--gold),var(--gold-dark));}
+  .bar.red{background:linear-gradient(180deg,#ef4444,#b91c1c);}
+  .bar.orange{background:linear-gradient(180deg,#fb923c,#c2410c);}
+
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .grid3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px;}
+  .card h4{margin:0 0 6px; font-size:14px; color:var(--navy);}
+  .card .big{font-size:24px; font-weight:800;}
+
+  .matriz-gut td.score{font-weight:800; text-align:center;}
+  .rank-1{background:#fef2f2;}
+  .rank-2{background:#fff7ed;}
+
+  .badge-step{display:inline-flex; align-items:center; gap:8px; background:var(--navy); color:var(--gold); padding:4px 12px; border-radius:999px; font-size:12px; font-weight:700; margin-bottom:10px;}
+
+  footer{text-align:center; padding:28px; color:var(--muted); font-size:12px; border-top:1px solid var(--border); margin-top:10px;}
+
+  @media (max-width:880px){
+    .kpis{grid-template-columns:repeat(2,1fr);}
+    .grid2, .grid3{grid-template-columns:1fr;}
+    table{font-size:12.5px;}
+  }
+  @media print{
+    body{background:#fff;}
+    .kpi, .chart, table, .card{box-shadow:none;}
+    header.cover{padding:30px 24px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="wrap">
+    <div class="cover-top">
+      <img src="novo-site/assets/images/logo-helios.png" alt="Hélios Proteção Veicular">
+      <span class="cover-tag">Reunião de Resultados · Diretoria</span>
+    </div>
+    <h1 class="title">Relatório Executivo de Resultados</h1>
+    <p class="sub">1º Semestre de 2026 (janeiro a junho) · Indicadores de Crescimento de Base, Churn, Ticket Médio, Inadimplência e Cobrança · Fonte: Painel Hinova BI</p>
+    <div class="gold-rule"></div>
+  </div>
+</header>
+
+<div class="kpis">
+  <div class="kpi ok"><div class="v">1.363</div><div class="l">Veículos ativos em jun/26 (+40,33% no semestre)</div></div>
+  <div class="kpi alert"><div class="v">31,56%</div><div class="l">Churn médio do período · custo R$ 141.737,79</div></div>
+  <div class="kpi"><div class="v">R$ 155,08</div><div class="l">Ticket médio mensal (dez/25–jun/26)</div></div>
+  <div class="kpi alert"><div class="v">8,46%</div><div class="l">Inadimplência ao fim de jun/26 (pico do semestre)</div></div>
+  <div class="kpi alert"><div class="v">25,04%</div><div class="l">Boletos pagos em atraso no período</div></div>
+</div>
+
+<main>
+
+  <section>
+    <h2><span class="num">1</span>Mensagem da Diretoria</h2>
+    <p class="lead">O 1º semestre de 2026 confirma que a Hélios está em <b>trajetória de crescimento real</b> — a base ativa saltou de 935 para 1.363 veículos (+40,33%). Esse é o resultado positivo a celebrar. Mas o crescimento é <b>bruto, não líquido</b>: estamos repondo associados quase tão rápido quanto os perdemos. O churn ficou a maior parte do semestre acima de 39%, e o indicador "Custo do Churn" do próprio painel (R$ 141.737,79) equivale a <b>~26% de toda a receita recebida no período</b> — ou seja, de cada R$ 4 que entram, quase R$ 1 se perde por cancelamento. Esse é o ponto central deste relatório: transformar crescimento bruto em crescimento líquido e sustentável.</p>
+    <div class="callout gold"><b>Leitura executiva em uma frase:</b> a aquisição está funcionando; a retenção é o gargalo. Os próximos 6 meses devem priorizar reter a base que já conquistamos antes de acelerar ainda mais a captação.</div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span>Crescimento da Base Ativa</h2>
+    <p class="lead">Contagem de veículos ativos no painel "Evolução de Ativos": crescimento de período de <b>+40,33%</b> e variação média de <b>+6,98% ao mês</b>.</p>
+    <div class="chart">
+      <div class="bars">
+        <div class="bar-col"><div class="bar navy" style="height:68.6%"><span class="bv">935</span></div><div class="bar-label">jan/26</div></div>
+        <div class="bar-col"><div class="bar navy" style="height:72.8%"><span class="bv">992</span></div><div class="bar-label">fev/26</div></div>
+        <div class="bar-col"><div class="bar navy" style="height:77.0%"><span class="bv">1.050</span></div><div class="bar-label">mar/26</div></div>
+        <div class="bar-col"><div class="bar navy" style="height:84.8%"><span class="bv">1.156</span></div><div class="bar-label">abr/26</div></div>
+        <div class="bar-col"><div class="bar navy" style="height:93.0%"><span class="bv">1.268</span></div><div class="bar-label">mai/26</div></div>
+        <div class="bar-col"><div class="bar gold" style="height:100%"><span class="bv" style="color:#7a5b00">1.363</span></div><div class="bar-label">jun/26</div></div>
+      </div>
+    </div>
+    <div class="callout"><b>Leitura:</b> o crescimento mensal acelerou a partir de abril (+106 e +112 ativos/mês) após um mar/26 mais fraco (variação de -1,75% destacada no painel). Abr–jun sustentaram ritmo de ~+95 a +112 ativos líquidos/mês — o melhor trimestre do semestre.</div>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span>Churn — a maior ameaça ao resultado</h2>
+    <p class="lead">Indicador oficial do painel: <b>Churn médio 31,56%</b> e <b>Custo do Churn de R$ 141.737,79</b> no semestre. Olhando mês a mês (churn bruto = cancelamentos ÷ ativos), o quadro é ainda mais tenso:</p>
+    <div class="chart">
+      <div class="bars">
+        <div class="bar-col"><div class="bar red" style="height:80.6%"><span class="bv">36,26%</span></div><div class="bar-label">jan/26</div></div>
+        <div class="bar-col"><div class="bar red" style="height:86.7%"><span class="bv">39,01%</span></div><div class="bar-label">fev/26</div></div>
+        <div class="bar-col"><div class="bar red" style="height:91.8%"><span class="bv">41,33%</span></div><div class="bar-label">mar/26</div></div>
+        <div class="bar-col"><div class="bar red" style="height:90.5%"><span class="bv">40,74%</span></div><div class="bar-label">abr/26</div></div>
+        <div class="bar-col"><div class="bar orange" style="height:88.3%"><span class="bv">39,75%</span></div><div class="bar-label">mai/26</div></div>
+        <div class="bar-col"><div class="bar orange" style="height:86.9%"><span class="bv">39,10%</span></div><div class="bar-label">jun/26</div></div>
+      </div>
+    </div>
+    <div class="callout danger"><b>Ponto crítico:</b> o churn bruto pico em mar/26 (41,33%) e desde então caiu levemente, dois meses seguidos (39,75% → 39,10%). É uma melhora real, mas ainda insuficiente — patamar "saudável" para associações desse perfil costuma ficar abaixo de 25–30%.</div>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span>Ticket Médio e Receita</h2>
+    <table>
+      <tr><th>Mês</th><th class="num">Ticket médio</th><th class="num">Veículos faturados</th></tr>
+      <tr><td>dez/25 *</td><td class="num">R$ 174,85</td><td class="num">19</td></tr>
+      <tr><td>jan/26</td><td class="num">R$ 153,69</td><td class="num">520</td></tr>
+      <tr><td>fev/26</td><td class="num">R$ 157,00</td><td class="num">534</td></tr>
+      <tr><td>mar/26</td><td class="num">R$ 156,58</td><td class="num">551</td></tr>
+      <tr><td>abr/26</td><td class="num">R$ 146,32</td><td class="num">584</td></tr>
+      <tr><td>mai/26</td><td class="num">R$ 148,01</td><td class="num">662</td></tr>
+      <tr><td>jun/26</td><td class="num">R$ 149,12</td><td class="num">705</td></tr>
+      <tr class="tot"><td>Média do período</td><td class="num">R$ 155,08</td><td class="num">—</td></tr>
+    </table>
+    <p class="lead" style="margin-top:10px;">* dez/25 teve apenas 19 veículos faturados (fase de implantação) — ticket alto, mas amostra não comparável. A leitura confiável é jan/26 → jun/26.</p>
+    <div class="callout"><b>Diagnóstico:</b> o crescimento do semestre veio quase inteiramente do <b>volume</b> (+35,6% em veículos faturados, de 520 para 705/mês), não do valor agregado — o ticket médio caiu de R$ 153,69 (jan) para R$ 149,12 (jun), uma retração de 2,97%. A empresa está crescendo "vendendo mais", não "vendendo melhor". Vale revisar mix de produtos e política de descontos na ponta comercial.</div>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span>Saúde Financeira: Inadimplência e Atrasos</h2>
+    <div class="grid2">
+      <div class="card">
+        <h4>Inadimplência média do semestre</h4>
+        <div class="big" style="color:var(--navy)">4,89% <span style="font-size:14px; color:var(--muted); font-weight:500;">(qtd) · 4,25% (valor)</span></div>
+        <p style="font-size:13px; color:var(--muted); margin:6px 0 0;">142 boletos em aberto/inadimplentes sobre 2.904 boletos do período — patamar saudável na média.</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--red);">
+        <h4>Inadimplência ao final do mês — jun/26</h4>
+        <div class="big bad">8,46%</div>
+        <p style="font-size:13px; color:var(--muted); margin:6px 0 0;">Maior valor do semestre, saltando de 5,80% (mai/26). Total de boletos vencidos saltou de R$ 3.324,11 para <b>R$ 9.399,45</b> no mesmo período.</p>
+      </div>
+    </div>
+
+    <h3>Inadimplência ao final do mês (dez/25–jun/26)</h3>
+    <div class="chart">
+      <div class="bars">
+        <div class="bar-col"><div class="bar orange" style="height:74.2%"><span class="bv">7,42%</span></div><div class="bar-label">jan/26</div></div>
+        <div class="bar-col"><div class="bar orange" style="height:85.7%"><span class="bv">8,57%</span></div><div class="bar-label">fev/26</div></div>
+        <div class="bar-col"><div class="bar navy" style="height:65.3%"><span class="bv">6,53%</span></div><div class="bar-label">mar/26</div></div>
+        <div class="bar-col"><div class="bar orange" style="height:80.3%"><span class="bv">8,03%</span></div><div class="bar-label">abr/26</div></div>
+        <div class="bar-col"><div class="bar navy" style="height:58.0%"><span class="bv">5,80%</span></div><div class="bar-label">mai/26</div></div>
+        <div class="bar-col"><div class="bar red" style="height:84.6%"><span class="bv">8,46%</span></div><div class="bar-label">jun/26</div></div>
+      </div>
+    </div>
+
+    <h3>Pagamentos em atraso por dia de vencimento</h3>
+    <table>
+      <tr><th>Dia de vencimento</th><th class="num">% pago em atraso</th></tr>
+      <tr class="rank-1"><td>05</td><td class="num">40,81%</td></tr>
+      <tr><td>10</td><td class="num">19,13%</td></tr>
+      <tr><td>15</td><td class="num">23,11%</td></tr>
+      <tr><td>20</td><td class="num">28,70%</td></tr>
+      <tr><td>25</td><td class="num">19,09%</td></tr>
+      <tr><td>30</td><td class="num">26,67%</td></tr>
+    </table>
+    <div class="callout danger"><b>Achado relevante:</b> boletos com vencimento no dia 5 atrasam <b>2x mais</b> que a média (40,81% vs. ~22,9% nos demais dias). No agregado do período, 691 boletos (25,04%) foram pagos em atraso contra 2.069 em dia (74,96%). Combinado ao salto de inadimplência em junho, isso indica que a cobrança precisa de reforço imediato — especialmente na régua de vencimento do dia 5.</div>
+
+    <h3>Inadimplência por segmento (qtd / valor / nº boletos)</h3>
+    <div class="grid2">
+      <table>
+        <tr><th>Tipo de veículo</th><th class="num">% Qtd</th><th class="num">% Valor</th><th class="num">Boletos</th></tr>
+        <tr><td>Auto particular</td><td class="num">5,91%</td><td class="num">5,70%</td><td class="num">76</td></tr>
+        <tr><td>Motos</td><td class="num">6,81%</td><td class="num">3,61%</td><td class="num">40</td></tr>
+        <tr><td>Leves</td><td class="num">2,67%</td><td class="num">3,41%</td><td class="num">20</td></tr>
+        <tr><td>Motocicleta</td><td class="num">2,30%</td><td class="num">2,66%</td><td class="num">7</td></tr>
+        <tr><td>SUV</td><td class="num">6,67%</td><td class="num">8,28%</td><td class="num">1</td></tr>
+        <tr><td>Pickup pesada</td><td class="num">2,50%</td><td class="num">2,74%</td><td class="num">1</td></tr>
+        <tr class="tot"><td>Total</td><td class="num">4,89%</td><td class="num">4,25%</td><td class="num">142</td></tr>
+      </table>
+      <table>
+        <tr><th>Categoria</th><th class="num">% Qtd</th><th class="num">% Valor</th><th class="num">Boletos</th></tr>
+        <tr><td>Passeio</td><td class="num">5,05%</td><td class="num">4,55%</td><td class="num">140</td></tr>
+        <tr><td>Utilitários</td><td class="num">6,67%</td><td class="num">8,28%</td><td class="num">1</td></tr>
+        <tr><td>Utilitários/Pesados</td><td class="num">2,50%</td><td class="num">2,74%</td><td class="num">1</td></tr>
+        <tr class="tot"><td>Total</td><td class="num">4,89%</td><td class="num">4,25%</td><td class="num">142</td></tr>
+      </table>
+    </div>
+    <div class="callout success"><b>Ponto positivo:</b> 95,75% do valor faturado e 95,11% dos boletos do período acabam sendo pagos — a base, no geral, é honesta e a cobrança funciona. O problema de junho é pontual e recente, não estrutural — mas exige ação rápida para não se tornar tendência.</div>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span>Diagnóstico Integrado — Matriz GUT</h2>
+    <p class="lead">Priorização dos problemas identificados por Gravidade, Urgência e Tendência (escala 1–5). Quanto maior o produto G×U×T, mais prioritário.</p>
+    <table class="matriz-gut">
+      <tr><th>Problema</th><th class="num">Gravidade</th><th class="num">Urgência</th><th class="num">Tendência</th><th class="num">G×U×T</th><th>Prioridade</th></tr>
+      <tr class="rank-1"><td>Churn elevado (39–41% a.m.) e custo de R$ 141,7k no semestre</td><td class="num">5</td><td class="num">5</td><td class="num">5</td><td class="num score">125</td><td><span class="pill critica">1ª</span></td></tr>
+      <tr class="rank-2"><td>Pico de inadimplência em jun/26 (8,46%) e atraso concentrado no dia 5</td><td class="num">4</td><td class="num">5</td><td class="num">4</td><td class="num score">80</td><td><span class="pill alta">2ª</span></td></tr>
+      <tr><td>Concentração de churn em captadores específicos (Leandro Regly, Julia Gabrille, Tatiane)</td><td class="num">4</td><td class="num">4</td><td class="num">3</td><td class="num score">48</td><td><span class="pill alta">3ª</span></td></tr>
+      <tr><td>Ticket médio em leve queda (mix/desconto comercial)</td><td class="num">3</td><td class="num">2</td><td class="num">2</td><td class="num score">12</td><td><span class="pill baixa">4ª</span></td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span>Plano de Ação (PDCA + 5W2H)</h2>
+    <p class="lead">Ciclo contínuo de melhoria (Plan–Do–Check–Act) aplicado às duas prioridades da Matriz GUT, com plano 5W2H para execução imediata.</p>
+
+    <span class="badge-step">PRIORIDADE 1 · Reduzir o Churn</span>
+    <table>
+      <tr><th>O quê</th><th>Por quê</th><th>Quem</th><th>Quando</th><th>Como</th></tr>
+      <tr>
+        <td>Programa de retenção nas 3 maiores carteiras</td>
+        <td>74% da base está com CRM, Marcos Vinícius e Leandro Regly; churn varia de 24% a 47% entre eles</td>
+        <td>Diretoria Comercial + captadores</td>
+        <td>Início imediato, revisão mensal</td>
+        <td>Replicar a abordagem do CRM (melhor churn) para Marcos Vinícius e Leandro Regly; auditoria de qualidade da venda</td>
+      </tr>
+      <tr>
+        <td>Plano de melhoria individual para captadores com churn &gt;50%</td>
+        <td>Julia Gabrille (77,78%) e Tatiane Aparecida (69,44%) perdem mais da metade da carteira</td>
+        <td>RH / Gestão de Captadores</td>
+        <td>30 dias</td>
+        <td>Treinamento de qualificação de lead + acompanhamento quinzenal; suspender captação se não houver melhora em 60 dias</td>
+      </tr>
+      <tr>
+        <td>Pesquisa de motivo de cancelamento (exit survey)</td>
+        <td>Hoje não há causa-raiz registrada do churn, só o resultado</td>
+        <td>Atendimento / CS</td>
+        <td>Implementar em até 15 dias</td>
+        <td>Formulário rápido no momento do cancelamento (preço, atendimento, sinistro, concorrência)</td>
+      </tr>
+    </table>
+
+    <span class="badge-step" style="margin-top:22px;">PRIORIDADE 2 · Conter a Inadimplência</span>
+    <table>
+      <tr><th>O quê</th><th>Por quê</th><th>Quem</th><th>Quando</th><th>Como</th></tr>
+      <tr>
+        <td>Régua de cobrança reforçada para vencimento dia 5</td>
+        <td>Atraso de 40,81% nesse vencimento, o dobro da média</td>
+        <td>Financeiro / Cobrança</td>
+        <td>Próximo ciclo de boletos (15 dias)</td>
+        <td>Lembrete por WhatsApp 3 dias antes + opção de migrar a data de vencimento para dia 10/25 (melhores índices)</td>
+      </tr>
+      <tr>
+        <td>Investigar causa do salto de inadimplência em jun/26</td>
+        <td>Inadimplência ao fim do mês foi de 5,80% para 8,46% em 30 dias</td>
+        <td>Financeiro</td>
+        <td>Imediato</td>
+        <td>Checar se o salto está concentrado em associados novos (jun teve recorde de captação) ou em carteiras específicas</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span>KPIs para Acompanhamento — Jul a Dez/2026</h2>
+    <p class="lead">Painel de indicadores (modelo Balanced Scorecard) para apresentação mensal à diretoria nos próximos 6 meses.</p>
+    <table>
+      <tr><th>Perspectiva</th><th>KPI</th><th>Fórmula / Fonte</th><th class="num">Linha de base (jun/26)</th><th class="num">Meta dez/26</th><th>Frequência</th></tr>
+      <tr><td rowspan="2">Financeira</td><td>Custo do Churn (R$)</td><td>Indicador "Custo" — painel Churn</td><td class="num">R$ 141.737,79 (acum. sem.)</td><td class="num">&lt; R$ 100.000 (acum. sem.)</td><td>Mensal</td></tr>
+      <tr><td>Ticket médio (R$)</td><td>Valor recebido ÷ veículos faturados</td><td class="num">R$ 149,12</td><td class="num">≥ R$ 155,00</td><td>Mensal</td></tr>
+      <tr><td rowspan="3">Clientes</td><td>Churn mensal bruto (%)</td><td>Perda de ativos ÷ ativos do mês</td><td class="num">39,10%</td><td class="num">&lt; 28%</td><td>Mensal</td></tr>
+      <tr><td>Crescimento líquido de ativos</td><td>Ativos novos − cancelamentos</td><td class="num">+95 (mai→jun)</td><td class="num">≥ +120/mês</td><td>Mensal</td></tr>
+      <tr><td>% pagamentos em atraso</td><td>Boletos pagos em atraso ÷ total pago</td><td class="num">25,04%</td><td class="num">&lt; 18%</td><td>Mensal</td></tr>
+      <tr><td rowspan="2">Processos</td><td>Inadimplência ao final do mês</td><td>Painel Boleto por situação</td><td class="num">8,46%</td><td class="num">&lt; 6%</td><td>Mensal</td></tr>
+      <tr><td>% atraso no vencimento dia 5</td><td>Pagos em atraso por dia de vencimento</td><td class="num">40,81%</td><td class="num">&lt; 25%</td><td>Mensal</td></tr>
+      <tr><td rowspan="2">Pessoas / Captadores</td><td>Nº de captadores com churn &gt; 50%</td><td>Ranking de churn por voluntário</td><td class="num">2 (Julia, Tatiane)</td><td class="num">0</td><td>Mensal</td></tr>
+      <tr><td>Diferença de churn entre maiores carteiras</td><td>Maior churn − menor churn (top 3 por volume)</td><td class="num">23,2 p.p.</td><td class="num">&lt; 10 p.p.</td><td>Trimestral</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2><span class="num">9</span>Previsão para o 2º Semestre de 2026</h2>
+    <p class="lead">Projeção construída a partir da tendência observada nos últimos 6 meses, em dois cenários: <b>Tendência</b> (sem mudança de rota) e <b>Meta</b> (com o plano de ação da seção 7 implementado).</p>
+
+    <table>
+      <tr><th>Mês</th><th colspan="2">Ativos (veículos)</th><th colspan="2">Churn bruto mensal</th></tr>
+      <tr><th></th><th class="num">Cenário Tendência</th><th class="num">Cenário Meta</th><th class="num">Cenário Tendência</th><th class="num">Cenário Meta</th></tr>
+      <tr><td>jul/26</td><td class="num">~1.448</td><td class="num">~1.470</td><td class="num">~39%</td><td class="num">~37%</td></tr>
+      <tr><td>ago/26</td><td class="num">~1.533</td><td class="num">~1.590</td><td class="num">~39%</td><td class="num">~35%</td></tr>
+      <tr><td>set/26</td><td class="num">~1.618</td><td class="num">~1.715</td><td class="num">~40%</td><td class="num">~33%</td></tr>
+      <tr><td>out/26</td><td class="num">~1.703</td><td class="num">~1.850</td><td class="num">~40%</td><td class="num">~31%</td></tr>
+      <tr><td>nov/26</td><td class="num">~1.788</td><td class="num">~1.995</td><td class="num">~40%</td><td class="num">~30%</td></tr>
+      <tr class="tot"><td>dez/26</td><td class="num">~1.873</td><td class="num">~2.150</td><td class="num">~40%</td><td class="num">~29%</td></tr>
+    </table>
+
+    <div class="grid2" style="margin-top:16px;">
+      <div class="card">
+        <h4>Cenário Tendência (sem intervenção)</h4>
+        <p style="font-size:13.5px; color:var(--muted);">Mantendo o ritmo médio de crescimento líquido (~+85/mês) e o churn estabilizado em torno de 39–40%, a base chega a <b>~1.873 ativos em dez/26</b> (+37% vs jun/26), mas o custo do churn no semestre deve repetir a faixa de <b>R$ 140–150 mil</b>, e a inadimplência pode seguir oscilando acima de 8% se o vencimento dia 5 não for corrigido.</p>
+      </div>
+      <div class="card" style="border-top:3px solid var(--green);">
+        <h4>Cenário Meta (com plano de ação)</h4>
+        <p style="font-size:13.5px; color:var(--muted);">Reduzindo o churn gradualmente até ~29% em dez/26 (ação nas 3 maiores carteiras + captadores críticos) e mantendo o ritmo de captação, a base pode chegar a <b>~2.150 ativos</b> (+58% vs jun/26) — <b>+277 ativos a mais</b> que o cenário tendência, sem precisar acelerar a captação, apenas reduzindo a perda.</p>
+      </div>
+    </div>
+
+    <h3>Ticket médio e inadimplência — 2º semestre</h3>
+    <table>
+      <tr><th>Indicador</th><th class="num">Cenário Tendência</th><th class="num">Cenário Meta</th></tr>
+      <tr><td>Ticket médio (dez/26)</td><td class="num">R$ 148–152 (estável)</td><td class="num">R$ 155–160 (revisão de mix)</td></tr>
+      <tr><td>Inadimplência ao final do mês</td><td class="num">7–10% (oscilante)</td><td class="num">&lt; 6% (estável)</td></tr>
+      <tr><td>% pagamentos em atraso</td><td class="num">~25% (mantém)</td><td class="num">&lt; 18%</td></tr>
+    </table>
+    <div class="callout gold"><b>Conclusão da previsão:</b> o maior potencial de ganho do 2º semestre não está em vender mais — a captação já está em ritmo forte (+40% no 1º semestre). Está em <b>reter o que já foi conquistado</b>. Fechar a diferença de churn entre os captadores e corrigir a régua de cobrança do dia 5 pode, isoladamente, gerar mais base ativa em dez/26 do que qualquer esforço adicional de captação.</div>
+  </section>
+
+</main>
+
+<footer>
+  Relatório gerado a partir do painel Hinova BI (Helios Proteção Veicular) · Capturas de tela de 28–29/06/2026 · Período de referência: jan–jun/2026 · Documento interno — apresentação de resultados à diretoria.
+</footer>
+
+</body>
+</html>

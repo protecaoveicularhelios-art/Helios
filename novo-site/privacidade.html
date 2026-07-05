@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NSQ5MDW2');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade | Hélios Proteção Veicular</title>
+  <meta name="description" content="Conheça a Política de Privacidade da Hélios Proteção Veicular. Saiba como coletamos, usamos e protegemos seus dados pessoais conforme a LGPD.">
+  <link rel="canonical" href="https://heliosprotecaoveicular.com.br/privacidade.html">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Política de Privacidade | Hélios Proteção Veicular">
+  <meta property="og:description" content="Transparência no uso dos seus dados pessoais. Conheça nossa política de privacidade em conformidade com a LGPD.">
+  <meta property="og:url" content="https://heliosprotecaoveicular.com.br/privacidade.html">
+  <link rel="icon" href="assets/images/helios_ico.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy:   #0b1a35;
+      --navy2:  #00122b;
+      --yellow: #f5c400;
+      --yellow2:#e6b800;
+      --gray:   #f4f6f9;
+      --text:   #1a2332;
+      --mid:    #4a5568;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Montserrat', sans-serif; color: var(--text); background: #fff; overflow-x: hidden; }
+
+    /* ── TOPBAR ── */
+    .topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1001;
+      background: #fff; border-bottom: 1px solid #e8eaf0;
+      padding: 0 40px; height: 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: transform .3s ease;
+    }
+    .topbar.hidden { transform: translateY(-100%); }
+    .topbar-left { font-size: .72rem; font-weight: 800; color: var(--navy); letter-spacing: 1.5px; text-transform: uppercase; }
+    .topbar-center { display: flex; align-items: center; gap: 24px; }
+    .topbar-item { display: flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 600; color: var(--navy); letter-spacing: .5px; text-transform: uppercase; white-space: nowrap; }
+    .topbar-item span.label { color: #555; font-weight: 700; }
+    .topbar-item a { color: var(--navy); font-weight: 800; text-decoration: none; transition: color .2s; }
+    .topbar-item a:hover { color: var(--yellow); }
+    .topbar-dot { color: #bbb; font-size: .9rem; }
+    .topbar-right { display: flex; align-items: center; gap: 10px; }
+    .topbar-brand { font-size: .72rem; font-weight: 800; color: var(--navy); letter-spacing: 1px; text-transform: uppercase; }
+    .topbar-social { display: flex; align-items: center; gap: 8px; }
+    .topbar-social a { color: var(--navy); display: flex; align-items: center; transition: color .2s; text-decoration: none; }
+    .topbar-social a:hover { color: var(--yellow); }
+    @media (max-width: 768px) { .topbar { display: none; } }
+
+    /* ── NAVBAR ── */
+    .navbar {
+      position: fixed; top: 40px; left: 0; right: 0; z-index: 1000;
+      padding: 18px 40px;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: top .3s ease, background .3s, box-shadow .3s, padding .3s;
+    }
+    .navbar.scrolled { background: var(--navy); box-shadow: 0 4px 24px rgba(0,0,0,.3); padding: 12px 40px; }
+    .navbar.topbar-gone { top: 0; }
+    .nav-logo img { height: 52px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.85); text-decoration: none; font-size: .82rem; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--yellow); }
+    .nav-cta { background: var(--yellow) !important; color: var(--navy) !important; padding: 10px 22px !important; border-radius: 50px; font-weight: 800 !important; }
+    .nav-cta:hover { background: var(--yellow2) !important; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
+    .nav-toggle span { display: block; width: 26px; height: 2px; background: #fff; margin: 5px 0; }
+
+    /* ── OFFCANVAS ── */
+    .offcanvas { position: fixed; top: 0; right: -100%; width: 280px; height: 100%; background: var(--navy); z-index: 9999; transition: right .3s; padding: 80px 32px 32px; box-shadow: -8px 0 32px rgba(0,0,0,.3); }
+    .offcanvas.open { right: 0; }
+    .offcanvas-links { list-style: none; }
+    .offcanvas-links li { margin-bottom: 22px; }
+    .offcanvas-links a { color: rgba(255,255,255,.85); text-decoration: none; font-size: 1rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; }
+    .offcanvas-close { position: absolute; top: 20px; right: 20px; background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer; }
+    .menu-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 9998; }
+    .menu-overlay.open { display: block; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy2);
+      padding-top: 140px;
+      padding-bottom: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      right: -120px; top: -120px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245,196,0,.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 40px;
+      text-align: center;
+    }
+    .hero-label {
+      display: inline-block;
+      background: rgba(245,196,0,.15);
+      border: 1px solid rgba(245,196,0,.3);
+      color: var(--yellow);
+      font-size: .65rem; font-weight: 800; letter-spacing: 2px;
+      text-transform: uppercase; padding: 4px 14px; border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(1.9rem, 3.5vw, 3rem);
+      font-weight: 900; color: #fff;
+      line-height: 1.18; margin-bottom: 20px;
+    }
+    .hero h1 span { color: var(--yellow); }
+    .hero p {
+      font-size: .95rem; color: rgba(255,255,255,.6);
+      line-height: 1.75; max-width: 520px; margin: 0 auto;
+    }
+    .hero-meta {
+      margin-top: 24px;
+      font-size: .75rem;
+      color: rgba(255,255,255,.35);
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+
+    /* ── CONTEÚDO ── */
+    .privacidade-section {
+      background: var(--gray);
+      padding: 80px 40px;
+    }
+    .privacidade-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .priv-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 52px 56px;
+      box-shadow: 0 8px 40px rgba(0,0,0,.07);
+    }
+    .priv-card h2 {
+      font-size: 1.25rem; font-weight: 800; color: var(--navy);
+      margin-top: 40px; margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--yellow);
+      display: inline-block;
+    }
+    .priv-card h2:first-child { margin-top: 0; }
+    .priv-card p {
+      font-size: .9rem; color: var(--mid); line-height: 1.85;
+      margin-bottom: 14px;
+    }
+    .priv-card ul {
+      margin: 10px 0 16px 20px;
+      list-style: disc;
+    }
+    .priv-card ul li {
+      font-size: .9rem; color: var(--mid); line-height: 1.75;
+      margin-bottom: 6px;
+    }
+    .priv-card strong { color: var(--navy); }
+    .priv-card .destaque {
+      background: rgba(245,196,0,.1);
+      border-left: 4px solid var(--yellow);
+      padding: 16px 20px;
+      border-radius: 0 10px 10px 0;
+      margin: 20px 0;
+      font-size: .88rem;
+      color: var(--navy);
+      font-weight: 600;
+      line-height: 1.7;
+    }
+    @media (max-width: 640px) {
+      .priv-card { padding: 32px 24px; }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy2);
+      padding: 60px 40px 0;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .footer-logo-img { height: 44px; margin-bottom: 16px; }
+    .footer-desc { font-size: .82rem; color: rgba(255,255,255,.45); line-height: 1.7; margin-bottom: 20px; }
+    .footer-social { display: flex; gap: 10px; }
+    .social-btn {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(255,255,255,.08);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.6); text-decoration: none;
+      transition: background .2s, color .2s;
+      font-size: .9rem;
+    }
+    .social-btn:hover { background: var(--yellow); color: var(--navy); }
+    footer h5 { font-size: .72rem; font-weight: 800; color: #fff; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links a { font-size: .82rem; color: rgba(255,255,255,.45); text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--yellow); }
+    .footer-links li:not(:has(a)) { font-size: .82rem; color: rgba(255,255,255,.45); }
+    .footer-bottom {
+      padding: 24px 0;
+      display: flex; flex-wrap: wrap; gap: 8px;
+      justify-content: space-between;
+      font-size: .72rem; color: rgba(255,255,255,.25); font-weight: 600;
+    }
+    .footer-bottom span { color: rgba(255,255,255,.5); }
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── WHATSAPP FAB ── */
+    .whatsapp-fab {
+      position: fixed; bottom: 28px; right: 28px; z-index: 999;
+      width: 60px; height: 60px; border-radius: 50%;
+      background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4);
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .whatsapp-fab:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(37,211,102,.55); }
+    .whatsapp-fab-pulse {
+      position: absolute; width: 100%; height: 100%; border-radius: 50%;
+      background: rgba(37,211,102,.4);
+      animation: pulse 2s ease-out infinite;
+    }
+    @keyframes pulse { 0%{transform:scale(1);opacity:.7} 70%{transform:scale(1.5);opacity:0} 100%{transform:scale(1.5);opacity:0} }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      .navbar { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .privacidade-section { padding: 48px 20px; }
+      .hero { padding-top: 110px; padding-bottom: 56px; }
+      .hero-inner { padding: 0 20px; }
+    }
+  </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSQ5MDW2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- TOPBAR -->
+<div class="topbar" id="topbar">
+  <div class="topbar-left">Hélios Proteção Veicular</div>
+  <div class="topbar-center">
+    <div class="topbar-item">
+      <span class="label">Assistência 24H</span>
+      <a href="tel:08004900190">0800 490 0190</a>
+    </div>
+    <span class="topbar-dot">•</span>
+    <div class="topbar-item">
+      <span class="label">Geral</span>
+      <a href="tel:+5531972593075">(31) 97259-3075</a>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <span class="topbar-brand">heliosprotecaoveicular</span>
+    <div class="topbar-social">
+      <a href="https://www.instagram.com/heliosprotecaoveicular" target="_blank" aria-label="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/images/logo-helios.png" alt="Hélios Proteção Veicular">
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="quem-somos.html">Quem Somos</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="cotacao.html" class="nav-cta">Cotação Grátis</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- OFFCANVAS -->
+<div class="offcanvas" id="offcanvas">
+  <button class="offcanvas-close" id="offcanvasClose">✕</button>
+  <ul class="offcanvas-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="quem-somos.html">Quem Somos</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="contato.html">Contato</a></li>
+    <li><a href="cotacao.html">Cotação Grátis</a></li>
+  </ul>
+</div>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-label">LGPD · Transparência</span>
+    <h1>Política de <span>Privacidade</span></h1>
+    <p>Saiba como a Hélios coleta, usa e protege seus dados pessoais com total transparência e em conformidade com a Lei Geral de Proteção de Dados.</p>
+    <p class="hero-meta">Última atualização: julho de 2025</p>
+  </div>
+</section>
+
+<!-- CONTEÚDO -->
+<section class="privacidade-section">
+  <div class="privacidade-inner">
+    <div class="priv-card">
+
+      <h2>1. Quem Somos</h2>
+      <p>A <strong>Hélios Proteção Veicular</strong> é uma associação de proteção veicular sediada em Belo Horizonte, Minas Gerais, que oferece planos de proteção para veículos de passeio, motos, vans e frotas.</p>
+      <p><strong>CNPJ:</strong> a informar &nbsp;|&nbsp; <strong>E-mail:</strong> <a href="mailto:contato@heliosprotecao.com.br" style="color:var(--navy);font-weight:700;">contato@heliosprotecao.com.br</a><br>
+      <strong>Telefone:</strong> (31) 97259-3075 &nbsp;|&nbsp; <strong>Site:</strong> heliosprotecaoveicular.com.br</p>
+
+      <h2>2. Dados que Coletamos</h2>
+      <p>Coletamos dados pessoais apenas quando você os fornece voluntariamente, nas seguintes situações:</p>
+      <ul>
+        <li><strong>Formulários de contato e cotação:</strong> nome, telefone/WhatsApp, e-mail, cidade e tipo de veículo.</li>
+        <li><strong>Conversas via WhatsApp:</strong> nome, número de telefone e informações compartilhadas durante o atendimento.</li>
+        <li><strong>Dados de navegação:</strong> endereço IP, tipo de navegador, páginas visitadas e tempo de sessão, coletados automaticamente pelo Google Analytics e Google Tag Manager.</li>
+        <li><strong>Cookies:</strong> utilizamos cookies essenciais para funcionamento do site e cookies analíticos para medir audiência.</li>
+      </ul>
+
+      <h2>3. Como Usamos seus Dados</h2>
+      <p>Seus dados são utilizados exclusivamente para as finalidades abaixo:</p>
+      <ul>
+        <li>Responder a solicitações de cotação e atendimento comercial.</li>
+        <li>Enviar informações sobre planos, promoções e novidades da Hélios (mediante consentimento).</li>
+        <li>Analisar o desempenho do site e melhorar a experiência do usuário.</li>
+        <li>Cumprir obrigações legais e regulatórias.</li>
+      </ul>
+      <div class="destaque">
+        Não vendemos, alugamos nem compartilhamos seus dados pessoais com terceiros para fins de marketing sem o seu consentimento expresso.
+      </div>
+
+      <h2>4. Base Legal para o Tratamento</h2>
+      <p>O tratamento dos seus dados pessoais é realizado com base nas seguintes hipóteses legais previstas na LGPD (Lei nº 13.709/2018):</p>
+      <ul>
+        <li><strong>Consentimento</strong> — para envio de comunicações comerciais e uso de cookies analíticos.</li>
+        <li><strong>Execução de contrato</strong> — para processar sua cotação e formalizar a adesão ao plano.</li>
+        <li><strong>Legítimo interesse</strong> — para análise de navegação e melhoria do site.</li>
+        <li><strong>Cumprimento de obrigação legal</strong> — quando exigido por lei ou autoridade competente.</li>
+      </ul>
+
+      <h2>5. Compartilhamento de Dados</h2>
+      <p>Seus dados podem ser compartilhados com:</p>
+      <ul>
+        <li><strong>Prestadores de serviço:</strong> plataformas de e-mail, CRM, e ferramentas de análise (Google Analytics, Google Tag Manager) — sempre sob cláusulas de confidencialidade.</li>
+        <li><strong>Parceiros operacionais:</strong> prestadores de assistência 24h (guincho, chaveiro, reboque), apenas quando necessário para execução do serviço contratado.</li>
+        <li><strong>Autoridades públicas:</strong> quando exigido por lei, decisão judicial ou regulatória.</li>
+      </ul>
+
+      <h2>6. Armazenamento e Segurança</h2>
+      <p>Seus dados são armazenados em servidores seguros e mantidos pelo tempo necessário ao cumprimento das finalidades descritas nesta política ou pelo prazo exigido por lei.</p>
+      <p>Adotamos medidas técnicas e organizacionais adequadas para proteger seus dados contra acesso não autorizado, perda, alteração ou divulgação indevida.</p>
+
+      <h2>7. Seus Direitos como Titular</h2>
+      <p>De acordo com a LGPD, você tem o direito de:</p>
+      <ul>
+        <li>Confirmar a existência de tratamento dos seus dados.</li>
+        <li>Acessar os dados que temos sobre você.</li>
+        <li>Corrigir dados incompletos, inexatos ou desatualizados.</li>
+        <li>Solicitar a anonimização, bloqueio ou eliminação dos seus dados.</li>
+        <li>Revogar o consentimento a qualquer momento.</li>
+        <li>Solicitar a portabilidade dos dados a outro fornecedor.</li>
+        <li>Opor-se ao tratamento quando realizado com base em legítimo interesse.</li>
+      </ul>
+      <p>Para exercer qualquer um desses direitos, entre em contato pelo e-mail <a href="mailto:contato@heliosprotecao.com.br" style="color:var(--navy);font-weight:700;">contato@heliosprotecao.com.br</a>. Responderemos em até 15 dias úteis.</p>
+
+      <h2>8. Cookies</h2>
+      <p>Utilizamos os seguintes tipos de cookies:</p>
+      <ul>
+        <li><strong>Cookies essenciais:</strong> necessários para o funcionamento básico do site. Não podem ser desativados.</li>
+        <li><strong>Cookies analíticos:</strong> coletam informações anônimas sobre como os visitantes usam o site (Google Analytics). Podem ser desativados nas configurações do seu navegador.</li>
+      </ul>
+      <p>Você pode gerenciar ou desativar cookies a qualquer momento através das configurações do seu navegador.</p>
+
+      <h2>9. Links Externos</h2>
+      <p>Nosso site pode conter links para sites de terceiros. Não nos responsabilizamos pela política de privacidade ou pelo conteúdo desses sites. Recomendamos que você leia as políticas de privacidade de cada site que visitar.</p>
+
+      <h2>10. Alterações nesta Política</h2>
+      <p>Esta Política de Privacidade pode ser atualizada periodicamente. Quando houver alterações relevantes, notificaremos através do próprio site. A data da última atualização sempre estará indicada no topo desta página.</p>
+
+      <h2>11. Contato e Encarregado de Dados (DPO)</h2>
+      <p>Para dúvidas, solicitações ou exercício dos seus direitos relacionados à privacidade, entre em contato com nosso responsável pelo tratamento de dados:</p>
+      <ul>
+        <li><strong>E-mail:</strong> <a href="mailto:contato@heliosprotecao.com.br" style="color:var(--navy);font-weight:700;">contato@heliosprotecao.com.br</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/5531992395859" target="_blank" style="color:var(--navy);font-weight:700;">(31) 99239-5859</a></li>
+        <li><strong>Telefone:</strong> (31) 97259-3075</li>
+      </ul>
+      <div class="destaque">
+        Esta política está em conformidade com a Lei Geral de Proteção de Dados Pessoais — LGPD (Lei nº 13.709, de 14 de agosto de 2018).
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/images/logo-helios.png" alt="Hélios" class="footer-logo-img">
+        <p class="footer-desc">Confiança, Proteção e Tranquilidade ao seu alcance.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/heliosprotecaoveicular" class="social-btn" target="_blank" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5531992395859" class="social-btn" target="_blank" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Serviços</h5>
+        <ul class="footer-links">
+          <li><a href="servicos.html">Proteção contra Colisão</a></li>
+          <li><a href="servicos.html">Roubo e Furto</a></li>
+          <li><a href="servicos.html">Assistência 24h</a></li>
+          <li><a href="servicos.html">Cobertura de Vidros</a></li>
+          <li><a href="servicos.html">Rastreamento</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul class="footer-links">
+          <li><a href="tel:08004900190">0800 490 0190</a></li>
+          <li><a href="tel:+5531972593075">(31) 97259-3075</a></li>
+          <li><a href="https://wa.me/5531992395859" target="_blank">WhatsApp</a></li>
+          <li><a href="mailto:contato@heliosprotecao.com.br">contato@heliosprotecao.com.br</a></li>
+          <li>Belo Horizonte, MG</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <span>Hélios Proteção Veicular</span>. Todos os direitos reservados.</p>
+      <p>heliosprotecaoveicular.com.br — Belo Horizonte, MG</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5531992395859?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20a%20Hélios%20Proteção%20Veicular." class="whatsapp-fab" target="_blank" aria-label="WhatsApp">
+  <div class="whatsapp-fab-pulse"></div>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+  const topbar = document.getElementById('topbar');
+  const navbar = document.getElementById('navbar');
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const current = window.scrollY;
+    if (current > 40) {
+      topbar.classList.add('hidden');
+      navbar.classList.add('topbar-gone');
+    } else {
+      topbar.classList.remove('hidden');
+      navbar.classList.remove('topbar-gone');
+    }
+    navbar.classList.toggle('scrolled', current > 60);
+    lastScroll = current;
+  });
+
+  const navToggle = document.getElementById('navToggle');
+  const offcanvas = document.getElementById('offcanvas');
+  const offcanvasClose = document.getElementById('offcanvasClose');
+  const menuOverlay = document.getElementById('menuOverlay');
+  function openMenu() { offcanvas.classList.add('open'); menuOverlay.classList.add('open'); }
+  function closeMenu() { offcanvas.classList.remove('open'); menuOverlay.classList.remove('open'); }
+  navToggle.addEventListener('click', openMenu);
+  offcanvasClose.addEventListener('click', closeMenu);
+  menuOverlay.addEventListener('click', closeMenu);
+</script>
+</body>
+</html>

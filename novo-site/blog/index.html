@@ -161,6 +161,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .bg-edu { background: #e8f0fe; color: #1a56c4; } .bg-comp { background: #fce8f3; color: #b02a7a; }
   .bg-moto { background: #fff3cd; color: #856404; } .bg-duvida { background: #e2f7ec; color: #1a7a45; }
   .bg-app { background: #fff0e6; color: #c45c00; }
+  .bg-rastreio { background: #e0f7fa; color: #00695c; } .bg-equip { background: #fdecea; color: #b71c1c; }
   .card-title { font-size: 16px; font-weight: 700; color: var(--navy); line-height: 1.35; margin: 0; }
   .card-desc { font-size: 13px; color: var(--gray-text); line-height: 1.65; margin: 0; flex: 1; }
   .card-footer { display: flex; justify-content: space-between; align-items: center; padding: 14px 22px; border-top: 1px solid var(--gray-border); }
@@ -341,6 +342,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <button class="filter-btn" onclick="setFilter(this,'Motos')">Motos</button>
     <button class="filter-btn" onclick="setFilter(this,'Dúvidas Frequentes')">Dúvidas Frequentes</button>
     <button class="filter-btn" onclick="setFilter(this,'Motoristas de App')">Motoristas de App</button>
+    <button class="filter-btn" onclick="setFilter(this,'Rastreamento')">Rastreamento</button>
+    <button class="filter-btn" onclick="setFilter(this,'Equipamentos')">Equipamentos</button>
   </div>
   <select class="sort-select" onchange="sortCards(this.value)">
     <option value="recent">Mais recentes</option>
@@ -440,6 +443,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="card-footer">
         <span class="card-meta">05 jun 2026 · 5 min</span>
         <a href="/blog/protecao-veicular-para-motorista-de-aplicativo/" class="card-read">Ler <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Equipamentos" data-min="5" data-date="2026-09-08">
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&q=80" alt="Tipos de rastreador veicular">
+        <span class="card-thumb-badge bg-equip">Equipamentos</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Tipos de rastreador veicular: qual é o ideal para o seu carro?</h3>
+        <p class="card-desc">GPS, GPRS, satelital ou com bloqueio? Entenda os principais tipos de rastreador veicular e qual funciona melhor para o seu veículo.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-meta">08 set 2026 · 5 min</span>
+        <a href="/blog/tipos-de-rastreador-veicular/" class="card-read">Ler <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Rastreamento" data-min="6" data-date="2026-09-08">
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Como funciona o rastreamento veicular">
+        <span class="card-thumb-badge bg-rastreio">Rastreamento</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Como funciona o rastreamento veicular na prática</h3>
+        <p class="card-desc">Entenda passo a passo como funciona o rastreamento veicular: da localização por satélite ao acionamento da central em caso de roubo ou furto.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-meta">08 set 2026 · 6 min</span>
+        <a href="/blog/como-funciona-o-rastreamento-veicular/" class="card-read">Ler <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Rastreamento" data-min="5" data-date="2026-09-08">
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800&q=80" alt="Funcionalidades do rastreamento veicular">
+        <span class="card-thumb-badge bg-rastreio">Rastreamento</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Rastreamento veicular: funcionalidades e o que você ganha com a Hélios</h3>
+        <p class="card-desc">Localização em tempo real, cerca eletrônica, botão de pânico e muito mais. Veja tudo que vem incluso no rastreamento dos planos da Hélios.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-meta">08 set 2026 · 5 min</span>
+        <a href="/blog/funcionalidades-do-rastreamento-veicular/" class="card-read">Ler <span>→</span></a>
       </div>
     </article>
 

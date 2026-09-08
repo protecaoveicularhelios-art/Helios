@@ -162,6 +162,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .bg-moto { background: #fff3cd; color: #856404; } .bg-duvida { background: #e2f7ec; color: #1a7a45; }
   .bg-app { background: #fff0e6; color: #c45c00; }
   .bg-rastreio { background: #e0f7fa; color: #00695c; } .bg-equip { background: #fdecea; color: #b71c1c; }
+  .bg-marca { background: #e6e9f5; color: #3a4a9c; }
   .card-title { font-size: 16px; font-weight: 700; color: var(--navy); line-height: 1.35; margin: 0; }
   .card-desc { font-size: 13px; color: var(--gray-text); line-height: 1.65; margin: 0; flex: 1; }
   .card-footer { display: flex; justify-content: space-between; align-items: center; padding: 14px 22px; border-top: 1px solid var(--gray-border); }
@@ -344,6 +345,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <button class="filter-btn" onclick="setFilter(this,'Motoristas de App')">Motoristas de App</button>
     <button class="filter-btn" onclick="setFilter(this,'Rastreamento')">Rastreamento</button>
     <button class="filter-btn" onclick="setFilter(this,'Equipamentos')">Equipamentos</button>
+    <button class="filter-btn" onclick="setFilter(this,'Comparativos de Marca')">Comparativos de Marca</button>
   </div>
   <select class="sort-select" onchange="sortCards(this.value)">
     <option value="recent">Mais recentes</option>
@@ -488,6 +490,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="card-footer">
         <span class="card-meta">08 set 2026 · 5 min</span>
         <a href="/blog/funcionalidades-do-rastreamento-veicular/" class="card-read">Ler <span>→</span></a>
+      </div>
+    </article>
+
+    <article class="card" data-cat="Comparativos de Marca" data-min="5" data-date="2026-09-08">
+      <div class="card-thumb">
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80" alt="Star Proteção Veicular: como funciona">
+        <span class="card-thumb-badge bg-marca">Comparativos de Marca</span>
+      </div>
+      <div class="card-body">
+        <h3 class="card-title">Star Proteção Veicular: como funciona e o que oferece</h3>
+        <p class="card-desc">Entenda como funciona a Star Proteção Veicular, que tipo de cobertura costuma oferecer e como pesquisar a reputação de qualquer associação antes de contratar.</p>
+      </div>
+      <div class="card-footer">
+        <span class="card-meta">08 set 2026 · 5 min</span>
+        <a href="/blog/star-protecao-veicular-como-funciona/" class="card-read">Ler <span>→</span></a>
       </div>
     </article>
 

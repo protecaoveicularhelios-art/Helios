@@ -388,16 +388,17 @@ export const artigos: Artigo[] = [
   },
   {
     slug: "star-protecao-veicular-como-funciona",
-    titulo: "Star Proteção Veicular: como funciona e o que oferece",
-    descricao: "Entenda como funciona a Star Proteção Veicular, que tipo de cobertura costuma oferecer e como pesquisar a reputação de qualquer associação antes de contratar.",
+    titulo: "Pensando em contratar a Star Proteção Veicular? Veja isso antes",
+    descricao: "Antes de contratar a Star Proteção Veicular, entenda como o modelo funciona, o que costuma cobrir e como comparar com outras opções — inclusive com atendimento local em BH.",
     data: "2026-09-08",
     categoria: "Comparativos de Marca",
     tempoLeitura: "5 min",
     imagem: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&q=80",
     conteudo: `
       <h2>O que é a Star Proteção Veicular</h2>
-      <p>A <strong>Star Proteção Veicular</strong> é uma das associações de proteção veicular mais pesquisadas no Brasil. Como a maioria das associações do setor, ela opera pelo modelo <strong>mutualista</strong>: os associados formam um grupo e dividem entre si o custo dos sinistros, em vez de pagar um contrato individual com uma seguradora regulamentada pela SUSEP.</p>
-      <p>Se você está pesquisando sobre a Star, provavelmente já sabe que proteção veicular não é a mesma coisa que seguro — se ainda tiver dúvida sobre isso, vale entender primeiro a <a href="/blog/diferenca-entre-seguro-de-carro-e-protecao-veicular/">diferença entre seguro e proteção veicular</a>.</p>
+      <p>Se você está pesquisando sobre a <strong>Star Proteção Veicular</strong>, antes de assinar qualquer contrato vale entender bem como o modelo funciona e o que verificar — coisas que valem para a Star e para qualquer outra associação do mercado.</p>
+      <p>A Star é uma das associações de proteção veicular mais pesquisadas no Brasil. Como a maioria das associações do setor, ela opera pelo modelo <strong>mutualista</strong>: os associados formam um grupo e dividem entre si o custo dos sinistros, em vez de pagar um contrato individual com uma seguradora regulamentada pela SUSEP.</p>
+      <p>Se você ainda tem dúvida sobre essa diferença, vale entender primeiro a <a href="/blog/diferenca-entre-seguro-de-carro-e-protecao-veicular/">diferença entre seguro e proteção veicular</a> antes de seguir.</p>
 
       <h2>Tipos de cobertura que costumam ser oferecidos</h2>
       <p>Associações desse porte costumam trabalhar com planos que incluem roubo, furto, colisão e assistência 24h, com variações de acordo com o plano contratado. As condições exatas — franquia, carência, limites de cobertura — variam de contrato para contrato, então o mais importante é <strong>ler o contrato oficial antes de assinar</strong>, independentemente de qual associação você está avaliando.</p>

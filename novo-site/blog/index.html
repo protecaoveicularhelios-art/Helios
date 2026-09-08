@@ -170,6 +170,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .card-read { font-size: 12px; font-weight: 700; color: var(--navy); text-decoration: none; display: flex; align-items: center; gap: 4px; transition: gap .2s; }
   .card-read:hover { gap: 8px; }
 
+  /* ── VER MAIS ── */
+  .ver-mais-wrap { text-align: center; margin-top: 36px; }
+  .btn-ver-mais {
+    padding: 13px 34px; border-radius: 30px; border: 1.5px solid var(--navy);
+    background: var(--white); font-family: 'Montserrat', sans-serif; font-size: 13.5px; font-weight: 700;
+    color: var(--navy); cursor: pointer; transition: all .2s;
+  }
+  .btn-ver-mais:hover { background: var(--navy); color: var(--white); }
+
   /* ── CTA STRIP ── */
   .cta-strip { margin: 64px 0 0; background: var(--gold); padding: 60px 5%; text-align: center; }
   .cta-strip h2 { font-size: clamp(24px, 4vw, 38px); font-weight: 800; color: var(--navy); margin-bottom: 12px; letter-spacing: -.5px; }
@@ -512,6 +521,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div id="emptyMsg" style="display:none;text-align:center;padding:48px;color:var(--gray-muted);font-size:14px;">
     Nenhum artigo encontrado para essa busca.
   </div>
+  <div id="verMaisWrap" class="ver-mais-wrap">
+    <button class="btn-ver-mais" onclick="verMaisArtigos()">Ver mais artigos</button>
+  </div>
 </div>
 
 <!-- CTA STRIP -->
@@ -591,7 +603,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   offcanvasClose.addEventListener('click', closeMenu);
   menuOverlay.addEventListener('click', closeMenu);
 
+  const CARDS_VISIVEIS_INICIAL = 6; // ~2 linhas em telas largas
+  let expandido = false;
   let activeFilter = 'todos';
+
   function setFilter(btn, cat) {
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
@@ -599,6 +614,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     applyFilters();
   }
   function filterCards() { applyFilters(); }
+  function verMaisArtigos() {
+    expandido = true;
+    applyFilters();
+  }
   function sortCards(val) {
     const grid = document.getElementById('articlesGrid');
     const cards = Array.from(grid.querySelectorAll('.card'));
@@ -607,22 +626,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       return b.dataset.date.localeCompare(a.dataset.date);
     });
     cards.forEach(c => grid.appendChild(c));
+    applyFilters();
   }
   function applyFilters() {
     const query = document.getElementById('searchInput').value.toLowerCase();
     const cards = document.querySelectorAll('.card');
+    const pesquisando = activeFilter !== 'todos' || !!query;
     let visible = 0;
-    cards.forEach(card => {
+    cards.forEach((card, i) => {
       const cat = card.dataset.cat;
       const title = card.querySelector('.card-title').textContent.toLowerCase();
       const desc = card.querySelector('.card-desc').textContent.toLowerCase();
       const matchCat = activeFilter === 'todos' || cat === activeFilter;
       const matchQuery = !query || title.includes(query) || desc.includes(query) || cat.toLowerCase().includes(query);
-      if (matchCat && matchQuery) { card.style.display = ''; visible++; }
+      const dentroDoLimite = expandido || pesquisando || i < CARDS_VISIVEIS_INICIAL;
+      if (matchCat && matchQuery && dentroDoLimite) { card.style.display = ''; visible++; }
       else { card.style.display = 'none'; }
     });
     document.getElementById('emptyMsg').style.display = visible === 0 ? 'block' : 'none';
+    const verMaisWrap = document.getElementById('verMaisWrap');
+    verMaisWrap.style.display = (!pesquisando && !expandido && cards.length > CARDS_VISIVEIS_INICIAL) ? '' : 'none';
   }
+
+  sortCards('recent');
 </script>
 <!-- WhatsApp Click Tracking -->
 <script>

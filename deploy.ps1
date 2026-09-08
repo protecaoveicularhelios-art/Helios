@@ -49,7 +49,8 @@ $artigos = @(
   "protecao-veicular-para-motorista-de-aplicativo",
   "tipos-de-rastreador-veicular",
   "como-funciona-o-rastreamento-veicular",
-  "funcionalidades-do-rastreamento-veicular"
+  "funcionalidades-do-rastreamento-veicular",
+  "star-protecao-veicular-como-funciona"
 )
 foreach ($a in $artigos) {
   Get-ChildItem "$out\blog\$a" | Copy-Item -Destination "$dst\blog\$a" -Recurse -Force

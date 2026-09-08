@@ -247,4 +247,130 @@ export const artigos: Artigo[] = [
       <p>Fale com nossa equipe agora pelo WhatsApp e receba uma cotação personalizada para o seu veículo e perfil de uso.</p>
     `,
   },
+  {
+    slug: "tipos-de-rastreador-veicular",
+    titulo: "Tipos de rastreador veicular: qual é o ideal para o seu carro?",
+    descricao: "GPS, GPRS, satelital ou com bloqueio? Entenda os principais tipos de rastreador veicular disponíveis no mercado e qual funciona melhor para o seu veículo.",
+    data: "2026-09-08",
+    categoria: "Equipamentos",
+    tempoLeitura: "5 min",
+    imagem: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&q=80",
+    conteudo: `
+      <h2>Por que entender os tipos de rastreador veicular importa</h2>
+      <p>Na hora de proteger o carro ou a moto, muita gente pensa que "rastreador é tudo igual". Não é bem assim. Existem diferentes tecnologias de rastreamento veicular no mercado, cada uma com um jeito próprio de funcionar, um custo diferente e um nível de proteção distinto contra roubo e furto.</p>
+      <p>Neste artigo, explicamos os principais tipos de rastreador disponíveis hoje e qual costuma ser oferecido dentro dos planos de proteção veicular.</p>
+
+      <h2>1. Rastreador GPS/GPRS (o mais comum)</h2>
+      <p>É o modelo mais usado no Brasil. Ele combina duas tecnologias: o <strong>GPS</strong>, que localiza o veículo por satélite, e o <strong>GPRS</strong> (rede de dados do celular), que envia essa localização para a central de monitoramento através de um chip, parecido com o de um celular.</p>
+      <p>Vantagens: cobertura em praticamente qualquer lugar com sinal de celular, custo mais acessível e instalação simples. É o tipo de rastreador presente na maioria dos planos de proteção veicular.</p>
+
+      <h2>2. Rastreador satelital</h2>
+      <p>Diferente do modelo GPS/GPRS, o rastreador satelital transmite a localização diretamente por satélite, sem depender da rede de celular. Isso é uma vantagem em áreas rurais ou de sinal fraco, mas o custo de instalação e mensalidade costuma ser bem mais alto — por isso é menos comum em planos de associação.</p>
+
+      <h2>3. Rastreador com bloqueio remoto</h2>
+      <p>Além de informar a localização, esse tipo de equipamento permite <strong>cortar a alimentação elétrica do veículo remotamente</strong> em caso de roubo, impedindo que o carro seja ligado novamente depois de desligado. É um dos recursos mais eficazes para recuperação rápida do veículo.</p>
+
+      <h2>4. Rastreador com botão de pânico</h2>
+      <p>Alguns modelos vêm com um botão instalado de forma discreta no veículo. Ao ser acionado pelo motorista em uma situação de assalto ou sequestro relâmpago, ele envia um alerta imediato para a central de monitoramento, que aciona o protocolo de segurança e comunica a polícia.</p>
+
+      <h2>5. Rastreador veicular x rastreador para moto</h2>
+      <p>Motos exigem um cuidado extra: por serem menores e mais fáceis de esconder, os rastreadores para moto costumam ser instalados em pontos estratégicos e disfarçados, muitas vezes com bateria própria (backup), já que é mais fácil um ladrão desconectar a bateria principal.</p>
+
+      <h2>Comparativo rápido</h2>
+      <table>
+        <thead>
+          <tr><th>Tipo</th><th>Como funciona</th><th>Custo</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>GPS/GPRS</td><td>Satélite + rede de celular</td><td>Acessível</td></tr>
+          <tr><td>Satelital</td><td>Transmissão direta por satélite</td><td>Alto</td></tr>
+          <tr><td>Com bloqueio</td><td>GPS/GPRS + corte remoto de energia</td><td>Médio</td></tr>
+          <tr><td>Com botão de pânico</td><td>GPS/GPRS + alerta manual</td><td>Médio</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Qual rastreador a Hélios utiliza?</h2>
+      <p>Os planos da <strong>Hélios Proteção Veicular</strong> já incluem rastreamento veicular via GPS/GPRS, com central de monitoramento 24h — sem custo extra de instalação para o associado. É a tecnologia com melhor custo-benefício e mais usada em todo o Brasil para recuperação de veículos roubados ou furtados.</p>
+      <p>Quer saber mais sobre como o rastreamento funciona na prática? Fale com a nossa equipe pelo WhatsApp.</p>
+    `,
+  },
+  {
+    slug: "como-funciona-o-rastreamento-veicular",
+    titulo: "Como funciona o rastreamento veicular na prática",
+    descricao: "Entenda passo a passo como funciona o rastreamento veicular: da localização por satélite ao acionamento da central em caso de roubo ou furto.",
+    data: "2026-09-08",
+    categoria: "Rastreamento",
+    tempoLeitura: "6 min",
+    imagem: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=80",
+    conteudo: `
+      <h2>O caminho do sinal: do satélite até o seu celular</h2>
+      <p>Quando você contrata um plano com rastreamento veicular, um pequeno equipamento é instalado de forma discreta no seu carro ou moto. A partir daí, ele passa a "conversar" com satélites e com a central de monitoramento em tempo real. Veja como esse processo acontece, passo a passo.</p>
+
+      <h2>Passo 1: triangulação de sinal GPS</h2>
+      <p>O equipamento instalado no veículo capta sinais de satélites do sistema <strong>GPS</strong> (Sistema de Posicionamento Global). Com o sinal de pelo menos três satélites, o rastreador calcula a posição exata do veículo — latitude e longitude — por triangulação, com margem de erro de poucos metros.</p>
+
+      <h2>Passo 2: transmissão via chip GSM</h2>
+      <p>Depois de calcular a posição, o rastreador envia essa informação usando um chip de celular (rede <strong>GSM/GPRS</strong>), da mesma forma que um smartphone troca dados com a internet. Esse envio acontece em intervalos curtos, mantendo a localização sempre atualizada.</p>
+
+      <h2>Passo 3: plataforma de monitoramento 24h</h2>
+      <p>Os dados chegam a uma <strong>central de monitoramento</strong>, que funciona 24 horas por dia, 7 dias por semana. É lá que uma equipe acompanha a movimentação dos veículos protegidos e recebe qualquer alerta fora do padrão — como uma movimentação em horário incomum ou fora da área cadastrada pelo associado.</p>
+
+      <h2>Cerca eletrônica (geofencing): como funciona</h2>
+      <p>Uma das funcionalidades mais úteis do rastreamento é a <strong>cerca eletrônica</strong> (ou geofencing). Você define no aplicativo uma área geográfica onde o veículo costuma circular — por exemplo, sua cidade ou bairro. Se o veículo sair dessa área sem justificativa, um alerta automático é disparado para o associado e para a central.</p>
+
+      <h2>O que acontece em caso de roubo ou furto</h2>
+      <p>Ao perceber que o veículo foi roubado ou furtado, o associado aciona a central pelo telefone ou aplicativo. A partir daí, a equipe de monitoramento:</p>
+      <ul>
+        <li>Localiza o veículo em tempo real pelo sistema de rastreamento</li>
+        <li>Aciona o bloqueio remoto do veículo, se o equipamento tiver essa função</li>
+        <li>Comunica a localização à polícia para apoio na recuperação</li>
+        <li>Acompanha o caso até a recuperação ou finalização do sinistro</li>
+      </ul>
+      <p>Quanto mais rápido o aviso à central, maiores as chances de recuperação do veículo — por isso a importância de agir assim que perceber o roubo.</p>
+
+      <h2>E se o ladrão tentar bloquear o sinal (jammer)?</h2>
+      <p>Alguns criminosos usam aparelhos chamados <strong>jammers</strong>, que tentam interferir no sinal GPS/GSM do rastreador. Equipamentos mais modernos contam com sensores que identificam essa interferência e disparam um alerta imediato para a central, mesmo sem conseguir transmitir a localização exata — o que já ajuda a identificar a última posição confiável do veículo.</p>
+
+      <h2>Como funciona o rastreamento na Hélios</h2>
+      <p>Na <strong>Hélios Proteção Veicular</strong>, o rastreamento vem incluso nos planos, com central de monitoramento 24h e app para acompanhar seu veículo de qualquer lugar. Em caso de roubo ou furto, basta acionar nossa equipe para iniciar o processo de localização e recuperação imediatamente.</p>
+    `,
+  },
+  {
+    slug: "funcionalidades-do-rastreamento-veicular",
+    titulo: "Rastreamento veicular: funcionalidades e o que você ganha com a Hélios",
+    descricao: "Localização em tempo real, cerca eletrônica, botão de pânico e muito mais. Veja todas as funcionalidades do rastreamento veicular incluso nos planos da Hélios.",
+    data: "2026-09-08",
+    categoria: "Rastreamento",
+    tempoLeitura: "5 min",
+    imagem: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=1200&q=80",
+    conteudo: `
+      <h2>Rastreamento veicular: muito além de "saber onde o carro está"</h2>
+      <p>Quando se fala em rastreamento veicular, a primeira coisa que vem à cabeça é "saber onde o carro está". Mas essa é só uma pequena parte do que a tecnologia oferece hoje. Veja as principais funcionalidades disponíveis e o que você tem acesso ao contratar a proteção veicular com a Hélios.</p>
+
+      <h2>1. Localização em tempo real</h2>
+      <p>Pelo aplicativo, você acompanha a posição exata do seu veículo a qualquer momento, de qualquer lugar. Essa é a base de todo o sistema de rastreamento e a funcionalidade mais usada no dia a dia pelos associados.</p>
+
+      <h2>2. Cerca eletrônica (geofencing)</h2>
+      <p>Você define uma área no mapa — sua cidade, bairro ou trajeto de rotina — e recebe um alerta automático caso o veículo saia dessa área sem justificativa. É uma das funcionalidades mais eficazes para identificar rapidamente uma movimentação suspeita.</p>
+
+      <h2>3. Histórico de trajetos</h2>
+      <p>O sistema guarda o histórico de rotas percorridas pelo veículo em um determinado período, permitindo consultar por onde ele passou em dias anteriores — útil tanto para segurança quanto para gestão de uso do veículo, no caso de famílias ou motoristas de aplicativo.</p>
+
+      <h2>4. Botão de pânico</h2>
+      <p>Em situações de risco, como um assalto, o botão de pânico permite avisar a central de monitoramento de forma discreta e imediata, sem precisar ligar ou mexer no celular.</p>
+
+      <h2>5. Bloqueio remoto do veículo</h2>
+      <p>Em caso de roubo ou furto confirmado, a central pode acionar o bloqueio remoto, impedindo que o veículo seja ligado novamente após ser desligado — uma funcionalidade que aumenta bastante as chances de recuperação.</p>
+
+      <h2>6. Alertas de movimentação e vibração</h2>
+      <p>O sistema pode notificar o associado caso o veículo seja movimentado ou sofra uma vibração fora do padrão enquanto estiver estacionado — útil para identificar uma tentativa de furto ainda no início.</p>
+
+      <h2>7. Aplicativo com acesso 24h</h2>
+      <p>Todas essas funcionalidades ficam disponíveis em um aplicativo simples, acessível pelo celular a qualquer hora, com suporte da central de monitoramento 24 horas por dia, 7 dias por semana.</p>
+
+      <h2>O rastreamento vem incluso no plano da Hélios?</h2>
+      <p>Sim. Na <strong>Hélios Proteção Veicular</strong>, o rastreamento veicular já vem incluído nos planos de proteção, sem custo extra de instalação. Além da localização em tempo real e da cerca eletrônica, nossos associados contam com central de monitoramento 24h, assistência completa e suporte imediato em caso de roubo ou furto.</p>
+      <p>Quer saber qual plano se encaixa melhor no seu veículo? Fale agora com a nossa equipe pelo WhatsApp e receba uma cotação gratuita.</p>
+    `,
+  },
 ]

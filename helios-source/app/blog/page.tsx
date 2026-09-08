@@ -23,6 +23,8 @@ const categoriasCores: Record<string, string> = {
   "Motos": "bg-orange-100 text-orange-800",
   "Dúvidas Frequentes": "bg-green-100 text-green-800",
   "Motoristas de App": "bg-yellow-100 text-yellow-800",
+  "Rastreamento": "bg-teal-100 text-teal-800",
+  "Equipamentos": "bg-red-100 text-red-800",
 }
 
 function formatarData(data: string) {

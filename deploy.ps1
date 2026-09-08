@@ -46,7 +46,10 @@ $artigos = @(
   "maiores-protecoes-veiculares-do-brasil",
   "seguro-moto-ou-protecao-veicular-qual-escolher",
   "protecao-veicular-e-confiavel",
-  "protecao-veicular-para-motorista-de-aplicativo"
+  "protecao-veicular-para-motorista-de-aplicativo",
+  "tipos-de-rastreador-veicular",
+  "como-funciona-o-rastreamento-veicular",
+  "funcionalidades-do-rastreamento-veicular"
 )
 foreach ($a in $artigos) {
   Get-ChildItem "$out\blog\$a" | Copy-Item -Destination "$dst\blog\$a" -Recurse -Force

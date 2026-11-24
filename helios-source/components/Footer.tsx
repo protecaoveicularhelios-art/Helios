@@ -1,5 +1,5 @@
 export default function Footer() {
-  const whatsapp = "https://wa.me/5531993728984"
+  const whatsapp = "https://wa.me/5531993189043"
 
   return (
     <footer className="bg-[#0b1a35] text-white px-4 md:px-10 pt-12 pb-6">
@@ -43,7 +43,7 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-4">Contato</h4>
             <div className="flex flex-col gap-2 text-[#a0aec0] text-sm">
               <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="text-[#a0aec0] no-underline">
-                📞 (31) 99372-8984
+                📞 (31) 99318-9043
               </a>
               <span>📍 Belo Horizonte, MG</span>
               <span>⏰ Seg–Sex 8h–18h</span>

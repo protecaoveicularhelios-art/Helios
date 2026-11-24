@@ -1,13 +1,13 @@
 import Image from "next/image"
 
 export default function Header() {
-  const whatsapp = "https://wa.me/5531993728984"
+  const whatsapp = "https://wa.me/5531993189043"
 
   return (
     <header>
       <div className="bg-[#0b1a35] border-b border-[#1a2e50] px-4 md:px-10 h-10 flex items-center justify-between">
         <a href={whatsapp} target="_blank" rel="noopener noreferrer" className="text-[#f5c400] text-xs no-underline">
-          📞 (31) 99372-8984
+          📞 (31) 99318-9043
         </a>
         <span className="hidden md:block text-[#ccc] text-xs">Atendimento: Seg–Sex 8h–18h | Sáb 8h–12h</span>
       </div>

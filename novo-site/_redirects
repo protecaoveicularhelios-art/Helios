@@ -1,4 +1,44 @@
-﻿/guincho-24-horas-abaete-mg/ /assistencia-24-horas-abaete-mg/ 301
+# URLs do site antigo (Mobirise) — 410 para o Google remover mais rápido
+/find/* /404.html 410!
+/cidades-sfw-mg /404.html 410!
+/cidades-sfw-sp /404.html 410!
+/cidades-atendidas /404.html 410!
+/cidades-atendidas/* /404.html 410!
+/index.asp /404.html 410!
+
+# Consolidação nov/2026: páginas de cidade duplicadas -> página completa
+/belo-horizonte/ /protecao-veicular-belo-horizonte-mg/ 301!
+/belo-horizonte /protecao-veicular-belo-horizonte-mg/ 301!
+/contagem/ /protecao-veicular-contagem-mg/ 301!
+/contagem /protecao-veicular-contagem-mg/ 301!
+/betim/ /protecao-veicular-betim-mg/ 301!
+/betim /protecao-veicular-betim-mg/ 301!
+/ribeirao-das-neves/ /protecao-veicular-ribeirao-das-neves-mg/ 301!
+/ribeirao-das-neves /protecao-veicular-ribeirao-das-neves-mg/ 301!
+/santa-luzia/ /protecao-veicular-santa-luzia-mg/ 301!
+/santa-luzia /protecao-veicular-santa-luzia-mg/ 301!
+/ibirite/ /protecao-veicular-ibirite-mg/ 301!
+/ibirite /protecao-veicular-ibirite-mg/ 301!
+/vespasiano/ /protecao-veicular-vespasiano-mg/ 301!
+/vespasiano /protecao-veicular-vespasiano-mg/ 301!
+/sabara/ /protecao-veicular-sabara-mg/ 301!
+/sabara /protecao-veicular-sabara-mg/ 301!
+/nova-lima/ /protecao-veicular-nova-lima-mg/ 301!
+/nova-lima /protecao-veicular-nova-lima-mg/ 301!
+/lagoa-santa/ /protecao-veicular-lagoa-santa-mg/ 301!
+/lagoa-santa /protecao-veicular-lagoa-santa-mg/ 301!
+/pedro-leopoldo/ /protecao-veicular-pedro-leopoldo-mg/ 301!
+/pedro-leopoldo /protecao-veicular-pedro-leopoldo-mg/ 301!
+/brumadinho/ /protecao-veicular-brumadinho-mg/ 301!
+/brumadinho /protecao-veicular-brumadinho-mg/ 301!
+/esmeraldas/ /protecao-veicular-esmeraldas-mg/ 301!
+/esmeraldas /protecao-veicular-esmeraldas-mg/ 301!
+/mario-campos/ /protecao-veicular-mario-campos-mg/ 301!
+/mario-campos /protecao-veicular-mario-campos-mg/ 301!
+/sarzedo/ /protecao-veicular-sarzedo-mg/ 301!
+/sarzedo /protecao-veicular-sarzedo-mg/ 301!
+
+/guincho-24-horas-abaete-mg/ /assistencia-24-horas-abaete-mg/ 301
 /reboque-24-horas-abaete-mg/ /assistencia-24-horas-abaete-mg/ 301
 /chaveiro-24h-abaete-mg/ /assistencia-24-horas-abaete-mg/ 301
 /pane-seca-abaete-mg/ /assistencia-24-horas-abaete-mg/ 301

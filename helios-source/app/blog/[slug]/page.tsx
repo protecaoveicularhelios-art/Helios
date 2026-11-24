@@ -108,7 +108,7 @@ export default async function ArtigoPage({ params }: { params: Promise<{ slug: s
                 Fale com nossa equipe agora e receba uma cotação gratuita e sem compromisso.
               </p>
               <a
-                href="https://wa.me/5531993728984"
+                href="https://wa.me/5531993189043"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-[#25d366] text-white font-extrabold px-8 py-3 rounded-xl no-underline text-base"

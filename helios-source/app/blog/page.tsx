@@ -88,7 +88,7 @@ export default function BlogPage() {
             Fale com nossa equipe e receba uma cotação gratuita agora.
           </p>
           <a
-            href="https://wa.me/5531993728984"
+            href="https://wa.me/5531993189043"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#25d366] text-white font-extrabold px-10 py-4 rounded-xl no-underline text-lg"

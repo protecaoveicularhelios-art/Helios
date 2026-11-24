@@ -66,8 +66,8 @@ export const artigos: Artigo[] = [
   },
   {
     slug: "maiores-protecoes-veiculares-do-brasil",
-    titulo: "As 5 maiores proteções veiculares do Brasil em 2026",
-    descricao: "Conheça as maiores e mais conhecidas proteções veiculares do Brasil, compare coberturas e descubra qual é a melhor opção para você.",
+    titulo: "Maiores proteções veiculares do Brasil em 2026: qual a melhor?",
+    descricao: "Ranking das maiores proteções veiculares do Brasil em 2026: APVS, AGV, Proauto, Lions e SaveCar. Compare coberturas, veja qual a melhor e faça sua cotação.",
     data: "2026-06-06",
     categoria: "Comparativos",
     tempoLeitura: "6 min",

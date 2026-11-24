@@ -6,8 +6,6 @@ Disallow: /a/
 Disallow: /m/
 Disallow: /p/
 Disallow: /city-seventy/
-Disallow: /cidades-atendidas
-Disallow: /_next/
 Disallow: /*.txt$
 
 Sitemap: https://heliosprotecaoveicular.com.br/sitemap-index.xml

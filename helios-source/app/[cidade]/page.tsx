@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ cidade: s
   }
 }
 
-const whatsapp = "https://wa.me/5531993728984"
+const whatsapp = "https://wa.me/5531993189043"
 
 const coberturas = [
   { icon: "🔒", titulo: "Roubo e Furto", desc: "Indenização de 100% da Tabela FIPE em caso de roubo ou furto do veículo." },
@@ -81,7 +81,7 @@ export default async function PaginaCidade({ params }: { params: Promise<{ cidad
     name: "Hélios Proteção Veicular",
     description: `Proteção veicular completa em ${cidade.nome}. Cobertura contra roubo, furto, colisão e assistência 24h.`,
     url: `https://heliosprotecaoveicular.com.br/${cidade.slug}/`,
-    telephone: "+5531993728984",
+    telephone: "+5531993189043",
     areaServed: cidade.nome,
     address: {
       "@type": "PostalAddress",
@@ -89,7 +89,7 @@ export default async function PaginaCidade({ params }: { params: Promise<{ cidad
       addressRegion: "MG",
       addressCountry: "BR",
     },
-    sameAs: ["https://wa.me/5531993728984"],
+    sameAs: ["https://wa.me/5531993189043"],
   }
 
   return (

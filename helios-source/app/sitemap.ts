@@ -4,7 +4,7 @@ import { artigos } from "@/data/artigos"
 
 export const dynamic = "force-static"
 
-const LAST_MODIFIED = new Date("2026-06-06")
+const LAST_MODIFIED = new Date("2026-11-24")
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://heliosprotecaoveicular.com.br"
@@ -36,7 +36,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly" as const,
       priority: 0.9,
     },
-    ...cidadesUrls,
     ...blogUrls,
   ]
 }
